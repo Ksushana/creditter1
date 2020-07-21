@@ -1,0 +1,91 @@
+<% var data = {
+  title: "SmartCredit | Как вернуть деньги",
+  name: 'how',
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main main-back">
+  <section class="section section-hero back-hero">
+    <div class="back-hero-container">
+      <h1 class="hero-title">Как вернуть деньги</h1>
+    </div>
+  </section>
+  <section class="section section-back">
+    <div class="page-container">
+      <h2 class="section-title">Погашение займа</h2>
+      <p class="section-back__notice">Вы можете возвращать займ так, как удобно вам: погашать его целиком или частями, в срок или досрочно. Если у вас возникнет необходимость, вы сможете продлить срок займа. Напомним, что своевременное погашение займа положительно отразится на вашей кредитной истории и увеличит кредитный рейтинг.</p>
+    </div>
+  </section>
+  <section class="section section-back">
+    <div class="page-container">
+      <h2 class="section-title">Досрочное погашение займа</h2>
+      <p class="section-back__notice">Проценты начисляются только за фактическое количество дней займа. А это значит, что при досрочном погашении вы сэкономите на процентах за пользование деньгами.</p>
+    </div>
+  </section>
+  <section class="section section-back">
+    <div class="page-container">
+      <h2 class="section-title">Частичное погашение займа</h2>
+      <p class="section-back__notice">Дополнительный способ экономии на возврате займа — это регулярное погашение плановых или частичных платежей. Оплата займа частями снижает сумму долга и проценты будут начислены на сумму за вычетом внесённого платежа.</p>
+    </div>
+  </section>
+  <section class="section section-back">
+    <div class="page-container">
+      <h2 class="section-title">Продление займа</h2>
+      <p class="section-back__notice">Не успеваете погасить займ вовремя? Продлите его срок. Для этого в личном кабинете выберите срок продления, оплатив при этом лишь проценты, начисленные сверх суммы займа. Это позволит вам сохранить кредитный рейтинг и избежать темных пятен на кредитной истории.</p>
+    </div>
+  </section>
+  <section class="section how-variants back-variants">
+    <div class="page-container">
+      <ul class="how-variants-list">
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-visa"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-mastercard"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-maestro"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-qiwi"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-ymoney"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-bank"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-cash-desk"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-contact"></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section how-payment-contact">
+    <div class="page-container">
+      <h2 class="section-title">Платежная система CONTACT</h2>
+      <div class="contact-map" id="contact-map">
+        <input id="contact-point-search" type="search" placeholder="Город, улица" autocomplete="off">
+        <div class="ctabs how-payment-contact__tabs">
+          <div class="ctabs-tablist how-payment-contact__tablist" role="tablist">
+            <button id="contact-pos-in-btn" class="ctabs-tablist__item how-payment-contact__tablist-item" role="tab"
+              aria-selected="true" aria-controls="">Пункты получения займа</button>
+            <button id="contact-pos-out-btn" class="ctabs-tablist__item how-payment-contact__tablist-item" role="tab"
+              aria-selected="false" aria-controls="" tabindex="-1">Пункты погашения займа</button>
+            <button id="contact-pos-in-out-btn" class="ctabs-tablist__item how-payment-contact__tablist-item" role="tab"
+              aria-selected="false" aria-controls="" tabindex="-1">Пункты получения/погашения</button>
+          </div>
+        </div>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+      </div>
+      <div class="how-payment-contact-map" id="contact">
+        <div id="how-payment-contact-map"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

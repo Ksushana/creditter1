@@ -1,0 +1,174 @@
+<% var data = {
+  title: "SmartCredit | Affiliate",
+  name: 'affiliate',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-affiliate">
+  <section class="section lk-section">
+    <div class="lk-page-container affiliate-page-container">
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block affiliate">
+          <div class="affiliate-header">
+            <h3 class="lk-content-block__title affiliate-title">Получайте 500 ₽ за каждого привлеченного клиента,
+              который оформит займ</h3>
+            <div class="affiliate-stats">
+              <p class="affiliate-stats__title">Статистика:</p>
+              <ul class="affiliate-stats-list">
+                <li class="affiliate-stats__item">
+                  <span class="affiliate-stats__item-title">отправлено приглашений —</span> <span
+                    class="affiliate-stats__item-value">123</span>
+                </li>
+                <li class="affiliate-stats__item">
+                  <span class="affiliate-stats__item-title">приглашений —</span> <span
+                    class="affiliate-stats__item-value">23</span>
+                </li>
+                <li class="affiliate-stats__item">
+                  <span class="affiliate-stats__item-title">получено займов —</span> <span
+                    class="affiliate-stats__item-value">1</span>
+                </li>
+                <li class="affiliate-stats__item">
+                  <span class="affiliate-stats__item-title">вам начислено —</span> <span
+                    class="affiliate-stats__item-value">500 ₽</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="affiliate-content">
+            <div class="affiliate-steps">
+              <ul class="step-list affiliate-steps-list">
+                <li class="affiliate-steps__item step step-one">
+                  <div class="step__number affiliate-steps__item-number">1</div>
+                  <div class="affiliate-steps__item-description">
+                    <p class="affiliate-steps__item-description__title">Вы приглашаете друзей</p>
+                    <p class="affiliate-steps__item-description__notice">
+                      Расскажите друзьям о Creditter: отправьте письмо с приглашением или поделитесь ссылкой
+                    </p>
+                  </div>
+                </li>
+                <li class="affiliate-steps__item step step-two">
+                  <div class="step__number affiliate-steps__item-number">2</div>
+                  <div class="affiliate-steps__item-description">
+                    <p class="affiliate-steps__item-description__title">Они регистрируются и инвестируют</p>
+                    <p class="affiliate-steps__item-description__notice">Сразу после регистрации мы положим на счет
+                      вашего друга €5</p>
+                  </div>
+                </li>
+                <li class="affiliate-steps__item step step-three">
+                  <div class="step__number affiliate-steps__item-number">3</div>
+                  <div class="affiliate-steps__item-description">
+                    <p class="affiliate-steps__item-description__title">Вы получаете 5% с их инвестиций</p>
+                    <p class="affiliate-steps__item-description__notice">
+                      На ваш счет будет автоматически зачислено 5% от суммы, инвестированной вашим другом в первые 30
+                      дней.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="affiliate-variants">
+              <div class="affiliate-variants__col affiliate-variant">
+                <p class="affiliate-variant__title">Пригласить по эл. почте</p>
+                <form class="affiliate-invite-from">
+                  <div class="affiliate-invite-from__field radio-toggle">
+                    <label class="radio-toggle__item">
+                      <input class="radio-toggle__item-radio" type="radio" value="email" name="type" checked>
+                      <span class="radio-toggle__item-label">Email</span>
+                    </label>
+                    <label class="radio-toggle__item">
+                      <input class="radio-toggle__item-radio" type="radio" value="sms" name="type">
+                      <span class="radio-toggle__item-label">SMS</span>
+                    </label>
+                  </div>
+                  <label class="affiliate-invite-from__field affiliate-invite-from__field-name">
+                    <input class="lk-input affiliate-invite-from__field-input" type="text" placeholder="Имя">
+                  </label>
+                  <label class="affiliate-invite-from__field">
+                    <input class="lk-input affiliate-invite-from__field-input" type="email" placeholder="Эл. почта">
+                  </label>
+                  <button class="btn btn--orange affiliate-invite-form__submit">Пригласить</button>
+                </form>
+              </div>
+              <div class="affiliate-variants__col affiliate-variant">
+                <p class="affiliate-variant__title">Поделиться ссылкой в&nbsp;соцсетях или мессенджерах</p>
+                <ul class="affiliate-share-list">
+                  <li class="affiliate-share-list__item">
+                    <a class="affiliate-share-link" href="#">
+                      <span class="icon icon-facebook"></span>
+                    </a>
+                  </li>
+                  <li class="affiliate-share-list__item">
+                    <a class="affiliate-share-link" href="#">
+                      <span class="icon icon-linkedin"></span>
+                    </a>
+                  </li>
+                  <li class="affiliate-share-list__item">
+                    <a class="affiliate-share-link" href="#">
+                      <span class="icon icon-gplus"></span>
+                    </a>
+                  </li>
+                  <li class="affiliate-share-list__item">
+                    <a class="affiliate-share-link" href="#">
+                      <span class="icon icon-twitter"></span>
+                    </a>
+                  </li>
+                  <li class="affiliate-share-list__item">
+                    <a class="affiliate-share-link" href="#">
+                      <span class="icon icon-telegram"></span>
+                    </a>
+                  </li>
+                  <li class="affiliate-share-list__item">
+                    <a class="affiliate-share-link" href="#">
+                      <span class="icon icon-whatsup"></span>
+                    </a>
+                  </li>
+                  <li class="affiliate-share-list__item">
+                    <a class="affiliate-share-link" href="#">
+                      <span class="icon icon-viber"></span>
+                    </a>
+                  </li>
+                  <li class="affiliate-share-list__item">
+                    <a class="affiliate-share-link" href="#">
+                      <span class="icon icon-facebook-messanger"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="affiliate-variants__col affiliate-variant">
+                <p class="affiliate-variant__title affiliate-variant-contacts__title">Поделиться ссылкой или
+                  импортировать контакты</p>
+                <div class="copy-invite">
+                  <p class="copy-invite__label">Ссылка с приглашением</p>
+                  <div class="copy-invite-field">
+                    <input id="copy-invite-link" class="lk-input copy-invite-field__input" type="text"
+                      value="https://creditter.com/ref/user123" readonly>
+                    <button class="unbtn copy-invite-field__button" type="button"
+                      data-clipboard-target="#copy-invite-link">
+                      <span class="icon icon-copy"></span>
+                    </button>
+                  </div>
+                </div>
+                <div class="mail-share">
+                  <ul class="mail-share__list">
+                    <li class="mail-share__list-item">
+                      <a class="mail-share-link" href="#">
+                        <span class="icon icon-gmail"></span>
+                      </a>
+                    </li>
+                    <li class="mail-share__list-item">
+                      <a class="mail-share-link" href="#">
+                        <span class="icon icon-outlook"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

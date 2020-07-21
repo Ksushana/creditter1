@@ -1,0 +1,277 @@
+<% var data = {
+  title: "SmartCredit | История займов",
+  name: 'loans-history',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-loans-history">
+  <section class="section lk-section">
+    <div class="lk-page-container loans-history-page-container">
+      <h2 class="section-title lk-section-title">История займов</h2>
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block loans-history">
+          <div class="loans-history-header">
+            <h3 class="lk-content-block__title loans-history-title">Ваши займы</h3>
+            <button class="btn btn--orange-transparent button-get-certificate">
+              Получить справку об отсутствии долга
+            </button>
+          </div>
+          <div class="loans-history-content">
+            <ul class="lk-table loans-history-list">
+              <li class="lk-table__row loans-history-list__item">
+                <div class="lk-table__head loans-history-list__head">
+                  <p class="lk-table__head-cell loans-history-list__head-cell">№ договора</p>
+                  <p class="lk-table__head-cell loans-history-list__head-cell">Сумма займа</p>
+                  <p class="lk-table__head-cell loans-history-list__head-cell">Дата выдачи</p>
+                  <p class="lk-table__head-cell loans-history-list__head-cell">Дата погашения</p>
+                  <p class="lk-table__head-cell loans-history-list__head-cell">Статус</p>
+                </div>
+                <div class="lk-table__row-inner loans-history-list__row">
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">№ договора</span>
+                    <span class="lk-table__cell-value">223819</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">Сумма займа</span>
+                    <span class="lk-table__cell-value">15 000 ₽</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата выдачи</span>
+                    <span class="lk-table__cell-value with-date">5 февраля 2019</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата погашения</span>
+                    <span class="lk-table__cell-value with-date">20 февраля 2019</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell" data-toggle-table-details>
+                    <span class="lk-table__head-cell--mobile">Статус</span>
+                    <span class="lk-table__cell-value loans-history-status">Пролонгирован <span
+                        class="icon icon-arrow-down-small"></span></span>
+                  </p>
+                </div>
+                <div class="loans-history-list__details lk-table-details loans-history-details">
+                  <div class="loans-history-details__header">
+                    <p class="loans-history-details__header-item">
+                      <span>Основной долг:</span> <span class="major-debt">15 000 ₽</span>
+                    </p>
+                    <p class="loans-history-details__header-item">
+                      <span>Проценты, штрафы и неустойки:</span> <span class="other-debt">2 250 ₽</span>
+                    </p>
+                  </div>
+                  <div class="loans-history-details__content">
+                    <ul class="lk-table loans-history-details-list">
+                      <li class="lk-table__row loans-history-details-list__item">
+                        <div class="lk-table__head loans-history-list__head">
+                          <p class="lk-table__head-cell loans-history-list__head-cell">№ платежа</p>
+                          <p class="lk-table__head-cell loans-history-list__head-cell">Дата платежа</p>
+                          <p class="lk-table__head-cell loans-history-list__head-cell">Сумма платежа</p>
+                          <p class="lk-table__head-cell loans-history-list__head-cell">Остаток долга после платежа</p>
+                          <p class="lk-table__head-cell loans-history-list__head-cell">Способ платежа</p>
+                        </div>
+                        <div class="lk-table__row-inner loans-history-list__row">
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">№ платежа</span>
+                            <span class="lk-table__cell-value">1</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Дата платежа</span>
+                            <span class="lk-table__cell-value">08.01.2019</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Сумма платежа</span>
+                            <span class="lk-table__cell-value">10 000 ₽</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Остаток долга после платежа</span>
+                            <span class="lk-table__cell-value">7 250 ₽</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Способ платежа</span>
+                            <span class="lk-table__cell-value">Банковский первод</span>
+                          </p>
+                        </div>
+                      </li>
+                      <li class="lk-table__row loans-history-details-list__item">
+                        <div class="lk-table__row-inner loans-history-list__row">
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">№ платежа</span>
+                            <span class="lk-table__cell-value">2</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Дата платежа</span>
+                            <span class="lk-table__cell-value">15.01.2019</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Сумма платежа</span>
+                            <span class="lk-table__cell-value">5 000 ₽</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Остаток долга после платежа</span>
+                            <span class="lk-table__cell-value">2 250 ₽</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Способ платежа</span>
+                            <span class="lk-table__cell-value">Банковский первод</span>
+                          </p>
+                        </div>
+                      </li>
+                      <li class="lk-table__row loans-history-details-list__item">
+                        <div class="lk-table__row-inner loans-history-list__row">
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">№ платежа</span>
+                            <span class="lk-table__cell-value">3</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Дата платежа</span>
+                            <span class="lk-table__cell-value">22.01.2019</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Сумма платежа</span>
+                            <span class="lk-table__cell-value">2 250 ₽</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Остаток долга после платежа</span>
+                            <span class="lk-table__cell-value">3 759 ₽</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Способ платежа</span>
+                            <span class="lk-table__cell-value">Банковский первод</span>
+                          </p>
+                        </div>
+                      </li>
+                      <li class="lk-table__row loans-history-details-list__item">
+                        <div class="lk-table__row-inner loans-history-list__row">
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">№ платежа</span>
+                            <span class="lk-table__cell-value">Ваш следующий платеж</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Дата платежа</span>
+                            <span class="lk-table__cell-value">29.01.2019</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Сумма платежа</span>
+                            <span class="lk-table__cell-value">3 759 ₽</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Остаток долга после платежа</span>
+                            <span class="lk-table__cell-value">0</span>
+                          </p>
+                          <p class="lk-table__cell loans-history-list__cell">
+                            <span class="lk-table__head-cell--mobile">Способ платежа</span>
+                            <span class="lk-table__cell-value"></span>
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="loans-history-actions">
+                  <button class="btn btn--orange button-loans-history-more" data-toggle-table-details>
+                    <span class="not-active-text">Подробнее</span>
+                    <span class="active-text">Скрыть</span>
+                  </button>
+                </div>
+              </li>
+              <li class="lk-table__row loans-history-list__item">
+                <div class="lk-table__row-inner loans-history-list__row">
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">№ договора</span>
+                    <span class="lk-table__cell-value">892348</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">Сумма займа</span>
+                    <span class="lk-table__cell-value">15 000 ₽</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата выдачи</span>
+                    <span class="lk-table__cell-value with-date">7 января 2019</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата погашения</span>
+                    <span class="lk-table__cell-value with-date">22 января 2019</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell" data-toggle-table-details>
+                    <span class="lk-table__head-cell--mobile">Статус</span>
+                    <span class="lk-table__cell-value loans-history-status loans-history-status--success">Погашен в срок
+                      <span class="icon icon-arrow-down-small"></span></span>
+                  </p>
+                </div>
+                <div class="loans-history-actions">
+                  <button class="btn btn--orange button-loans-history-more" data-toggle-table-details>
+                    <span class="not-active-text">Подробнее</span>
+                    <span class="active-text">Скрыть</span>
+                  </button>
+                </div>
+              </li>
+              <li class="lk-table__row loans-history-list__item">
+                <div class="lk-table__row-inner loans-history-list__row">
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">№ договора</span>
+                    <span class="lk-table__cell-value">123942</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">Сумма займа</span>
+                    <span class="lk-table__cell-value">9 500 ₽</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата выдачи</span>
+                    <span class="lk-table__cell-value with-date">21 декабря 2018</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата погашения</span>
+                    <span class="lk-table__cell-value with-date">6 января 2019</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell" data-toggle-table-details>
+                    <span class="lk-table__head-cell--mobile">Статус</span>
+                    <span class="lk-table__cell-value loans-history-status loans-history-status--failure">Погашен с
+                      нарушением срока <span class="icon icon-arrow-down-small"></span></span>
+                  </p>
+                </div>
+                <div class="loans-history-actions">
+                  <button class="btn btn--orange button-loans-history-more" data-toggle-table-details>
+                    <span class="not-active-text">Подробнее</span>
+                    <span class="active-text">Скрыть</span>
+                  </button>
+                </div>
+              </li>
+              <li class="lk-table__row loans-history-list__item">
+                <div class="lk-table__row-inner loans-history-list__row">
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">№ договора</span>
+                    <span class="lk-table__cell-value">823949</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">Сумма займа</span>
+                    <span class="lk-table__cell-value">14 000 ₽</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата выдачи</span>
+                    <span class="lk-table__cell-value with-date">13 октября 2018</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата погашения</span>
+                    <span class="lk-table__cell-value with-date">28 октября 2018</span>
+                  </p>
+                  <p class="lk-table__cell loans-history-list__cell" data-toggle-table-details>
+                    <span class="lk-table__head-cell--mobile">Статус</span>
+                    <span class="lk-table__cell-value loans-history-status loans-history-status--success">Погашен в срок
+                      <span class="icon icon-arrow-down-small"></span></span>
+                  </p>
+                </div>
+                <div class="loans-history-actions">
+                  <button class="btn btn--orange button-loans-history-more" data-toggle-table-details>
+                    <span class="not-active-text">Подробнее</span>
+                    <span class="active-text">Скрыть</span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

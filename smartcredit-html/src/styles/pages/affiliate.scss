@@ -1,0 +1,363 @@
+.affiliate-page-container {
+  width: 100%;
+  max-width: 1069px;
+}
+
+.affiliate-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 24px 34px 39px 34px;
+  border-bottom: 1px solid $lightGray;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 23px;
+    padding-left: 26px;
+    padding-right: 22px;
+  }
+
+  @media screen and (max-width: 540px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.affiliate-title {
+  width: 100%;
+  max-width: 437px;
+  margin-right: 62px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 42px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 31px;
+    font-size: 29px;
+    line-height: 37px;
+  }
+
+  @media screen and (max-width: 540px) {
+    margin-right: 0;
+    margin-bottom: 21px;
+  }
+}
+
+.affiliate-stats {
+  min-width: 241px;
+}
+
+.affiliate-stats__title {
+  font-size: 15px;
+  margin-bottom: 9px;
+}
+
+.affiliate-stats__item {
+  position: relative;
+  padding-left: 15px;
+  font-size: 15px;
+  margin-bottom: 9px;
+  color: $gray;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $gray;
+  }
+}
+
+.affiliate-stats__item-value {
+  color: $textMainColor;
+}
+
+.affiliate-steps {
+  padding-top: 54px;
+  padding-bottom: 61px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 32px;
+    padding-bottom: 39px;
+  }
+}
+
+.affiliate-steps-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 915px;
+  margin: 0 auto;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  &::after {
+    left: 10%;
+    width: 67%;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.affiliate-steps__item {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: calc(100% / 3);
+  width: calc(100% / 3);
+
+  &:nth-child(1) {
+    max-width: 242px;
+  }
+  &:nth-child(2) {
+    max-width: 273px;
+  }
+  &:nth-child(3) {
+    max-width: 256px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(1) {
+      max-width: 100%;
+    }
+    &:nth-child(2) {
+      max-width: 100%;
+    }
+    &:nth-child(3) {
+      max-width: 100%;
+    }
+  }
+}
+
+.affiliate-steps__item-number {
+  margin-bottom: 26px;
+}
+
+.affiliate-steps__item-description {
+  text-align: center;
+}
+
+.affiliate-steps__item-description__title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+}
+
+.affiliate-variants {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.affiliate-variants__col {
+  flex-basis: calc(100% / 3);
+  width: calc(100% / 3);
+  padding-top: 25px;
+  padding-bottom: 40px;
+  border: 1px solid $lightGray;
+  border-bottom: none;
+
+  &:first-child {
+    border-left: none;
+    border-right: none;
+  }
+  &:last-child {
+    border-left: none;
+    border-right: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 100%;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.affiliate-variant__title {
+  margin-bottom: 28px;
+  padding: 0 25px;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+
+  @media screen and (max-width: 992px) {
+    padding: 0 10px;
+  }
+}
+
+.affiliate-invite-from {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.affiliate-invite-from__field {
+  width: 100%;
+  max-width: 424px;
+  margin: 0 auto 32px;
+  padding-left: 34px;
+  padding-right: 33px;
+  text-align: center;
+
+  @media screen and (max-width: 992px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.affiliate-invite-from__field-name {
+  margin-bottom: 25px;
+}
+
+.affiliate-invite-from__field-input {
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.affiliate-invite-form__submit {
+  width: 100%;
+  max-width: 161px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.affiliate-share-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 225px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.affiliate-share-list__item {
+  flex-basis: calc((100% - 15px * 3) / 4);
+  width: calc((100% - 15px * 3) / 4);
+  margin-right: 15px;
+  margin-bottom: 15px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &:nth-last-child(-n + 4) {
+    margin-bottom: 0;
+  }
+}
+
+.affiliate-share-link {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.affiliate-variant-contacts__title {
+  margin-bottom: 24px;
+}
+
+.copy-invite {
+  padding-left: 33px;
+  padding-right: 34px;
+
+  @media screen and (max-width: 992px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.copy-invite__label {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.copy-invite-field {
+  position: relative;
+  max-width: 424px;
+  margin: 0 auto;
+}
+
+.copy-invite-field__input {
+  width: 100%;
+  padding: 10px 44px 10px 15px;
+  border-radius: 4px;
+}
+
+.copy-invite-field__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  padding: 11px 12px 11px 14px;
+  border: 1px solid #e5e9f2;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: #f5f6fa;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.mail-share {
+  padding-top: 32px;
+}
+
+.mail-share__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail-share__list-item {
+  margin-right: 15px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.mail-share-link {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

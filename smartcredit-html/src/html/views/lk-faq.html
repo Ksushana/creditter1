@@ -1,0 +1,894 @@
+<% var data = {
+  title: "SmartCredit | Вопросы",
+  name: 'lk-faq',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-lk-faq">
+  <section class="section lk-section">
+    <div class="lk-page-container lk-faq-page-container">
+      <h2 class="section-title lk-section-title">Вопросы</h2>
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block lk-faq">
+          <div class="lk-faq-header">
+            <h3 class="lk-content-block__title lk-faq-title">Частозадаваемые вопросы</h3>
+            <button class="btn btn--orange lk-faq-new-question-button">Задать вопрос</button>
+          </div>
+          <div class="lk-faq-content" id="faq-main-search">
+            <div class="question-search-field">
+              <input class="question-search-field__input" type="text" name="question" placeholder="Введите ваш вопрос">
+            </div>
+            <div class="ctabs faq-tabs lk-faq-tabs">
+              <div class="faq-tabs__arrows">
+                <span class="icon icon-left-right-arrows"></span>
+              </div>
+              <div class="ctabs-tablist faq-tabs__tablist lk-faq-tabs__tablist" role="tablist">
+                <button class="ctabs-tablist__item faq-tabs__tablist-item lk-faq-tabs__tablist-item" role="tab"
+                  aria-selected="true" aria-controls="all-tab" id="all">Все</button>
+                <button class="ctabs-tablist__item faq-tabs__tablist-item lk-faq-tabs__tablist-item" role="tab"
+                  aria-selected="false" aria-controls="general-tab" id="general" tabindex="-1">Общие</button>
+                <button class="ctabs-tablist__item faq-tabs__tablist-item lk-faq-tabs__tablist-item" role="tab"
+                  aria-selected="false" aria-controls="repayment-tab" id="repayment" tabindex="-1">Погашение</button>
+                <button class="ctabs-tablist__item faq-tabs__tablist-item lk-faq-tabs__tablist-item" role="tab"
+                  aria-selected="false" aria-controls="loans-tab" id="loans" tabindex="-1">Займы</button>
+                <button class="ctabs-tablist__item faq-tabs__tablist-item lk-faq-tabs__tablist-item" role="tab"
+                  aria-selected="false" aria-controls="credit-history-tab" id="credit-history" tabindex="-1">Кредитная
+                  история</button>
+                <button class="ctabs-tablist__item faq-tabs__tablist-item lk-faq-tabs__tablist-item" role="tab"
+                  aria-selected="false" aria-controls="about-tab" id="about" tabindex="-1">О компании</button>
+                <button class="ctabs-tablist__item faq-tabs__tablist-item lk-faq-tabs__tablist-item" role="tab"
+                  aria-selected="false" aria-controls="private-tab" id="private" tabindex="-1">Личный кабинет</button>
+              </div>
+              <div class="faq-tabs__panel-wrapper">
+                <div class="ctabs-panel faq-tabs__panel lk-faq-tabs__panel" tabindex="0" role="tabpanel" id="all-tab"
+                  aria-labelledby="all">
+                  <div class="ctabs-panel__content faq-tabs__panel-content">
+                    <ul class="faq-questions-list faq-questions-search-list accordion" data-allow-toggle
+                      data-allow-multiple data-animation="fadeIn">
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect1"
+                          id="accordion1id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Смогу ли я
+                            оформить займ через мобильный
+                            телефон?</span>
+                        </div>
+                        <p class="faq-answer" id="sect1" role="region" aria-labelledby="accordion1id"
+                          class="accordion-panel" hidden="">
+                          Да, сможете. Любой телефон с доступом в интернет позволит вам быстро взять займ через наш
+                          онлайн-сервис.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect2"
+                          id="accordion2id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Смогу ли я
+                            оформить займ при наличии
+                            судимости?</span>
+                        </div>
+                        <p class="faq-answer" id="sect2" role="region" aria-labelledby="accordion2id"
+                          class="accordion-panel" hidden="">
+                          Да, если в вашем прошлом не было связей с терроризмом и другими угрозами обществу, вы сможете
+                          взять
+                          займ. Судимость – не помеха, но при этом кредитная история должна быть хорошей.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect3"
+                          id="accordion3id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Моя банковская
+                            карта в данный момент
+                            заблокирована, есть
+                            альтернативные способы получения займа?</span>
+                        </div>
+                        <p class="faq-answer" id="sect3" role="region" aria-labelledby="accordion3id"
+                          class="accordion-panel" hidden="">
+                          При первичном обращение выдача займа возможно только на именную банковскую карту. При
+                          последующих
+                          обращениях возможна выдача не только на карту, но и на банковский счет, киви кошелек, по
+                          системе
+                          «Contact».
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect4"
+                          id="accordion4id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Какие документы
+                            нужны для получения
+                            займа?</span>
+                        </div>
+                        <p class="faq-answer" id="sect4" role="region" aria-labelledby="accordion4id"
+                          class="accordion-panel" hidden="">
+                          Документы это завершающий этап проверки заявки на займ. В случае, если нам понадобятся Ваши
+                          документы специалист Вам сообщит об этом.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect5"
+                          id="accordion5id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Я живу в Твери.
+                            Смогу ли я получить заем
+                            в
+                            вашей
+                            компании?</span>
+                        </div>
+                        <p class="faq-answer" id="sect5" role="region" aria-labelledby="accordion5id"
+                          class="accordion-panel" hidden="">
+                          Да, можете. Займ можно получить из любого города, где есть интернет. Просто зайдите на наш
+                          сайт и
+                          оформите заявку.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect6"
+                          id="accordion6id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">После полного
+                            погашения займа, когда
+                            можно
+                            оформить
+                            следующий?</span>
+                        </div>
+                        <p class="faq-answer" id="sect6" role="region" aria-labelledby="accordion6id"
+                          class="accordion-panel" hidden="">
+                          Заявку на следующий займ можно оформлять сразу же после погашения предыдущего.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect7"
+                          id="accordion7id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Влияет ли моя
+                            кредитная история на
+                            получение
+                            займа?</span>
+                        </div>
+                        <p class="faq-answer" id="sect7" role="region" aria-labelledby="accordion7id"
+                          class="accordion-panel" hidden="">
+                          Да ,влияет. Если вы имеете постоянные просрочки по прошлым кредитам или у вас сейчас на руках
+                          три
+                          других займа, ваши шансы получить кредит у нас снижаются. Но при этом мы рассматриваем каждую
+                          кредитную историю, ведь нарушения бывают разные. Если нарушения были незначительными и
+                          разовыми, вы
+                          скорее всего сможете получить займ у нас.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect8"
+                          id="accordion8id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Есть ли у
+                            компании SmartCredit
+                            лицензия?</span>
+                        </div>
+                        <p class="faq-answer" id="sect8" role="region" aria-labelledby="accordion8id"
+                          class="accordion-panel" hidden="">
+                          Да, есть. Наша компания внесена в государственный реестр финансовых организаций.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect9"
+                          id="accordion9id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Есть ли у вас
+                            программы лояльности для
+                            постоянных
+                            клиентов?</span>
+                        </div>
+                        <p class="faq-answer" id="sect9" role="region" aria-labelledby="accordion9id"
+                          class="accordion-panel" hidden="">
+                          Да, есть. Второй и следующие займы вы сможете брать на более выгодных условиях. Ставка будет
+                          меньше,
+                          до 0,3% в день.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect10"
+                          id="accordion10id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Мои персональные данные будут в
+                            безопасности?</span>
+                        </div>
+                        <p class="faq-answer" id="sect10" role="region" aria-labelledby="accordion10id"
+                          class="accordion-panel" hidden="">
+                          Да, конечно. Мы гарантируем сохранность и конфиденциальность ваших персональных данных. Данные
+                          могут
+                          быть переданы только в официальные структуры по особому запросу.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect11"
+                          id="accordion11id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Я оформил займ и успешно прошёл
+                            верификацию. Получил письмо
+                            о том,
+                            что деньги были отправлены мне на банковскую карту, но деньги так и не поступили спустя 24
+                            часа. В
+                            чём может быть причина?</span>
+                        </div>
+                        <p class="faq-answer" id="sect11" role="region" aria-labelledby="accordion11id"
+                          class="accordion-panel" hidden="">
+                          Время поступления денег на вашу карту зависит от вида карты и банка эмитента, выдавшего карты.
+                          Если
+                          вы являетесь владельцем карты VISA, MasterCard то как правило время поступления денег
+                          составляет до
+                          30 минут. Если у вас карта Maestro, то время поступления денег зависит от банка-эмитента и
+                          может
+                          достигать 3-х рабочих дней.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect12"
+                          id="accordion12id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Мне 19 лет, могу ли я взять микрозайм
+                            в вашей
+                            компании?</span>
+                        </div>
+                        <p class="faq-answer" id="sect12" role="region" aria-labelledby="accordion12id"
+                          class="accordion-panel" hidden="">
+                          В настоящее время возрастное ограничение для выдачи микрозаймов составляет от 21 до 68 лет,
+                          поэтому
+                          если вам меньше 21 года, то микрозайм вы получить не сможете.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect13"
+                          id="accordion13id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Как правильно оформить обращение в
+                            ООО МФК
+                            "СМАРТМАНИ.РУ"?</span>
+                        </div>
+                        <div class="faq-answer" id="sect13" role="region" aria-labelledby="accordion13id"
+                          class="accordion-panel" hidden="">
+                          Уважаемый Заемщик, ООО МФК «СМАРТМАНИ.РУ» рассматривает все поступающие в его адрес обращения
+                          по вопросам оказываемых им финансовых услуг.<br>
+                          Обращение может быть подано посредством почтовой связи, на адрес электронной почты, путем
+                          заполнения соответствующей формы на сайте Общества, либо через личный кабинет. <br>
+                          Сообщаем, что обращение обязательно должно содержать фамилию, имя, отчество (при наличии), а
+                          также адрес (почтовый или электронный) для направления ответа на обращение.
+                          <hr>
+                          Кроме того, при составлении обращения рекомендуем указывать (включать) следующую информацию
+                          (документы):<br><br>
+                          <ol>
+                            <li>1) Укажите номер договора потребительского займа;</li>
+                            <li>2) Изложите требования по существу с указанием фактических обстоятельств и ссылкой на
+                              доказательства, которые подтверждают указанные обстоятельства;</li>
+                            <li>3) В случае обжалования действий (бездействий) работника ООО МФК "СМАРТМАНИ.РУ" укажите
+                              его
+                              фамилию, имя, отчество (при наличии), должность;</li>
+                            <li>4) Укажите иные сведения, которые могут иметь значение для рассмотрения Вашего
+                              обращения;</li>
+                            <li>5) При наличии, приложите копии документов, подтверждающих указанные в обращении
+                              обстоятельства. В тексте обращения приведите перечень прикладываемых документов.</li>
+                          </ol>
+                        </div>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect14"
+                          id="accordion14id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">В случае, если я не успеваю погасить
+                            займ вовремя, какие
+                            санкции
+                            предусмотрены?</span>
+                        </div>
+                        <p class="faq-answer" id="sect14" role="region" aria-labelledby="accordion14id"
+                          class="accordion-panel" hidden="">
+                          Вы можете продлить займ. Пролонгация - это простой метод перенести срок погашения с
+                          минимальными
+                          процентными надбавками. Если же вы не продлили займ и не погасили его вовремя, мы вынуждены
+                          будем
+                          передать ваше дело в соответствующее подразделение для взыскания долга, либо действовать в
+                          рамках
+                          действующего законодательства.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect15"
+                          id="accordion15id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Могу ли я погасить задолженность
+                            раньше срока?</span>
+                        </div>
+                        <p class="faq-answer" id="sect15" role="region" aria-labelledby="accordion15id"
+                          class="accordion-panel" hidden="">
+                          Да, можете. При этом вы сэкономите на процентах за пользование деньгами. Проценты начисляются
+                          только
+                          за дни фактического пользования займом.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect16"
+                          id="accordion16id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">При погашении задолженности возникла
+                            проблема с оплатой по
+                            моей
+                            банковской карте. Мой платеж отменен. Что мне делать?</span>
+                        </div>
+                        <p class="faq-answer" id="sect16" role="region" aria-labelledby="accordion16id"
+                          class="accordion-panel" hidden="">
+                          В таком случае вам необходимо связаться вашим банком и уточнить причину возникновения
+                          проблемы. В
+                          большинстве случаев это связано с тем, что, возможно, у вас установлен суточный лимит по
+                          оплате в
+                          интернете на определенную сумму.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect17"
+                          id="accordion17id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Как погасить через сторонние
+                            структуры?</span>
+                        </div>
+                        <p class="faq-answer" id="sect17" role="region" aria-labelledby="accordion17id"
+                          class="accordion-panel" hidden="">
+                          Произвести оплату можно несколькими способами:<br>
+                          1. Банковская карты (зачисление моментально)<br>
+                          Для оплаты потребуется войти в личный кабинет, ввести данные карты и подтвердить оплату с
+                          помощью
+                          кода, пришедшего в смс от банка.<br>
+                          2. Банковские системы (зачисление моментально)<br>
+                          Для оплаты необходимо зайти в свой личный кабинет выбрать банк куда хочет выставить счет на
+                          оплату.
+                          Далее зайти в личный кабинет банка (куда был выставлен счет) и оплачивать по выставленному
+                          счету.<br>
+                          3. Наличные, платежные терминалы. (Зачисление моментально)<br>
+                          Для оплаты необходимо выбрать в личном кабинете терминал для оплаты и выставить себе код или
+                          счет
+                          для оплаты по терминалу. Далее подойти к этому терминалу и оплатить. Пошаговая инструкция по
+                          оплате
+                          будет указана в терминале.<br>
+                          4. Салоны связи (зачисление моментально)<br>
+                          Через Евросеть: Необходимо зайти в свой личный кабинет и нажать кнопку оплатить через
+                          Евросеть. На
+                          телефон придет КОД для оплаты. Далее именно в Евросети необходимо сказать оператору код и
+                          назвать
+                          систему переводов через МОНЕТА.РУ – это обязательно! Максимальная сумма перевода за 1 раз
+                          15000р.
+                          ВАЖНО: если выставлен код на 15000р, а Вы хотите оплатить 5000, то оператор Евросети может
+                          отказать,
+                          так как данный код сформирован на 15000. В таком случае необходимо заново заказать код на
+                          меньшую
+                          сумму. Если сумма более 15000р, то необходимо выставить сначала на 15000, после оплаты
+                          выставить на
+                          остаток.<br>
+                          Через СВЯЗНОЙ: Необходимо зайти в свой личный кабинет и нажать кнопку оплатить через Евросеть.
+                          На
+                          телефон придет КОД для оплаты. Далее именно в СВЯЗНОМ необходимо сказать оператору код и
+                          назвать
+                          систему переводов через PAW – это обязательно! Максимальная сумма перевода за 1 раз 15000р.
+                          ВАЖНО:
+                          если выставлен код на 15000р, а Вы хотите оплатить 5000, то оператор Евросети может отказать,
+                          так
+                          как данный код сформирован на 15000. В таком случае необходимо заново заказать код на меньшую
+                          сумму.
+                          Если сумма более 15000р, то необходимо выставить сначала на 15000, после оплаты выставить на
+                          остаток.<br>
+                          5. Яндекс. Деньги (зачисление минимум 3 рабочих дня, если через реквизиты)<br>
+                          В личном кабинете на нашем сайте необходимо выставить себе счет на Яндекс кошелек. Далее
+                          оплатить по
+                          счету в личном кабинете Яндекс кошелька. Либо оплатить через реквизиты компании. Счет
+                          выставляет
+                          одним кликом, и максимальная сумма счета 15000 р. Если оплачиваете по реквизитам компании, то
+                          сумма
+                          не ограничена.<br>
+                          6. Яндекс. Касса<br>
+                          Для оплаты необходимо в личном кабинете выбрать способ оплаты «Яндекс касса», ввести данные
+                          карты и
+                          подтвердить оплату с помощью кода, пришедшего в смс от банка. Платёж проходит как покупка
+                          онлайн.<br>
+                          7. QIWI кошелек (зачисление моментально, но если отправляет по реквизитам, то 3 рабочих
+                          дня)<br>
+                          В личном кабинете на нашем сайте необходимо выставить себе счет на киви кошелек. ВНИМАНИЕ:
+                          если Вы
+                          выставляете сумму свыше 15000р, то данный способ (QIWI) исчезает. Так как максимальная сумма
+                          перевода 15000р. Если сумма более 15000р, то необходимо выставить сначала на 15000, после
+                          оплаты
+                          выставить на остаток.<br>
+                          8. Система перевода «CONTACT»<br>
+                          Оплатить по системе «контакт» без комиссий можно в любом коммерческом банке где есть система
+                          переводов «контакт» оплата юридическому лицу. Необходим паспорт и номер договора (есть в
+                          личном
+                          кабинете) Если сотрудник «контакта» затрудняется найти нашу компанию можно назвать наш код
+                          нашей
+                          компании SMMP.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect18"
+                          id="accordion18id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Как изменить паспортные данные и
+                            основной номер контактного
+                            телефона?</span>
+                        </div>
+                        <p class="faq-answer" id="sect18" role="region" aria-labelledby="accordion18id"
+                          class="accordion-panel" hidden="">
+                          Для изменения основного номера телефона и/или паспортных данных Вам необходимо со своей
+                          контактной
+                          электронной почты нам отправить на почту info@smartcredit.ru, либо воспользоваться отправкой
+                          заявки
+                          в службу поддержки через раздел в личном кабинете «поддержка» письмо в свободной форме с
+                          просьбой
+                          произвести изменения. В нем нужно указать:
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="sect19"
+                          id="accordion19id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">В личном кабинете (ЛК) возникает
+                            ошибка?</span>
+                        </div>
+                        <p class="faq-answer" id="sect19" role="region" aria-labelledby="accordion19id"
+                          class="accordion-panel" hidden="">
+                          Для решения вашего вопроса просьба связаться с нами по телефону горячей линии 8 495 268 05 57
+                          и
+                          выслать скрин ошибки в вашем ЛК на нашем сайте. Либо обратиться к нам по средствам отправки
+                          заявки в
+                          службу поддержки через раздел в личном кабинете «поддержка – новая заявка».
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ctabs-panel faq-tabs__panel lk-faq-tabs__panel" tabindex="0" role="tabpanel"
+                  id="general-tab" aria-labelledby="general" hidden="">
+                  <div class="ctabs-panel__content faq-tabs__panel-content">
+                    <ul class="faq-questions-list accordion" data-allow-toggle data-allow-multiple
+                      data-animation="fadeIn">
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="generalsect1"
+                          id="generalaccordion1id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Есть ли у вас программы лояльности
+                            для постоянных
+                            клиентов?</span>
+                        </div>
+                        <p class="faq-answer" id="generalsect1" role="region" aria-labelledby="generalaccordion1id"
+                          class="accordion-panel" hidden="">
+                          Да, есть. Второй и следующие займы вы сможете брать на более выгодных условиях. Ставка будет
+                          меньше,
+                          до 0,3% в день.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="generalsect2"
+                          id="generalaccordion2id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Мои персональные данные будут в
+                            безопасности?</span>
+                        </div>
+                        <p class="faq-answer" id="generalsect2" role="region" aria-labelledby="generalaccordion2id"
+                          class="accordion-panel" hidden="">
+                          Да, конечно. Мы гарантируем сохранность и конфиденциальность ваших персональных данных. Данные
+                          могут
+                          быть переданы только в официальные структуры по особому запросу.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="generalsect3"
+                          id="generalaccordion3id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Я оформил займ и успешно прошёл
+                            верификацию. Получил письмо
+                            о том,
+                            что деньги были отправлены мне на банковскую карту, но деньги так и не поступили спустя 24
+                            часа. В
+                            чём может быть причина?</span>
+                        </div>
+                        <p class="faq-answer" id="generalsect3" role="region" aria-labelledby="generalaccordion3id"
+                          class="accordion-panel" hidden="">
+                          Время поступления денег на вашу карту зависит от вида карты и банка эмитента, выдавшего карты.
+                          Если
+                          вы являетесь владельцем карты VISA, MasterCard то как правило время поступления денег
+                          составляет до
+                          30 минут. Если у вас карта Maestro, то время поступления денег зависит от банка-эмитента и
+                          может
+                          достигать 3-х рабочих дней.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="generalsect4"
+                          id="generalaccordion4id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Мне 19 лет, могу ли я взять микрозайм
+                            в вашей
+                            компании?</span>
+                        </div>
+                        <p class="faq-answer" id="generalsect4" role="region" aria-labelledby="generalaccordion4id"
+                          class="accordion-panel" hidden="">
+                          В настоящее время возрастное ограничение для выдачи микрозаймов составляет от 21 до 68 лет,
+                          поэтому
+                          если вам меньше 21 года, то микрозайм вы получить не сможете.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="generalsect5"
+                          id="generalaccordion5id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Как правильно оформить обращение в
+                            ООО МФК
+                            "СМАРТМАНИ.РУ"?</span>
+                        </div>
+                        <div class="faq-answer" id="generalsect5" role="region" aria-labelledby="generalaccordion5id"
+                          class="accordion-panel" hidden="">
+                          Уважаемый Заемщик, ООО МФК «СМАРТМАНИ.РУ» рассматривает все поступающие в его адрес обращения
+                          по вопросам оказываемых им финансовых услуг.<br>
+                          Обращение может быть подано посредством почтовой связи, на адрес электронной почты, путем
+                          заполнения соответствующей формы на сайте Общества, либо через личный кабинет. <br>
+                          Сообщаем, что обращение обязательно должно содержать фамилию, имя, отчество (при наличии), а
+                          также адрес (почтовый или электронный) для направления ответа на обращение.
+                          <hr>
+                          Кроме того, при составлении обращения рекомендуем указывать (включать) следующую информацию
+                          (документы):<br><br>
+                          <ol>
+                            <li>1) Укажите номер договора потребительского займа;</li>
+                            <li>2) Изложите требования по существу с указанием фактических обстоятельств и ссылкой на
+                              доказательства, которые подтверждают указанные обстоятельства;</li>
+                            <li>3) В случае обжалования действий (бездействий) работника ООО МФК "СМАРТМАНИ.РУ" укажите
+                              его
+                              фамилию, имя, отчество (при наличии), должность;</li>
+                            <li>4) Укажите иные сведения, которые могут иметь значение для рассмотрения Вашего
+                              обращения;</li>
+                            <li>5) При наличии, приложите копии документов, подтверждающих указанные в обращении
+                              обстоятельства. В тексте обращения приведите перечень прикладываемых документов.</li>
+                          </ol>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ctabs-panel faq-tabs__panel lk-faq-tabs__panel" tabindex="0" role="tabpanel"
+                  id="repayment-tab" aria-labelledby="repayment" hidden="">
+                  <div class="ctabs-panel__content faq-tabs__panel-content">
+                    <ul class="faq-questions-list accordion" data-allow-toggle data-allow-multiple
+                      data-animation="fadeIn">
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="repaymentsect1"
+                          id="repaymentaccordion1id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">В случае, если я не успеваю погасить
+                            займ вовремя, какие
+                            санкции
+                            предусмотрены?</span>
+                        </div>
+                        <p class="faq-answer" id="repaymentsect1" role="region" aria-labelledby="repaymentaccordion1id"
+                          class="accordion-panel" hidden="">
+                          Вы можете продлить займ. Пролонгация - это простой метод перенести срок погашения с
+                          минимальными
+                          процентными надбавками. Если же вы не продлили займ и не погасили его вовремя, мы вынуждены
+                          будем
+                          передать ваше дело в соответствующее подразделение для взыскания долга, либо действовать в
+                          рамках
+                          действующего законодательства.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="repaymentsect2"
+                          id="repaymentaccordion2id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Могу ли я погасить задолженность
+                            раньше срока?</span>
+                        </div>
+                        <p class="faq-answer" id="repaymentsect2" role="region" aria-labelledby="repaymentaccordion2id"
+                          class="accordion-panel" hidden="">
+                          Да, можете. При этом вы сэкономите на процентах за пользование деньгами. Проценты начисляются
+                          только
+                          за дни фактического пользования займом.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="repaymentsect3"
+                          id="repaymentaccordion3id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">При погашении задолженности возникла
+                            проблема с оплатой по
+                            моей
+                            банковской карте. Мой платеж отменен. Что мне делать?</span>
+                        </div>
+                        <p class="faq-answer" id="repaymentsect3" role="region" aria-labelledby="repaymentaccordion3id"
+                          class="accordion-panel" hidden="">
+                          В таком случае вам необходимо связаться вашим банком и уточнить причину возникновения
+                          проблемы. В
+                          большинстве случаев это связано с тем, что, возможно, у вас установлен суточный лимит по
+                          оплате в
+                          интернете на определенную сумму.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="repaymentsect4"
+                          id="repaymentaccordion4id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Как погасить через сторонние
+                            структуры?</span>
+                        </div>
+                        <p class="faq-answer" id="repaymentsect4" role="region" aria-labelledby="repaymentaccordion4id"
+                          class="accordion-panel" hidden="">
+                          Произвести оплату можно несколькими способами:<br>
+                          1. Банковская карты (зачисление моментально)<br>
+                          Для оплаты потребуется войти в личный кабинет, ввести данные карты и подтвердить оплату с
+                          помощью
+                          кода, пришедшего в смс от банка.<br>
+                          2. Банковские системы (зачисление моментально)<br>
+                          Для оплаты необходимо зайти в свой личный кабинет выбрать банк куда хочет выставить счет на
+                          оплату.
+                          Далее зайти в личный кабинет банка (куда был выставлен счет) и оплачивать по выставленному
+                          счету.<br>
+                          3. Наличные, платежные терминалы. (Зачисление моментально)<br>
+                          Для оплаты необходимо выбрать в личном кабинете терминал для оплаты и выставить себе код или
+                          счет
+                          для оплаты по терминалу. Далее подойти к этому терминалу и оплатить. Пошаговая инструкция по
+                          оплате
+                          будет указана в терминале.<br>
+                          4. Салоны связи (зачисление моментально)<br>
+                          Через Евросеть: Необходимо зайти в свой личный кабинет и нажать кнопку оплатить через
+                          Евросеть. На
+                          телефон придет КОД для оплаты. Далее именно в Евросети необходимо сказать оператору код и
+                          назвать
+                          систему переводов через МОНЕТА.РУ – это обязательно! Максимальная сумма перевода за 1 раз
+                          15000р.
+                          ВАЖНО: если выставлен код на 15000р, а Вы хотите оплатить 5000, то оператор Евросети может
+                          отказать,
+                          так как данный код сформирован на 15000. В таком случае необходимо заново заказать код на
+                          меньшую
+                          сумму. Если сумма более 15000р, то необходимо выставить сначала на 15000, после оплаты
+                          выставить на
+                          остаток.<br>
+                          Через СВЯЗНОЙ: Необходимо зайти в свой личный кабинет и нажать кнопку оплатить через Евросеть.
+                          На
+                          телефон придет КОД для оплаты. Далее именно в СВЯЗНОМ необходимо сказать оператору код и
+                          назвать
+                          систему переводов через PAW – это обязательно! Максимальная сумма перевода за 1 раз 15000р.
+                          ВАЖНО:
+                          если выставлен код на 15000р, а Вы хотите оплатить 5000, то оператор Евросети может отказать,
+                          так
+                          как данный код сформирован на 15000. В таком случае необходимо заново заказать код на меньшую
+                          сумму.
+                          Если сумма более 15000р, то необходимо выставить сначала на 15000, после оплаты выставить на
+                          остаток.<br>
+                          5. Яндекс. Деньги (зачисление минимум 3 рабочих дня, если через реквизиты)<br>
+                          В личном кабинете на нашем сайте необходимо выставить себе счет на Яндекс кошелек. Далее
+                          оплатить по
+                          счету в личном кабинете Яндекс кошелька. Либо оплатить через реквизиты компании. Счет
+                          выставляет
+                          одним кликом, и максимальная сумма счета 15000 р. Если оплачиваете по реквизитам компании, то
+                          сумма
+                          не ограничена.<br>
+                          6. Яндекс. Касса<br>
+                          Для оплаты необходимо в личном кабинете выбрать способ оплаты «Яндекс касса», ввести данные
+                          карты и
+                          подтвердить оплату с помощью кода, пришедшего в смс от банка. Платёж проходит как покупка
+                          онлайн.<br>
+                          7. QIWI кошелек (зачисление моментально, но если отправляет по реквизитам, то 3 рабочих
+                          дня)<br>
+                          В личном кабинете на нашем сайте необходимо выставить себе счет на киви кошелек. ВНИМАНИЕ:
+                          если Вы
+                          выставляете сумму свыше 15000р, то данный способ (QIWI) исчезает. Так как максимальная сумма
+                          перевода 15000р. Если сумма более 15000р, то необходимо выставить сначала на 15000, после
+                          оплаты
+                          выставить на остаток.<br>
+                          8. Система перевода «CONTACT»<br>
+                          Оплатить по системе «контакт» без комиссий можно в любом коммерческом банке где есть система
+                          переводов «контакт» оплата юридическому лицу. Необходим паспорт и номер договора (есть в
+                          личном
+                          кабинете) Если сотрудник «контакта» затрудняется найти нашу компанию можно назвать наш код
+                          нашей
+                          компании SMMP.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ctabs-panel faq-tabs__panel lk-faq-tabs__panel" tabindex="0" role="tabpanel" id="loans-tab"
+                  aria-labelledby="loans" hidden="">
+                  <div class="ctabs-panel__content faq-tabs__panel-content">
+                    <ul class="faq-questions-list accordion" data-allow-toggle data-allow-multiple
+                      data-animation="fadeIn">
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="loanssect1"
+                          id="loanaccordion1id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Смогу ли я
+                            оформить займ через мобильный
+                            телефон?</span>
+                        </div>
+                        <p class="faq-answer" id="loanssect1" role="region" aria-labelledby="loanaccordion1id"
+                          class="accordion-panel" hidden="">
+                          Да, сможете. Любой телефон с доступом в интернет позволит вам быстро взять займ через наш
+                          онлайн-сервис.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="loanssect2"
+                          id="loanaccordion2id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Смогу ли я
+                            оформить займ при наличии
+                            судимости?</span>
+                        </div>
+                        <p class="faq-answer" id="loanssect2" role="region" aria-labelledby="loanaccordion2id"
+                          class="accordion-panel" hidden="">
+                          Да, если в вашем прошлом не было связей с терроризмом и другими угрозами обществу, вы сможете
+                          взять
+                          займ. Судимость – не помеха, но при этом кредитная история должна быть хорошей.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="loanssect3"
+                          id="loanaccordion3id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Моя банковская
+                            карта в данный момент
+                            заблокирована, есть
+                            альтернативные способы получения займа?</span>
+                        </div>
+                        <p class="faq-answer" id="loanssect3" role="region" aria-labelledby="loanaccordion3id"
+                          class="accordion-panel" hidden="">
+                          При первичном обращение выдача займа возможно только на именную банковскую карту. При
+                          последующих
+                          обращениях возможна выдача не только на карту, но и на банковский счет, киви кошелек, по
+                          системе
+                          «Contact».
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="loanssect4"
+                          id="loanaccordion4id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Какие документы
+                            нужны для получения
+                            займа?</span>
+                        </div>
+                        <p class="faq-answer" id="loanssect4" role="region" aria-labelledby="loanaccordion4id"
+                          class="accordion-panel" hidden="">
+                          Документы это завершающий этап проверки заявки на займ. В случае, если нам понадобятся Ваши
+                          документы специалист Вам сообщит об этом.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="loanssect5"
+                          id="loanaccordion5id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Я живу в Твери.
+                            Смогу ли я получить заем
+                            в
+                            вашей
+                            компании?</span>
+                        </div>
+                        <p class="faq-answer" id="loanssect5" role="region" aria-labelledby="loanaccordion5id"
+                          class="accordion-panel" hidden="">
+                          Да, можете. Займ можно получить из любого города, где есть интернет. Просто зайдите на наш
+                          сайт и
+                          оформите заявку.
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="loanssect6"
+                          id="loanaccordion6id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">После полного
+                            погашения займа, когда
+                            можно
+                            оформить
+                            следующий?</span>
+                        </div>
+                        <p class="faq-answer" id="loanssect6" role="region" aria-labelledby="loanaccordion6id"
+                          class="accordion-panel" hidden="">
+                          Заявку на следующий займ можно оформлять сразу же после погашения предыдущего.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ctabs-panel faq-tabs__panel lk-faq-tabs__panel" tabindex="0" role="tabpanel"
+                  id="credit-history-tab" aria-labelledby="credit-history" hidden="">
+                  <div class="ctabs-panel__content faq-tabs__panel-content">
+                    <ul class="faq-questions-list accordion" data-allow-toggle data-allow-multiple
+                      data-animation="fadeIn">
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false"
+                          aria-controls="credit-historysect1" id="credit-historyaccordion1id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Влияет ли моя
+                            кредитная история на
+                            получение
+                            займа?</span>
+                        </div>
+                        <p class="faq-answer" id="credit-historysect1" role="region"
+                          aria-labelledby="credit-historyaccordion1id" class="accordion-panel" hidden="">
+                          Да ,влияет. Если вы имеете постоянные просрочки по прошлым кредитам или у вас сейчас на руках
+                          три
+                          других займа, ваши шансы получить кредит у нас снижаются. Но при этом мы рассматриваем каждую
+                          кредитную историю, ведь нарушения бывают разные. Если нарушения были незначительными и
+                          разовыми, вы
+                          скорее всего сможете получить займ у нас.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ctabs-panel faq-tabs__panel lk-faq-tabs__panel" tabindex="0" role="tabpanel" id="about-tab"
+                  aria-labelledby="about" hidden="">
+                  <div class="ctabs-panel__content faq-tabs__panel-content">
+                    <ul class="faq-questions-list accordion" data-allow-toggle data-allow-multiple
+                      data-animation="fadeIn">
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="aboutsect1"
+                          id="aboutaccordion1id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title faq-search-question">Есть ли у
+                            компании SmartCredit
+                            лицензия?</span>
+                        </div>
+                        <p class="faq-answer" id="aboutsect1" role="region" aria-labelledby="aboutaccordion1id"
+                          class="accordion-panel" hidden="">
+                          Да, есть. Наша компания внесена в государственный реестр финансовых организаций.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="ctabs-panel faq-tabs__panel lk-faq-tabs__panel" tabindex="0" role="tabpanel"
+                  id="private-tab" aria-labelledby="private" hidden="">
+                  <div class="ctabs-panel__content faq-tabs__panel-content">
+                    <ul class="faq-questions-list accordion" data-allow-toggle data-allow-multiple
+                      data-animation="fadeIn">
+
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="privatesect1"
+                          id="privateaccordion1id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">Как изменить паспортные данные и
+                            основной номер контактного
+                            телефона?</span>
+                        </div>
+                        <p class="faq-answer" id="privatesect1" role="region" aria-labelledby="privateaccordion1id"
+                          class="accordion-panel" hidden="">
+                          Для изменения основного номера телефона и/или паспортных данных Вам необходимо со своей
+                          контактной
+                          электронной почты нам отправить на почту info@smartcredit.ru, либо воспользоваться отправкой
+                          заявки
+                          в службу поддержки через раздел в личном кабинете «поддержка» письмо в свободной форме с
+                          просьбой
+                          произвести изменения. В нем нужно указать:
+                        </p>
+                      </li>
+                      <li class="faq-questions-list__item">
+                        <div class="faq-question accordion-trigger" aria-expanded="false" aria-controls="privatesect2"
+                          id="privateaccordion2id">
+                          <span class="icon icon-arrow-down faq-question__icon"></span>
+                          <span class="faq-question__title lk-faq-question__title">В личном кабинете (ЛК) возникает
+                            ошибка?</span>
+                        </div>
+                        <p class="faq-answer" id="privatesect2" role="region" aria-labelledby="privateaccordion2id"
+                          class="accordion-panel" hidden="">
+                          Для решения вашего вопроса просьба связаться с нами по телефону горячей линии 8 495 268 05 57
+                          и
+                          выслать скрин ошибки в вашем ЛК на нашем сайте. Либо обратиться к нам по средствам отправки
+                          заявки в
+                          службу поддержки через раздел в личном кабинете «поддержка – новая заявка».
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

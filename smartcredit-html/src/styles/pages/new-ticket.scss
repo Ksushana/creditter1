@@ -1,0 +1,133 @@
+.new-ticket-header {
+  padding: 24px 34px;
+  border-bottom: 1px solid $lightGray;
+}
+
+.new-ticket-form {
+  padding: 34px 35px 61px 32px;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media screen and (max-width: 424px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.new-ticket-form__field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+
+  &:nth-last-child(2) {
+    padding-top: 4px;
+    margin-bottom: 45px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.new-ticket-form__field-label {
+  flex-grow: 0;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: right;
+  color: #8c94a8;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 12px;
+  }
+}
+
+.new-ticket-form__field-input {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 654px;
+  max-width: 100%;
+  margin-left: 27px;
+
+  @media screen and (max-width: 992px) {
+    width: 554px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
+}
+
+.new-ticket-form__field-input[type="file"] {
+  display: none;
+}
+
+.new-ticket-form__field .custom-select-container {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 654px;
+  max-width: 100%;
+  margin-left: 27px;
+
+  & .custom-select-opener {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 554px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
+}
+
+.new-ticket-form__field-textarea {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 654px;
+  max-width: 100%;
+  height: 134px;
+  margin-left: 27px;
+  resize: none;
+
+  @media screen and (max-width: 992px) {
+    width: 554px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+  }
+}
+
+.new-ticket-form__field-filebutton {
+  display: inline-block;
+  width: 288px;
+  max-width: 100%;
+  padding: 10px 0;
+  border: 1px dashed #e5e6eb;
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 18px;
+  background: #fff;
+  text-align: center;
+  color: #8c94a8;
+  cursor: pointer;
+}
+
+.new-ticket-submit {
+  width: 100%;
+  max-width: 245px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+
+  @media screen and (max-width: 424px) {
+    max-width: 100%;
+  }
+}

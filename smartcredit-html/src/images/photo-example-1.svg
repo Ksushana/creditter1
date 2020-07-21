@@ -1,0 +1,16 @@
+<svg width="102" height="150" viewBox="0 0 102 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45.851 124.214L38.0596 122.266L37.1727 118.714C39.3423 116.766 40.7944 113.84 41.0249 110.923H41.1162C42.0683 110.923 42.8727 110.214 42.9901 109.266L43.464 105.488C43.6031 104.366 42.7379 103.379 41.6118 103.366L41.8379 98.6357L42.7857 97.6922C44.0075 96.3922 44.0075 94.8357 42.7857 92.9661C41.5553 91.0879 39.4162 90.1313 36.4162 90.1313C34.8292 90.1313 32.077 90.214 29.551 92.0183C21.9379 92.0966 21.0466 95.2705 21.0466 98.6357C21.0466 99.8227 21.4944 103.362 21.4944 103.362H21.2988C20.1596 103.362 19.2814 104.357 19.4205 105.488L19.8944 109.266C20.0118 110.214 20.8162 110.923 21.7683 110.923H22.077C22.3031 113.762 23.6814 116.614 25.7553 118.557L24.8249 122.266L17.0336 124.214C12.7249 125.292 9.70312 129.162 9.70312 133.605V133.61H53.1814V133.605C53.1814 129.162 50.1596 125.292 45.851 124.214V124.214Z" stroke="#FF4E2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M92.3043 148.826H9.69565C4.8913 148.826 1 144.935 1 140.13C1 118.391 1 96.6522 1 74.9131C34.3333 74.9131 67.6667 74.9131 101 74.9131C101 96.6522 101 118.391 101 140.13C101 144.935 97.1087 148.826 92.3043 148.826Z" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M61.8672 98.8259H74.9107" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83.6133 98.8259H92.3089" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M61.8672 111.869H92.302" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M61.8672 124.913H66.215" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M74.9141 124.913H92.3054" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 74.913C1 53.1739 1 31.4348 1 9.69565C1 4.8913 4.8913 1 9.69565 1H92.3043C97.1087 1 101 4.8913 101 9.69565C101 31.4348 101 53.1739 101 74.913C67.6667 74.913 34.3333 74.913 1 74.913Z" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.70312 24.9131H77.0944" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M68.3945 24.9131H92.3076" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.70312 37.9565H92.3118" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.70312 50.9999H46.6596" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M44.4766 50.9999H92.3027" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="31" cy="45" r="12" fill="white" stroke="#FF4E2C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

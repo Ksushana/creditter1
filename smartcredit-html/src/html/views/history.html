@@ -1,0 +1,229 @@
+<% var data = {
+  title: "SmartCredit | Исправление кредитной истории",
+  name: 'history',
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main main-history">
+  <section class="section section-hero history-hero">
+    <div class="history-hero-container">
+      <h1 class="hero-title">Исправление кредитной истории</h1>
+    </div>
+  </section>
+  <section class="section history-intro">
+    <div class="page-container">
+      <h2 class="section-title">Коротко о кредитной истории</h2>
+      <p class="history-intro-notice">
+        Кредитная история — ваша репутация в банке. Наладить хорошие отношения с банком трудно, а вот попасть в
+        немилость и подпортить свою репутацию — проще простого.
+        <br>
+        <br>
+        Банк может наградить вас статусом неблагонадежного заемщика не только за внушительные просрочки по платежам, но
+        и за мелкие недочеты. Помните, хорошая кредитная история - залог получения займа.
+      </p>
+    </div>
+  </section>
+  <section class="section history-includes">
+    <div class="page-container">
+      <h2 class="section-title">Что входит</h2>
+      <ul class="history-includes-list">
+        <li class="history-includes-list__item includes-item">
+          <div class="includes-item__icon">
+            <span class="icon icon-personal-data"></span>
+          </div>
+          <div class="includes-item__description">
+            <p class="includes-item__description-title">Данные клиента</p>
+            <p class="includes-item__description-notice">Фамилия, имя, отчество, паспорт, ИНН, адрес проживания,
+              контактные данные.</p>
+          </div>
+        </li>
+        <li class="history-includes-list__item includes-item">
+          <div class="includes-item__icon">
+            <span class="icon icon-list"></span>
+          </div>
+          <div class="includes-item__description">
+            <p class="includes-item__description-title">Запросы клиента</p>
+            <p class="includes-item__description-notice">Данные где и в какой форме клиент интересовался кредитным
+              отчетом.</p>
+          </div>
+        </li>
+        <li class="history-includes-list__item includes-item">
+          <div class="includes-item__icon">
+            <span class="icon icon-doc-reward"></span>
+          </div>
+          <div class="includes-item__description">
+            <p class="includes-item__description-title">Статус клиента</p>
+            <p class="includes-item__description-notice">Образование, занятость, семейное положение, кол-во детей,
+              доход, деятельность.</p>
+          </div>
+        </li>
+        <li class="history-includes-list__item includes-item">
+          <div class="includes-item__icon">
+            <span class="icon icon-case"></span>
+          </div>
+          <div class="includes-item__description">
+            <p class="includes-item__description-title">Кредиты клиента</p>
+            <p class="includes-item__description-notice">Сумма, сроки, порядок выплаты, проценты, договор, судебные иски
+              и&nbsp;т.д.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section history-bad-reasons bg-beige">
+    <div class="page-container">
+      <h2 class="section-title">Причины плохой кредитной истории</h2>
+      <div class="history-bad-reasons-wrapper">
+        <ul class="history-bad-reasons-list">
+          <li class="history-bad-reasons-list__item history-bad-reason">
+            <div class="history-bad-reason__icon">
+              <span class="icon icon-hammer"></span>
+            </div>
+            <p class="history-bad-reason__notice">
+              Уклонение от уплаты
+            </p>
+          </li>
+          <li class="history-bad-reasons-list__item history-bad-reason">
+            <div class="history-bad-reason__icon">
+              <span class="icon icon-loyalty-clock"></span>
+            </div>
+            <p class="history-bad-reason__notice">
+              Просрочка по выплате
+            </p>
+          </li>
+          <li class="history-bad-reasons-list__item history-bad-reason">
+            <div class="history-bad-reason__icon">
+              <span class="icon icon-bank"></span>
+            </div>
+            <p class="history-bad-reason__notice">
+              По вине банка
+            </p>
+          </li>
+          <li class="history-bad-reasons-list__item history-bad-reason">
+            <div class="history-bad-reason__icon">
+              <span class="icon icon-smile-x"></span>
+            </div>
+            <p class="history-bad-reason__notice">
+              Человеческий фактор
+            </p>
+          </li>
+        </ul>
+        <div class="history-bad-reasons__arrows">
+          <span class="icon icon-left-right-arrows"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section history-rating">
+    <div class="page-container">
+      <h2 class="section-title">Кредитный рейтинг</h2>
+      <p class="rating-notice">
+        Кредитный рейтинг — это оценка вашей платежеспособности для получения микрозайма. Проще говоря - вероятность
+        того, что вы сможете вернуть нам деньги.
+        <br>
+        <br>
+        При расчете кредитного рейтинга мы изучаем вашу кредитную историю и персональные данные. Это позволит нам
+        выбрать для вас максимально удобные и доступные условия кредитования.
+        <br>
+        <br>
+        Чем выше ваш кредитный рейтинг, тем выгоднее и привлекательнее будет наше предложение по займу.
+      </p>
+      <div class="history-rating-line">
+        <div class="history-rating-line__handle" style="left: 0;border: 2px solid #FF1208;">
+          <span class="history-rating-line__handle-value">0</span>
+        </div>
+        <span class="history-rating-line__hint" style="left: 16.5%;">Низкий</span>
+        <div class="history-rating-line__handle" style="left: 33%;border: 2px solid #FF931F;">
+          <span class="history-rating-line__handle-value">300</span>
+        </div>
+        <span class="history-rating-line__hint" style="left: 49.5%;">Средний</span>
+        <div class="history-rating-line__handle" style="left: 66%;border: 2px solid #E6D830;">
+          <span class="history-rating-line__handle-value">600</span>
+        </div>
+        <span class="history-rating-line__hint" style="left: 82.5%;">Высокий</span>
+        <div class="history-rating-line__handle" style="left: 100%;border: 2px solid #AACF39;">
+          <span class="history-rating-line__handle-value">900</span>
+        </div>
+      </div>
+      <button class="btn btn--orange history-rating-know-button">Узнайте свой кредитный рейтинг бесплатно</button>
+    </div>
+  </section>
+  <section class="section history-hiw bg-beige">
+    <div class="page-container">
+      <h2 class="section-title">Как это работает</h2>
+      <ul class="history-hiw-list">
+        <li class="history-hiw-list__item hiw-item">
+          <div class="hiw-item__icon">
+            <span class="icon icon-window-ok"></span>
+          </div>
+          <p class="hiw-item__notice">
+            Получаем заявку и выдаем займ
+          </p>
+        </li>
+        <li class="history-hiw-list__item hiw-item">
+          <div class="hiw-item__icon">
+            <span class="icon icon-refresh-inside"></span>
+          </div>
+          <p class="hiw-item__notice">
+            Ждем своевременного погашения займа
+          </p>
+        </li>
+        <li class="history-hiw-list__item hiw-item">
+          <div class="hiw-item__icon">
+            <span class="icon icon-mail-wind"></span>
+          </div>
+          <p class="hiw-item__notice">
+            Отправляем данные в бюро
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section history-correction-options">
+    <div class="page-container">
+      <h2 class="section-title">Варианты исправления</h2>
+      <ul class="history-correction-options-list">
+        <li class="history-correction-options-list__item correction-option">
+          <div class="correction-option__icon">
+            <span class="icon icon-doc-pen"></span>
+          </div>
+          <div class="correction-option__notice">
+            Писать заявление в банк (если вина с их стороны)
+          </div>
+        </li>
+        <li class="history-correction-options-list__item correction-option correction-option-borrowing">
+          <div class="correction-option__icon">
+            <span class="icon icon-how-wallet"></span>
+          </div>
+          <div class="correction-option__notice">
+            Брать мелкие займы и возвращать их вовремя
+          </div>
+          <div class="correction-option-borrowing__plan">
+            <p class="correction-option-borrowing__plan-sum correction-option-borrowing__plan-sum--active">3000 ₽</p>
+            <p class="correction-option-borrowing__plan-notice">10 дней на погашение</p>
+          </div>
+          <div class="correction-option-borrowing__plan">
+            <p class="correction-option-borrowing__plan-sum">5000 ₽</p>
+            <p class="correction-option-borrowing__plan-notice">10 дней на погашение</p>
+          </div>
+          <div class="correction-option-borrowing__plan">
+            <p class="correction-option-borrowing__plan-sum">8000 ₽</p>
+            <p class="correction-option-borrowing__plan-notice">10 дней на погашение</p>
+          </div>
+          <button class="btn btn--orange correction-option-borrowing__button">Взять займ</button>
+        </li>
+        <li class="history-correction-options-list__item correction-option">
+          <div class="correction-option__icon">
+            <span class="icon icon-clock-simple"></span>
+          </div>
+          <div class="correction-option__notice">
+            Ждать 10 лет (срок хранения истории)
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ff0000" />
+    <!-- First, all the preloads -->
+    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
+    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
+    <link rel="stylesheet" href="css/style.bundle.css?v=0.0.10" />
+    <title>SmartCredit | Исправление кредитной истории</title>
+  </head>
+
+  <body class="body-history">
+    <div class="sidebar-container">
+      <div class="sidebar-menu-container">
+        <nav class="sidebar-menu">
+          <div class="sidebar-menu-header">
+            <nav class="sidebar-menu-toggle">
+              <button class="unbtn sidebar-menu-button">
+                <span class="icon icon-cross"></span>
+              </button>
+            </nav>
+            <a href="/" class="logo">
+              <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
+            </a>
+          </div>
+          <ul class="sidebar-menu-list">
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">О компании</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Раскрытие информации</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">СМИ о нас</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Новости компании</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Контакты</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как взять деньги</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Схема работы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Правила предоставления займов</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Тарифы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Документы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Способы получения денег</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Программа лояльности</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как вернуть деньги</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Ответы на вопросы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Исправление кредитной истории</a>
+            </li>
+          </ul>
+          <div class="sidebar-menu-footer">
+            <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="top-area-container">
+      <button class="unbtn top-area-container__close">
+        <span class="icon icon-cross"></span>
+      </button>
+      <div class="ctabs top-area-tabs">
+        <div class="ctabs-tablist top-area-tabs__tablist" role="tablist">
+          <button
+            class="ctabs-tablist__item top-area-tabs__tablist-item"
+            role="tab"
+            aria-selected="true"
+            aria-controls="top-callback-tab"
+            id="top-callback"
+          >
+            <span class="icon icon-callback-gray"></span>
+            <span>Обратный звонок</span>
+          </button>
+          <button
+            class="ctabs-tablist__item top-area-tabs__tablist-item"
+            role="tab"
+            aria-selected="false"
+            aria-controls="top-feedback-tab"
+            id="top-feedback"
+            tabindex="-1"
+          >
+            <span class="icon icon-feedback-gray"></span>
+            <span>Обратная связь</span>
+          </button>
+          <a class="ctabs-tablist__item top-area-tabs__tablist-item" href="#">
+            <span class="icon icon-question"></span>
+            <span>Ответы на вопросы</span>
+          </a>
+        </div>
+        <div
+          class="ctabs-panel top-area-tabs__panel"
+          tabindex="0"
+          role="tabpanel"
+          data-animation="fadeIn"
+          id="top-callback-tab"
+          aria-labelledby="top-callback"
+        >
+          <div class="ctabs-panel__content top-area-tabs__panel-content">
+            <form class="top-callback-form" action="">
+              <input type="text" class="top-feedback-input top-callback-input" name="phone" placeholder="Телефон" />
+              <button class="btn btn--orange top-feedback-button top-callback-button">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="ctabs-panel top-area-tabs__panel"
+          tabindex="0"
+          role="tabpanel"
+          data-animation="fadeIn"
+          id="top-feedback-tab"
+          aria-labelledby="top-feedback"
+          hidden=""
+        >
+          <div class="ctabs-panel__content top-area-tabs__panel-content">
+            <form class="top-feedback-form" action="">
+              <div class="top-feedback-row">
+                <input type="text" class="top-feedback-input" name="name" placeholder="Имя" />
+                <input type="email" class="top-feedback-input" name="email" placeholder="Эл. почта" />
+              </div>
+              <div class="top-feedback-row">
+                <textarea class="top-feedback-textarea" name="message" cols="30" rows="10"></textarea>
+              </div>
+              <button class="btn btn--orange top-feedback-button">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header header-history">
+      <div class="header-container">
+        <div class="header-left">
+          <nav class="sidebar-menu-toggle">
+            <button class="unbtn sidebar-menu-button">
+              <span class="icon icon-hamburger"></span>
+            </button>
+          </nav>
+          <a href="/" class="logo">
+            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
+          </a>
+        </div>
+        <div class="header-center">
+          <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-callback">
+            <span class="icon icon-phone"></span>
+            <span>Позвонить нам</span>
+          </a>
+          <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-feedback">
+            <span class="icon icon-chat"></span>
+            <span>Поддержка/Верификация 24/7</span>
+          </a>
+        </div>
+        <div class="header-right">
+          <a href="#" class="link link--right-icon header-profile-link">
+            <span>Мой кабинет</span>
+            <span class="icon icon-profile"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main main-history">
+      <section class="section section-hero history-hero">
+        <div class="history-hero-container">
+          <h1 class="hero-title">Исправление кредитной истории</h1>
+        </div>
+      </section>
+      <section class="section history-intro">
+        <div class="page-container">
+          <h2 class="section-title">Коротко о кредитной истории</h2>
+          <p class="history-intro-notice">
+            Кредитная история — ваша репутация в банке. Наладить хорошие отношения с банком трудно, а вот попасть в
+            немилость и подпортить свою репутацию — проще простого.
+            <br />
+            <br />
+            Банк может наградить вас статусом неблагонадежного заемщика не только за внушительные просрочки по платежам,
+            но и за мелкие недочеты. Помните, хорошая кредитная история - залог получения займа.
+          </p>
+        </div>
+      </section>
+      <section class="section history-includes">
+        <div class="page-container">
+          <h2 class="section-title">Что входит</h2>
+          <ul class="history-includes-list">
+            <li class="history-includes-list__item includes-item">
+              <div class="includes-item__icon">
+                <span class="icon icon-personal-data"></span>
+              </div>
+              <div class="includes-item__description">
+                <p class="includes-item__description-title">Данные клиента</p>
+                <p class="includes-item__description-notice">
+                  Фамилия, имя, отчество, паспорт, ИНН, адрес проживания, контактные данные.
+                </p>
+              </div>
+            </li>
+            <li class="history-includes-list__item includes-item">
+              <div class="includes-item__icon">
+                <span class="icon icon-list"></span>
+              </div>
+              <div class="includes-item__description">
+                <p class="includes-item__description-title">Запросы клиента</p>
+                <p class="includes-item__description-notice">
+                  Данные где и в какой форме клиент интересовался кредитным отчетом.
+                </p>
+              </div>
+            </li>
+            <li class="history-includes-list__item includes-item">
+              <div class="includes-item__icon">
+                <span class="icon icon-doc-reward"></span>
+              </div>
+              <div class="includes-item__description">
+                <p class="includes-item__description-title">Статус клиента</p>
+                <p class="includes-item__description-notice">
+                  Образование, занятость, семейное положение, кол-во детей, доход, деятельность.
+                </p>
+              </div>
+            </li>
+            <li class="history-includes-list__item includes-item">
+              <div class="includes-item__icon">
+                <span class="icon icon-case"></span>
+              </div>
+              <div class="includes-item__description">
+                <p class="includes-item__description-title">Кредиты клиента</p>
+                <p class="includes-item__description-notice">
+                  Сумма, сроки, порядок выплаты, проценты, договор, судебные иски и&nbsp;т.д.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section history-bad-reasons bg-beige">
+        <div class="page-container">
+          <h2 class="section-title">Причины плохой кредитной истории</h2>
+          <div class="history-bad-reasons-wrapper">
+            <ul class="history-bad-reasons-list">
+              <li class="history-bad-reasons-list__item history-bad-reason">
+                <div class="history-bad-reason__icon">
+                  <span class="icon icon-hammer"></span>
+                </div>
+                <p class="history-bad-reason__notice">
+                  Уклонение от уплаты
+                </p>
+              </li>
+              <li class="history-bad-reasons-list__item history-bad-reason">
+                <div class="history-bad-reason__icon">
+                  <span class="icon icon-loyalty-clock"></span>
+                </div>
+                <p class="history-bad-reason__notice">
+                  Просрочка по выплате
+                </p>
+              </li>
+              <li class="history-bad-reasons-list__item history-bad-reason">
+                <div class="history-bad-reason__icon">
+                  <span class="icon icon-bank"></span>
+                </div>
+                <p class="history-bad-reason__notice">
+                  По вине банка
+                </p>
+              </li>
+              <li class="history-bad-reasons-list__item history-bad-reason">
+                <div class="history-bad-reason__icon">
+                  <span class="icon icon-smile-x"></span>
+                </div>
+                <p class="history-bad-reason__notice">
+                  Человеческий фактор
+                </p>
+              </li>
+            </ul>
+            <div class="history-bad-reasons__arrows">
+              <span class="icon icon-left-right-arrows"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section history-rating">
+        <div class="page-container">
+          <h2 class="section-title">Кредитный рейтинг</h2>
+          <p class="rating-notice">
+            Кредитный рейтинг — это оценка вашей платежеспособности для получения микрозайма. Проще говоря - вероятность
+            того, что вы сможете вернуть нам деньги.
+            <br />
+            <br />
+            При расчете кредитного рейтинга мы изучаем вашу кредитную историю и персональные данные. Это позволит нам
+            выбрать для вас максимально удобные и доступные условия кредитования.
+            <br />
+            <br />
+            Чем выше ваш кредитный рейтинг, тем выгоднее и привлекательнее будет наше предложение по займу.
+          </p>
+          <div class="history-rating-line">
+            <div class="history-rating-line__handle" style="left: 0;border: 2px solid #FF1208;">
+              <span class="history-rating-line__handle-value">0</span>
+            </div>
+            <span class="history-rating-line__hint" style="left: 16.5%;">Низкий</span>
+            <div class="history-rating-line__handle" style="left: 33%;border: 2px solid #FF931F;">
+              <span class="history-rating-line__handle-value">300</span>
+            </div>
+            <span class="history-rating-line__hint" style="left: 49.5%;">Средний</span>
+            <div class="history-rating-line__handle" style="left: 66%;border: 2px solid #E6D830;">
+              <span class="history-rating-line__handle-value">600</span>
+            </div>
+            <span class="history-rating-line__hint" style="left: 82.5%;">Высокий</span>
+            <div class="history-rating-line__handle" style="left: 100%;border: 2px solid #AACF39;">
+              <span class="history-rating-line__handle-value">900</span>
+            </div>
+          </div>
+          <button class="btn btn--orange history-rating-know-button">Узнайте свой кредитный рейтинг бесплатно</button>
+        </div>
+      </section>
+      <section class="section history-hiw bg-beige">
+        <div class="page-container">
+          <h2 class="section-title">Как это работает</h2>
+          <ul class="history-hiw-list">
+            <li class="history-hiw-list__item hiw-item">
+              <div class="hiw-item__icon">
+                <span class="icon icon-window-ok"></span>
+              </div>
+              <p class="hiw-item__notice">
+                Получаем заявку и выдаем займ
+              </p>
+            </li>
+            <li class="history-hiw-list__item hiw-item">
+              <div class="hiw-item__icon">
+                <span class="icon icon-refresh-inside"></span>
+              </div>
+              <p class="hiw-item__notice">
+                Ждем своевременного погашения займа
+              </p>
+            </li>
+            <li class="history-hiw-list__item hiw-item">
+              <div class="hiw-item__icon">
+                <span class="icon icon-mail-wind"></span>
+              </div>
+              <p class="hiw-item__notice">
+                Отправляем данные в бюро
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section history-correction-options">
+        <div class="page-container">
+          <h2 class="section-title">Варианты исправления</h2>
+          <ul class="history-correction-options-list">
+            <li class="history-correction-options-list__item correction-option">
+              <div class="correction-option__icon">
+                <span class="icon icon-doc-pen"></span>
+              </div>
+              <div class="correction-option__notice">
+                Писать заявление в банк (если вина с их стороны)
+              </div>
+            </li>
+            <li class="history-correction-options-list__item correction-option correction-option-borrowing">
+              <div class="correction-option__icon">
+                <span class="icon icon-how-wallet"></span>
+              </div>
+              <div class="correction-option__notice">
+                Брать мелкие займы и возвращать их вовремя
+              </div>
+              <div class="correction-option-borrowing__plan">
+                <p class="correction-option-borrowing__plan-sum correction-option-borrowing__plan-sum--active">
+                  3000 ₽
+                </p>
+                <p class="correction-option-borrowing__plan-notice">10 дней на погашение</p>
+              </div>
+              <div class="correction-option-borrowing__plan">
+                <p class="correction-option-borrowing__plan-sum">5000 ₽</p>
+                <p class="correction-option-borrowing__plan-notice">10 дней на погашение</p>
+              </div>
+              <div class="correction-option-borrowing__plan">
+                <p class="correction-option-borrowing__plan-sum">8000 ₽</p>
+                <p class="correction-option-borrowing__plan-notice">10 дней на погашение</p>
+              </div>
+              <button class="btn btn--orange correction-option-borrowing__button">Взять займ</button>
+            </li>
+            <li class="history-correction-options-list__item correction-option">
+              <div class="correction-option__icon">
+                <span class="icon icon-clock-simple"></span>
+              </div>
+              <div class="correction-option__notice">
+                Ждать 10 лет (срок хранения истории)
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-history">
+      <div class="footer-container">
+        <div class="footer__contacts">
+          <div class="footer__contacts-phone">
+            <a href="tel:+74952680557" class="link phone">+7 (495) 268 0557</a>
+          </div>
+          <div class="footer__contacts-copy">
+            <span class="footer__contacts-copy__left">&copy; SmartCredit, 2015-2019.</span>
+            <span class="footer__contacts-copy__right">Все права защищены.</span>
+          </div>
+          <div class="footer__contacts-program">
+            <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
+          </div>
+          <div class="footer__contacts-designedby">
+            <a class="link designedby-link" href="#">Дизайн: Genue</a>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">О компании</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Раскрытие информации</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">СМИ о нас</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Новости компании</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--big" href="#">Контакты</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Программа лояльности</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Как вернуть деньги</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Ответы на вопросы</a>
+            </li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray footer__nav-link--big" href="#"
+                >Исправление кредитной истории</a
+              >
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Как взять деньги</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Схема работы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Правила предоставления займов</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Тарифы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Документы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Способы получения денег</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/bundle.js?v=0.0.10"></script>
+  </body>
+</html>

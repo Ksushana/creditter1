@@ -1,0 +1,319 @@
+.loyalty-hero {
+  background-image: url("../images/bg-loyalty.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 123px;
+  padding-bottom: 123px;
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../images/bg-loyalty-mobile.png");
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
+
+.loyalty-discount {
+  position: relative;
+  padding-top: 119px;
+  padding-bottom: 23px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 85px;
+  }
+}
+
+.loyalty-discount .section-title {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 63px;
+  }
+}
+
+.loyalty-discount-chart {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid $lightGray;
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    display: block;
+    max-width: 840px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.loyalty-discount-chart-mobile {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+
+.loyalty-discount-chart-mobile__row {
+  position: relative;
+  height: calc(48px + 24px);
+  margin-bottom: 47px;
+  padding-top: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: 2px solid #ff4e2c;
+    z-index: 1;
+  }
+
+  &:nth-child(2) {
+    // margin-bottom: 44px;
+    &::after {
+      left: -20px;
+    }
+  }
+}
+
+.discount-line__handle {
+  position: absolute;
+  z-index: 2;
+
+  &:nth-child(1) {
+    transform: translate(0%, -50%);
+  }
+  &:nth-child(2) {
+    transform: translate(-25%,-50%);
+  }
+  &:nth-child(3) {
+    transform: translate(-50%, -50%);
+  }
+  &:nth-child(4) {
+    transform: translate(-75%,-50%);
+  }
+  &:nth-child(5) {
+    transform: translate(-100%, -50%);
+  }
+}
+
+.discount-line__handle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #ff4e2c;
+  font-size: 14px;
+  color: #ff4e2c;
+}
+
+.discount-line__handle-notice {
+  position: absolute;
+  width: 100%;
+  padding-top: 12px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.loyalty-discount-notice {
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  transform: translate(-50%);
+  font-size: 15px;
+  font-weight: 500;
+
+  @media screen and (max-width: 767px) {
+    position: static;
+    transform: none;
+    text-align: center;
+  }
+}
+
+.loyalty-participation {
+  padding-bottom: 0;
+}
+
+.loyalty-participation-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 13px;
+  padding-bottom: 83px;
+  border-bottom: 1px solid $lightGray;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    padding-top: 26px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.loyalty-participation-list__item {
+  flex-basis: calc((100% - 60px * 2) / 3);
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 44px;
+  }
+}
+
+.participation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:first-child .participation-item__notice {
+    padding: 0;
+  }
+}
+
+.participation-item__notice {
+  text-align: center;
+  font-size: 15px;
+  line-height: 23px;
+  padding: 0 15px;
+
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.participation-item__icon {
+  margin-bottom: 22px;
+}
+
+.loyalty-questions {
+  padding-top: 107px;
+  padding-bottom: 120px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 66px;
+    padding-bottom: 89px;
+  }
+}
+
+.loyalty-questions-list__item {
+  margin-bottom: 19px;
+}
+
+.loyalty-question {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    align-items: flex-start;
+  }
+}
+
+.loyalty-question__icon {
+  flex-shrink: 0;
+  margin-right: 19px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 9px;
+  }
+}
+
+.loyalty-question__title {
+  font-size: 21px;
+  line-height: 50px;
+
+  @media screen and (max-width: 767px) {
+    line-height: 31px;
+  }
+}
+
+.loyalty-answer {
+  margin-bottom: 7px;
+  padding-left: 34px;
+  font-size: 15px;
+  line-height: 23px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 6px;
+    margin-bottom: 2px;
+  }
+}
+
+.loyalty-help {
+  padding-top: 86px;
+  padding-bottom: 118px;
+}
+
+.loyalty-help-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.loyalty-help__title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.loyalty-help-contacts__phone {
+  font-size: 21px;
+  line-height: 32px;
+}
+
+.loyalty-help-contacts__notice {
+  font-size: 15px;
+  line-height: 32px;
+}
+
+.loyalty-help-row__col {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 49px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.loyalty-help-row__col.loyalty-help-questions {
+  display: flex;
+  align-items: flex-start;
+}
+
+.loyalty-help-questions__item {
+  margin-bottom: 25px;
+  font-size: 21px;
+}
+
+.loyalty-help-questions__button {
+  width: 200px;
+  padding: 10px 0 11px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.loyalty-help-questions__col {
+  margin-right: 113px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+
+    &:last-child {
+      display: none;
+    }
+  }
+}

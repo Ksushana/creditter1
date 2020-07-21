@@ -1,0 +1,72 @@
+<% var data = {
+  title: "SmartCredit | Привязать социальные сети",
+  name: 'social-networks',
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main main-social-networks">
+  <section class="section section-social-networks">
+    <div class="social-networks-wrapper">
+      <div class="social-networks-content">
+        <p class="social-networks-title">Привязать социальные сети</p>
+        <p class="social-networks-notice">
+          Привяжите социальные сети к своему аккаунту и заходите в приложение и на сайт в один клик, без ввода логина и пароля.
+          Перед привязкой убедитесь, что номер телефона актуален и совпдает с тем, что вы указали при регистрации.
+        </p>
+      </div>
+      <div class="login-by-socials">
+        <ul class="login-by-socials__list">
+          <li class="login-by-socials__list-item">
+            <a href="#" class="social-oauth-link">
+              <img class="social-oauth-link__image" src="icons/social-auth/yandex.svg" alt="Яндекс" width="11"
+                height="21">
+            </a>
+          </li>
+          <li class="login-by-socials__list-item">
+            <a href="#" class="social-oauth-link">
+              <img class="social-oauth-link__image" src="icons/social-auth/google.svg" alt="Google" width="23"
+                height="23">
+            </a>
+          </li>
+          <li class="login-by-socials__list-item">
+            <a href="#" class="social-oauth-link">
+              <img class="social-oauth-link__image" src="icons/social-auth/mail.svg" alt="Mail.ru" width="23"
+                height="23">
+            </a>
+          </li>
+          <li class="login-by-socials__list-item">
+            <a href="#" class="social-oauth-link">
+              <img class="social-oauth-link__image" src="icons/social-auth/fb.svg" alt="Facebook" width="25"
+                height="25">
+            </a>
+          </li>
+          <li class="login-by-socials__list-item">
+            <a href="#" class="social-oauth-link">
+              <img class="social-oauth-link__image" src="icons/social-auth/vk.svg" alt="VKontakte" width="25"
+                height="25">
+            </a>
+          </li>
+          <li class="login-by-socials__list-item">
+            <a href="#" class="social-oauth-link">
+              <img class="social-oauth-link__image" src="icons/social-auth/ok.svg" alt="Одноклассники" width="14"
+                height="23">
+            </a>
+          </li>
+          <li class="login-by-socials__list-item login-by-socials__list-item--full">
+            <a href="#" class="social-oauth-link">
+              <img class="social-oauth-link__image" src="icons/social-auth/gosuslugi.svg" alt="Госуслуги" width="120"
+                height="19">
+            </a>
+          </li>
+          <li class="login-by-socials__list-item login-by-socials__list-item--full">
+            <a href="#" class="social-oauth-link">
+              Продолжить без привязки
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/body-end.html'))(data) %>

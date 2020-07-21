@@ -1,0 +1,168 @@
+.active-loan-page-container {
+  width: 100%;
+  max-width: 771px;
+  margin: 0 auto;
+}
+
+.active-loan-content {
+  padding: 38px 42px 47px 25px;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 25px;
+  }
+}
+
+.active-loan-row {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-top: 1px solid $lightGray;
+
+  &:first-child {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  &:last-child {
+    padding-top: 8px;
+    padding-bottom: 0;
+    border-top: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.active-loan-row--middle {
+  justify-content: center;
+}
+
+.active-loan-row--small {
+  justify-content: center;
+  width: 50%;
+  max-width: 315px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.active-loan-item {
+  margin-right: 45px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 32px;
+    text-align: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.active-loan-item__title {
+  margin-bottom: 6px;
+  font-size: 15px;
+  line-height: 20px;
+  color: $gray;
+}
+
+.active-loan-item__value {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.active-loan__month {
+  font-size: 15px;
+}
+
+.active-loan-item--big {
+  text-align: center;
+
+  & > .active-loan-item__value {
+    font-size: 45px;
+    line-height: 54px;
+    color: $orange;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.active-loan-item--middle {
+  & > .active-loan-item__value {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.active-loan-row--actions .btn {
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-right: auto;
+      margin-bottom: 23px;
+    }
+  }
+}
+
+.active-loan-pay-button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 280px;
+  padding: 17px 10px 18px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 424px) {
+    max-width: 100%;
+  }
+}
+
+.active-loan-defer-pay-button {
+  display: block;
+  margin: 0 auto 0 0;
+  width: 100%;
+  max-width: 280px;
+  padding: 17px 10px 18px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 424px) {
+    max-width: 100%;
+  }
+}

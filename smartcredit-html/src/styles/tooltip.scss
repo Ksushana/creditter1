@@ -1,0 +1,64 @@
+$arrowOffset: 15px;
+$arrowSize: 10px;
+
+$tooltipColor: rgba(100, 100, 102, 0.9);
+
+[data-tooltip] {
+  cursor: pointer;
+}
+
+.tooltip .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: -($arrowSize / 2);
+  bottom: -$arrowSize;
+  border-color: transparent transparent $tooltipColor $tooltipColor;
+  border-style: solid;
+  border-width: $arrowSize / 2;
+  transform-origin: 0 0;
+  transform: rotate(-45deg);
+  box-shadow: -5px 5px 5px -1px rgba(0, 0, 0, 0.11);
+  z-index: 100;
+}
+
+.tooltip[x-placement^="top"] {
+  margin-bottom: $arrowOffset;
+}
+
+.tooltip[x-placement^="top"] .tooltip-arrow {
+}
+
+.tooltip[x-placement^="bottom"] {
+  margin-top: $arrowOffset;
+}
+.tooltip[x-placement^="bottom"] .tooltip-arrow {
+  top: 0;
+  bottom: auto;
+  transform: rotate(135deg);
+  box-shadow: -5px 5px 7px -2px rgba(0, 0, 0, 0.11);
+}
+
+.tooltip[x-placement^="right"] {
+  margin-left: $arrowOffset;
+}
+
+.tooltip[x-placement^="right"] .tooltip-arrow {
+}
+
+.tooltip[x-placement^="left"] {
+  margin-right: $arrowOffset;
+}
+
+.tooltip[x-placement^="left"] .tooltip-arrow {
+}
+
+.tooltip-inner {
+  padding: 11px 20px;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 16px;
+  background: $tooltipColor;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}

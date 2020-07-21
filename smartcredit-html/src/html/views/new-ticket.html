@@ -1,0 +1,51 @@
+<% var data = {
+  title: "SmartCredit | Заявки в службу поддержки",
+  name: 'tickets',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-tickets">
+  <section class="section lk-section">
+    <div class="lk-page-container tickets-page-container">
+      <h2 class="section-title lk-section-title">Заявки в службу поддержки</h2>
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block new-ticket">
+          <div class="new-ticket-header">
+            <h3 class="lk-content-block__title new-ticket-title">Новая заявка</h3>
+          </div>
+          <div class="new-ticket-content">
+            <form class="new-ticket-form">
+              <label class="new-ticket-form__field">
+                <span class="new-ticket-form__field-label">Тип заявки</span>
+                <select class="new-ticket-select new-ticket-form__field-select">
+                  <option value>Выберите...</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </label>
+              <label class="new-ticket-form__field">
+                <span class="new-ticket-form__field-label">Тема</span>
+                <input class="lk-input new-ticket-form__field-input" type="text" placeholder="Введите тему">
+              </label>
+              <label class="new-ticket-form__field">
+                <span class="new-ticket-form__field-label">Сообщение</span>
+                <textarea class="lk-textarea new-ticket-form__field-textarea" placeholder="Ваше сообщение"></textarea>
+              </label>
+              <label class="new-ticket-form__field">
+                <span class="new-ticket-form__field-label">Прикрепить файл</span>
+                <span class="new-ticket-form__field-input">
+                  <span class="new-ticket-form__field-filebutton">Добавьте файлы</span>
+                </span>
+                <input class="new-ticket-form__field-input" type="file" name="files">
+              </label>
+              <button class="btn btn--orange new-ticket-submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,244 @@
+.faq-hero {
+  background-image: url("../images/bg-faq.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 123px 0;
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../images/bg-faq-mobile.png");
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
+
+.faq-main {
+  padding-bottom: 134px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 56px;
+    padding-bottom: 97px;
+  }
+}
+
+.question-search-field {
+  margin-bottom: 30px;
+}
+
+.question-search-field__input {
+  width: 100%;
+  // height: 50px;
+  padding: 16px 20px 14px;
+  border: 1px solid #e5e6eb;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.faq-tabs__arrows {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.faq-tabs__tablist {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    border-bottom: none;
+    margin-bottom: 43px;
+  }
+}
+
+.faq-tabs__tablist-item {
+  margin-right: 28px;
+
+  @media screen and (max-width: 767px) {
+    white-space: nowrap;
+  }
+}
+
+.faq-tabs__panel-wrapper {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    position: relative;
+    flex-direction: column;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -43px;
+      width: 100%;
+      border-bottom: 1px solid $lightGray;
+    }
+  }
+}
+
+.faq-tabs__panel {
+  flex-basis: 60%;
+  max-width: 60%;
+  padding-right: 12px;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.faq-new-question {
+  flex-basis: 40%;
+  padding-left: 44px;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 100px;
+    width: 100%;
+    padding-top: 70px;
+    padding-left: 0;
+  }
+}
+
+.faq-questions-list__item {
+  margin-bottom: 28px;
+}
+
+.faq-question__title {
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.faq-answer {
+  font-size: 15px;
+  line-height: 23px;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+.faq-question__icon {
+  flex-shrink: 0;
+  margin-right: 15px;
+  margin-top: 11px;
+}
+
+.faq-question {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.new-question-form {
+  border: 1px solid #e5e9f2;
+  border-radius: 5px;
+  background: #fff;
+
+  @media screen and (max-width: 767px) {
+    border: none;
+  }
+}
+
+.new-question-form__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 27px 21px 0;
+
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.new-question-form__title {
+  font-size: 21px;
+  margin-bottom: 28px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 22px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
+.new-question-form__field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 18px;
+
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.new-question-form__field-label {
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+textarea.new-question-form__field-textarea {
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+  border: 1px solid #e5e6eb;
+  border-radius: 3px;
+  resize: none;
+}
+
+.new-question-form__field-input {
+  border: 1px solid #e5e6eb;
+  border-radius: 3px;
+  width: 100%;
+  // height: 40px;
+  padding: 11px 10px 9px;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.new-question-form__field-input[type="file"] {
+  display: none;
+}
+
+.new-question-form__field-filebutton {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  border: 1px dashed #e5e6eb;
+  border-radius: 3px;
+  font-size: 15px;
+  background: #ffffff;
+  text-align: center;
+  color: $gray;
+  cursor: pointer;
+}
+
+.new-question-form__footer {
+  width: 100%;
+  background: #f5f6fa;
+  border-top: 1px solid #e5e9f2;
+  padding: 25px 27px 31px;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    padding: 0;
+    border-top: none;
+    background: none;
+  }
+}
+
+.new-question-form_button {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+}

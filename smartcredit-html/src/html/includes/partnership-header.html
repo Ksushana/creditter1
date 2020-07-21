@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ff0000">
+  <!-- First, all the preloads -->
+  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
+  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
+  <link rel="stylesheet" href="css/style.bundle.css?v=0.0.9" />
+  <title><%=title%></title>
+</head>
+
+<body class="lk-body<%=typeof name !== 'undefined' ? ' body-' + name : ''%>">
+  <div class="sidebar-container">
+    <div class="sidebar-menu-container">
+      <nav class="sidebar-menu lk-sidebar-menu">
+        <div class="sidebar-menu-header lk-sidebar-menu-header">
+          <nav class="sidebar-menu-toggle partnership-sidebar-menu-toggle">
+            <button class="unbtn sidebar-menu-button">
+              <span class="icon icon-cross"></span>
+            </button>
+          </nav>
+          <a href="/" class="logo lk-logo">
+            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
+          </a>
+          <a href="#" class="link lk-header-user-link">
+            <span class="icon icon-user"></span>
+          </a>
+        </div>
+        <div class="lk-sidebar-menu__header">
+          <div class="lk-sidebar-menu__header-actions">
+            <a href="#" class="link">Выйти</a>
+            <a class="link link--left-icon lk-support-chat lk-sidebar-support-chat" href="#">
+              <span class="icon icon-chat"></span>
+              <span class="badge lk-support-chat__badge">4</span>
+              <span>Поддержка</span>
+            </a>
+          </div>
+          <div class="lk-sidebar-username">
+            Константин Константинопольский
+          </div>
+        </div>
+        <ul class="partnership-sidebar-menu partnership-header-sidebar-menu">
+          <li class="partnership-sidebar-menu__item partnership-sidebar-menu__item--category">
+            <a href="add-platform"
+              class="link partnership-sidebar-menu-link partnership-sidebar-menu-category<%=activeLink === 'add-platform' ? ' partnership-sidebar-menu-link--active' : ''%>">Инструменты</a>
+          </li>
+          <li class="partnership-sidebar-menu__item">
+            <a href="generator"
+              class="link partnership-sidebar-menu-link<%=activeLink === 'generator' ? ' partnership-sidebar-menu-link--active' : ''%>">Генератор
+              ссылок</a>
+          </li>
+          <li class="partnership-sidebar-menu__item">
+            <a href="landings"
+              class="link partnership-sidebar-menu-link<%=activeLink === 'landings' ? ' partnership-sidebar-menu-link--active' : ''%>">Лендинги</a>
+          </li>
+          <li class="partnership-sidebar-menu__item">
+            <a href="banners"
+              class="link partnership-sidebar-menu-link<%=activeLink === 'banners' ? ' partnership-sidebar-menu-link--active' : ''%>">Баннеры</a>
+          </li>
+          <li class="partnership-sidebar-menu__item">
+            <a href="#"
+              class="link partnership-sidebar-menu-link<%=activeLink === 'actions' ? ' partnership-sidebar-menu-link--active' : ''%>">Акции</a>
+          </li>
+          <li class="partnership-sidebar-menu__item partnership-sidebar-menu__item--last">
+            <a href="add-platform"
+              class="link partnership-sidebar-menu-link<%=activeLink === 'add-platform' ? ' partnership-sidebar-menu-link--active' : ''%>">Добавление
+              площадки</a>
+          </li>
+          <li class="partnership-sidebar-menu__item partnership-sidebar-menu__item--category">
+            <a href="statistics-gived-loan"
+              class="link partnership-sidebar-menu-link partnership-sidebar-menu-category<%=activeLink === 'statistics' ? ' partnership-sidebar-menu-link--active' : ''%>">Статистика</a>
+          </li>
+          <li class="partnership-sidebar-menu__item partnership-sidebar-menu__item--last">
+            <a href="#"
+              class="link partnership-sidebar-menu-link<%=activeLink === 'statistics-params' ? ' partnership-sidebar-menu-link--active' : ''%>">По
+              параметрам</a>
+          </li>
+          <li class="partnership-sidebar-menu__item partnership-sidebar-menu__item--category">
+            <a href="#"
+              class="link partnership-sidebar-menu-link partnership-sidebar-menu-category<%=activeLink === 'finance' ? ' partnership-sidebar-menu-link--active' : ''%>">Финансы</a>
+          </li>
+          <li class="partnership-sidebar-menu__item">
+            <a href="#"
+              class="link partnership-sidebar-menu-link<%=activeLink === '' ? ' partnership-sidebar-menu-link--active' : ''%>">Вывод
+              средств</a>
+          </li>
+          <li class="partnership-sidebar-menu__item">
+            <a href="#"
+              class="link partnership-sidebar-menu-link<%=activeLink === '' ? ' partnership-sidebar-menu-link--active' : ''%>">Платёжная
+              информация</a>
+          </li>
+          <li class="partnership-sidebar-menu__item partnership-sidebar-menu__item--last">
+            <a href="#"
+              class="link partnership-sidebar-menu-link<%=activeLink === '' ? ' partnership-sidebar-menu-link--active' : ''%>">История
+              выплат</a>
+          </li>
+          <li class="partnership-sidebar-menu__item partnership-sidebar-menu__item--category">
+            <a href="#"
+              class="link partnership-sidebar-menu-link partnership-sidebar-menu-category<%=activeLink === 'finance' ? ' partnership-sidebar-menu-link--active' : ''%>">Справочник</a>
+          </li>
+          <li class="partnership-sidebar-menu__item">
+            <a href="#"
+              class="link partnership-sidebar-menu-link<%=activeLink === '' ? ' partnership-sidebar-menu-link--active' : ''%>">Общие
+              правила</a>
+          </li>
+          <li class="partnership-sidebar-menu__item">
+            <a href="#"
+              class="link partnership-sidebar-menu-link<%=activeLink === '' ? ' partnership-sidebar-menu-link--active' : ''%>">FAQ</a>
+          </li>
+          <li class="partnership-sidebar-menu__item">
+            <a href="#"
+              class="link partnership-sidebar-menu-link<%=activeLink === '' ? ' partnership-sidebar-menu-link--active' : ''%>">Термины</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <header class="header lk-header<%=typeof name !== 'undefined' ? ' header-' + name : ''%>">
+    <div class="lk-header-wrapper">
+      <div class="header-container">
+        <div class="header-left lk-header-left">
+          <nav class="sidebar-menu-toggle partnership-sidebar-menu-toggle">
+            <button class="unbtn sidebar-menu-button">
+              <span class="icon icon-hamburger"></span>
+            </button>
+          </nav>
+          <a href="/" class="logo">
+            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
+          </a>
+        </div>
+        <div class="header-right lk-header-right">
+          <a class="link link--left-icon header-center__link lk-support-chat" href="#">
+            <span class="icon icon-chat"></span>
+            <span class="badge lk-support-chat__badge">4</span>
+            <span>Служба поддержки</span>
+          </a>
+          <div class="lk-dropdown lk-header-dropdown">
+            <button class="unbtn link lk-dropdown__trigger lk-header-user-link">
+              <span class="icon icon-user"></span>
+              <span class="lk-header-user-link__value">konstantin.k@gmail.com</span>
+              <span class="icon icon-arrow-down-lk"></span>
+            </button>
+            <div class="lk-dropdown__content">
+              <ul class="lk-header-user-menu">
+                <li class="lk-header-user-menu__item">
+                  <a class="link" href="#">Настройка профиля</a>
+                </li>
+                <li class="lk-header-user-menu__item">
+                  <a class="link" href="#">Поддержка</a>
+                </li>
+                <li class="lk-header-user-menu__item">
+                  <a class="link" href="#">Выход</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>

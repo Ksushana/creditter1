@@ -1,0 +1,322 @@
+$orange: #ff4e2c;
+$gray: #8c94a8;
+$lightGray: #edeef0;
+
+$textMainColor: #17233b;
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html.is-nav-opened,
+html.is-nav-opened body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #ffffff;
+  color: $textMainColor;
+  font-size: 16px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+}
+
+input,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+font.rub {
+  font-family: "ArialRub", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.mute {
+  font-size: 15px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gray {
+  color: $gray;
+}
+
+.link {
+  font-size: 15px;
+  color: #333333;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    color: $orange;
+  }
+}
+
+.link--left-icon {
+  & > .icon {
+    margin-right: 10px;
+  }
+
+  & > span {
+    vertical-align: middle;
+  }
+}
+
+.link--right-icon {
+  & > .icon {
+    margin-left: 10px;
+  }
+
+  & > span {
+    vertical-align: middle;
+  }
+}
+
+.link--orange {
+  color: $orange;
+}
+
+.unbtn {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  user-select: none;
+}
+
+.btn {
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  background: none;
+  user-select: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn--orange {
+  background-color: $orange;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #ff2f1b;
+  }
+}
+
+.btn--orange-transparent {
+  border: 1px solid $orange;
+  color: $orange;
+
+  &:hover {
+    background-color: $orange;
+    color: #ffffff;
+    opacity: 1;
+  }
+}
+
+.btn--gray {
+  background: transparent;
+  border: 1px solid rgba(140, 148, 168, 0.4);
+  color: $gray;
+
+  &:hover {
+    border-color: #ff4024;
+    color: #ff4024;
+  }
+}
+
+.btn--white-transparent {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+
+  &:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: $textMainColor;
+  }
+}
+
+.divider {
+  padding-top: 47px;
+  border-bottom: 1px solid #e5e6eb;
+}
+
+.section {
+  padding-top: 85px;
+  padding-bottom: 20px;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 38px;
+  }
+}
+
+.section-subtitle {
+  margin-bottom: 35px;
+  font-size: 21px;
+  line-height: 22px;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 25px;
+    line-height: 31px;
+  }
+}
+
+.bg-beige {
+  background: rgba(248, 244, 237, 0.9);
+}
+
+.section-hero {
+  background-color: #5d6576;
+  padding: 40px 20px;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+main.main {
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+}
+
+.hidden {
+  display: none !important;
+}

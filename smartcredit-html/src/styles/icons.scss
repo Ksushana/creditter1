@@ -1,0 +1,540 @@
+/* icons */
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon-hamburger {
+  width: 26px;
+  height: 19px;
+  background-image: svg-load("icons/hamburger.svg");
+}
+.icon-cross {
+  width: 23px;
+  height: 23px;
+  background-image: svg-load("icons/cross.svg");
+}
+
+.icon-chat {
+  width: 29px;
+  height: 21px;
+  background-image: svg-load("icons/chat.svg");
+}
+
+.icon-phone {
+  width: 19px;
+  height: 19px;
+  background-image: svg-load("icons/phone.svg");
+}
+
+.icon-profile {
+  width: 22px;
+  height: 22px;
+  background-image: svg-load("icons/profile.svg");
+}
+
+.icon-cursor {
+  width: 40px;
+  height: 54px;
+  background-image: svg-load("icons/cursor.svg");
+}
+.icon-lightning {
+  width: 29px;
+  height: 58px;
+  background-image: svg-load("icons/lightning.svg");
+}
+.icon-wallet {
+  width: 46px;
+  height: 44px;
+  background-image: svg-load("icons/wallet.svg");
+}
+.icon-refresh {
+  width: 46px;
+  height: 44px;
+  background-image: svg-load("icons/refresh.svg");
+}
+
+.icon-people {
+  width: 61px;
+  height: 40px;
+  background-image: svg-load("icons/people.svg");
+}
+
+.icon-lightning-wind {
+  width: 47px;
+  height: 46px;
+  background-image: svg-load("icons/lightning-wind.svg");
+}
+
+.icon-clock {
+  width: 44px;
+  height: 46px;
+  background-image: svg-load("icons/clock.svg");
+}
+
+.icon-pdf {
+  width: 34px;
+  height: 46px;
+  background-image: svg-load("icons/pdf.svg");
+}
+
+.icon-how-wallet {
+  width: 49px;
+  height: 46px;
+  background-image: svg-load("icons/how-wallet.svg");
+}
+.icon-how-switcher {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/how-switcher.svg");
+}
+.icon-how-window {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/how-window.svg");
+}
+
+.icon-payment-visa {
+  width: 99px;
+  height: 32px;
+  background-image: svg-load("icons/payments/visa.svg");
+}
+.icon-payment-mastercard {
+  width: 58px;
+  height: 36px;
+  background-image: svg-load("icons/payments/mastercard.svg");
+}
+.icon-payment-maestro {
+  width: 58px;
+  height: 36px;
+  background-image: svg-load("icons/payments/maestro.svg");
+}
+.icon-payment-qiwi {
+  width: 103px;
+  height: 46px;
+  background-image: svg-load("icons/payments/qiwi.svg");
+}
+.icon-payment-ymoney {
+  width: 150px;
+  height: 29px;
+  background-image: svg-load("icons/payments/ymoney.svg");
+}
+.icon-payment-bank {
+  width: 44px;
+  height: 46px;
+  background-image: svg-load("icons/payments/bank.svg");
+}
+.icon-payment-cash-desk {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/payments/cash-desk.svg");
+}
+.icon-payment-contact {
+  width: 136px;
+  height: 34px;
+  background-image: svg-load("icons/payments/contact.svg");
+}
+
+.icon-rocket {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/rocket.svg");
+}
+.icon-free {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/free.svg");
+}
+.icon-percent {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/percent.svg");
+}
+.icon-refresh-circle {
+  width: 46px;
+  height: 44px;
+  background-image: svg-load("icons/refresh-circle.svg");
+}
+
+.icon-yes {
+  width: 15px;
+  height: 12px;
+  background-image: svg-load("icons/yes.svg");
+}
+.icon-no {
+  width: 14px;
+  height: 14px;
+  background-image: svg-load("icons/no.svg");
+}
+
+.icon-loyalty-clock {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/loyalty-clock.svg");
+}
+.icon-loyalty-calendar {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/loyalty-calendar.svg");
+}
+.icon-loyalty-prize {
+  width: 46px;
+  height: 44px;
+  background-image: svg-load("icons/loyalty-prize.svg");
+}
+
+.icon-arrow-down {
+  width: 15px;
+  height: 9px;
+  background-image: svg-load("icons/arrow-down.svg");
+}
+
+.icon-arrow-down-small {
+  width: 12px;
+  height: 7px;
+  background-image: svg-load("icons/arrow-down.svg");
+}
+
+.icon-arrow-down-big {
+  width: 20px;
+  height: 10px;
+  background-image: svg-load("icons/arrow-down.svg");
+}
+
+.icon-arrow-down-lk {
+  width: 12px;
+  height: 7px;
+  background-image: svg-load("icons/arrow-down-lk.svg");
+}
+
+.icon-arrow-left {
+  width: 6px;
+  height: 11px;
+  background-image: svg-load("icons/arrow-left.svg", fill=#17233B);
+}
+
+.icon-arrow-right {
+  width: 6px;
+  height: 11px;
+  background-image: svg-load("icons/arrow-left.svg", fill=$orange);
+  transform: rotate(180deg);
+}
+
+.icon-arrow-left-lk {
+  width: 7px;
+  height: 13px;
+  background-image: svg-load("icons/arrow-left.svg", fill=#BFC5D2);
+}
+
+.icon-connected-people {
+  width: 45px;
+  height: 47px;
+  background-image: svg-load("icons/connected-people.svg");
+}
+.icon-horn {
+  width: 44px;
+  height: 46px;
+  background-image: svg-load("icons/horn.svg");
+}
+.icon-long-arrow-right {
+  width: 14px;
+  height: 68px;
+  background-image: svg-load("icons/long-arrow-right.svg");
+}
+
+.icon-window-ok {
+  width: 54px;
+  height: 46px;
+  background-image: svg-load("icons/window-ok.svg");
+}
+.icon-window-reward {
+  width: 50px;
+  height: 48px;
+  background-image: svg-load("icons/window-reward.svg");
+}
+
+.icon-moneys {
+  width: 55px;
+  height: 40px;
+  background-image: svg-load("icons/moneys.svg");
+}
+.icon-clock-simple {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/clock-simple.svg");
+}
+
+.icon-personal-data {
+  width: 46px;
+  height: 36px;
+  background-image: svg-load("icons/personal-data.svg");
+}
+.icon-list {
+  width: 46px;
+  height: 40px;
+  background-image: svg-load("icons/list.svg");
+}
+.icon-doc-reward {
+  width: 38px;
+  height: 46px;
+  background-image: svg-load("icons/doc-reward.svg");
+}
+.icon-case {
+  width: 46px;
+  height: 38px;
+  background-image: svg-load("icons/case.svg");
+}
+
+.icon-hammer {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/hammer.svg");
+}
+.icon-bank {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/bank.svg");
+}
+.icon-bank-black {
+  width: 22px;
+  height: 23px;
+  background-image: svg-load("icons/bank-black.svg");
+}
+.icon-smile-x {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/smile-x.svg");
+}
+
+.icon-mail-wind {
+  width: 75px;
+  height: 33px;
+  background-image: svg-load("icons/mail-wind.svg");
+}
+.icon-refresh-inside {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/refresh-inside.svg");
+}
+.icon-doc-pen {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/doc-pen.svg");
+}
+
+.icon-yes-big {
+  width: 22px;
+  height: 14px;
+  background-image: svg-load("icons/yes-big.svg");
+}
+.icon-no-big {
+  width: 18px;
+  height: 18px;
+  background-image: svg-load("icons/no-big.svg");
+}
+
+.icon-feedback {
+  width: 48px;
+  height: 46px;
+  background-image: svg-load("icons/feedback.svg");
+}
+.icon-callback {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/callback.svg");
+}
+
+.icon-left-right-arrows {
+  width: 46px;
+  height: 13px;
+  background-image: svg-load("icons/left-right-arrows.svg");
+}
+
+.icon-callback-gray {
+  width: 23px;
+  height: 23px;
+  background-image: svg-load("icons/callback-gray.svg");
+}
+
+.icon-callback-orange {
+  width: 23px;
+  height: 23px;
+  background-image: svg-load("icons/callback-gray.svg", stroke=#FF4E2C);
+}
+
+.icon-feedback-gray {
+  width: 24px;
+  height: 23px;
+  background-image: svg-load("icons/feedback-gray.svg");
+}
+
+.icon-feedback-orange {
+  width: 24px;
+  height: 23px;
+  background-image: svg-load("icons/feedback-gray.svg", stroke=#FF4E2C);
+}
+
+.icon-question {
+  width: 23px;
+  height: 23px;
+  background-image: svg-load("icons/question-circle.svg");
+}
+
+.icon-plus-circle {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/plus-circle.svg");
+}
+
+.icon-success {
+  width: 23px;
+  height: 23px;
+  background-image: svg-load("icons/success.svg");
+}
+
+.icon-user {
+  width: 23px;
+  height: 23px;
+  background-image: svg-load("icons/user.svg");
+}
+
+.icon-user-big {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/user-big.svg");
+}
+
+.icon-refresh-ruble {
+  width: 40px;
+  height: 46px;
+  background-image: svg-load("icons/refresh-ruble.svg");
+}
+
+.icon-status {
+  width: 50px;
+  height: 46px;
+  background-image: svg-load("icons/status.svg");
+}
+
+.icon-error {
+  width: 23px;
+  height: 23px;
+  background-image: svg-load("icons/error.svg");
+}
+
+.icon-tooltip {
+  width: 16px;
+  height: 16px;
+  background-image: svg-load("icons/tooltip.svg");
+}
+
+.icon-question-circle-orange {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/question-circle-orange.svg");
+}
+
+.icon-facebook-messanger {
+  width: 40px;
+  height: 40px;
+  background-image: svg-load("icons/socials/facebook-messanger.svg");
+}
+
+.icon-facebook {
+  width: 40px;
+  height: 40px;
+  background-image: svg-load("icons/socials/facebook.svg");
+}
+
+.icon-gplus {
+  width: 40px;
+  height: 40px;
+  background-image: svg-load("icons/socials/gplus.svg");
+}
+
+.icon-linkedin {
+  width: 40px;
+  height: 40px;
+  background-image: svg-load("icons/socials/linkedin.svg");
+}
+
+.icon-telegram {
+  width: 40px;
+  height: 40px;
+  background-image: svg-load("icons/socials/telegram.svg");
+}
+
+.icon-twitter {
+  width: 40px;
+  height: 40px;
+  background-image: svg-load("icons/socials/twitter.svg");
+}
+
+.icon-viber {
+  width: 40px;
+  height: 40px;
+  background-image: svg-load("icons/socials/viber.svg");
+}
+
+.icon-whatsup {
+  width: 40px;
+  height: 40px;
+  background-image: svg-load("icons/socials/whatsup.svg");
+}
+
+.icon-gmail {
+  width: 40px;
+  height: 40px;
+  background-image: svg-load("icons/socials/gmail.svg");
+}
+
+.icon-outlook {
+  width: 40px;
+  height: 40px;
+  background-image: svg-load("icons/socials/outlook.svg");
+}
+
+.icon-copy {
+  width: 14px;
+  height: 16px;
+  background-image: svg-load("icons/copy.svg");
+}
+
+.icon-copy-white {
+  width: 14px;
+  height: 16px;
+  background-image: svg-load("icons/copy.svg", fill=#fff);
+}
+
+.icon-success-circle {
+  width: 46px;
+  height: 46px;
+  background-image: svg-load("icons/success-circle.svg");
+}
+
+.icon-staple {
+  width: 23px;
+  height: 21px;
+  background-image: svg-load("icons/staple.svg");
+}
+
+.icon-cross-circle {
+  width: 23px;
+  height: 23px;
+  background-image: svg-load("icons/cross-circle.svg");
+}
+
+.icon-arrow-right-circle {
+  width: 16px;
+  height: 16px;
+  background-image: svg-load("icons/arrow-right-circle.svg");
+}
+
+.icon-download {
+  width: 18px;
+  height: 16px;
+  background-image: svg-load("icons/download.svg");
+}

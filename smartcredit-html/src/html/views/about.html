@@ -1,0 +1,128 @@
+<% var data = {
+  title: "SmartCredit | О компании",
+  name: 'about',
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main main-about">
+  <section class="section section-hero about-hero">
+    <div class="about-hero-container">
+      <h1 class="hero-title">О компании</h1>
+      <p class="hero-notice">Мы — команда профессионалов — придумали и создали онлайн&#8209;сервис SmartCredit. Цель сервиса —
+        максимально упростить для клиента процесс получения микрокредита.</p>
+    </div>
+  </section>
+  <section class="section about-intro">
+    <div class="page-container">
+      <h2 class="section-title about-intro__title">SmartCredit</h2>
+      <p class="section-subtitle about-intro__subtitle">Удобный и человечный онлайн-сервис для получения микрокредитов.
+      </p>
+      <p class="about-intro__notice">SmartCredit – сервис для каждого. Сейчас сложные времена, все напуганы
+        экономическим
+        кризисом. Именно в этот период мы хотим поддержать людей и помочь им в любых жизненных ситуациях, когда срочно
+        нужны деньги. Мы сделали удобный и человечный онлайн-сервис для получения микрокредитов. И мы готовы идти
+        навстречу клиентам - брать на себя риски и выдавать займы даже в тех случаях, когда отказывают банки.
+        Современные
+        технологии и опыт работы в финансовой сфере дают нам такую возможность.</p>
+    </div>
+  </section>
+  <section class="section about-advantages">
+    <div class="page-container">
+      <h2 class="section-title about-advantages__title">Наши преимущества</h2>
+      <div class="about-advantages__content">
+        <ul class="about-advantages-list">
+          <li class="about-advantages-list__item about-advantage">
+            <div class="about-advantage__icon">
+              <span class="icon icon-people"></span>
+            </div>
+            <div class="about-advantage__description">
+              <p class="about-advantage__title">Индивидуальный подход</p>
+              <p class="about-advantage__notice">Мы рассматриваем каждый случай отдельно, поэтому плохая кредитная
+                история не
+                всегда будет помехой для получения займа в SmartCredit. Более того, каждый следующий выданный в сервисе
+                кредит будет обходиться вам дешевле.</p>
+            </div>
+          </li>
+          <li class="about-advantages-list__item about-advantage">
+            <div class="about-advantage__icon">
+              <span class="icon icon-lightning-wind"></span>
+            </div>
+            <div class="about-advantage__description">
+              <p class="about-advantage__title">Оформление за пять минут</p>
+              <p class="about-advantage__notice">Сумма займа начинается от 2000 рублей. Оформление заявки занимает не
+                больше
+                пяти
+                минут, не нужны никакие документы — достаточно указать номер паспорта. Доступно несколько способов
+                получения денег — наличными, на банковскую карту или электронными деньгами.</p>
+            </div>
+          </li>
+          <li class="about-advantages-list__item about-advantage">
+            <div class="about-advantage__icon">
+              <span class="icon icon-clock"></span>
+            </div>
+            <div class="about-advantage__description">
+              <p class="about-advantage__title">Круглосуточно и ежедневно</p>
+              <p class="about-advantage__notice">Выдаем займы по всей России в любое время. Служба поддержки оперативно
+                ответит
+                на любые вопросы, поможет оформить заявку и проконсультирует по срокам и условиям возврата. Мы
+                гарантируем
+                прозрачность работы, отсутствие скрытых комиссий и дополнительных платежей.</p>
+            </div>
+          </li>
+        </ul>
+        <div class="about-arrows">
+          <span class="icon icon-left-right-arrows"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section about-media">
+    <div class="page-container">
+      <h2 class="section-title about-media__title">СМИ о нас</h2>
+      <div class="about-media__content">
+        <ul class="media-list">
+          <li class="media-list__item media-item">
+            <div class="media-item__icon">
+              <img src="images/media/credit.png" alt="Credit.ru" width="114" height="24">
+            </div>
+            <div class="media-item__description">
+              <p class="media-item__notice">Компания SmartCredit планирует занять прочные позиции на конкурентном рынке,
+                выстроив с клиентами долгосрочные и доверительные отношения.</p>
+              <a class="link link--orange" href="#">Читать дальше</a>
+            </div>
+          </li>
+          <li class="media-list__item media-item">
+            <div class="media-item__icon">
+              <img src="images/media/vc.png" alt="vc.ru" width="50" height="50">
+            </div>
+            <div class="media-item__description">
+              <p class="media-item__notice">Компания SmartCredit планирует занять прочные позиции на конкурентном рынке,
+                выстроив с клиентами долгосрочные и доверительные отношения.</p>
+              <a class="link link--orange" href="#">Читать дальше</a>
+            </div>
+          </li>
+          <li class="media-list__item media-item">
+            <div class="media-item__icon">
+              <img src="images/media/bankir.png" alt="Bankir.ru" width="174" height="40">
+            </div>
+            <div class="media-item__description">
+              <p class="media-item__notice">Компания SmartCredit планирует занять прочные позиции на конкурентном рынке,
+                выстроив с клиентами долгосрочные и доверительные отношения.</p>
+              <a class="link link--orange" href="#">Читать дальше</a>
+            </div>
+          </li>
+        </ul>
+        <div class="about-arrows about-media__arrows">
+          <span class="icon icon-left-right-arrows"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section about-news">
+    <div class="page-container">
+      <%= _.template(require('./../includes/news.html'))({title: 'Новости компании', isHorizontal: true }) %>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

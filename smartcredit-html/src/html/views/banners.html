@@ -1,0 +1,128 @@
+<% var data = {
+  title: "SmartCredit | Баннеры",
+  name: 'banners',
+  activeLink: 'banners',
+}; %>
+<%= _.template(require('./../includes/partnership-header.html'))(data) %>
+
+<main class="main partnership-main">
+  <div class="partnership-container partnership-page-container">
+    <%= _.template(require('./../includes/partnership-sidebar.html'))(data) %>
+    <section class="partnership-section">
+      <div class="partnership-section__header">
+        <h2 class="partnership-section-title">Баннеры</h2>
+      </div>
+      <div class="partnership-section__content">
+        <div class="ctabs banners-tabs">
+          <div class="banners-filters">
+            <div class="banners-filters__col banners-filters__sort">
+              <p class="banners-filters__col-title">Сортировать</p>
+              <div class="ctabs-tablist banners-tabs__tablist" role="tablist">
+                <button class="ctabs-tablist__item banners-tabs__tablist-item" role="tab" aria-selected="true"
+                  aria-controls="by-size-tab" id="by-size">по размеру</button>
+                <button class="ctabs-tablist__item banners-tabs__tablist-item" role="tab" aria-selected="false"
+                  aria-controls="by-efficiency-tab" id="by-efficiency" tabindex="-1">по эффективности</button>
+              </div>
+            </div>
+            <div class="banners-filters__col banners-filters__formats">
+              <p class="banners-filters__col-title">Форматы</p>
+              <label class="banners-filters__formats-item check">
+                <input class="check__input" type="checkbox" name="gif">
+                <span class="check__box"></span>
+                <span>GIF</span>
+              </label>
+              <label class="banners-filters__formats-item check">
+                <input class="check__input" type="checkbox" name="jpeg">
+                <span class="check__box"></span>
+                <span>JPEG</span>
+              </label>
+              <label class="banners-filters__formats-item check">
+                <input class="check__input" type="checkbox" name="flash">
+                <span class="check__box"></span>
+                <span>FLASH</span>
+              </label>
+            </div>
+          </div>
+          <div class="ctabs-panel banners-tabs__panel" tabindex="0" role="tabpanel" id="by-size-tab"
+            aria-labelledby="by-size">
+            <div class="ctabs-panel__content banners-tabs__panel-content">
+              <div class="banners-block">
+                <p class="banners-block__title">468 x 60</p>
+                <ul class="banners-list">
+                  <li class="banners-list__item banner-item">
+                    <p class="banner-item__title">Название баннера</p>
+                    <img class="banner-item__image" src="images/banner-1@2x.png" width="169" height="42" alt="Название баннера">
+                    <div class="banner-item__actions">
+                      <a href="#" class="banner-item__actions-download">Скачать<span
+                          class="icon icon-download"></span></a>
+                      <a href="#" class="banner-item__actions-link">Ссылка</a>
+                    </div>
+                  </li>
+                  <li class="banners-list__item banner-item">
+                    <p class="banner-item__title">Название баннера</p>
+                    <img class="banner-item__image" src="images/banner-1@2x.png" width="169" height="42" alt="Название баннера">
+                    <div class="banner-item__actions">
+                      <a href="#" class="banner-item__actions-download">Скачать<span
+                          class="icon icon-download"></span></a>
+                      <a href="#" class="banner-item__actions-link">Ссылка</a>
+                    </div>
+                  </li>
+                  <li class="banners-list__item banner-item">
+                    <p class="banner-item__title">Название баннера</p>
+                    <img class="banner-item__image" src="images/banner-1@2x.png" width="169" height="42" alt="Название баннера">
+                    <div class="banner-item__actions">
+                      <a href="#" class="banner-item__actions-download">Скачать<span
+                          class="icon icon-download"></span></a>
+                      <a href="#" class="banner-item__actions-link">Ссылка</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="banners-block">
+                <p class="banners-block__title">500 x 500</p>
+                <ul class="banners-list">
+                  <li class="banners-list__item banner-item">
+                    <p class="banner-item__title">Название баннера</p>
+                    <img class="banner-item__image" src="images/banner-2@2x.png" width="169" height="124" alt="Название баннера">
+                    <div class="banner-item__actions">
+                      <a href="#" class="banner-item__actions-download">Скачать<span
+                          class="icon icon-download"></span></a>
+                      <a href="#" class="banner-item__actions-link">Ссылка</a>
+                    </div>
+                  </li>
+                  <li class="banners-list__item banner-item">
+                    <p class="banner-item__title">Название баннера</p>
+                    <img class="banner-item__image" src="images/banner-2@2x.png" width="169" height="124" alt="Название баннера">
+                    <div class="banner-item__actions">
+                      <a href="#" class="banner-item__actions-download">Скачать<span
+                          class="icon icon-download"></span></a>
+                      <a href="#" class="banner-item__actions-link">Ссылка</a>
+                    </div>
+                  </li>
+                  <li class="banners-list__item banner-item">
+                    <p class="banner-item__title">Название баннера</p>
+                    <img class="banner-item__image" src="images/banner-2@2x.png" width="169" height="124" alt="Название баннера">
+                    <div class="banner-item__actions">
+                      <a href="#" class="banner-item__actions-download">Скачать<span
+                          class="icon icon-download"></span></a>
+                      <a href="#" class="banner-item__actions-link">Ссылка</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="ctabs-panel banners-tabs__panel" tabindex="0" role="tabpanel" id="by-efficiency-tab"
+            aria-labelledby="by-efficiency" hidden="">
+            <div class="ctabs-panel__content banners-tabs__panel-content">
+              123
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <%= _.template(require('./../includes/partnership-advantages.html'))(data) %>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

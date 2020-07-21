@@ -1,0 +1,135 @@
+.landing-item {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #E5E6EB;
+  border-radius: 3px;
+
+  @media screen and (max-width: 767px) {
+    padding: 20px 15px;
+  }
+}
+
+.landing-item__number {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  border-right: 1px solid #E5E6EB;
+}
+
+.landing-item__number-value {
+  vertical-align: middle;
+  font-size: 45px;
+  line-height: 54px;
+  color: $gray;
+}
+
+.landing-item__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  padding-left: 30px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border-right: none;
+  }
+
+  @media screen and (max-width: 424px) {
+    padding-left: 15px;
+  }
+}
+
+.landing-item__description {
+  min-width: 195px;
+
+  @media screen and (max-width: 613px) {
+    margin-bottom: 20px;
+  }
+}
+
+.landing-item__description-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 7px;
+  }
+}
+
+.landing-item__description-date {
+  color: $gray;
+}
+
+.landing-item__stats {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 20px;
+  border-right: 1px solid #E5E6EB;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 0;
+  }
+
+  @media screen and (max-width: 711px) {
+    border-right: 0;
+  }
+
+  @media screen and (max-width: 400px) {
+    margin-bottom: 20px;
+  }
+}
+
+.landing-item__stats-col {
+  margin-right: 20px;
+}
+
+.landing-item__stats-col__title {
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 7px;
+  }
+}
+
+.landing-item__stats-col__value {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.landing-item__actions {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  max-width: 220px;
+  padding-left: 20px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    padding-left: 0;
+  }
+
+  @media screen and (max-width: 613px) {
+    margin-left: 0;
+  }
+}
+
+.landing-item__actions-button {
+  width: 100%;
+  padding: 10px;
+  vertical-align: middle;
+  font-weight: bold;
+}

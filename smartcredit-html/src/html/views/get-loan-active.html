@@ -1,0 +1,88 @@
+<% var data = {
+  title: "SmartCredit | Активный займ",
+  name: 'get-loan',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-get-loan">
+  <section class="section lk-section">
+    <div class="lk-page-container get-loan-page-container">
+      <div class="get-loan-section-head">
+        <p class="get-loan-section-head__item">
+          <span class="icon icon-user-big"></span>
+          <span class="greeting">Здравствуйте, <span class="greeting-name">Константин!</span></span>
+        </p>
+        <a href="#" class="get-loan-section-head__item">
+          <span class="icon icon-status"></span>
+          <span class="repay application-status">Узнать статус заявки</span>
+        </a>
+      </div>
+      <h3 class="lk-content-block__title get-loan-title">Возьмите займ на выгодных условиях</h3>
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block get-loan">
+          <div class="get-loan-content">
+            <form action="#" class="application-credit-form get-loan-form">
+              <div class="application-credit-form-wrapper">
+                <div class="chooses">
+                  <div class="chooses__block" data-min="2000" data-max="15000" data-step="500">
+                    <label class="choose-field">
+                      <span class="choose-field__label">Занять</span>
+                      <input class="choose-field__input" type="text" value="7500">
+                      <span class="choose-field__suffix" style="display:none;">₽</span>
+                    </label>
+                    <div class="choose-slider"></div>
+                    <div class="choose-hints">
+                      <div class="choose-hints__min">2 000 <font class="rub">₽</font>
+                      </div>
+                      <div class="choose-hints__max">15 000 <font class="rub">₽</font>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chooses__block" data-min="5" data-max="30" data-step="1">
+                    <label class="choose-field">
+                      <span class="choose-field__label">На срок</span>
+                      <input class="choose-field__input" type="text" value="15">
+                      <span class="choose-field__suffix" style="display:none;">дней</span>
+                    </label>
+                    <div class="choose-slider"></div>
+                    <div class="choose-hints">
+                      <div class="choose-hints__min"><span>5</span> дней</div>
+                      <div class="choose-hints__max"><span>30</span> дней</div>
+                    </div>
+                  </div>
+                  <div class="form-error application-credit-form__error">
+                    <span class="icon icon-error"></span>
+                    <span class="form-error__message">У вас есть активный займ или оформлена заявка</span>
+                  </div>
+                </div>
+                <div class="application-credit-form__footer">
+                  <div class="totals">
+                    <div class="totals-item">
+                      <p class="totals-item__label">К возврату</p>
+                      <p class="totals-item__value">9 863 <span class="totals-item__value-suffix">
+                          <font class="rub">₽</font>
+                        </span></p>
+                    </div>
+                    <div class="totals-item">
+                      <p class="totals-item__label">До</p>
+                      <p class="totals-item__value">1 <span class="totals-item__value-suffix"
+                          title="апреля">апреля</span></p>
+                    </div>
+                    <div class="totals-item">
+                      <p class="totals-item__label">Ставка</p>
+                      <p class="totals-item__value">1,50 <span class="totals-item__value-suffix">%</span></p>
+                    </div>
+                  </div>
+                  <button class="btn btn--orange application-credit-form__submit" disabled type="submit">Получить
+                    деньги</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

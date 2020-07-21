@@ -1,0 +1,58 @@
+<% var data = {
+  title: "SmartCredit | Активный займ",
+  name: 'active-loan',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-active-loan">
+  <section class="section lk-section">
+    <div class="lk-page-container active-loan-page-container">
+      <h2 class="section-title lk-section-title">Активный займ</h2>
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block active-loan">
+          <div class="active-loan-content">
+            <div class="active-loan-row active-loan-row--small">
+              <div class="active-loan-item active-loan-item--big">
+                <p class="active-loan-item__title">Сумма к возврату на сегодня</p>
+                <p class="active-loan-item__value">16,002.50 ₽</p>
+              </div>
+            </div>
+            <div class="active-loan-row active-loan-row--small">
+              <div class="active-loan-item active-loan-item--middle">
+                <p class="active-loan-item__title">Сумма к возврату в срок</p>
+                <p class="active-loan-item__value">18,513.40 ₽</p>
+              </div>
+              <div class="active-loan-item active-loan-item--middle">
+                <p class="active-loan-item__title">Дата возврата</p>
+                <p class="active-loan-item__value">1 <span class="active-loan__month">апреля</span></p>
+              </div>
+            </div>
+            <div class="active-loan-row">
+              <div class="active-loan-item">
+                <p class="active-loan-item__title">Сумма к возврату в срок</p>
+                <p class="active-loan-item__value">15,000.00 ₽</p>
+              </div>
+              <div class="active-loan-item">
+                <p class="active-loan-item__title">Заявка принята</p>
+                <p class="active-loan-item__value">1 <span class="active-loan__month">апреля</span></p>
+              </div>
+              <div class="active-loan-item">
+                <p class="active-loan-item__title">Номер договора</p>
+                <p class="active-loan-item__value">132185</p>
+              </div>
+              <div class="active-loan-item">
+                <p class="active-loan-item__title">Статус</p>
+                <p class="active-loan-item__value">Пролонгирован</p>
+              </div>
+            </div>
+            <div class="active-loan-row">
+              <button class="btn btn--orange active-loan-pay-button">Оплатить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

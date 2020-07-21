@@ -1,0 +1,80 @@
+<% var data = {
+  title: "SmartCredit | Платежные реквизиты",
+  name: 'ticket',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-ticket">
+  <section class="section lk-section">
+    <div class="lk-page-container ticket-page-container">
+      <div class="ticket-head-row">
+        <a href="#" class="link lk-back-link ticket-back-link">
+          <span class="icon icon-arrow-left-lk"></span>
+          Вернуться к списку
+        </a>
+        <h2 class="section-title lk-section-title">Заявка #24442</h2>
+      </div>
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block ticket">
+          <div class="ticket-header">
+            <h3 class="lk-content-block__title ticket-title">Статус<span class="ticket-status">ожидает</span></h3>
+            <p class="ticket-created-date">Создана: <span class="ticket-created-date__value">24 июня 2019,
+                13:50:09</span></p>
+          </div>
+          <div class="ticket-content">
+            <div class="ticket-item">
+              <div class="ticket-item__header">
+                <h4 class="ticket-item__title">Общие вопросы</h4>
+                <p class="ticket-item__created-date">24 июня 2019, 13:50:09</p>
+              </div>
+              <p class="ticket-item__message">
+                Пока магма остается в камере, деградация мерзлоты несет в себе молого-шекснинский дрейф континентов.
+                Лавовый поток пододвигается под грубообломочный аллювий.
+              </p>
+              <div class="ticket-item__footer">
+                <a href="#" class="link link--orange ticket-item__attached-link">
+                  <span class="icon icon-staple"></span>текст_ошибки.txt
+                </a>
+              </div>
+            </div>
+            <div class="ticket-item">
+              <div class="ticket-item__header">
+                <h4 class="ticket-item__title">Общие вопросы</h4>
+                <p class="ticket-item__created-date">24 июня 2019, 13:50:09</p>
+              </div>
+              <p class="ticket-item__message">
+                Ответ на вопрос
+              </p>
+              <div class="ticket-item__footer">
+                <p class="ticket-item__sign">
+                  С уважением,<br>SmartCredit
+                </p>
+                <a href="#" class="link link--orange ticket-item__attached-link">
+                  <span class="icon icon-staple"></span>текст_ошибки.txt
+                </a>
+              </div>
+            </div>
+            <form class="ticket-message-form">
+              <textarea class="ticket-message-form__field-textarea" name="message" cols="30" rows="5"
+                placeholder="Ответ на вопрос"></textarea>
+              <div class="ticket-message-form__row">
+                <label class="ticket-message-form__field">
+                  <span class="btn btn--orange-transparent ticket-message-form__field-filebutton">Прикрепить файл</span>
+                  <input class="ticket-message-form__field-input" type="file" name="files">
+                </label>
+              </div>
+              <div class="ticket-message-form__footer">
+                <a href="#" class="link link--orange close-ticket-link">
+                  <span class="icon icon-cross-circle"></span>Закрыть заявку
+                </a>
+                <button class="btn btn--orange ticket-message-form__submit" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,233 @@
+<% var data = {
+  title: "SmartCredit | Личная информация",
+  name: 'profile',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-profile">
+  <section class="section lk-section">
+    <div class="lk-page-container profile-page-container">
+      <h2 class="section-title lk-section-title">Личная информация</h2>
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block profile" data-tooltip-boundaries>
+          <div class="profile-header">
+            <h3 class="lk-content-block__title profile-title">Персональные данные</h3>
+          </div>
+          <div class="profile-content">
+            <form class="profile-form profile-settings-form">
+              <div class="profile-form__wrapper">
+                <label class="profile-form__checkbox check profile-form__change">
+                  <input class="check__input" type="checkbox" name="change" checked>
+                  <span class="check__box"></span>
+                  <span>Изменить</span>
+                </label>
+                <div class="profile-form__formgroup">
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Фамилия</span>
+                    <input class="lk-input profile-form__field-input" type="text" value="Иванов">
+                    <span class="profile-form__field-tooltip icon icon-tooltip" data-tooltip="Введите фамилию"></span>
+                  </label>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Имя</span>
+                    <input class="lk-input profile-form__field-input" type="text" value="Александр">
+                    <span class="profile-form__field-tooltip icon icon-tooltip" data-tooltip="Введите имя"></span>
+                  </label>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Отчество</span>
+                    <input class="lk-input profile-form__field-input" type="text" value="Сергеевич">
+                    <span class="profile-form__field-tooltip icon icon-tooltip" data-tooltip="Введите отчество"></span>
+                  </label>
+                </div>
+                <div class="profile-form__formgroup">
+                  <p class="profile-form__formgroup-title">
+                    Контактные данные
+                  </p>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Телефон</span>
+                    <input class="lk-input profile-form__field-input" type="text" value="+7 905 324 8528">
+                    <span class="profile-form__field-tooltip icon icon-tooltip" data-tooltip="Введите телефон"></span>
+                  </label>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Эл. почта</span>
+                    <input class="lk-input profile-form__field-input" type="email" value="ivanov.a@gmail.com">
+                    <span class="profile-form__field-tooltip icon icon-tooltip" data-tooltip="Введите эл. почту"></span>
+                  </label>
+                </div>
+                <div class="profile-form__formgroup">
+                  <p class="profile-form__formgroup-title">
+                    Паспортные данные
+                  </p>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Серия и номер</span>
+                    <input class="lk-input profile-form__field-input" type="text" value="9503 438703">
+                    <span class="profile-form__field-tooltip icon icon-tooltip"
+                      data-tooltip="Введите серия и номер паспорта"></span>
+                  </label>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Кем выдан</span>
+                    <textarea
+                      class="lk-textarea profile-form__field-textarea">Отделением по району Северное Медведково ОУФМС по гор. Москве в СВАО</textarea>
+                    <span class="profile-form__field-tooltip icon icon-tooltip"
+                      data-tooltip="Введите кем выдан паспорт"></span>
+                  </label>
+                </div>
+                <div class="profile-form__formgroup">
+                  <p class="profile-form__formgroup-title">
+                    Адрес текущего места проживания
+                  </p>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Регион</span>
+                    <select class="profile-select profile-form__field-select">
+                      <option value="1">Ленинградская область</option>
+                      <option value="2">Ленинградская область 2</option>
+                      <option value="3">Ленинградская область 3</option>
+                      <option value="4">Ленинградская область 4</option>
+                    </select>
+                    <span class="profile-form__field-tooltip icon icon-tooltip" data-tooltip="Выберите регион"></span>
+                  </label>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Населенный пункт</span>
+                    <select class="profile-select profile-form__field-select">
+                      <option value="1">Санкт-Петербург</option>
+                      <option value="2">Санкт-Петербург 2</option>
+                      <option value="3">Санкт-Петербург 3</option>
+                      <option value="4">Санкт-Петербург 4</option>
+                    </select>
+                    <span class="profile-form__field-tooltip icon icon-tooltip"
+                      data-tooltip="Выберите населенный пункт"></span>
+                  </label>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Улица</span>
+                    <input class="lk-input profile-form__field-input" type="text" value="Заречная">
+                    <span class="profile-form__field-tooltip icon icon-tooltip" data-tooltip="Введите улицу"></span>
+                  </label>
+                  <div class="profile-form-formgroup__row">
+                    <label class="profile-form__field profile-form__field--col">
+                      <span class="profile-form__field-label">Дом</span>
+                      <input class="lk-input profile-form__field-input" type="text" value="48">
+                    </label>
+                    <label class="profile-form__field profile-form__field--col">
+                      <span class="profile-form__field-label">Корпус</span>
+                      <input class="lk-input profile-form__field-input" type="text" value="2">
+                    </label>
+                    <label class="profile-form__field profile-form__field--col">
+                      <span class="profile-form__field-label">Квартира</span>
+                      <input class="lk-input profile-form__field-input" type="text" value="34">
+                    </label>
+                  </div>
+                  <label class="profile-form__checkbox check">
+                    <input class="check__input" type="checkbox" name="change" checked>
+                    <span class="check__box"></span>
+                    <span>Совпадает с адресом регистрации</span>
+                  </label>
+                </div>
+                <div class="profile-form__formgroup">
+                  <p class="profile-form__formgroup-title">
+                    Дополнительная информация
+                  </p>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Семейное положение</span>
+                    <select class="profile-select profile-form__field-select">
+                      <option value="1">Разведен(а)</option>
+                      <option value="2">Разведен(а) 2</option>
+                      <option value="3">Разведен(а) 3</option>
+                      <option value="4">Разведен(а) 4</option>
+                    </select>
+                    <span class="profile-form__field-tooltip icon icon-tooltip"
+                      data-tooltip="Выберите семейное положение"></span>
+                  </label>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Образование</span>
+                    <select class="profile-select profile-form__field-select">
+                      <option value="1">Высшее образование</option>
+                      <option value="2">Высшее образование 2</option>
+                      <option value="3">Высшее образование 3</option>
+                      <option value="4">Высшее образование 4</option>
+                    </select>
+                    <span class="profile-form__field-tooltip icon icon-tooltip"
+                      data-tooltip="Введите образование"></span>
+                  </label>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Домашний телефон</span>
+                    <input class="lk-input profile-form__field-input" type="text" value="" placeholder="+7">
+                    <span class="profile-form__field-tooltip icon icon-tooltip"
+                      data-tooltip="Введите домашний телефон"></span>
+                  </label>
+                  <label class="profile-form__checkbox check">
+                    <input class="check__input" type="checkbox" name="change" checked>
+                    <span class="check__box"></span>
+                    <span>У меня нет домашнего телефона</span>
+                  </label>
+                </div>
+                <div class="profile-form__formgroup">
+                  <p class="profile-form__formgroup-title">
+                    Информация о работе
+                  </p>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Тип занятости</span>
+                    <select class="profile-select profile-form__field-select">
+                      <option value="1">Полная занятость</option>
+                      <option value="2">Полная занятость 2</option>
+                      <option value="3">Полная занятость 3</option>
+                      <option value="4">Полная занятость 4</option>
+                    </select>
+                    <span class="profile-form__field-tooltip icon icon-tooltip"
+                      data-tooltip="Выберите тип занятости"></span>
+                  </label>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Доход</span>
+                    <input class="lk-input profile-form__field-input" type="text" value="30 000 ₽" placeholder="">
+                    <span class="profile-form__field-tooltip icon icon-tooltip" data-tooltip="Введите доход"></span>
+                  </label>
+                  <label class="profile-form__field">
+                    <span class="profile-form__field-label">Название организации</span>
+                    <input class="lk-input profile-form__field-input" type="text" value="" placeholder="">
+                    <span class="profile-form__field-tooltip icon icon-tooltip"
+                      data-tooltip="Введите название организации"></span>
+                  </label>
+                </div>
+                <div class="profile-form__formgroup profile-form__formgroup-documents">
+                  <p class="profile-form__formgroup-title profile-form__formgroup-documents-title">
+                    Для продолжения изменений загрузите
+                  </p>
+                  <div class="profile-form__documents">
+                    <div class="document-uploader profile-form__documents-item">
+                      <p class="document-uploader__title">Фото/скан паспорта с фотографией</p>
+                      <img class="document-uploader__example" src="images/photo-example-1.svg"
+                        alt="Пример фото/скан паспорта с фотографией" width="100" height="148">
+                      <label
+                        class="document-uploader__field document-uploader__field--uploaded profile-form__document-uploader">
+                        <span class="btn btn--orange-transparent document-uploader__field-filebutton">Прикрепить</span>
+                        <span
+                          class="btn btn--orange-transparent document-uploader__field-filebutton document-uploader__field-filebutton--uploaded">Документ
+                          загружен</span>
+                        <input class="document-uploader__field-input" type="file" name="doc_photo">
+                      </label>
+                    </div>
+                    <div class="document-uploader profile-form__documents-item">
+                      <p class="document-uploader__title">Фото/скан паспорта с пропиской</p>
+                      <img class="document-uploader__example" src="images/photo-example-2.svg"
+                        alt="Пример фото/скан паспорта с фотографией" width="100" height="148">
+                      <label class="document-uploader__field profile-form__document-uploader">
+                        <span class="btn btn--orange-transparent document-uploader__field-filebutton">Прикрепить</span>
+                        <span
+                          class="btn btn--orange-transparent document-uploader__field-filebutton document-uploader__field-filebutton--uploaded">Документ
+                          загружен</span>
+                        <input class="document-uploader__field-input" type="file" name="doc_address">
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-form__actions">
+                <button class="btn btn--orange profile-form-submit" type="submit">Сохранить изменения</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

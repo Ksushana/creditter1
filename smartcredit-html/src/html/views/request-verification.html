@@ -1,0 +1,29 @@
+<% var data = {
+  title: "SmartCredit | Заявка на кредит",
+  name: 'request-verification',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-request-verification">
+  <section class="section lk-section">
+    <div class="lk-page-container request-verification-page-container">
+      <h2 class="section-title lk-section-title">Ваша завка отправлена на ручную верификацию</h2>
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block request-verification">
+          <div class="request-verification-content">
+            <p class="request-verification-notice">В течении нескольких минут с вами свяжется менеджер</p>
+            <div class="request-verification-status">
+              <div class="request-verification-status__icon">
+                <span class="icon icon-success-circle"></span>
+              </div>
+              <p class="request-verification-status__notice">Вы можете самостоятельно проверить статус заявки</p>
+              <button class="btn btn--orange request-verification-status-button" type="button">Проверить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

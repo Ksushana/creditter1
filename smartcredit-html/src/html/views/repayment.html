@@ -1,0 +1,204 @@
+<% var data = {
+  title: "SmartCredit | Погашение займа",
+  name: 'repayment',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-repayment">
+  <section class="section lk-section">
+    <div class="lk-page-container">
+      <h2 class="section-title lk-section-title">Погашение займа</h2>
+      <div class="lk-section-wrapper">
+        <div class="lk-section-row">
+          <div class="lk-content-block repayment">
+            <div class="repayment-header">
+              <h3 class="lk-content-block__title repayment-title">Выберите способ погашения</h3>
+            </div>
+            <div class="repayment-content">
+              <ul class="repayment-ps-list">
+                <li class="repayment-ps-list__item repayment-ps repayment-ps--active">
+                  <div class="repayment-ps__images">
+                    <img src="images/visa.png" width="72" height="24"
+                      class="repayment-ps__images-item repayment-ps__images-item--visa">
+                    <img src="images/mastercard.png" width="42" height="26"
+                      class="repayment-ps__images-item repayment-ps__images-item--mastercard">
+                  </div>
+                  <div class="repayment-ps__description">
+                    <p class="repayment-ps__description-title">Банковские карты</p>
+                    <p class="repayment-ps__description-notice">Комиссия 1.26%</p>
+                  </div>
+                </li>
+                <li class="repayment-ps-list__item repayment-ps">
+                  <div class="repayment-ps__images">
+                    <img src="images/yakassa.png" width="121" height="25"
+                      class="repayment-ps__images-item repayment-ps__images-item--yakassa">
+                  </div>
+                  <div class="repayment-ps__description">
+                    <p class="repayment-ps__description-title">Банковские карты</p>
+                    <p class="repayment-ps__description-notice">Комиссия 2.5%</p>
+                  </div>
+                </li>
+                <li class="repayment-ps-list__item repayment-ps">
+                  <div class="repayment-ps__images">
+                    <img src="images/qiwi.png" width="98" height="44"
+                      class="repayment-ps__images-item repayment-ps__images-item--qiwi">
+                  </div>
+                  <div class="repayment-ps__description">
+                    <p class="repayment-ps__description-title">QIWI кошелек</p>
+                    <p class="repayment-ps__description-notice">Комиссия 4%</p>
+                  </div>
+                </li>
+                <li class="repayment-ps-list__item repayment-ps">
+                  <div class="repayment-ps__images">
+                    <img src="images/sberonline.png" width="128" height="36"
+                      class="repayment-ps__images-item repayment-ps__images-item--sberonline">
+                  </div>
+                  <div class="repayment-ps__description">
+                    <p class="repayment-ps__description-title">Сбербанк онлайн</p>
+                    <p class="repayment-ps__description-notice">Комиссия 2.5%</p>
+                  </div>
+                </li>
+                <li class="repayment-ps-list__item repayment-ps repayment-ps--big">
+                  <div class="repayment-ps__images">
+                    <img src="images/alfabank.png" width="17" height="26"
+                      class="repayment-ps__images-item repayment-ps__images-item--alfabank">
+                    <img src="images/psb.png" width="26" height="26"
+                      class="repayment-ps__images-item repayment-ps__images-item--psb">
+                    <img src="images/ub.png" width="35" height="26"
+                      class="repayment-ps__images-item repayment-ps__images-item--ub">
+                    <img src="images/wolf-eagle.png" width="30" height="30"
+                      class="repayment-ps__images-item repayment-ps__images-item--wolf">
+                    <img src="images/pochta.png" width="26" height="26"
+                      class="repayment-ps__images-item repayment-ps__images-item--pochta">
+                  </div>
+                  <div class="repayment-ps__description">
+                    <p class="repayment-ps__description-title">Банковские системы</p>
+                    <p class="repayment-ps__description-notice">Комиссия 2.5%</p>
+                  </div>
+                </li>
+                <li class="repayment-ps-list__item repayment-ps repayment-ps--big">
+                  <div class="repayment-ps__images">
+                    <img src="images/vr.png" width="46" height="22"
+                      class="repayment-ps__images-item repayment-ps__images-item--vr">
+                    <img src="images/ub.png" width="35" height="26"
+                      class="repayment-ps__images-item repayment-ps__images-item--ub">
+                    <img src="images/eleksnet.png" width="30" height="30"
+                      class="repayment-ps__images-item repayment-ps__images-item--eleksnet">
+                    <img src="images/=o.png" width="41" height="26"
+                      class="repayment-ps__images-item repayment-ps__images-item--o">
+                  </div>
+                  <div class="repayment-ps__description">
+                    <p class="repayment-ps__description-title">Наличные, терминалы</p>
+                    <p class="repayment-ps__description-notice">Комиссия 2.5%</p>
+                  </div>
+                </li>
+                <li class="repayment-ps-list__item repayment-ps">
+                  <div class="repayment-ps__images">
+                    <img src="images/svyaznoy.png" width="81" height="15"
+                      class="repayment-ps__images-item repayment-ps__images-item--svyaznoy">
+                    <img src="images/evroset.png" width="105" height="15"
+                      class="repayment-ps__images-item repayment-ps__images-item--evroset">
+                  </div>
+                  <div class="repayment-ps__description">
+                    <p class="repayment-ps__description-title">Салоны связи</p>
+                    <p class="repayment-ps__description-notice">Комиссия 2.5%</p>
+                  </div>
+                </li>
+                <li class="repayment-ps-list__item repayment-ps">
+                  <div class="repayment-ps__images">
+                    <img src="images/yamoney.png" width="132" height="26"
+                      class="repayment-ps__images-item repayment-ps__images-item--yamoney">
+                  </div>
+                  <div class="repayment-ps__description">
+                    <p class="repayment-ps__description-title">Яндекс деньги</p>
+                    <p class="repayment-ps__description-notice">Комиссия 2.5%</p>
+                  </div>
+                </li>
+                <li class="repayment-ps-list__item repayment-ps">
+                  <div class="repayment-ps__images">
+                    <img src="images/monetaru.png" width="131" height="30"
+                      class="repayment-ps__images-item repayment-ps__images-item--monetaru">
+                  </div>
+                  <div class="repayment-ps__description">
+                    <p class="repayment-ps__description-title">Электронные деньги</p>
+                    <p class="repayment-ps__description-notice">Комиссия 2.5%</p>
+                  </div>
+                </li>
+              </ul>
+              <button class="btn btn--orange-transparent repayment-show-more-button">Показать еще</button>
+            </div>
+          </div>
+          <div class="user-stats">
+            <div class="user-stats__item credit-terms">
+              <div class="user-stats__item-header credit-terms__header">
+                <h3 class="user-stats__item-title credit-terms-title">Ваши кредитные условия</h3>
+              </div>
+              <div class="user-stats__item-content credit-terms__content">
+                <div class="credit-terms-row">
+                  <div class="credit-terms__item">
+                    <p class="credit-terms__item-title">Сумма займа</p>
+                    <p class="credit-terms__item-value">15 000 ₽</p>
+                  </div>
+                  <div class="credit-terms__item">
+                    <p class="credit-terms__item-title">Срок</p>
+                    <p class="credit-terms__item-value">15 дней</p>
+                  </div>
+                </div>
+                <div class="credit-terms-row">
+                  <div class="credit-terms__item">
+                    <p class="credit-terms__item-title">К возврату</p>
+                    <p class="credit-terms__item-value">16 002,5 ₽</p>
+                  </div>
+                  <div class="credit-terms__item">
+                    <p class="credit-terms__item-title">Ставка</p>
+                    <p class="credit-terms__item-value">1,43%</p>
+                  </div>
+                </div>
+                <div class="credit-terms-row">
+                  <div class="credit-terms__item credit-terms__item--full">
+                    <p class="credit-terms__item-title">Ставка при просрочке</p>
+                    <p class="credit-terms__item-value">1,5%</p>
+                  </div>
+                </div>
+                <div class="credit-terms-row">
+                  <div class="credit-terms__item credit-terms__item--full">
+                    <p class="credit-terms__item-title">Дата возврата</p>
+                    <p class="credit-terms__item-value">25 апреля 19:21</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="user-stats__item repayment-data">
+              <div class="user-stats__item-header repayment-data__header">
+                <h3 class="user-stats__item-title repayment-data-title">Данные погашения</h3>
+              </div>
+              <div class="user-stats__item-content repayment-data__content">
+                <div class="repayment-data-row">
+                  <div class="repayment-data__item">
+                    <p class="repayment-data__item-title">Сумма</p>
+                    <div class="repayment-data__item-value">
+                      <input type="text" class="repayment-data-input" value="16 206.7 ₽" data-suffix="₽">
+                    </div>
+                  </div>
+                </div>
+                <div class="repayment-data-row">
+                  <div class="repayment-data__item">
+                    <p class="repayment-data__item-title">К списанию</p>
+                    <div class="repayment-data__item-value">
+                      <span class="repayment-data-output">16 432,4 ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="repayment-data-row">
+                  <button class="btn btn--orange repayment-data-submit">Погасить займ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,126 @@
+.coupon-hero {
+    background-image: url("../images/bg-coupon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 123px 0;
+
+    @media screen and (max-width: 767px) {
+        background: none;
+        background-image: none;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.coupon-hero-title {
+    @media screen and (max-width: 767px) {
+        color: #17233b;
+    }
+}
+
+.section-coupon {
+    padding-bottom: 90px;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+}
+
+.section-coupon__title {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 25px;
+    }
+}
+
+.section-coupon__notice {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto 48px;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 36px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+.coupon-code {
+    width: 100%;
+    max-width: 292px;
+    margin: 0 auto 48px;
+    padding: 41px 48px 43px 49px;
+    border: 1px solid #e5e6eb;
+    border-radius: 4px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 36px;
+      padding: 36px 27px;
+    }
+}
+
+.coupon-code__value {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+        font-size: 21px;
+        line-height: 25px;
+    }
+}
+
+.coupon-debt {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+.coupon-debt__value {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.coupon-debt-before {
+    margin-bottom: 15px;
+}
+
+.coupon-debt-after {
+    margin-bottom: 48px;
+}
+
+.coupon-activation {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.coupon-activation-button {
+    width: 100%;
+    max-width: 468px;
+    padding: 16px 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.coupon-warn {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #8c94a8;
+
+  @media screen and (max-width: 767px) {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}

@@ -1,0 +1,351 @@
+.repayment {
+  flex-basis: 60%;
+  width: 60%;
+  flex-shrink: 0;
+  max-width: 554px;
+  margin-right: 24px;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+.repayment-header {
+  padding: 23px 33px 21px;
+  border-bottom: 1px solid $lightGray;
+}
+
+.repayment-content {
+  padding: 41px 33px 47px;
+
+  @media screen and (max-width: 767px) {
+    padding: 24px 10px;
+  }
+}
+
+.repayment-ps-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.repayment-ps-list__item {
+  flex-basis: calc((100% - 31px) / 2);
+  width: calc((100% - 31px) / 2);
+  max-width: 227px;
+  height: 178px;
+  margin-bottom: 31px;
+
+  &:nth-child(odd) {
+    margin-right: 31px;
+  }
+
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 13px) / 2);
+    width: calc((100% - 13px) / 2);
+    max-width: 50%;
+    height: auto;
+    min-height: 133px;
+    margin-bottom: 12px;
+
+    &:nth-child(odd) {
+      margin-right: 13px;
+    }
+  }
+}
+
+.repayment-ps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 14px;
+  border: 1px solid #e5e9f2;
+  border-radius: 5px;
+  background: #ffffff;
+  cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    padding: 11px;
+
+    &:nth-child(-n + 4) {
+      display: flex;
+    }
+  }
+}
+
+.repayment-ps.repayment-ps--show {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    margin-bottom: 12px;
+  }
+}
+
+.repayment-ps--active {
+  background: #f9f5ef;
+  border: 1px solid #ff6f53;
+}
+
+.repayment-ps__images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-bottom: 31px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    min-height: 70px;
+    margin-bottom: 0;
+  }
+}
+
+.repayment-ps--big .repayment-ps__images {
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+  }
+}
+
+.repayment-ps__images-item {
+  margin-right: 13px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    height: auto;
+    margin-bottom: 16px;
+  }
+}
+
+.repayment-ps--big .repayment-ps__images-item {
+  @media screen and (max-width: 767px) {
+    margin-right: 11px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .repayment-ps__images-item--visa {
+    width: 64px;
+  }
+  .repayment-ps__images-item--mastercard {
+    width: 38px;
+  }
+  .repayment-ps__images-item--yakassa {
+    width: 111px;
+  }
+  .repayment-ps__images-item--qiwi {
+    width: 88px;
+  }
+  .repayment-ps__images-item--sberonline {
+    width: 112px;
+  }
+  .repayment-ps__images-item--alfabank {
+    width: 16px;
+  }
+  .repayment-ps__images-item--psb {
+    width: 24px;
+  }
+  .repayment-ps__images-item--ub {
+    width: 28px;
+  }
+  .repayment-ps__images-item--wolf {
+    width: 28px;
+  }
+  .repayment-ps__images-item--pochta {
+    width: 24px;
+  }
+  .repayment-ps__images-item--vr {
+    width: 38px;
+  }
+  .repayment-ps__images-item--eleksnet {
+    width: 24px;
+  }
+  .repayment-ps__images-item--o {
+    width: 38px;
+  }
+  .repayment-ps__images-item--svyaznoy {
+    width: 80px;
+    margin-right: 0;
+  }
+  .repayment-ps__images-item--evroset {
+    width: 94px;
+  }
+  .repayment-ps__images-item--yamoney {
+  }
+  .repayment-ps__images-item--monetaru {
+  }
+}
+
+.repayment-ps__description {
+  font-size: 15px;
+  line-height: 23px;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  @media screen and (max-width: 413px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.repayment-ps__description-notice {
+  color: $gray;
+}
+
+.repayment-show-more-button {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 10px 11px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+}
+
+.user-stats {
+  flex-basis: 40%;
+  width: 40%;
+  max-width: 295px;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.user-stats__item {
+  border: 1px solid #e5e9f2;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px #edeff5;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 12px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.user-stats__item-header {
+  padding: 18px 20px;
+  border-bottom: 1px solid $lightGray;
+}
+
+.user-stats__item-content {
+  padding: 20px 20px 30px;
+}
+
+.user-stats__item-title {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  color: $gray;
+}
+
+.credit-terms {
+  margin-bottom: 12px;
+}
+
+.credit-terms-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.credit-terms__item {
+  flex-basis: 50%;
+}
+
+.credit-terms__item--full {
+  flex-basis: 100%;
+}
+
+.credit-terms__item-title {
+  font-size: 13px;
+  line-height: 20px;
+  color: $gray;
+}
+
+.credit-terms__item-value {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.repayment-data-row {
+  margin-bottom: 29px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.repayment-data__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.repayment-data__item-title {
+  flex-basis: 50%;
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.repayment-data__item-value {
+  flex-basis: 50%;
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.repayment-data-input {
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  padding-left: 17px;
+  padding-right: 0;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #e5e6eb;
+  border-radius: 3px;
+}
+
+.repayment-data-submit {
+  width: 100%;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  padding: 10px 10px 11px;
+}

@@ -1,0 +1,322 @@
+<% var data = {
+  title: "SmartCredit | Программа лояльности",
+  name: 'lk-loyalty',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-lk-loyalty">
+  <section class="section lk-section">
+    <div class="lk-page-container lk-loyalty-page-container">
+      <h2 class="section-title lk-section-title">Программа лояльности</h2>
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block lk-loyalty">
+          <div class="lk-loyalty-header">
+            <h3 class="lk-content-block__title lk-loyalty-title">Скидка на оплату процентов до 25%</h3>
+          </div>
+          <div class="lk-loyalty-content">
+            <section class="lk-loyalty-section lk-loyalty-coupons">
+              <p class="lk-loyalty-section__title lk-loyalty-coupons__title">Купоны</p>
+              <p class="lk-loyalty-coupons__warning">Активация купона возможна при наличии активного займа</p>
+              <ul class="lk-table lk-loyalty-coupons-list">
+                <li class="lk-table__row lk-loyalty-coupons-list__item coupon">
+                  <div class="lk-table__head lk-loyalty-coupons-list__head">
+                    <p class="lk-table__head-cell lk-loyalty-coupons-list__head-cell">Код</p>
+                    <p class="lk-table__head-cell lk-loyalty-coupons-list__head-cell">Сумма</p>
+                    <p class="lk-table__head-cell lk-loyalty-coupons-list__head-cell">Истекает</p>
+                    <p class="lk-table__head-cell lk-loyalty-coupons-list__head-cell">Статус</p>
+                  </div>
+                  <div class="lk-table__row-inner lk-loyalty-coupons-list__row">
+                    <p class="lk-table__cell lk-loyalty-coupons-list__cell">
+                      <span class="lk-table__head-cell--mobile">Код</span>
+                      <span class="lk-table__cell-value">537831</span>
+                    </p>
+                    <p class="lk-table__cell lk-loyalty-coupons-list__cell">
+                      <span class="lk-table__head-cell--mobile">Сумма</span>
+                      <span class="lk-table__cell-value lk-loyalty-coupons-list__cell-ticket">500 ₽</span>
+                    </p>
+                    <p class="lk-table__cell lk-loyalty-coupons-list__cell">
+                      <span class="lk-table__head-cell--mobile">Истекает</span>
+                      <span class="lk-table__cell-value lk-loyalty-coupons-list__cell-ticket">22 июня 2019</span>
+                    </p>
+                    <p class="lk-table__cell lk-loyalty-coupons-list__cell coupon__status">
+                      <span class="lk-table__head-cell--mobile">Статус</span>
+                      <span class="lk-table__cell-value">
+                        <button class="btn btn--orange-transparent coupon-activate-button">Активировать</button>
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="lk-table__row lk-loyalty-coupons-list__item coupon">
+                  <div class="lk-table__row-inner lk-loyalty-coupons-list__row">
+                    <p class="lk-table__cell lk-loyalty-coupons-list__cell">
+                      <span class="lk-table__head-cell--mobile">Код</span>
+                      <span class="lk-table__cell-value">537834</span>
+                    </p>
+                    <p class="lk-table__cell lk-loyalty-coupons-list__cell">
+                      <span class="lk-table__head-cell--mobile">Сумма</span>
+                      <span class="lk-table__cell-value lk-loyalty-coupons-list__cell-ticket">500 ₽</span>
+                    </p>
+                    <p class="lk-table__cell lk-loyalty-coupons-list__cell">
+                      <span class="lk-table__head-cell--mobile">Истекает</span>
+                      <span class="lk-table__cell-value lk-loyalty-coupons-list__cell-ticket">14 мая 2019</span>
+                    </p>
+                    <p class="lk-table__cell lk-loyalty-coupons-list__cell coupon__status">
+                      <span class="lk-table__head-cell--mobile">Статус</span>
+                      <span class="lk-table__cell-value">
+                        <button class="btn btn--orange-transparent coupon-activate-button">Активировать</button>
+                      </span>
+                    </p>
+                  </div>
+                </li>
+                <li class="lk-table__row lk-loyalty-coupons-list__item coupon">
+                  <div class="lk-table__row-inner lk-loyalty-coupons-list__row">
+                    <p class="lk-table__cell lk-loyalty-coupons-list__cell">
+                      <span class="lk-table__head-cell--mobile">Код</span>
+                      <span class="lk-table__cell-value">285768</span>
+                    </p>
+                    <p class="lk-table__cell lk-loyalty-coupons-list__cell">
+                      <span class="lk-table__head-cell--mobile">Сумма</span>
+                      <span class="lk-table__cell-value lk-loyalty-coupons-list__cell-ticket">500 ₽</span>
+                    </p>
+                    <p class="lk-table__cell lk-loyalty-coupons-list__cell">
+                      <span class="lk-table__head-cell--mobile">Истекает</span>
+                      <span class="lk-table__cell-value lk-loyalty-coupons-list__cell-ticket">1 мая 2019</span>
+                    </p>
+                    <p class="lk-table__cell lk-loyalty-coupons-list__cell coupon__status">
+                      <span class="lk-table__head-cell--mobile">Статус</span>
+                      <span class="lk-table__cell-value">
+                        <button class="btn btn--orange-transparent coupon-activate-button">Активировать</button>
+                      </span>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="lk-loyalty-section lk-loyalty-discount">
+              <p class="lk-loyalty-section__title lk-loyalty-discount__title">Скидки</p>
+              <svg class="loyalty-discount-chart lk-loyalty-discount-chart" width="1001" height="398" viewBox="0 0 1001 398" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path opacity=".2" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M976.578 398H24.084V270.5L261 255l240.5-66L740 171l236.578-61v288z" fill="url(#paint0_linear)" />
+                <text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+                  <tspan x="478" y="153.806">4 займ</tspan>
+                </text>
+                <path d="M524 103c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z"
+                  stroke="#FF4E2C" stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15"
+                  font-weight="bold" letter-spacing="0" white-space="pre">
+                  <tspan x="483.356" y="107.805">-15%</tspan>
+                </text><text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+                  <tspan x="239" y="218.805">3 займ</tspan>
+                </text>
+                <path fill="#fff" d="M238 144h48v48h-48z" />
+                <path d="M285 168c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z"
+                  stroke="#FF4E2C" stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15"
+                  font-weight="bold" letter-spacing="0" white-space="pre">
+                  <tspan x="244.356" y="172.805">-10%</tspan>
+                </text><text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+                  <tspan x="1" y="234.805">2 займ</tspan>
+                </text>
+                <path d="M47 184c0 12.703-10.297 23-23 23S1 196.703 1 184s10.297-23 23-23 23 10.297 23 23z"
+                  stroke="#FF4E2C" stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15"
+                  font-weight="bold" letter-spacing="0" white-space="pre">
+                  <tspan x="10.207" y="188.805">-5%</tspan>
+                </text><text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+                  <tspan x="716" y="135.805">5 займ</tspan>
+                </text>
+                <path d="M762 85c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z" fill="#fff"
+                  stroke="#FF4E2C" stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15"
+                  font-weight="bold" letter-spacing="0" white-space="pre">
+                  <tspan x="721.356" y="89.805">-20%</tspan>
+                </text>
+                <g>
+                  <text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+                    <tspan x="954" y="74.805">6 займ</tspan>
+                  </text>
+                  <path d="M1000 24c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z"
+                    fill="#fff" stroke="#FF4E2C" stroke-width="2" /><text fill="#FF4E2C" font-family="Lato"
+                    font-size="15" font-weight="bold" letter-spacing="0" white-space="pre">
+                    <tspan x="959.356" y="28.805">-25%</tspan>
+                  </text>
+                </g>
+                <path d="M24 270.5L261 255l240-66 238-18 238-61" stroke="#FF4E2C" stroke-width="2" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M739 179a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM501 197a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM977 118a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM261 262a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM24 278a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"
+                  fill="#fff" stroke="#FF4E2C" stroke-width="2" />
+                <defs>
+                  <linearGradient id="paint0_linear" x1="500.331" y1="109.093" x2="500.331" y2="398"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FF4E2C" />
+                    <stop offset="1" stop-color="#FF4E2C" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="loyalty-discount-chart-mobile">
+                <div class="loyalty-discount-chart-mobile__row discount-line">
+                  <div class="discount-line__handle" style="left: 0%;">
+                    <div class="discount-line__handle-icon">-5%</div>
+                    <div class="discount-line__handle-notice">2 займ</div>
+                  </div>
+                  <div class="discount-line__handle" style="left: 25%;">
+                    <div class="discount-line__handle-icon">-10%</div>
+                    <div class="discount-line__handle-notice">3 займ</div>
+                  </div>
+                  <div class="discount-line__handle" style="left: 50%;">
+                    <div class="discount-line__handle-icon">-15%</div>
+                    <div class="discount-line__handle-notice">4 займ</div>
+                  </div>
+                  <div class="discount-line__handle" style="left: 75%;">
+                    <div class="discount-line__handle-icon">-20%</div>
+                    <div class="discount-line__handle-notice">5 займ</div>
+                  </div>
+                  <div class="discount-line__handle" style="left: 100%;">
+                    <div class="discount-line__handle-icon">-25%</div>
+                    <div class="discount-line__handle-notice">6 займ</div>
+                  </div>
+                </div>
+              </div>
+              <p class="loyalty-discount-notice">Скидка действительна в течении 12 месяцев</p>
+            </section>
+            <section class="lk-loyalty-section lk-loyalty-participation">
+              <p class="lk-loyalty-section__title lk-loyalty-participation__title">Участие в&nbsp;программе лояльности
+              </p>
+              <ul class="loyalty-participation-list lk-loyalty-participation-list">
+                <li class="loyalty-participation-list__item participation-item">
+                  <div class="participation-item__icon">
+                    <span class="icon icon-loyalty-clock"></span>
+                  </div>
+                  <p class="participation-item__notice">
+                    Клиент может принять участие в&nbsp;программе лояльности, погасив первый полученный займ вовремя
+                  </p>
+                </li>
+                <li class="loyalty-participation-list__item participation-item">
+                  <div class="participation-item__icon">
+                    <span class="icon icon-loyalty-calendar"></span>
+                  </div>
+                  <p class="participation-item__notice">
+                    Активный срок предыдущего займа должен бытьне менее 14&nbsp;дней
+                  </p>
+                </li>
+                <li class="loyalty-participation-list__item participation-item">
+                  <div class="participation-item__icon">
+                    <span class="icon icon-loyalty-prize"></span>
+                  </div>
+                  <p class="participation-item__notice">
+                    Скидки программы лояльности уникальны и не суммируются с&nbsp;другими&nbsp;индивидуальными
+                    предложениями от
+                    SmartCredit
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <section class="lk-loyalty-section lk-loyalty-questions">
+              <p class="lk-loyalty-section__title lk-loyalty-questions__title">Вопросы о программе лояльности <span
+                  class="icon icon-arrow-down-big"></span></p>
+              <ul class="lk-loyalty-questions-list hidden">
+                <li class="lk-loyalty-questions-list__item">
+                  <div class="lk-loyalty-questions-list__item-icon">
+                    <span class="icon icon-question-circle-orange"></span>
+                  </div>
+                  <div class="lk-loyalty-questions-list__item-description">
+                    <p class="lk-loyalty-questions-list__item-description__question">Кто может стать участником
+                      программы лояльности SmartCredit?</p>
+                    <p class="lk-loyalty-questions-list__item-description__answer">
+                      Участником программы лояльности становится Клиент при условии что, предыдущий заем был оплачен
+                      вовремя, а также активный срок предыдущего займабыл не менее 14 дней.
+                    </p>
+                  </div>
+                </li>
+                <li class="lk-loyalty-questions-list__item">
+                  <div class="lk-loyalty-questions-list__item-icon">
+                    <span class="icon icon-question-circle-orange"></span>
+                  </div>
+                  <div class="lk-loyalty-questions-list__item-description">
+                    <p class="lk-loyalty-questions-list__item-description__question">Как увеличивается скидка в
+                      программе лояльности?</p>
+                    <p class="lk-loyalty-questions-list__item-description__answer">
+                      Участником программы лояльности Клиент становится автоматически со второго займа, если предыдущий
+                      заем был оплачен в срок.
+                      <br>
+                      <br>
+                      Для каждого последующего займа предоставляется дополнительная скидка на 5% больше предыдущей.
+                      Следовательно, на второй заем Вам будет предоставлена 5% скидка, на третий 10%, на четвертый 15%,
+                      и так на каждый следующий.
+                      <br>
+                      <br>
+                      Оплачивая заем своевременно, Ваша скидка возрастает на 5%, пока Вы не достигнете скидки в 25% на
+                      оплату процентов. Скидка действительна 12 месяцев с момента последней оплаты.
+                    </p>
+                  </div>
+                </li>
+                <li class="lk-loyalty-questions-list__item">
+                  <div class="lk-loyalty-questions-list__item-icon">
+                    <span class="icon icon-question-circle-orange"></span>
+                  </div>
+                  <div class="lk-loyalty-questions-list__item-description">
+                    <p class="lk-loyalty-questions-list__item-description__question">Как Клиент узнает, какой уровень
+                      скидки доступен для него?</p>
+                    <p class="lk-loyalty-questions-list__item-description__answer">
+                      Уровень текущей скидки доступен в Личном Кабинете на сайте smartcredit.ru, а также в
+                      информационном блоке при оформлении новой заявки.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="lk-loyalty-section lk-loyalty-promotions">
+              <p class="lk-loyalty-section__title">Акции</p>
+              <ul class="promotions-list">
+                <li class="promotions-list__item promotion">
+                  <div class="promotion__image">
+                    <img class="img-responsive" src="images/promotion-1.png" alt="Оформи займ, выиграй приз" width="464" height="227">
+                    <p class="promotion__image-title">Акция проходит с 15 по 31 мая 2019</p>
+                  </div>
+                  <div class="promotion__description">
+                    <p class="promotion__description-title">Оформи займ, выиграй приз</p>
+                    <p class="promotion__description-notice">Каждый клиент, который оформил займ с 15 по 31 мая и
+                      погасил его в срок, автоматически становится участником акции.</p>
+                  </div>
+                </li>
+                <li class="promotions-list__item promotion">
+                  <div class="promotion__image">
+                    <img class="img-responsive" src="images/promotion-2.png" alt="Скидка 20% на процент по кредиту" width="464" height="227">
+                    <p class="promotion__image-title">Акция проходит с 15 по 31 мая 2019</p>
+                  </div>
+                  <div class="promotion__description">
+                    <p class="promotion__description-title">Скидка 20% на процент по кредиту</p>
+                    <p class="promotion__description-notice">Каждый клиент, который оформил займ с 15 по 31 мая и
+                      погасил его в срок, автоматически становится участником акции.</p>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="lk-loyalty-section loyalty-help bg-beige lk-loyalty-help">
+              <div class="loyalty-help-row">
+                <div class="loyalty-help-row__col">
+                  <p class="loyalty-help__title">Нужна помощь?</p>
+                  <div class="loyalty-help-contacts">
+                    <p class="loyalty-help-contacts__phone">8 (495) 268-05-57</p>
+                    <p class="loyalty-help-contacts__notice">Звонок по России бесплатный</p>
+                  </div>
+                </div>
+                <div class="loyalty-help-row__col loyalty-help-questions">
+                  <div class="loyalty-help-questions__col">
+                    <p class="loyalty-help__title">Остались вопросы?</p>
+                    <p class="loyalty-help-questions__item">Кто может оформить заявку?</p>
+                    <p class="loyalty-help-questions__item">Как получить заем?</p>
+                    <p class="loyalty-help-questions__item">Каковы условия для меня?</p>
+                    <button class="btn btn--orange loyalty-help-questions__button">Вопросы и ответы</button>
+                  </div>
+                  <div class="loyalty-help-questions__col">
+                    <img class="img-responsive" src="images/operator.svg" width="188" height="188">
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

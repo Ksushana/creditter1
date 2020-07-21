@@ -1,0 +1,156 @@
+<% var data = {
+  title: "SmartCredit | Шаг 3",
+}; %>
+<%= _.template(require('./../includes/step-header.html'))(data) %>
+
+<body class="application">
+  <header class="header application-header">
+    <div class="application-header__container">
+      <div class="header-left">
+        <a href="/" class="logo">
+          <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
+        </a>
+      </div>
+      <div class="header-right">
+        <a href="#" class="link link--right-icon header-profile-link">
+          <span>Мой кабинет</span>
+          <span class="icon icon-profile"></span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="main main-application">
+    <section class="section-application">
+      <div class="section-application__container">
+        <form class="application-form">
+          <div class="application-form__steps">
+            <ul class="step-list">
+              <li class="step step-one">
+                <div class="step__number">1</div>
+                <p class="step__title">Контактная информация</p>
+              </li>
+              <li class="step step-two">
+                <div class="step__number">2</div>
+                <p class="step__title">Паспортные данные</p>
+              </li>
+              <li class="step step-three step--active">
+                <div class="step__number">3</div>
+                <p class="step__title">Дополнительная информация</p>
+              </li>
+              <li class="step step-four">
+                <div class="step__number">4</div>
+                <p class="step__title">Получение денег</p>
+              </li>
+            </ul>
+          </div>
+          <div class="application-form__steps-mobile">
+            <p class="application-form__steps-mobile__title">Дополнительная информация</p>
+          </div>
+          <div class="application-form__progress">
+            <div class="progress">
+              <div class="progress-filled" style="width: 85%;"></div>
+              <div class="progress-text">
+                <div class="progress-text__percent">85%</div>
+                <div class="progress-text__fraction">Шаг 3 из 4</div>
+              </div>
+            </div>
+          </div>
+          <div class="application-formblock application-formblock-prevalue">
+            <div class="application-formblock-prevalue__item">
+              <p class="application-choose__title">Желаемая сумма денег</p>
+              <p class="application-choose__value">100 000 ₽</p>
+            </div>
+            <div class="application-formblock-prevalue__item">
+              <p class="application-choose__title">Желаемый срок займа</p>
+              <p class="application-choose__value">30 дней</p>
+            </div>
+          </div>
+          <div
+            class="application-formblock application-fieldgroup application-fieldgroup--many application-fieldgroup--small">
+            <p class="application-fieldgroup__title application-fieldgroup__title--left">Адрес регистрации</p>
+            <div class="application-fieldgroup__row">
+              <input class="application-input application-fieldgroup__input application-fieldgroup__input--full"
+                type="text" placeholder="Индекс">
+            </div>
+            <div class="application-fieldgroup__row">
+              <input class="application-input application-fieldgroup__input application-fieldgroup__input--full"
+                type="text" placeholder="Регион">
+            </div>
+            <div class="application-fieldgroup__row">
+              <input class="application-input application-fieldgroup__input application-fieldgroup__input--full"
+                type="text" placeholder="Улица">
+            </div>
+            <div class="application-fieldgroup__row">
+              <input class="application-input application-fieldgroup__input application-fieldgroup__input--small"
+                type="text" placeholder="Дом">
+              <input class="application-input application-fieldgroup__input application-fieldgroup__input--small"
+                type="text" placeholder="Корпус">
+              <input class="application-input application-fieldgroup__input application-fieldgroup__input--small"
+                type="text" placeholder="Строение">
+              <input class="application-input application-fieldgroup__input application-fieldgroup__input--small"
+                type="text" placeholder="Квартира">
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div
+            class="application-formblock application-fieldgroup application-fieldgroup--many application-fieldgroup--small">
+            <p class="application-fieldgroup__title application-fieldgroup__title--left">Фактический адрес</p>
+            <div class="application-fieldgroup__row">
+              <label class="application-form__checkbox check">
+                <input class="check__input" type="checkbox" name="matches" checked>
+                <span class="check__box"></span>
+                <span>Совпадает с адресом постоянной регистрации</span>
+              </label>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div
+            class="application-formblock application-fieldgroup application-fieldgroup--many application-fieldgroup--small">
+            <p class="application-fieldgroup__title application-fieldgroup__title--left">Информация о работе</p>
+            <div class="application-fieldgroup__row">
+              <div class="application-select-container">
+                <select class="application-select">
+                  <option value>Выберите тип занятости</option>
+                  <option value="1">Полная занятость</option>
+                  <option value="2">Частичная занятость</option>
+                  <option value="3">ИП</option>
+                  <option value="4">Не работаю</option>
+                  <option value="5">Пенсия</option>
+                  <option value="6">Стипендия</option>
+                </select>
+              </div>
+            </div>
+            <div class="application-fieldgroup__row">
+              <input class="application-input application-fieldgroup__input application-fieldgroup__input--full"
+                type="text" placeholder="Название организации">
+            </div>
+            <div class="application-fieldgroup__row">
+              <input class="application-input application-fieldgroup__input application-fieldgroup__input--full"
+                type="text" placeholder="Ежемесячный доход">
+            </div>
+          </div>
+          <div class="application-formblock application-sms-field">
+            <p class="application-sms-field__col application-sms-field__label">Подтверждение операции при помощи SMS</p>
+            <input class="application-input application-sms-field__col application-sms-field__input" type="text" placeholder="Код из смс">
+            <p class="application-sms-field__col application-sms-field__notice">Отправить код еще раз через <span
+                class="application-sms-field__notice-time">1:27</span></p>
+          </div>
+          <div class="application-formblock application-form-next-action">
+            <button class="btn btn--orange application-next-button" type="button">Получить деньги</button>
+          </div>
+          <div class="application-formblock application-form-agreements">
+            <label class="application-form__checkbox check">
+              <input class="check__input" type="checkbox" name="agreements" checked>
+              <span class="check__box"></span>
+              <span>Я соглашаюсь <a class="link link--orange" href="#">на обработку персональных данных и моей кредитной
+                  истории</a></span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="js/bundle.js?v=0.0.1"></script>
+</body>
+
+</html>

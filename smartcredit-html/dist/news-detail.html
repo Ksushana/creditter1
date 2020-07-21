@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ff0000" />
+    <!-- First, all the preloads -->
+    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
+    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
+    <link rel="stylesheet" href="css/style.bundle.css?v=0.0.10" />
+    <title>SmartCredit | Детальная новость</title>
+  </head>
+
+  <body class="body-news-detail">
+    <div class="sidebar-container">
+      <div class="sidebar-menu-container">
+        <nav class="sidebar-menu">
+          <div class="sidebar-menu-header">
+            <nav class="sidebar-menu-toggle">
+              <button class="unbtn sidebar-menu-button">
+                <span class="icon icon-cross"></span>
+              </button>
+            </nav>
+            <a href="/" class="logo">
+              <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
+            </a>
+          </div>
+          <ul class="sidebar-menu-list">
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">О компании</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Раскрытие информации</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">СМИ о нас</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Новости компании</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Контакты</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как взять деньги</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Схема работы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Правила предоставления займов</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Тарифы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Документы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Способы получения денег</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Программа лояльности</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как вернуть деньги</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Ответы на вопросы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Исправление кредитной истории</a>
+            </li>
+          </ul>
+          <div class="sidebar-menu-footer">
+            <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="top-area-container">
+      <button class="unbtn top-area-container__close">
+        <span class="icon icon-cross"></span>
+      </button>
+      <div class="ctabs top-area-tabs">
+        <div class="ctabs-tablist top-area-tabs__tablist" role="tablist">
+          <button
+            class="ctabs-tablist__item top-area-tabs__tablist-item"
+            role="tab"
+            aria-selected="true"
+            aria-controls="top-callback-tab"
+            id="top-callback"
+          >
+            <span class="icon icon-callback-gray"></span>
+            <span>Обратный звонок</span>
+          </button>
+          <button
+            class="ctabs-tablist__item top-area-tabs__tablist-item"
+            role="tab"
+            aria-selected="false"
+            aria-controls="top-feedback-tab"
+            id="top-feedback"
+            tabindex="-1"
+          >
+            <span class="icon icon-feedback-gray"></span>
+            <span>Обратная связь</span>
+          </button>
+          <a class="ctabs-tablist__item top-area-tabs__tablist-item" href="#">
+            <span class="icon icon-question"></span>
+            <span>Ответы на вопросы</span>
+          </a>
+        </div>
+        <div
+          class="ctabs-panel top-area-tabs__panel"
+          tabindex="0"
+          role="tabpanel"
+          data-animation="fadeIn"
+          id="top-callback-tab"
+          aria-labelledby="top-callback"
+        >
+          <div class="ctabs-panel__content top-area-tabs__panel-content">
+            <form class="top-callback-form" action="">
+              <input type="text" class="top-feedback-input top-callback-input" name="phone" placeholder="Телефон" />
+              <button class="btn btn--orange top-feedback-button top-callback-button">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="ctabs-panel top-area-tabs__panel"
+          tabindex="0"
+          role="tabpanel"
+          data-animation="fadeIn"
+          id="top-feedback-tab"
+          aria-labelledby="top-feedback"
+          hidden=""
+        >
+          <div class="ctabs-panel__content top-area-tabs__panel-content">
+            <form class="top-feedback-form" action="">
+              <div class="top-feedback-row">
+                <input type="text" class="top-feedback-input" name="name" placeholder="Имя" />
+                <input type="email" class="top-feedback-input" name="email" placeholder="Эл. почта" />
+              </div>
+              <div class="top-feedback-row">
+                <textarea class="top-feedback-textarea" name="message" cols="30" rows="10"></textarea>
+              </div>
+              <button class="btn btn--orange top-feedback-button">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header header-news-detail">
+      <div class="header-container">
+        <div class="header-left">
+          <nav class="sidebar-menu-toggle">
+            <button class="unbtn sidebar-menu-button">
+              <span class="icon icon-hamburger"></span>
+            </button>
+          </nav>
+          <a href="/" class="logo">
+            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
+          </a>
+        </div>
+        <div class="header-center">
+          <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-callback">
+            <span class="icon icon-phone"></span>
+            <span>Позвонить нам</span>
+          </a>
+          <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-feedback">
+            <span class="icon icon-chat"></span>
+            <span>Поддержка/Верификация 24/7</span>
+          </a>
+        </div>
+        <div class="header-right">
+          <a href="#" class="link link--right-icon header-profile-link">
+            <span>Мой кабинет</span>
+            <span class="icon icon-profile"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main main-news">
+      <section class="section news-detail">
+        <div class="page-container">
+          <h1 class="news-detail__title">Милых дам с Международным женским днем</h1>
+          <div class="news-detail__meta">
+            <p class="news-detail__meta-date">08 марта 2019</p>
+            <p class="news-detail__meta-category">Новости компании</p>
+          </div>
+          <div class="news-detail__content">
+            Полтора столетия назад 8 марта в Нью-Йорке состоялся «кастрюльный митинг»: его устроили женщины, которым
+            надоело чувствовать себя бесправными. В наше время эта дата не имеет никакой политической подоплеки, —
+            сегодня праздник 8 марта посвящен той половине человечества, которую совершенно заслуженно именуют
+            «прекрасной».
+            <p class="news-detail__content-subtitle">Поздравляем с праздником</p>
+            Мы поздравляем со Всемирным женским днем наших мам, жен, возлюбленных, дочерей, подруг, коллег и знакомых.
+            Желаем, чтобы ваш горизонт не омрачали никакие тучи! Спасибо вам за тепло сердец, за тот свет, которым вы
+            освещаете нашу жизнь. Благодарим за любовь и терпение, за доброту и щедрость. Без вас, наши прекрасные
+            женщины, мир был бы скучен и нелеп. Пусть в вашей жизни будет всего в достатке: счастья, любви, уважения
+            близких!
+            <p class="news-detail__content-subtitle">Что подарить?</p>
+            Хотите купить хороший подарок ко Всемирному женскому дню, но не хватает денег? Обращайтесь в SmartCredit!
+          </div>
+        </div>
+      </section>
+      <section class="section news-detail-news">
+        <div class="page-container">
+          <div class="news">
+            <div class="news__header">
+              <div class="news__header-left">
+                <h2 class="section-title news__title">Другие новости компании</h2>
+              </div>
+              <div class="news__header-right">
+                <div class="news-select">
+                  <select class="news-select__month">
+                    <option value="1">Январь</option>
+                    <option value="2">Февраль</option>
+                    <option value="3">Март</option>
+                    <option value="4">Апрель</option>
+                    <option value="5">Май</option>
+                    <option value="6">Июнь</option>
+                    <option value="7">Июль</option>
+                    <option value="8">Август</option>
+                    <option value="9">Сентябрь</option>
+                    <option value="10">Октябрь</option>
+                    <option value="11">Ноябрь</option>
+                    <option value="12">Декабрь</option>
+                  </select>
+                </div>
+                <div class="news-select">
+                  <select class="news-select__year">
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="news-content news-content--horizontal">
+              <ul class="news-list news-list--horizontal">
+                <li class="news-list__item">
+                  <a class="news-item-link" href="#">
+                    <div class="news-list__item-date">
+                      <p class="news-date">
+                        <strong class="news-date__day">8</strong>
+                        <span class="news-date__month">Марта</span>
+                      </p>
+                    </div>
+                    <div class="news-list__item-description">
+                      <p class="news-list__item-title">Милых дам с Международным женским днем</p>
+                      <p class="news-list__item-notice">
+                        Полтора столетия назад 8 марта в Нью-Йорке состоялся «кастрюльный митинг»: его устроили женщины,
+                        которым надоело чувствовать себя бесправными.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="news-list__item">
+                  <a class="news-item-link" href="#">
+                    <div class="news-list__item-date">
+                      <p class="news-date">
+                        <strong class="news-date__day">23</strong>
+                        <span class="news-date__month">Февраля</span>
+                      </p>
+                    </div>
+                    <div class="news-list__item-description">
+                      <p class="news-list__item-title">С днем защитника Отечества</p>
+                      <p class="news-list__item-notice">
+                        День защитника Отечества впервые появился как праздник Советской Армии почти сто лет назад, но
+                        за прошедшие годы он изрядно подрастерял связь с воинской службой.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="news-list__item">
+                  <a class="news-item-link" href="#">
+                    <div class="news-list__item-date">
+                      <p class="news-date">
+                        <strong class="news-date__day">18</strong>
+                        <span class="news-date__month">Февраля</span>
+                      </p>
+                    </div>
+                    <div class="news-list__item-description">
+                      <p class="news-list__item-title">Что подарить на 23 февраля. 7 советов</p>
+                      <p class="news-list__item-notice">
+                        Пена для бритья, шампунь, дезодорант и носки? Бррр. Может, пора придумать что-то новенькое?
+                        Например, вот ТОП-7 идей для подарков, которым гарантированно обрадуется каждый защитник
+                        Отечества.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="news-list__item">
+                  <a class="news-item-link" href="#">
+                    <div class="news-list__item-date">
+                      <p class="news-date">
+                        <strong class="news-date__day">14</strong>
+                        <span class="news-date__month">Февраля</span>
+                      </p>
+                    </div>
+                    <div class="news-list__item-description">
+                      <p class="news-list__item-title">Счастья Вам в день всех влюбленных</p>
+                      <p class="news-list__item-notice">
+                        День защитника Отечества впервые появился как праздник Советской Армии почти сто лет назад, но
+                        за прошедшие годы он изрядно подрастерял связь с воинской службой.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <button class="btn btn--orange news__showmore">Показать еще</button>
+              <div class="news__arrows">
+                <span class="icon icon-left-right-arrows"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-news-detail">
+      <div class="footer-container">
+        <div class="footer__contacts">
+          <div class="footer__contacts-phone">
+            <a href="tel:+74952680557" class="link phone">+7 (495) 268 0557</a>
+          </div>
+          <div class="footer__contacts-copy">
+            <span class="footer__contacts-copy__left">&copy; SmartCredit, 2015-2019.</span>
+            <span class="footer__contacts-copy__right">Все права защищены.</span>
+          </div>
+          <div class="footer__contacts-program">
+            <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
+          </div>
+          <div class="footer__contacts-designedby">
+            <a class="link designedby-link" href="#">Дизайн: Genue</a>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">О компании</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Раскрытие информации</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">СМИ о нас</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Новости компании</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--big" href="#">Контакты</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Программа лояльности</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Как вернуть деньги</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Ответы на вопросы</a>
+            </li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray footer__nav-link--big" href="#"
+                >Исправление кредитной истории</a
+              >
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Как взять деньги</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Схема работы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Правила предоставления займов</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Тарифы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Документы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Способы получения денег</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/bundle.js?v=0.0.10"></script>
+  </body>
+</html>

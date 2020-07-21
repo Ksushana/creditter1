@@ -1,0 +1,212 @@
+<% var data = {
+  title: "SmartCredit | Платежные реквизиты",
+  name: 'payment-details',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-payment-details">
+  <section class="section lk-section">
+    <div class="lk-page-container payment-details-page-container">
+      <h2 class="section-title lk-section-title">Платежные реквизиты</h2>
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block payment-details">
+          <div class="payment-details-header">
+            <h3 class="lk-content-block__title payment-details-title">Выберите активную карту или счет</h3>
+          </div>
+          <div class="payment-details-content">
+            <div class="payment-banks">
+              <div class="payment-banks__item bank-cards">
+                <div class="payment-banks__item-title">
+                  Банковские карты
+                </div>
+                <div
+                  class="card-template-wrapper payment-banks-template-wrapper payment-banks-template-wrapper--active">
+                  <div class="payment-banks__status-badge"></div>
+                  <div class="card-template-container">
+                    <div class="template-item card-template">
+                      <div class="card-template-row">
+                        <img class="card-template__bank" src="images/sberbank.png" alt="Сбербанк" width="169"
+                          height="32">
+                        <img class="card-template__type" src="images/visa.png" alt="Visa" width="87" height="28">
+                      </div>
+                      <div class="card-template-row">
+                        <p class="card-template__number">1234 - 5678 - 9000 - 0000</p>
+                      </div>
+                      <div class="card-template-row">
+                        <p class="card-template__name">Алексей Петров</p>
+                        <p class="card-template__date">11/24</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-template-wrapper payment-banks-template-wrapper">
+                  <div class="payment-banks__status-badge"></div>
+                  <div class="card-template-container">
+                    <div class="template-item card-template">
+                      <div class="card-template-row">
+                        <img class="card-template__bank" src="images/sberbank.png" alt="Сбербанк" width="169"
+                          height="32">
+                        <img class="card-template__type" src="images/mastercard.png" alt="Mastercard" width="52"
+                          height="32">
+                      </div>
+                      <div class="card-template-row">
+                        <p class="card-template__number">ХХХХ - ХХХХ - ХХХХ - 9999</p>
+                      </div>
+                      <div class="card-template-row">
+                        <p class="card-template__name">Алексей Петров</p>
+                        <p class="card-template__date">11/24</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <form class="payment-form payment-add-card-form">
+                  <p class="payment-form__title">Добавить карту</p>
+                  <div class="card-template-wrapper payment-form__template-wrapper">
+                    <div class="card-template-container">
+                      <div class="template-item card-template payment-form__template">
+                        <div class="card-template-row payment-form__row">
+                          <label class="payment-form__field">
+                            <span class="payment-form__field-label">Номер карты</span>
+                            <input class="lk-input payment-form__field-input" type="text"
+                              placeholder="0000 0000 0000 0000" value="">
+                          </label>
+                        </div>
+                        <div class="card-template-row payment-form__row">
+                          <label class="payment-form__field payment-form__col">
+                            <span class="payment-form__field-label">Срок действия</span>
+                            <div class="payment-form__field-row">
+                              <input class="lk-input payment-form__field-input payment-form__field-input--small"
+                                type="text" placeholder="01" value="">
+                              <input class="lk-input payment-form__field-input payment-form__field-input--small"
+                                type="text" placeholder="23" value="">
+                            </div>
+                          </label>
+                          <label class="payment-form__field payment-form__col">
+                            <span class="payment-form__field-label">Имя, фамилия</span>
+                            <input class="lk-input payment-form__field-input" type="text" placeholder="IVAN IVANOV"
+                              value="">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-documents-uploader">
+                    <div class="payment-documents-uploader__list-item document-uploader">
+                      <p class="document-uploader__title">Фото/скан действующей банковской карты</p>
+                      <img class="document-uploader__example" src="images/photo-example-3.svg"
+                        alt="Пример фото/скан паспорта с фотографией" width="100" height="66">
+                      <label class="document-uploader__field">
+                        <span class="btn btn--orange-transparent document-uploader__field-filebutton">Прикрепить</span>
+                        <span
+                          class="btn btn--orange-transparent document-uploader__field-filebutton document-uploader__field-filebutton--uploaded">Документ
+                          загружен</span>
+                        <input class="document-uploader__field-input" type="file" name="doc_card">
+                      </label>
+                    </div>
+                  </div>
+                  <button class="btn btn--gray payment-form-submit payment-add-card-submit">Добавить карту</button>
+                </form>
+              </div>
+              <div class="payment-banks__item">
+                <div class="qiwi-accounts">
+                  <div class="payment-banks__item-title">
+                    QIWI кошелек
+                  </div>
+                  <div class="card-template-wrapper payment-banks-template-wrapper">
+                    <div class="payment-banks__status-badge"></div>
+                    <div class="card-template-container">
+                      <div class="template-item card-template">
+                        <div class="card-template-row">
+                          <img class="card-template__bank" src="images/qiwi.png" alt="QIWI" width="98" height="44">
+                        </div>
+                        <div class="card-template-row card-template-row--centered">
+                          <p class="card-template__number">+7 999 999 99 99</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bank-accounts">
+                  <div class="payment-banks__item-title">
+                    Банковские счета
+                  </div>
+                  <div class="card-template-wrapper payment-banks-template-wrapper">
+                    <div class="payment-banks__status-badge"></div>
+                    <div class="card-template-container">
+                      <div class="template-item account-template">
+                        <div class="account-template-row">
+                          <img class="account-template__bank" src="images/sberbank.png" alt="Сбербанк" width="169"
+                            height="32">
+                        </div>
+                        <div class="account-template-row">
+                          <p class="account-template__title">Основной счет</p>
+                        </div>
+                        <div class="account-template-row">
+                          <p class="account-template__number">ХХХХХХ - 5678</p>
+                          <p class="account-template__icon">
+                            <span class="icon icon-bank-black"></span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-template-wrapper payment-banks-template-wrapper">
+                    <div class="payment-banks__status-badge"></div>
+                    <div class="card-template-container">
+                      <div class="template-item account-template">
+                        <div class="account-template-row">
+                          <img class="account-template__bank" src="images/sberbank.png" alt="Сбербанк" width="169"
+                            height="32">
+                        </div>
+                        <div class="account-template-row">
+                          <p class="account-template__title">Сберегательный счет</p>
+                        </div>
+                        <div class="account-template-row">
+                          <p class="account-template__number">ХХХХХХ - 5678</p>
+                          <p class="account-template__icon">
+                            <span class="icon icon-bank-black"></span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <form class="payment-form payment-add-account-form">
+                    <p class="payment-form__title">Добавить счет</p>
+                    <div class="card-template-wrapper payment-form__template-wrapper">
+                      <div class="card-template-container">
+                        <div class="template-item card-template payment-form__template">
+                          <div class="card-template-row payment-form__row">
+                            <label class="payment-form__field">
+                              <span class="payment-form__field-label">БИК банка</span>
+                              <input class="lk-input payment-form__field-input" type="text" placeholder="040345678"
+                                value="">
+                            </label>
+                          </div>
+                          <div class="card-template-row payment-form__row">
+                            <label class="payment-form__field payment-form__col">
+                              <span class="payment-form__field-label">№ счета</span>
+                              <input class="lk-input payment-form__field-input" type="text"
+                                placeholder="20-ти значный номер" value="">
+                            </label>
+                            <label class="payment-form__field payment-form__col">
+                              <span class="payment-form__field-label">№ карты</span>
+                              <input class="lk-input payment-form__field-input" type="text"
+                                placeholder="0000 0000 0000 0000" value="">
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn--gray payment-form-submit payment-add-account-submit">Добавить счет</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

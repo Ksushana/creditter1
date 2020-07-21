@@ -1,0 +1,124 @@
+<% var data = {
+  title: "SmartCredit | Статистика",
+  name: 'statistics',
+  activeLink: 'statistics',
+}; %>
+<%= _.template(require('./../includes/partnership-header.html'))(data) %>
+
+<main class="main partnership-main">
+  <div class="partnership-container partnership-page-container statistics-page-container">
+    <%= _.template(require('./../includes/partnership-sidebar.html'))(data) %>
+    <section class="partnership-section statistics-section">
+      <div class="partnership-section__header statistics-section__header">
+        <h2 class="partnership-section-title">Статистика</h2>
+      </div>
+      <div class="partnership-section__content statistics-section__content statistics-graphic-section__content">
+        <div class="statistics-head statistics-graphic-head">
+          <div class="statistics-banner">
+            <img class="img-responsive" src="images/moneylink@2x.png" alt="Moneylink" width="831" height="172">
+          </div>
+          <div class="statistics-head__row">
+            <div class="statistics-field">
+              <p class="statistics-field__title">Период статистики</p>
+              <div class="statistics-datepicker-wrapper">
+                <input type="text" class="lk-input statistics-datepicker statistics-field__input">
+              </div>
+            </div>
+          </div>
+          <div class="statistics-head__row">
+            <div class="statistics-head__row-col statistics-field">
+              <p class="statistics-field__title">Площадка</p>
+              <div class="statistics-select-wrapper">
+                <select class="statistics-select statistics-field__input">
+                  <option value="1">Общая</option>
+                  <option value="2">Первая</option>
+                  <option value="3">Вторая</option>
+                </select>
+              </div>
+            </div>
+            <div class="statistics-head__row-col statistics-field">
+              <p class="statistics-field__title">Ваш реферальный код</p>
+              <div class="statistics-select-wrapper">
+                <input type="text" class="lk-input statistics-field__input" value="Syxr0g">
+              </div>
+              <p class="statistics-referral-link">
+                Реферальная ссылка:
+                <br>
+                <a href="http://smartcredit/syxr0g" class="link link--orange">http://smartcredit/syxr0g</a>
+              </p>
+            </div>
+            <div class="statistics-head__row-col statistics-field">
+              <p class="statistics-field__title statistic-balance">Баланс: <span class="statistic-balance__value">1 286
+                  935.89 ₽</span>
+              </p>
+              <button type="button" class="btn btn--orange-transparent withdrawal-request-button">Запрос на
+                вывод</button>
+            </div>
+            <button type="button"
+              class="btn btn--orange statistics-head__row-col statistics-params-refresh statistics-graphic-refresh">
+              Обновить
+            </button>
+          </div>
+        </div>
+        <div class="statistics-graphic-wrapper">
+          <div class="statistics-graphic-image">
+            <img class="img-responsive" src="images/graphic@2x.png" alt="graphic" width="831" height="339">
+          </div>
+          <div class="statistics-graphic-controls">
+            <label class="statistics-graphic-controls__item check">
+              <input class="check__input" type="checkbox" name="sessions">
+              <span class="check__box"></span>
+              <span>Сеансы</span>
+            </label>
+            <label class="statistics-graphic-controls__item check">
+              <input class="check__input" type="checkbox" name="distributions">
+              <span class="check__box"></span>
+              <span style="color: #18943B;">Выдачи</span>
+            </label>
+            <label class="statistics-graphic-controls__item check">
+              <input class="check__input" type="checkbox" name="tickets">
+              <span class="check__box"></span>
+              <span style="color: #BD8C22;">Заявки</span>
+            </label>
+            <label class="statistics-graphic-controls__item check">
+              <input class="check__input" type="checkbox" name="income">
+              <span class="check__box"></span>
+              <span style="color: #B41F23;">Доход</span>
+            </label>
+          </div>
+          <div class="statistics-graphic-stats">
+            <div class="statistics-graphic-stats__row">
+              <div class="statistics-graphic-stats__col">
+                <span class="statistics-graphic-stats-title">Количество сеансов:</span> <span
+                  class="statistics-graphic-stats-value">3</span>
+              </div>
+              <div class="statistics-graphic-stats__col">
+                <span class="statistics-graphic-stats-title">Конверсия CR:</span> <span
+                  class="statistics-graphic-stats-value">7.9%</span>
+              </div>
+              <div class="statistics-graphic-stats__col">
+                <span class="statistics-graphic-stats-title">Количество выданных займов:</span> <span
+                  class="statistics-graphic-stats-value">1</span>
+              </div>
+              <div class="statistics-graphic-stats__col">
+                <span class="statistics-graphic-stats-title">Количество оформленых заявок:</span> <span
+                  class="statistics-graphic-stats-value">1</span>
+              </div>
+              <div class="statistics-graphic-stats__col">
+                <span class="statistics-graphic-stats-title">Конверсия AR:</span> <span
+                  class="statistics-graphic-stats-value">5.3%</span>
+              </div>
+              <div class="statistics-graphic-stats__col">
+                <span class="statistics-graphic-stats-title">Вознаграждение:</span> <span
+                  class="statistics-graphic-stats-value">500.00 ₽</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <%= _.template(require('./../includes/partnership-advantages.html'))(data) %>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

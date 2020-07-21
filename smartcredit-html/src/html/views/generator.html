@@ -1,0 +1,60 @@
+<% var data = {
+  title: "SmartCredit | Генератор ссылок",
+  name: 'generator',
+  activeLink: 'generator',
+}; %>
+<%= _.template(require('./../includes/partnership-header.html'))(data) %>
+
+<main class="main partnership-main">
+  <div class="partnership-container partnership-page-container">
+    <%= _.template(require('./../includes/partnership-sidebar.html'))(data) %>
+    <section class="partnership-section">
+      <div class="partnership-section__header">
+        <h2 class="partnership-section-title">Генератор ссылок</h2>
+      </div>
+      <div class="partnership-section__content">
+        <div class="generator-block">
+          <div class="generator-row">
+            <p class="generator-row__title">Адрес страницы</p>
+            <div class="generator-field">
+              <span class="generator-field__prefix">https://smartcredit.ru/</span>
+              <input type="text" class="generator-field__input">
+            </div>
+          </div>
+        </div>
+        <div class="generator-block">
+          <p class="generator-block__title">Обязательные параметры</p>
+          <div class="generator-row">
+            <p class="generator-row__title">Идентификатор партнера</p>
+            <div class="generator-field">
+              <span class="generator-field__prefix">UTM_campaign</span>
+              <input type="text" class="generator-field__input">
+            </div>
+            <div class="generator-field-notice">Ваш идентификатор в системе</div>
+          </div>
+          <div class="generator-row">
+            <p class="generator-row__title">Площадка</p>
+            <div class="generator-field">
+              <span class="generator-field__prefix">UTM_content</span>
+              <input type="text" class="generator-field__input">
+            </div>
+            <div class="generator-field-notice">Укажите одну из ваших площадок</div>
+          </div>
+        </div>
+        <div class="generator-partners">
+          <p class="generator-partners__title">Партнёрская ссылка</p>
+          <p class="generator-partners__link">https://smartcredit.ru/how#partner/smartcredit%20SmartCredit/%201
+          </p>
+          <div class="generator-partners__row">
+            <button class="btn btn--orange generator-partners-copy-button"><span
+                class="icon icon-copy-white"></span>Скопировать</button>
+            <a href="#" class="generator-partners-go-link">Перейти<span class="icon icon-arrow-right-circle"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <%= _.template(require('./../includes/partnership-advantages.html'))(data) %>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

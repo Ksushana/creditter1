@@ -1,0 +1,109 @@
+<div class="news">
+  <div class="news__header">
+    <div class="news__header-left">
+      <h2 class="section-title news__title"><%=title%></h2>
+    </div>
+    <div class="news__header-right">
+      <div class="news-select">
+        <select class="news-select__month">
+          <option value="1">Январь</option>
+          <option value="2">Февраль</option>
+          <option value="3">Март</option>
+          <option value="4">Апрель</option>
+          <option value="5">Май</option>
+          <option value="6">Июнь</option>
+          <option value="7">Июль</option>
+          <option value="8">Август</option>
+          <option value="9">Сентябрь</option>
+          <option value="10">Октябрь</option>
+          <option value="11">Ноябрь</option>
+          <option value="12">Декабрь</option>
+        </select>
+      </div>
+      <div class="news-select">
+        <select class="news-select__year">
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div
+    class="news-content<%=typeof isHorizontal !== 'undefined' && isHorizontal ? ' news-content--horizontal' : ''%><%=typeof prefixClassName !== 'undefined' ? ' ' + prefixClassName + '-news-content' : ''%>">
+    <ul
+      class="news-list<%=typeof isHorizontal !== 'undefined' && isHorizontal ? ' news-list--horizontal' : ''%><%=typeof prefixClassName !== 'undefined' ? ' ' + prefixClassName + '-news-list' : ''%>">
+      <li
+        class="news-list__item<%=typeof prefixClassName !== 'undefined' ? ' ' + prefixClassName + '-news-list__item' : ''%>">
+        <a class="news-item-link" href="#">
+          <div class="news-list__item-date">
+            <p class="news-date">
+              <strong class="news-date__day">8</strong>
+              <span class="news-date__month">Марта</span>
+            </p>
+          </div>
+          <div class="news-list__item-description">
+            <p class="news-list__item-title">Милых дам с Международным женским днем</p>
+            <p class="news-list__item-notice">Полтора столетия назад 8 марта в Нью-Йорке состоялся «кастрюльный митинг»:
+              его устроили женщины, которым надоело чувствовать себя бесправными.</p>
+          </div>
+        </a>
+      </li>
+      <li
+        class="news-list__item<%=typeof prefixClassName !== 'undefined' ? ' ' + prefixClassName + '-news-list__item' : ''%>">
+        <a class="news-item-link" href="#">
+          <div class="news-list__item-date">
+            <p class="news-date">
+              <strong class="news-date__day">23</strong>
+              <span class="news-date__month">Февраля</span>
+            </p>
+          </div>
+          <div class="news-list__item-description">
+            <p class="news-list__item-title">С днем защитника Отечества</p>
+            <p class="news-list__item-notice">День защитника Отечества впервые появился как праздник Советской Армии
+              почти
+              сто лет назад, но за прошедшие годы он изрядно подрастерял связь с воинской службой.</p>
+          </div>
+        </a>
+      </li>
+      <li
+        class="news-list__item<%=typeof prefixClassName !== 'undefined' ? ' ' + prefixClassName + '-news-list__item' : ''%>">
+        <a class="news-item-link" href="#">
+          <div class="news-list__item-date">
+            <p class="news-date">
+              <strong class="news-date__day">18</strong>
+              <span class="news-date__month">Февраля</span>
+            </p>
+          </div>
+          <div class="news-list__item-description">
+            <p class="news-list__item-title">Что подарить на 23 февраля. 7 советов</p>
+            <p class="news-list__item-notice">Пена для бритья, шампунь, дезодорант и носки? Бррр. Может, пора придумать
+              что-то новенькое? Например, вот ТОП-7 идей для подарков, которым гарантированно обрадуется каждый
+              защитник Отечества. </p>
+          </div>
+        </a>
+      </li>
+      <li
+        class="news-list__item<%=typeof prefixClassName !== 'undefined' ? ' ' + prefixClassName + '-news-list__item' : ''%>">
+        <a class="news-item-link" href="#">
+          <div class="news-list__item-date">
+            <p class="news-date">
+              <strong class="news-date__day">14</strong>
+              <span class="news-date__month">Февраля</span>
+            </p>
+          </div>
+          <div class="news-list__item-description">
+            <p class="news-list__item-title">Счастья Вам в день всех влюбленных</p>
+            <p class="news-list__item-notice">День защитника Отечества впервые появился как праздник Советской Армии
+              почти
+              сто лет назад, но за прошедшие годы он изрядно подрастерял связь с воинской службой.</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <button class="btn btn--orange news__showmore">Показать еще</button>
+    <div class="news__arrows">
+      <span class="icon icon-left-right-arrows"></span>
+    </div>
+  </div>
+</div>

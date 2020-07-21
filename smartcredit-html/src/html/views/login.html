@@ -1,0 +1,102 @@
+<% var data = {
+  title: "SmartCredit | Авторизация",
+  name: 'login',
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main main-login">
+  <section class="section section-login">
+    <div class="login-wrapper">
+      <div class="login-sidebar">
+        <img class="login-sidebar__img" src="images/gosuslugi.svg" alt="Госуслуги" width="64" height="71">
+        <p class="login-sidebar__title">Вход через госуслуги</p>
+        <ul class="login-sidebar__advantages">
+          <li class="login-sidebar__advantages-item">
+            <span class="login-sidebar__advantages-marker">1.</span> Эрозионный тальвег глазами современников</li>
+          <li class="login-sidebar__advantages-item">
+            <span class="login-sidebar__advantages-marker">2.</span> Флювиогляциальный бараний лоб</li>
+          <li class="login-sidebar__advantages-item">
+            <span class="login-sidebar__advantages-marker">3.</span> Спайность как происхождение</li>
+        </ul>
+      </div>
+      <div class="login-content">
+        <form class="application-form login-form">
+          <div class="application-formblock application-fieldgroup application-fieldgroup--many login-formblock">
+            <p class="application-fieldgroup__title login-title">Авторизация</p>
+            <div class="application-fieldgroup__row">
+              <input class="application-input application-fieldgroup__input application-fieldgroup__input--full"
+                type="text" placeholder="Логин">
+            </div>
+            <div class="application-fieldgroup__row">
+              <input class="application-input application-fieldgroup__input application-fieldgroup__input--full"
+                type="text" placeholder="Пароль">
+            </div>
+          </div>
+
+          <div class="login-gosuslugi">
+            <div class="login-gosuslugi__title">
+              Вход через Госуслуги повышает вероятность одобрения на 20%
+            </div>
+            <a href="#" class="login-gosuslugi__link">
+              <img class="login-gosuslugi__img" src="images/gosuslugi.svg" alt="Госуслуги">
+              <span>Войти через Госуслуги</span>
+            </a>
+          </div>
+
+          <div class="application-formblock login-formblock login-form-next-action">
+            <a href="#" class="link link--orange forgot-password-link">Забыли пароль?</a>
+            <button class="btn btn--orange login-next-button" type="button">Войти</button>
+          </div>
+        </form>
+        <div class="login-by-socials-container login-by-socials">
+
+          <a href="#" class="social-oauth-link social-oauth-link_gosuslugi">
+            <img class="social-oauth-link_gosuslugi-image" src="icons/social-auth/gosuslugi.svg" alt="Госуслуги" width="104"
+                 height="auto">
+          </a>
+          <p class="login-by-socials__title">Вход через социальные сети</p>
+          <ul class="login-by-socials__list">
+            <li class="login-by-socials__list-item">
+              <a href="#" class="social-oauth-link">
+                <img class="social-oauth-link__image" src="icons/social-auth/yandex.svg" alt="Яндекс" width="11"
+                  height="21">
+              </a>
+            </li>
+            <li class="login-by-socials__list-item">
+              <a href="#" class="social-oauth-link">
+                <img class="social-oauth-link__image" src="icons/social-auth/google.svg" alt="Google" width="23"
+                  height="23">
+              </a>
+            </li>
+            <li class="login-by-socials__list-item">
+              <a href="#" class="social-oauth-link">
+                <img class="social-oauth-link__image" src="icons/social-auth/mail.svg" alt="Mail.ru" width="23"
+                  height="23">
+              </a>
+            </li>
+            <li class="login-by-socials__list-item">
+              <a href="#" class="social-oauth-link">
+                <img class="social-oauth-link__image" src="icons/social-auth/fb.svg" alt="Facebook" width="25"
+                  height="25">
+              </a>
+            </li>
+            <li class="login-by-socials__list-item">
+              <a href="#" class="social-oauth-link">
+                <img class="social-oauth-link__image" src="icons/social-auth/vk.svg" alt="VKontakte" width="25"
+                  height="25">
+              </a>
+            </li>
+            <li class="login-by-socials__list-item">
+              <a href="#" class="social-oauth-link">
+                <img class="social-oauth-link__image" src="icons/social-auth/ok.svg" alt="Одноклассники" width="14"
+                  height="23">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

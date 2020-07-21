@@ -1,0 +1,69 @@
+.ctabs-tablist {
+  margin-bottom: 35px;
+  border-bottom: 1px solid $lightGray;
+  overflow: visible;
+}
+
+.ctabs-tablist__item {
+  position: relative;
+  margin: 0 25px 0 0;
+  padding: 18px 0;
+  border: none;
+  font-size: 15px;
+  line-height: 18px;
+  background: #ffffff;
+  color: $textMainColor;
+  overflow: visible;
+  cursor: pointer;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.ctabs-tablist__item[aria-selected="true"],
+.ctabs-tablist__item:active[aria-selected="true"] {
+  color: $orange;
+  font-weight: bold;
+}
+
+.ctabs-tablist__item:active {
+  color: $textMainColor;
+}
+
+.ctabs-tablist__item:hover,
+.ctabs-tablist__item:focus,
+.ctabs-tablist__item:active,
+.ctabs-tablist__item[aria-selected="true"] {
+  border-radius: 0;
+  outline: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    left: 0;
+    height: 4px;
+    background: $orange;
+    box-shadow: none;
+    z-index: 3;
+  }
+}
+
+.ctabs-panel {
+  position: relative;
+  padding: 0;
+  background: #ffffff;
+  z-index: 2;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// .ctabs-panel:focus {
+//   border-color: rgba(255, 78, 44, 0.8);
+//   box-shadow: 0 0 0.2em rgba(255, 78, 44, 0.8);
+//   outline: 0;
+// }

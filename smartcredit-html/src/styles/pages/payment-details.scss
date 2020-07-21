@@ -1,0 +1,272 @@
+.payment-details-page-container {
+  width: 100%;
+  max-width: 1070px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (max-width: 991px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.payment-details-header {
+  padding: 24px 32px 28px;
+  border-bottom: 1px solid $lightGray;
+}
+
+.payment-details-title {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.payment-details-content {
+  padding: 50px 32px 58px 34px;
+
+  @media screen and (max-width: 767px) {
+    padding: 40px 20px 58px;
+  }
+
+  @media screen and (max-width: 424px) {
+    padding: 30px 10px 48px;
+  }
+}
+
+.payment-banks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.payment-banks__item {
+  flex-basis: calc((100% - 24px) / 2);
+  width: calc((100% - 24px) / 2);
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 100%;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 57px;
+    }
+  }
+}
+
+.bank-accounts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qiwi-accounts {
+  margin-bottom: 33px;
+}
+
+.payment-banks__item-title {
+  align-self: flex-start;
+  margin-bottom: 27px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.payment-banks-template-wrapper {
+  position: relative;
+  margin-bottom: 33px;
+  z-index: 1;
+
+  &:hover {
+    cursor: pointer;
+
+    & .card-template,
+    & .account-template {
+      border: 1px solid #ff6f53;
+      background: #f9f5ef;
+    }
+  }
+
+  & .payment-banks__status-badge {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #e5e6eb;
+    border-radius: 50%;
+    background: #ffffff;
+    z-index: 2;
+  }
+
+  & .card-template,
+  & .account-template {
+    background: #ffffff;
+    border: 1px solid #e5e9f2;
+  }
+}
+
+.payment-banks-template-wrapper--active {
+  & .payment-banks__status-badge {
+    background: svg-load("icons/success-orange.svg");
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  & .card-template,
+  & .account-template {
+    border: 1px solid #ff6f53;
+    background: #f9f5ef;
+  }
+}
+
+.payment-form {
+  display: block;
+  width: 100%;
+  padding-top: 58px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+  }
+}
+
+.payment-form__title {
+  align-self: flex-start;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.payment-form__template {
+  padding: 18px 26px;
+  border: 1px solid #e5e9f2;
+  border-radius: 5px;
+  background: #f5f6fa;
+
+  @media screen and (max-width: 767px) {
+    padding: 11px 15px;
+  }
+}
+
+.payment-form__col {
+  flex-basis: calc((100% - 25px) / 2);
+  width: calc((100% - 25px) / 2);
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 992px) {
+    flex-basis: calc((100% - 10px) / 2);
+    width: calc((100% - 10px) / 2);
+    margin-right: 15px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-right: 10px;
+  }
+}
+
+.payment-form__field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-basis: 100%;
+  width: 100%;
+}
+
+.payment-form__field-label {
+  flex-basis: 100%;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 21px;
+  line-height: 18px;
+  color: $gray;
+
+  @media screen and (max-width: 992px) {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+}
+
+.payment-form__field-input {
+  flex-basis: 100%;
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    padding: 8px 12px;
+  }
+}
+
+.payment-form__field-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 100%;
+  width: 100%;
+}
+
+.payment-form__field-input--small {
+  flex-basis: calc((100% - 13px) / 2);
+  width: calc((100% - 13px) / 2);
+  max-width: 91px;
+
+  @media screen and (max-width: 992px) {
+    max-width: 50%;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 6px) / 2);
+    width: calc((100% - 6px) / 2);
+  }
+}
+
+.payment-form__template-wrapper {
+  margin-bottom: 33px;
+}
+
+.payment-documents-uploader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  padding-top: 6px;
+}
+
+.payment-documents-uploader__list-item {
+  flex-basis: 80%;
+  width: 80%;
+}
+
+.payment-documents-uploader .document-uploader__field--uploaded > .document-uploader__field-filebutton--uploaded {
+  padding: 8px 10px 7px;
+  font-size: 16px;
+  line-height: 18px;
+  border: 1px solid #e5e9f2;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.payment-documents-uploader .document-uploader__field-filebutton {
+  max-width: 274px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.payment-form-submit {
+  flex-basis: 100%;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+}

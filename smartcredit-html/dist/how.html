@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ff0000" />
+    <!-- First, all the preloads -->
+    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
+    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
+    <link rel="stylesheet" href="css/style.bundle.css?v=0.0.10" />
+    <title>SmartCredit | Как взять деньги</title>
+  </head>
+
+  <body class="body-how">
+    <div class="sidebar-container">
+      <div class="sidebar-menu-container">
+        <nav class="sidebar-menu">
+          <div class="sidebar-menu-header">
+            <nav class="sidebar-menu-toggle">
+              <button class="unbtn sidebar-menu-button">
+                <span class="icon icon-cross"></span>
+              </button>
+            </nav>
+            <a href="/" class="logo">
+              <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
+            </a>
+          </div>
+          <ul class="sidebar-menu-list">
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">О компании</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Раскрытие информации</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">СМИ о нас</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Новости компании</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Контакты</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как взять деньги</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Схема работы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Правила предоставления займов</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Тарифы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Документы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Способы получения денег</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Программа лояльности</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как вернуть деньги</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Ответы на вопросы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Исправление кредитной истории</a>
+            </li>
+          </ul>
+          <div class="sidebar-menu-footer">
+            <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="top-area-container">
+      <button class="unbtn top-area-container__close">
+        <span class="icon icon-cross"></span>
+      </button>
+      <div class="ctabs top-area-tabs">
+        <div class="ctabs-tablist top-area-tabs__tablist" role="tablist">
+          <button
+            class="ctabs-tablist__item top-area-tabs__tablist-item"
+            role="tab"
+            aria-selected="true"
+            aria-controls="top-callback-tab"
+            id="top-callback"
+          >
+            <span class="icon icon-callback-gray"></span>
+            <span>Обратный звонок</span>
+          </button>
+          <button
+            class="ctabs-tablist__item top-area-tabs__tablist-item"
+            role="tab"
+            aria-selected="false"
+            aria-controls="top-feedback-tab"
+            id="top-feedback"
+            tabindex="-1"
+          >
+            <span class="icon icon-feedback-gray"></span>
+            <span>Обратная связь</span>
+          </button>
+          <a class="ctabs-tablist__item top-area-tabs__tablist-item" href="#">
+            <span class="icon icon-question"></span>
+            <span>Ответы на вопросы</span>
+          </a>
+        </div>
+        <div
+          class="ctabs-panel top-area-tabs__panel"
+          tabindex="0"
+          role="tabpanel"
+          data-animation="fadeIn"
+          id="top-callback-tab"
+          aria-labelledby="top-callback"
+        >
+          <div class="ctabs-panel__content top-area-tabs__panel-content">
+            <form class="top-callback-form" action="">
+              <input type="text" class="top-feedback-input top-callback-input" name="phone" placeholder="Телефон" />
+              <button class="btn btn--orange top-feedback-button top-callback-button">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="ctabs-panel top-area-tabs__panel"
+          tabindex="0"
+          role="tabpanel"
+          data-animation="fadeIn"
+          id="top-feedback-tab"
+          aria-labelledby="top-feedback"
+          hidden=""
+        >
+          <div class="ctabs-panel__content top-area-tabs__panel-content">
+            <form class="top-feedback-form" action="">
+              <div class="top-feedback-row">
+                <input type="text" class="top-feedback-input" name="name" placeholder="Имя" />
+                <input type="email" class="top-feedback-input" name="email" placeholder="Эл. почта" />
+              </div>
+              <div class="top-feedback-row">
+                <textarea class="top-feedback-textarea" name="message" cols="30" rows="10"></textarea>
+              </div>
+              <button class="btn btn--orange top-feedback-button">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header header-how">
+      <div class="header-container">
+        <div class="header-left">
+          <nav class="sidebar-menu-toggle">
+            <button class="unbtn sidebar-menu-button">
+              <span class="icon icon-hamburger"></span>
+            </button>
+          </nav>
+          <a href="/" class="logo">
+            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
+          </a>
+        </div>
+        <div class="header-center">
+          <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-callback">
+            <span class="icon icon-phone"></span>
+            <span>Позвонить нам</span>
+          </a>
+          <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-feedback">
+            <span class="icon icon-chat"></span>
+            <span>Поддержка/Верификация 24/7</span>
+          </a>
+        </div>
+        <div class="header-right">
+          <a href="#" class="link link--right-icon header-profile-link">
+            <span>Мой кабинет</span>
+            <span class="icon icon-profile"></span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main main-how">
+      <section class="section section-hero how-hero">
+        <div class="how-hero-container">
+          <h1 class="hero-title">Как взять деньги</h1>
+        </div>
+      </section>
+      <section class="section how-intro">
+        <div class="page-container">
+          <div class="ctabs how-tabs">
+            <div class="ctabs-tablist how-tabs__tablist" role="tablist">
+              <button
+                class="ctabs-tablist__item how-tabs__tablist-item"
+                role="tab"
+                aria-selected="true"
+                aria-controls="first-loan-tab"
+                id="first-loan"
+              >
+                Первый займ
+              </button>
+              <button
+                class="ctabs-tablist__item how-tabs__tablist-item"
+                role="tab"
+                aria-selected="false"
+                aria-controls="regular-customer-tab"
+                id="regular-customer"
+                tabindex="-1"
+              >
+                Постоянный клиент
+              </button>
+            </div>
+            <div
+              class="ctabs-panel how-tabs__panel"
+              tabindex="0"
+              role="tabpanel"
+              id="first-loan-tab"
+              aria-labelledby="first-loan"
+            >
+              <div class="ctabs-panel__content how-tabs__panel-content">
+                <p class="how-tabs__panel-content__mobile-title">Первый займ</p>
+                <ul class="how-tabs-list">
+                  <li class="how-tabs-list__item how-step">
+                    <div class="how-step__icon">
+                      <span class="icon icon-how-switcher"></span>
+                    </div>
+                    <div class="how-step__description">
+                      <p class="how-step__description-title">Рассчитайте займ</p>
+                      <p class="how-step__description-notice">Получите деньги всего за 5 минут</p>
+                    </div>
+                  </li>
+                  <li class="how-tabs-list__item how-step">
+                    <div class="how-step__icon">
+                      <span class="icon icon-how-window"></span>
+                    </div>
+                    <div class="how-step__description">
+                      <p class="how-step__description-title">Заполните форму</p>
+                      <p class="how-step__description-notice">Простая и понятная форма для заполнения</p>
+                    </div>
+                  </li>
+                  <li class="how-tabs-list__item how-step">
+                    <div class="how-step__icon">
+                      <span class="icon icon-how-wallet"></span>
+                    </div>
+                    <div class="how-step__description">
+                      <p class="how-step__description-title">Получите деньги</p>
+                      <p class="how-step__description-notice">
+                        Карты, банковские переводы, электронные кошельки и т.д.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="ctabs-panel how-tabs__panel"
+              tabindex="0"
+              role="tabpanel"
+              id="regular-customer-tab"
+              aria-labelledby="regular-customer"
+              hidden=""
+            >
+              <div class="ctabs-panel__content how-tabs__panel-content">
+                <p class="how-tabs__panel-content__mobile-title">Постоянный клиент</p>
+                <ul class="how-tabs-list">
+                  <li class="how-tabs-list__item how-step">
+                    <div class="how-step__icon">
+                      <span class="icon icon-lightning-wind"></span>
+                    </div>
+                    <div class="how-step__description">
+                      <p class="how-step__description-title">Займ в 1 клик</p>
+                      <p class="how-step__description-notice">Проверяем личные данные и отправляем заявку</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section how-variants">
+        <div class="page-container">
+          <h2 class="section-title how-variants__title">Варианты получения и способы оплаты</h2>
+          <ul class="how-variants-list">
+            <li class="how-variants-list__item">
+              <span class="icon icon-payment-visa"></span>
+            </li>
+            <li class="how-variants-list__item">
+              <span class="icon icon-payment-mastercard"></span>
+            </li>
+            <li class="how-variants-list__item">
+              <span class="icon icon-payment-maestro"></span>
+            </li>
+            <li class="how-variants-list__item">
+              <span class="icon icon-payment-qiwi"></span>
+            </li>
+            <li class="how-variants-list__item">
+              <span class="icon icon-payment-ymoney"></span>
+            </li>
+            <li class="how-variants-list__item">
+              <span class="icon icon-payment-bank"></span>
+            </li>
+            <li class="how-variants-list__item">
+              <span class="icon icon-payment-cash-desk"></span>
+            </li>
+            <li class="how-variants-list__item">
+              <span class="icon icon-payment-contact"></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section how-payment-contact">
+        <div class="page-container">
+          <h2 class="section-title">Платежная система CONTACT</h2>
+          <div class="contact-map" id="contact-map">
+            <input id="contact-point-search" type="search" placeholder="Город, улица" autocomplete="off" />
+            <div class="ctabs how-payment-contact__tabs">
+              <div class="ctabs-tablist how-payment-contact__tablist" role="tablist">
+                <button
+                  id="contact-pos-in-btn"
+                  class="ctabs-tablist__item how-payment-contact__tablist-item"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls=""
+                >
+                  Пункты получения займа
+                </button>
+                <button
+                  id="contact-pos-out-btn"
+                  class="ctabs-tablist__item how-payment-contact__tablist-item"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls=""
+                  tabindex="-1"
+                >
+                  Пункты погашения займа
+                </button>
+                <button
+                  id="contact-pos-in-out-btn"
+                  class="ctabs-tablist__item how-payment-contact__tablist-item"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls=""
+                  tabindex="-1"
+                >
+                  Пункты получения/погашения
+                </button>
+              </div>
+            </div>
+            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+          </div>
+          <div class="how-payment-contact-map" id="contact">
+            <div id="how-payment-contact-map"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section how-advantages">
+        <div class="page-container">
+          <h2 class="section-title">Наши преимущества</h2>
+          <ul class="how-advantages-list">
+            <li class="how-advantages-list__item how-advantage">
+              <div class="how-advantage__icon">
+                <span class="icon icon-rocket"></span>
+              </div>
+              <div class="how-advantage__description">
+                <p class="how-advantage__description-title">Мгновенно</p>
+                <p class="how-advantage__description-notice">Мгновенное зачисление денег на карту</p>
+              </div>
+            </li>
+            <li class="how-advantages-list__item how-advantage">
+              <div class="how-advantage__icon">
+                <span class="icon icon-percent"></span>
+              </div>
+              <div class="how-advantage__description">
+                <p class="how-advantage__description-title">Фактические %</p>
+                <p class="how-advantage__description-notice">
+                  Начисление процентов только за фактические дни пользования займом
+                </p>
+              </div>
+            </li>
+            <li class="how-advantages-list__item how-advantage">
+              <div class="how-advantage__icon">
+                <span class="icon icon-free"></span>
+              </div>
+              <div class="how-advantage__description">
+                <p class="how-advantage__description-title">Бесплатное продление</p>
+                <p class="how-advantage__description-notice">Решение вы узнаете сразу</p>
+              </div>
+            </li>
+            <li class="how-advantages-list__item how-advantage">
+              <div class="how-advantage__icon">
+                <span class="icon icon-refresh-circle"></span>
+              </div>
+              <div class="how-advantage__description">
+                <p class="how-advantage__description-title">Без комиссий</p>
+                <p class="how-advantage__description-notice">Отсутсвие комиссий за досрочный возрат суммы</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section how-tariffs">
+        <div class="page-container">
+          <h2 class="section-title">Таблица тарифов</h2>
+          <div class="how-tariffs__content">
+            <ul class="how-tariffs-list">
+              <li class="how-tariffs-list__item how-tariff">
+                <h3 class="how-tariff__title">Первый займ</h3>
+                <div class="how-tariff__sum-limits">
+                  <div class="sum-limits-item">
+                    <p class="sum-limits-item__label">Минимальная сумма</p>
+                    <p class="sum-limits-item__value">2000 ₽</p>
+                  </div>
+                  <div class="sum-limits-item">
+                    <p class="sum-limits-item__label">Максимальная сумма</p>
+                    <p class="sum-limits-item__value">14 000 ₽</p>
+                  </div>
+                </div>
+                <div class="how-tariff__limits">
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Мин. срок выдачи</div>
+                    <div class="limits-item__value">7 д.</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Макс. срок выдачи</div>
+                    <div class="limits-item__value">21 д.</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Основная % ставка</div>
+                    <div class="limits-item__value">1,5%</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">При просрочке</div>
+                    <div class="limits-item__value">1,5%</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">% в день выдачи</div>
+                    <div class="limits-item__value">
+                      <span class="icon icon-no"></span>
+                    </div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Реструктуризация</div>
+                    <div class="limits-item__value">
+                      <span class="icon icon-yes"></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="how-tariffs-list__item how-tariff">
+                <h3 class="how-tariff__title">Второй займ</h3>
+                <div class="how-tariff__sum-limits">
+                  <div class="sum-limits-item">
+                    <p class="sum-limits-item__label">Минимальная сумма</p>
+                    <p class="sum-limits-item__value">2000 ₽</p>
+                  </div>
+                  <div class="sum-limits-item">
+                    <p class="sum-limits-item__label">Максимальная сумма</p>
+                    <p class="sum-limits-item__value">15 000 ₽</p>
+                  </div>
+                </div>
+                <div class="how-tariff__limits">
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Мин. срок выдачи</div>
+                    <div class="limits-item__value">5 д.</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Макс. срок выдачи</div>
+                    <div class="limits-item__value">30 д.</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Основная % ставка</div>
+                    <div class="limits-item__value">1,5%</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">При просрочке</div>
+                    <div class="limits-item__value">1,5%</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">% в день выдачи</div>
+                    <div class="limits-item__value">
+                      <span class="icon icon-no"></span>
+                    </div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Реструктуризация</div>
+                    <div class="limits-item__value">
+                      <span class="icon icon-yes"></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="how-tariffs-list__item how-tariff">
+                <h3 class="how-tariff__title">Третий займ</h3>
+                <div class="how-tariff__sum-limits">
+                  <div class="sum-limits-item">
+                    <p class="sum-limits-item__label">Минимальная сумма</p>
+                    <p class="sum-limits-item__value">2000 ₽</p>
+                  </div>
+                  <div class="sum-limits-item">
+                    <p class="sum-limits-item__label">Максимальная сумма</p>
+                    <p class="sum-limits-item__value">20 000 ₽</p>
+                  </div>
+                </div>
+                <div class="how-tariff__limits">
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Мин. срок выдачи</div>
+                    <div class="limits-item__value">5 д.</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Макс. срок выдачи</div>
+                    <div class="limits-item__value">30 д.</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Основная % ставка</div>
+                    <div class="limits-item__value">1,5%</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">При просрочке</div>
+                    <div class="limits-item__value">1,5%</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">% в день выдачи</div>
+                    <div class="limits-item__value">
+                      <span class="icon icon-no"></span>
+                    </div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Реструктуризация</div>
+                    <div class="limits-item__value">
+                      <span class="icon icon-yes"></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="how-tariffs-list__item how-tariff">
+                <h3 class="how-tariff__title">Четвертый займ</h3>
+                <div class="how-tariff__sum-limits">
+                  <div class="sum-limits-item">
+                    <p class="sum-limits-item__label">Минимальная сумма</p>
+                    <p class="sum-limits-item__value">2000 ₽</p>
+                  </div>
+                  <div class="sum-limits-item">
+                    <p class="sum-limits-item__label">Максимальная сумма</p>
+                    <p class="sum-limits-item__value">30 000 ₽</p>
+                  </div>
+                </div>
+                <div class="how-tariff__limits">
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Мин. срок выдачи</div>
+                    <div class="limits-item__value">5 д.</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Макс. срок выдачи</div>
+                    <div class="limits-item__value">30 д.</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Основная % ставка</div>
+                    <div class="limits-item__value">1,5%</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">При просрочке</div>
+                    <div class="limits-item__value">1,5%</div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">% в день выдачи</div>
+                    <div class="limits-item__value">
+                      <span class="icon icon-no"></span>
+                    </div>
+                  </div>
+                  <div class="how-tariff__limits-item limits-item">
+                    <div class="limits-item__label">Реструктуризация</div>
+                    <div class="limits-item__value">
+                      <span class="icon icon-yes"></span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="how-tariffs-arrows">
+              <span class="icon icon-left-right-arrows"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-how">
+      <div class="footer-container">
+        <div class="footer__contacts">
+          <div class="footer__contacts-phone">
+            <a href="tel:+74952680557" class="link phone">+7 (495) 268 0557</a>
+          </div>
+          <div class="footer__contacts-copy">
+            <span class="footer__contacts-copy__left">&copy; SmartCredit, 2015-2019.</span>
+            <span class="footer__contacts-copy__right">Все права защищены.</span>
+          </div>
+          <div class="footer__contacts-program">
+            <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
+          </div>
+          <div class="footer__contacts-designedby">
+            <a class="link designedby-link" href="#">Дизайн: Genue</a>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">О компании</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Раскрытие информации</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">СМИ о нас</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Новости компании</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--big" href="#">Контакты</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Программа лояльности</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Как вернуть деньги</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Ответы на вопросы</a>
+            </li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray footer__nav-link--big" href="#"
+                >Исправление кредитной истории</a
+              >
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Как взять деньги</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Схема работы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Правила предоставления займов</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Тарифы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Документы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Способы получения денег</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/bundle.js?v=0.0.10"></script>
+  </body>
+</html>

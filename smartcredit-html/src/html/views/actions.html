@@ -1,0 +1,81 @@
+<% var data = {
+  title: "SmartCredit | Акции",
+  name: 'actions',
+  activeLink: 'actions',
+}; %>
+<%= _.template(require('./../includes/partnership-header.html'))(data) %>
+
+<main class="main partnership-main">
+  <div class="partnership-container partnership-page-container">
+    <%= _.template(require('./../includes/partnership-sidebar.html'))(data) %>
+    <section class="partnership-section">
+      <div class="partnership-section__header">
+        <h2 class="partnership-section-title">Акции</h2>
+      </div>
+      <div class="partnership-section__content">
+        <p class="actions-notice">В данном разделе мы собрали самые интересные акции для клиентов SmartCredit</p>
+        <ul class="actions-list">
+          <li class="actions-list__item actions-item">
+            <div class="actions-item__head">
+              <p class="actions-item__head-title">Текстура как экзарация</p>
+              <img class="actions-item__head-image" src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
+            </div>
+            <p class="actions-item__description">
+              Описание акции и почему она выгодна для клиентов SmartCredit
+            </p>
+            <div class="actions-item__footer">
+              <a href="#" class="link actions-item-get-link">Получить ссылку<span
+                  class="icon icon-arrow-right"></span></a>
+              <a href="#" class="link btn btn--orange-transparent actions-item-rate-button">Ставка 15%</a>
+            </div>
+          </li>
+          <li class="actions-list__item actions-item">
+            <div class="actions-item__head">
+              <p class="actions-item__head-title">Абразивный неоцен</p>
+              <img class="actions-item__head-image" src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
+            </div>
+            <p class="actions-item__description">
+              Описание акции и почему она выгодна для клиентов SmartCredit
+            </p>
+            <div class="actions-item__footer">
+              <a href="#" class="link actions-item-get-link">Получить ссылку<span
+                  class="icon icon-arrow-right"></span></a>
+              <a href="#" class="link btn btn--orange-transparent actions-item-rate-button">Ставка 15%</a>
+            </div>
+          </li>
+          <li class="actions-list__item actions-item">
+            <div class="actions-item__head">
+              <p class="actions-item__head-title">Интрузивный плюмаж</p>
+              <img class="actions-item__head-image" src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
+            </div>
+            <p class="actions-item__description">
+              Описание акции и почему она выгодна для клиентов SmartCredit
+            </p>
+            <div class="actions-item__footer">
+              <a href="#" class="link actions-item-get-link">Получить ссылку<span
+                  class="icon icon-arrow-right"></span></a>
+              <a href="#" class="link btn btn--orange-transparent actions-item-rate-button">Ставка 15%</a>
+            </div>
+          </li>
+          <li class="actions-list__item actions-item">
+            <div class="actions-item__head">
+              <p class="actions-item__head-title">Увалистый кварц</p>
+              <img class="actions-item__head-image" src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
+            </div>
+            <p class="actions-item__description">
+              Описание акции и почему она выгодна для клиентов SmartCredit
+            </p>
+            <div class="actions-item__footer">
+              <a href="#" class="link actions-item-get-link">Получить ссылку<span
+                  class="icon icon-arrow-right"></span></a>
+              <a href="#" class="link btn btn--orange-transparent actions-item-rate-button">Ставка 15%</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <%= _.template(require('./../includes/partnership-advantages.html'))(data) %>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

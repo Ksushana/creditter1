@@ -1,0 +1,78 @@
+<% var data = {
+  title: "SmartCredit | Заявки в службу поддержки",
+  name: 'tickets',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-tickets">
+  <section class="section lk-section">
+    <div class="lk-page-container tickets-page-container">
+      <h2 class="section-title lk-section-title">Заявки в службу поддержки</h2>
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block ctabs tickets">
+          <div class="tickets-header">
+            <div class="ctabs-tablist tickets__tabs" role="tablist">
+              <button class="ctabs-tablist__item tickets__tabs-item" role="tab" aria-selected="false"
+                aria-controls="opened-tab" id="opened">Открытые</button>
+              <button class="ctabs-tablist__item tickets__tabs-item" role="tab" aria-selected="false"
+                aria-controls="closed-tab" id="closed" tabindex="-1">Закрытые</button>
+              <button class="ctabs-tablist__item tickets__tabs-item" role="tab" aria-selected="true"
+                aria-controls="all-tab" id="all" tabindex="-1">Все</button>
+            </div>
+            <button class="btn btn--orange new-ticket-button">Новая заявка</button>
+          </div>
+          <div class="ctabs-panel" tabindex="0" role="tabpanel" id="opened-tab" aria-labelledby="opened" hidden="">
+            <div class="ctabs-panel__content tickets-content">
+              <ul class="lk-table support-tickets-list">
+                <li class="lk-table__row support-tickets-list__item">
+                  <div class="lk-table__head support-tickets-list__head">
+                    <p class="lk-table__head-cell support-tickets-list__head-cell">Изменена</p>
+                    <p class="lk-table__head-cell support-tickets-list__head-cell">Заявка</p>
+                    <p class="lk-table__head-cell support-tickets-list__head-cell">Статус</p>
+                  </div>
+                  <div class="lk-table__row-inner support-tickets-list__row">
+                    <p class="support-tickets-empty">Ни одного тикета не было найдено.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ctabs-panel" tabindex="0" role="tabpanel" id="closed-tab" aria-labelledby="closed" hidden="">
+            <div class="ctabs-panel__content tickets-content">
+              <ul class="lk-table support-tickets-list">
+                <li class="lk-table__row support-tickets-list__item">
+                  <div class="lk-table__head support-tickets-list__head">
+                    <p class="lk-table__head-cell support-tickets-list__head-cell">Изменена</p>
+                    <p class="lk-table__head-cell support-tickets-list__head-cell">Заявка</p>
+                    <p class="lk-table__head-cell support-tickets-list__head-cell">Статус</p>
+                  </div>
+                  <div class="lk-table__row-inner support-tickets-list__row">
+                    <p class="support-tickets-empty">Ни одного тикета не было найдено.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ctabs-panel" tabindex="0" role="tabpanel" id="all-tab" aria-labelledby="all">
+            <div class="ctabs-panel__content tickets-content">
+              <ul class="lk-table support-tickets-list">
+                <li class="lk-table__row support-tickets-list__item">
+                  <div class="lk-table__head support-tickets-list__head">
+                    <p class="lk-table__head-cell support-tickets-list__head-cell">Изменена</p>
+                    <p class="lk-table__head-cell support-tickets-list__head-cell">Заявка</p>
+                    <p class="lk-table__head-cell support-tickets-list__head-cell">Статус</p>
+                  </div>
+                  <div class="lk-table__row-inner support-tickets-list__row">
+                    <p class="support-tickets-empty">Ни одного тикета не было найдено.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

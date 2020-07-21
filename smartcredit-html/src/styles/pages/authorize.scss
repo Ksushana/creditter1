@@ -1,0 +1,53 @@
+.section-authorization__container {
+  padding-bottom: 54px;
+}
+
+.authorization-formblock {
+  padding-top: 45px;
+}
+
+.authorization-title {
+  font-size: 30px;
+  line-height: 27px;
+  margin-bottom: 51px;
+}
+
+.authorization-form-next-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 33px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.forgot-password-link {
+  font-size: 20px;
+  line-height: 24px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+.authorization-next-button {
+  width: 260px;
+  max-width: 100%;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.authorization-notice {
+  width: 100%;
+  max-width: 436px;
+  margin: 0 auto;
+}

@@ -1,0 +1,212 @@
+<% var data = {
+  title: "SmartCredit | Партнерская программа",
+  name: 'partner',
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main main-partner">
+  <section class="section section-hero partner-hero">
+    <div class="partner-hero-container">
+      <h1 class="hero-title">Партнерская программа</h1>
+    </div>
+  </section>
+  <section class="section partner-intro">
+    <div class="page-container">
+      <h2 class="section-title">Заработайте от 8000 ₽ за 100 заполненных заявок</h2>
+      <div class="ctabs partner-intro-tabs">
+        <div class="ctabs-tablist partner-intro-tabs__tablist" role="tablist">
+          <button class="ctabs-tablist__item partner-intro-tabs__tablist-item" role="tab" aria-selected="flase"
+            aria-controls="sarafan-tab" id="sarafan">Сарафанное радио</button>
+          <button class="ctabs-tablist__item partner-intro-tabs__tablist-item" role="tab" aria-selected="true"
+            aria-controls="online-partner-tab" id="online-partner" tabindex="-1">Для онлайн-партнеров</button>
+        </div>
+        <div class="ctabs-panel partner-intro-tabs__panel" tabindex="0" role="tabpanel" id="sarafan-tab"
+          aria-labelledby="sarafan" hidden="">
+          <div class="ctabs-panel__content partner-intro-tabs__panel-content">
+            <p class="partner-intro-tabs__panel-content__mobile-title">Сарафанное радио</p>
+            <ul class="partner-intro-tabs-list">
+              <li class="partner-intro-tabs-list__item partner-intro-step">
+                <div class="partner-intro-step__icon">
+                  <span class="icon icon-connected-people"></span>
+                </div>
+                <div class="partner-intro-step__title">Рассказыайте о нас</div>
+              </li>
+              <li class="partner-intro-tabs-list__item partner-intro-step">
+                <div class="partner-intro-step__icon">
+                  <span class="icon icon-how-wallet"></span>
+                </div>
+                <div class="partner-intro-step__title">Получайте вознаграждение</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ctabs-panel partner-intro-tabs__panel" tabindex="0" role="tabpanel" id="online-partner-tab"
+          aria-labelledby="online-partner">
+          <div class="ctabs-panel__content partner-intro-tabs__panel-content">
+            <p class="partner-intro-tabs__panel-content__mobile-title">Для онлайн-партнеров</p>
+            <ul class="partner-intro-tabs-list">
+              <li class="partner-intro-tabs-list__item partner-intro-step">
+                <div class="partner-intro-step__icon">
+                  <span class="icon icon-horn"></span>
+                </div>
+                <div class="partner-intro-step__title">Привлекайте клиентов</div>
+              </li>
+              <li class="partner-intro-tabs-list__item partner-intro-step">
+                <div class="partner-intro-step__icon">
+                  <span class="icon icon-connected-people"></span>
+                </div>
+                <div class="partner-intro-step__title">Рассказыайте о нас</div>
+              </li>
+              <li class="partner-intro-tabs-list__item partner-intro-step">
+                <div class="partner-intro-step__icon">
+                  <span class="icon icon-how-wallet"></span>
+                </div>
+                <div class="partner-intro-step__title">Получайте вознаграждение</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section partner-calculator">
+    <div class="page-container">
+      <h2 class="section-title">Калькулятор вознаграждений</h2>
+      <div class="ctabs partner-calculator-tabs">
+        <div class="ctabs-tablist partner-calculator-tabs__tablist" role="tablist">
+          <button class="ctabs-tablist__item partner-calculator-tabs__tablist-item" role="tab" aria-selected="true"
+            aria-controls="completed-application-tab" id="completed-application">Оплата за заполненную заявку</button>
+          <button class="ctabs-tablist__item partner-calculator-tabs__tablist-item" role="tab" aria-selected="false"
+            aria-controls="granted-loan-tab" id="granted-loan" tabindex="-1">Оплата за выданный займ</button>
+        </div>
+        <div class="ctabs-panel partner-calculator-tabs__panel" tabindex="0" role="tabpanel"
+          id="completed-application-tab" aria-labelledby="completed-application" data-animation="fadeInUp">
+          <div class="ctabs-panel__content partner-calculator-tabs__panel-content">
+            <p class="partner-calculator-tabs__panel-content__mobile-title">Оплата за заполненную заявку</p>
+            <form class="partner-calculator-form" action="">
+              <div class="partner-calculator-form__counts" data-min="1" data-max="200" data-step="1">
+                <label class="partner-calculator-form__counts-field">
+                  <span class="partner-calculator-form__counts-field__label--mobile">Заполненных заявок</span>
+                  <span class="partner-calculator-form__counts-field__label">Количество заполненных заявок</span>
+                  <input class="partner-calculator-form__counts-field__input" type="text" value="100">
+                </label>
+                <div class="partner-calculator-form__counts-slider choose-slider"></div>
+              </div>
+              <div class="partner-calculator-form__footer">
+                <p class="partner-calculator-form__result">
+                  <span class="partner-calculator-form__result-title">Ваше вознаграждение:</span> <span
+                    class="partner-calculator-form__result-value" data-coefficient="80">8 000</span> <span
+                    class="partner-calculator-form__result-suffix">₽</span></p>
+                <button class="btn btn--orange partner-calculator-form__submit" type="submit">Стать
+                  партнером</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="ctabs-panel partner-calculator-tabs__panel" tabindex="0" role="tabpanel" id="granted-loan-tab"
+          aria-labelledby="granted-loan" data-animation="fadeInUp" hidden="">
+          <div class="ctabs-panel__content partner-calculator-tabs__panel-content">
+            <p class="partner-calculator-tabs__panel-content__mobile-title">Оплата за выданный займ</p>
+            <form class="partner-calculator-form" action="">
+              <div class="partner-calculator-form__counts" data-min="1" data-max="100" data-step="1">
+                <label class="partner-calculator-form__counts-field">
+                  <span class="partner-calculator-form__counts-field__label--mobile">Выданных займов</span>
+                  <span class="partner-calculator-form__counts-field__label">Количество выданных займов</span>
+                  <input class="partner-calculator-form__counts-field__input" type="text" value="50">
+                </label>
+                <div class="partner-calculator-form__counts-slider choose-slider"></div>
+              </div>
+              <div class="partner-calculator-form__footer">
+                <p class="partner-calculator-form__result">
+                  <span class="partner-calculator-form__result-title">Ваше вознаграждение:</span> <span
+                    class="partner-calculator-form__result-value" data-coefficient="800">40
+                    000</span> <span class="partner-calculator-form__result-suffix">₽</span></p>
+                <button class="btn btn--orange partner-calculator-form__submit" type="submit">Стать
+                  партнером</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="calculator-rewards">
+        <div class="calculator-rewards__item calculator-reward">
+          <div class="calculator-reward__icon">
+            <span class="icon icon-window-reward"></span>
+          </div>
+          <div class="calculator-reward__description">
+            <p class="calculator-reward__description-title">800 ₽ за выданный займ</p>
+            <p class="calculator-reward__description-notice">Партнер получает фиксированное вознагражение, за
+              приведенного клиента, которому будет выдан займ.</p>
+          </div>
+        </div>
+        <div class="calculator-rewards__item calculator-reward">
+          <div class="calculator-reward__icon">
+            <span class="icon icon-window-ok"></span>
+          </div>
+          <div class="calculator-reward__description">
+            <p class="calculator-reward__description-title">80 ₽ за корректную заявку</p>
+            <p class="calculator-reward__description-notice">Партнер получает фиксированное вознагражение, за правильно
+              заполненную форму на выдачу займа.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section partner-advantages bg-beige">
+    <div class="page-container">
+      <h2 class="section-title">Наши преимущества</h2>
+      <ul class="partner-advantages-list">
+        <li class="partner-advantages-list__item partner-advantage">
+          <div class="partner-advantage__icon">
+            <span class="icon icon-moneys"></span>
+          </div>
+          <div class="partner-advantage__notice">
+            Нет лимитов на выплату
+          </div>
+        </li>
+        <li class="partner-advantages-list__item partner-advantage">
+          <div class="partner-advantage__icon">
+            <span class="icon icon-people"></span>
+          </div>
+          <div class="partner-advantage__notice">
+            Широчайшая потенциальная клиентская аудитория
+          </div>
+        </li>
+        <li class="partner-advantages-list__item partner-advantage">
+          <div class="partner-advantage__icon">
+            <span class="icon icon-clock-simple"></span>
+          </div>
+          <div class="partner-advantage__notice">
+            Выплаты в&nbsp;день&nbsp;обращения
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section partner-up">
+    <div class="page-container">
+      <h2 class="section-title">Стань нашим партнером</h2>
+      <form class="partner-up-form">
+        <label class="partner-up-form__field">
+          <span class="partner-up-form__field-label">Ваше имя</span>
+          <input type="text" class="partner-up-form__field-input" name="name">
+        </label>
+        <label class="partner-up-form__field">
+          <span class="partner-up-form__field-label">Email</span>
+          <input type="email" class="partner-up-form__field-input" name="email">
+        </label>
+        <label class="partner-up-form__field">
+          <span class="partner-up-form__field-label">Телефон</span>
+          <input type="text" class="partner-up-form__field-input" name="phone" placeholder="+7">
+        </label>
+        <label class="partner-up-form__field">
+          <span class="partner-up-form__field-label">Веб-сайт</span>
+          <input type="text" class="partner-up-form__field-input" name="site">
+        </label>
+        <button class="btn btn--orange partner-up-form__button">Стать партнером</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,232 @@
+.lk-header-wrapper {
+  border-bottom: 1px solid #e5e6eb;
+}
+
+.lk-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.lk-header-user-link {
+  & > .icon-user {
+    margin-right: 6px;
+  }
+
+  & > .icon-arrow-down-lk {
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    & > .icon-user {
+      background-image: svg-load("icons/user.svg", stroke=$orange);
+    }
+    & > .icon-arrow-down-lk {
+      background-image: svg-load("icons/arrow-down-lk.svg", stroke=$orange);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    & > .icon-user {
+      margin-right: 0;
+    }
+
+    & > .icon-arrow-down-lk {
+      display: none;
+    }
+  }
+}
+
+.lk-dropdown {
+  position: relative;
+}
+
+.lk-dropdown__content {
+  position: absolute;
+  bottom: -9px;
+  min-width: 211px;
+  height: 0;
+  padding: 0;
+  border: none;
+  box-shadow: 0px 2px 4px #edeff5;
+  background: #ffffff;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: height 0.3s ease, visibility 0.3s ease, overflow 0.3s ease, opacity 0.3s ease;
+
+  @media screen and (max-width: 767px) {
+    right: 0;
+  }
+}
+
+.lk-dropdown--opened .lk-dropdown__content {
+  height: auto;
+  padding: 10px 20px;
+  border: 1px solid #e5e9f2;
+  border-radius: 6px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.lk-dropdown--opened .lk-header-user-link {
+  & > .icon-arrow-down-lk {
+    transform: rotate(180deg);
+  }
+}
+
+.lk-header-dropdown {
+  display: inline-block;
+}
+
+.lk-header-user-menu__item {
+  font-size: 15px;
+  line-height: 34px;
+}
+
+.lk-header-user-link__value {
+  margin-right: 4px;
+  vertical-align: middle;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.lk-support-chat {
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.lk-support-chat__badge {
+  position: absolute;
+  top: -6px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  width: 16px;
+  height: 16px;
+  font-size: 13px;
+  line-height: 1;
+  color: #ffffff;
+  border-radius: 50%;
+  background: $orange;
+}
+
+.lk-header-nav {
+  padding-top: 14px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e6eb;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.lk-header-nav-menu {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    max-width: 840px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.lk-header-nav-menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lk-header-nav-menu-list__item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.lk-header-nav-menu-list__item-link {
+  display: inline-block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.lk-sidebar-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lk-sidebar-menu-header > .sidebar-menu-toggle {
+  margin-right: 0;
+}
+
+.lk-sidebar-menu-list {
+  padding: 31px 20px 13px;
+}
+
+.lk-sidebar-menu__header {
+  padding: 32px 20px;
+  border-bottom: 1px solid $lightGray;
+}
+
+.lk-sidebar-menu__header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lk-sidebar-support-chat {
+  display: inline-block;
+}
+
+.lk-sidebar-username {
+  padding-top: 35px;
+  padding-bottom: 11px;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+}
+
+.lk-sidebar-link {
+  padding-bottom: 28px;
+}
+
+.lk-sidebar-link__link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-weight: bold;
+
+  & > .icon {
+    margin-left: 11px;
+  }
+}
+
+.lk-sidebar-link__link--active {
+  color: $orange;
+}
+
+.lk-logo {
+  position: relative;
+  left: 0;
+  top: 0;
+  transform: none;
+}

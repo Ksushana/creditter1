@@ -1,0 +1,73 @@
+.get-loan-page-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.get-loan-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 52px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 4px;
+    margin-bottom: 31px;
+  }
+}
+
+.get-loan-section-head__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: $textMainColor;
+
+  & > .icon {
+    margin-right: 21px;
+  }
+
+  @media screen and (max-width: 767px) {
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+}
+
+.greeting {
+  font-size: 30px;
+  line-height: 36px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+.repay {
+  font-size: 21px;
+  line-height: 25px;
+}
+
+.get-loan-header {
+  padding: 29px 22px 20px 21px;
+  border-bottom: 1px solid #e5e6eb;
+}
+
+.get-loan-title {
+  margin-bottom: 20px;
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 41px;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 13px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+  }
+}
+
+.get-loan-form {
+  padding-top: 0;
+}

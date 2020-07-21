@@ -1,0 +1,178 @@
+.disclosure-hero {
+  background-image: url("../images/bg-disclosure.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 123px;
+  padding-bottom: 123px;
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../images/bg-disclosure-mobile.png");
+    padding-top: 109px;
+    padding-bottom: 111px;
+  }
+}
+
+.disclosure-intro {
+  padding-bottom: 90px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 55px;
+  }
+}
+
+.disclosure-intro__title {
+  margin-bottom: 49px;
+}
+
+.disclosure-intro__notice {
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.disclosure-intro__legal {
+  padding: 23px 0 100px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 62px;
+  }
+}
+
+.disclosure-intro__legal-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $lightGray;
+  font-size: 15px;
+  line-height: 23px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+    border: none;
+  }
+}
+
+.disclosure-intro__legal-row-header {
+  padding-bottom: 18px;
+  border-bottom: 1px solid $orange;
+  font-weight: bold;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.disclosure-intro__legal-row__col {
+  flex-basis: 50%;
+  padding-right: 8%;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 100%;
+    padding-right: 0;
+
+    &:last-child {
+      margin-bottom: 15px;
+      font-size: 21px;
+      line-height: 23px;
+    }
+  }
+}
+
+.legal-org-title {
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+.legal-org-description {
+  @media screen and (max-width: 767px) {
+    display: block;
+    font-size: 15px;
+    line-height: 23px;
+    color: $gray;
+  }
+}
+
+.disclosure-juristic-documents__arrows {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.disclosure-juristic-documents .ctabs-panel {
+  @media screen and (max-width: 767px) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -35px;
+      width: 100%;
+      height: 1px;
+      background-color: $lightGray;
+    }
+  }
+}
+
+.disclosure-juristic-documents__tabs {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: none;
+
+    & .ctabs-tablist__item {
+      flex-basis: auto;
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+  }
+}
+
+.juristic-documents-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.juristic-documents-list__item {
+  flex-basis: 50%;
+  margin-bottom: 35px;
+  padding-right: 10%;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 100%;
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.juristic-document-link {
+  display: flex;
+  text-decoration: none;
+  color: $textMainColor;
+
+  &:hover .juristic-document__title {
+    color: $orange;
+  }
+}
+
+.juristic-document__icon {
+  margin-right: 20px;
+}
+
+.juristic-document__title {
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+
+.juristic-document__meta {
+  color: $gray;
+  line-height: 20px;
+}

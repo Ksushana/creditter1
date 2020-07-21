@@ -1,0 +1,54 @@
+<svg width="1001" height="398" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path opacity=".2" fill-rule="evenodd" clip-rule="evenodd"
+    d="M976.578 398H24.084V270.5L261 255l240.5-66L740 171l236.578-61v288z" fill="url(#paint0_linear)" /><text
+    fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+    <tspan x="478" y="153.806">4 займ</tspan>
+  </text>
+  <path d="M524 103c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z" stroke="#FF4E2C"
+    stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15" font-weight="bold" letter-spacing="0"
+    white-space="pre">
+    <tspan x="483.356" y="107.805">-15%</tspan>
+  </text><text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+    <tspan x="239" y="218.805">3 займ</tspan>
+  </text>
+  <path fill="#fff" d="M238 144h48v48h-48z" />
+  <path d="M285 168c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z" stroke="#FF4E2C"
+    stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15" font-weight="bold" letter-spacing="0"
+    white-space="pre">
+    <tspan x="244.356" y="172.805">-10%</tspan>
+  </text><text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+    <tspan x="1" y="234.805">2 займ</tspan>
+  </text>
+  <path d="M47 184c0 12.703-10.297 23-23 23S1 196.703 1 184s10.297-23 23-23 23 10.297 23 23z" stroke="#FF4E2C"
+    stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15" font-weight="bold" letter-spacing="0"
+    white-space="pre">
+    <tspan x="10.207" y="188.805">-5%</tspan>
+  </text><text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+    <tspan x="716" y="135.805">5 займ</tspan>
+  </text>
+  <path d="M762 85c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z" fill="#fff"
+    stroke="#FF4E2C" stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15" font-weight="bold"
+    letter-spacing="0" white-space="pre">
+    <tspan x="721.356" y="89.805">-20%</tspan>
+  </text>
+  <g>
+    <text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+      <tspan x="954" y="74.805">6 займ</tspan>
+    </text>
+    <path d="M1000 24c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z" fill="#fff"
+      stroke="#FF4E2C" stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15" font-weight="bold"
+      letter-spacing="0" white-space="pre">
+      <tspan x="959.356" y="28.805">-25%</tspan>
+    </text>
+  </g>
+  <path d="M24 270.5L261 255l240-66 238-18 238-61" stroke="#FF4E2C" stroke-width="2" />
+  <path fill-rule="evenodd" clip-rule="evenodd"
+    d="M739 179a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM501 197a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM977 118a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM261 262a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM24 278a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"
+    fill="#fff" stroke="#FF4E2C" stroke-width="2" />
+  <defs>
+    <linearGradient id="paint0_linear" x1="500.331" y1="109.093" x2="500.331" y2="398" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF4E2C" />
+      <stop offset="1" stop-color="#FF4E2C" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,33 @@
+.back-hero {
+  background-image: url("../images/bg-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 123px 0;
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../images/bg-back-mobile.png");
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+}
+
+.section-back {
+  padding-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
+}
+
+.section-back__notice {
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.back-variants {
+  padding-top: 98px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 50px;
+  }
+}

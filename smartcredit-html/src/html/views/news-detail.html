@@ -1,0 +1,36 @@
+<% var data = {
+  title: "SmartCredit | Детальная новость",
+  name: 'news-detail',
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main main-news">
+  <section class="section news-detail">
+    <div class="page-container">
+      <h1 class="news-detail__title">Милых дам с Международным женским днем</h1>
+      <div class="news-detail__meta">
+        <p class="news-detail__meta-date">08 марта 2019</p>
+        <p class="news-detail__meta-category">Новости компании</p>
+      </div>
+      <div class="news-detail__content">
+        Полтора столетия назад 8 марта в Нью-Йорке состоялся «кастрюльный митинг»: его устроили женщины, которым надоело
+        чувствовать себя бесправными. В наше время эта дата не имеет никакой политической подоплеки, — сегодня праздник
+        8 марта посвящен той половине человечества, которую совершенно заслуженно именуют «прекрасной».
+        <p class="news-detail__content-subtitle">Поздравляем с праздником</p>
+        Мы поздравляем со Всемирным женским днем наших мам, жен, возлюбленных, дочерей, подруг, коллег и знакомых.
+        Желаем, чтобы ваш горизонт не омрачали никакие тучи! Спасибо вам за тепло сердец, за тот свет, которым вы
+        освещаете нашу жизнь. Благодарим за любовь и терпение, за доброту и щедрость. Без вас, наши прекрасные женщины,
+        мир был бы скучен и нелеп. Пусть в вашей жизни будет всего в достатке: счастья, любви, уважения близких!
+        <p class="news-detail__content-subtitle">Что подарить?</p>
+        Хотите купить хороший подарок ко Всемирному женскому дню, но не хватает денег? Обращайтесь в SmartCredit!
+      </div>
+    </div>
+  </section>
+  <section class="section news-detail-news">
+    <div class="page-container">
+      <%= _.template(require('./../includes/news.html'))({title: 'Другие новости компании', isHorizontal: true }) %>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

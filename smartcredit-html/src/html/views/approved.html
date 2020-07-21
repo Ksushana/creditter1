@@ -1,0 +1,54 @@
+<% var data = {
+  title: "SmartCredit | Вам одобрен займ",
+  name: 'approved',
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main main-approved">
+  <section class="section section-hero approved-hero">
+    <div class="approved-hero-container">
+      <h1 class="hero-title approved-hero-title">Вам одобрен займ</h1>
+    </div>
+  </section>
+  <section class="section section-approved">
+    <div class="page-container">
+      <h2 class="section-title section-approved__title">Уважаемый Антон Блинов!</h2>
+      <p class="section-approved__notice">Успейте воспользоваться предложением! Получите займ на вашу карту за 5 минут
+      </p>
+      <div class="approved-block approved-loan">
+        <div class="approved-loan-col">
+          <p class="approved-loan-col__title">Сумма займа</p>
+          <p class="approved-load-col__value">10 000 <span class="small">₽</span></p>
+        </div>
+        <div class="approved-loan-col">
+          <p class="approved-loan-col__title">Срок займа</p>
+          <p class="approved-load-col__value">21 <span class="small">день</span></p>
+        </div>
+        <div class="approved-loan-col">
+          <p class="approved-loan-col__title">Ставка</p>
+          <p class="approved-load-col__value">1<span class="small">%</span></p>
+        </div>
+        <div class="approved-loan-col">
+          <p class="approved-loan-col__title">К возврату</p>
+          <p class="approved-load-col__value">14 000 <span class="small">₽</span></p>
+        </div>
+      </div>
+      <div class="approved-block approved-card">
+        <p class="approved-card__title">На карту</p>
+        <p class="approved-card__value">4231 ХХХХ ХХХХ 2306</p>
+      </div>
+      <div class="approved-agreements">
+        <label class="application-form__checkbox check">
+          <input class="check__input" type="checkbox" name="agreements">
+          <span class="check__box"></span>
+          <span>Согласен с <a class="link link--orange" href="#">условиями получения займа</a></span>
+        </label>
+      </div>
+      <div class="approved-get-loan">
+        <button class="btn btn--orange approved-get-loan-button" type="button">Получить займ</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

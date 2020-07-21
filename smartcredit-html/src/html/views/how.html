@@ -1,0 +1,363 @@
+<% var data = {
+  title: "SmartCredit | Как взять деньги",
+  name: 'how',
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main main-how">
+  <section class="section section-hero how-hero">
+    <div class="how-hero-container">
+      <h1 class="hero-title">Как взять деньги</h1>
+    </div>
+  </section>
+  <section class="section how-intro">
+    <div class="page-container">
+      <div class="ctabs how-tabs">
+        <div class="ctabs-tablist how-tabs__tablist" role="tablist">
+          <button class="ctabs-tablist__item how-tabs__tablist-item" role="tab" aria-selected="true"
+            aria-controls="first-loan-tab" id="first-loan">Первый займ</button>
+          <button class="ctabs-tablist__item how-tabs__tablist-item" role="tab" aria-selected="false"
+            aria-controls="regular-customer-tab" id="regular-customer" tabindex="-1">Постоянный клиент</button>
+        </div>
+        <div class="ctabs-panel how-tabs__panel" tabindex="0" role="tabpanel" id="first-loan-tab"
+          aria-labelledby="first-loan">
+          <div class="ctabs-panel__content how-tabs__panel-content">
+            <p class="how-tabs__panel-content__mobile-title">Первый займ</p>
+            <ul class="how-tabs-list">
+              <li class="how-tabs-list__item how-step">
+                <div class="how-step__icon">
+                  <span class="icon icon-how-switcher"></span>
+                </div>
+                <div class="how-step__description">
+                  <p class="how-step__description-title">Рассчитайте займ</p>
+                  <p class="how-step__description-notice">Получите деньги всего за 5
+                    минут</p>
+                </div>
+              </li>
+              <li class="how-tabs-list__item how-step">
+                <div class="how-step__icon">
+                  <span class="icon icon-how-window"></span>
+                </div>
+                <div class="how-step__description">
+                  <p class="how-step__description-title">Заполните форму</p>
+                  <p class="how-step__description-notice">Простая и понятная форма для
+                    заполнения</p>
+                </div>
+              </li>
+              <li class="how-tabs-list__item how-step">
+                <div class="how-step__icon">
+                  <span class="icon icon-how-wallet"></span>
+                </div>
+                <div class="how-step__description">
+                  <p class="how-step__description-title">Получите деньги</p>
+                  <p class="how-step__description-notice">Карты, банковские переводы,
+                    электронные кошельки и т.д.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="ctabs-panel how-tabs__panel" tabindex="0" role="tabpanel" id="regular-customer-tab"
+          aria-labelledby="regular-customer" hidden="">
+          <div class="ctabs-panel__content how-tabs__panel-content">
+            <p class="how-tabs__panel-content__mobile-title">Постоянный клиент</p>
+            <ul class="how-tabs-list">
+              <li class="how-tabs-list__item how-step">
+                <div class="how-step__icon">
+                  <span class="icon icon-lightning-wind"></span>
+                </div>
+                <div class="how-step__description">
+                  <p class="how-step__description-title">Займ в 1 клик</p>
+                  <p class="how-step__description-notice">Проверяем личные данные и отправляем заявку</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section how-variants">
+    <div class="page-container">
+      <h2 class="section-title how-variants__title">Варианты получения и способы оплаты</h2>
+      <ul class="how-variants-list">
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-visa"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-mastercard"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-maestro"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-qiwi"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-ymoney"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-bank"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-cash-desk"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-contact"></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section how-payment-contact">
+    <div class="page-container">
+      <h2 class="section-title">Платежная система CONTACT</h2>
+      <div class="contact-map" id="contact-map">
+        <input id="contact-point-search" type="search" placeholder="Город, улица" autocomplete="off">
+        <div class="ctabs how-payment-contact__tabs">
+          <div class="ctabs-tablist how-payment-contact__tablist" role="tablist">
+            <button id="contact-pos-in-btn" class="ctabs-tablist__item how-payment-contact__tablist-item" role="tab"
+              aria-selected="true" aria-controls="">Пункты получения займа</button>
+            <button id="contact-pos-out-btn" class="ctabs-tablist__item how-payment-contact__tablist-item" role="tab"
+              aria-selected="false" aria-controls="" tabindex="-1">Пункты погашения займа</button>
+            <button id="contact-pos-in-out-btn" class="ctabs-tablist__item how-payment-contact__tablist-item" role="tab"
+              aria-selected="false" aria-controls="" tabindex="-1">Пункты получения/погашения</button>
+          </div>
+        </div>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+      </div>
+      <div class="how-payment-contact-map" id="contact">
+        <div id="how-payment-contact-map"></div>
+      </div>
+    </div>
+  </section>
+  <section class="section how-advantages">
+    <div class="page-container">
+      <h2 class="section-title">Наши преимущества</h2>
+      <ul class="how-advantages-list">
+        <li class="how-advantages-list__item how-advantage">
+          <div class="how-advantage__icon">
+            <span class="icon icon-rocket"></span>
+          </div>
+          <div class="how-advantage__description">
+            <p class="how-advantage__description-title">Мгновенно</p>
+            <p class="how-advantage__description-notice">Мгновенное зачисление денег на карту</p>
+          </div>
+        </li>
+        <li class="how-advantages-list__item how-advantage">
+          <div class="how-advantage__icon">
+            <span class="icon icon-percent"></span>
+          </div>
+          <div class="how-advantage__description">
+            <p class="how-advantage__description-title">Фактические %</p>
+            <p class="how-advantage__description-notice">Начисление процентов только за фактические дни пользования
+              займом</p>
+          </div>
+        </li>
+        <li class="how-advantages-list__item how-advantage">
+          <div class="how-advantage__icon">
+            <span class="icon icon-free"></span>
+          </div>
+          <div class="how-advantage__description">
+            <p class="how-advantage__description-title">Бесплатное продление</p>
+            <p class="how-advantage__description-notice">Решение вы узнаете сразу</p>
+          </div>
+        </li>
+        <li class="how-advantages-list__item how-advantage">
+          <div class="how-advantage__icon">
+            <span class="icon icon-refresh-circle"></span>
+          </div>
+          <div class="how-advantage__description">
+            <p class="how-advantage__description-title">Без комиссий</p>
+            <p class="how-advantage__description-notice">Отсутсвие комиссий за досрочный возрат суммы</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section how-tariffs">
+    <div class="page-container">
+      <h2 class="section-title">Таблица тарифов</h2>
+      <div class="how-tariffs__content">
+        <ul class="how-tariffs-list">
+          <li class="how-tariffs-list__item how-tariff">
+            <h3 class="how-tariff__title">Первый займ</h3>
+            <div class="how-tariff__sum-limits">
+              <div class="sum-limits-item">
+                <p class="sum-limits-item__label">Минимальная сумма</p>
+                <p class="sum-limits-item__value">2000 ₽</p>
+              </div>
+              <div class="sum-limits-item">
+                <p class="sum-limits-item__label">Максимальная сумма</p>
+                <p class="sum-limits-item__value">14 000 ₽</p>
+              </div>
+            </div>
+            <div class="how-tariff__limits">
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Мин. срок выдачи</div>
+                <div class="limits-item__value">7 д.</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Макс. срок выдачи</div>
+                <div class="limits-item__value">21 д.</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Основная % ставка</div>
+                <div class="limits-item__value">1,5%</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">При просрочке</div>
+                <div class="limits-item__value">1,5%</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">% в день выдачи</div>
+                <div class="limits-item__value">
+                  <span class="icon icon-no"></span>
+                </div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Реструктуризация</div>
+                <div class="limits-item__value">
+                  <span class="icon icon-yes"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="how-tariffs-list__item how-tariff">
+            <h3 class="how-tariff__title">Второй займ</h3>
+            <div class="how-tariff__sum-limits">
+              <div class="sum-limits-item">
+                <p class="sum-limits-item__label">Минимальная сумма</p>
+                <p class="sum-limits-item__value">2000 ₽</p>
+              </div>
+              <div class="sum-limits-item">
+                <p class="sum-limits-item__label">Максимальная сумма</p>
+                <p class="sum-limits-item__value">15 000 ₽</p>
+              </div>
+            </div>
+            <div class="how-tariff__limits">
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Мин. срок выдачи</div>
+                <div class="limits-item__value">5 д.</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Макс. срок выдачи</div>
+                <div class="limits-item__value">30 д.</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Основная % ставка</div>
+                <div class="limits-item__value">1,5%</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">При просрочке</div>
+                <div class="limits-item__value">1,5%</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">% в день выдачи</div>
+                <div class="limits-item__value">
+                  <span class="icon icon-no"></span>
+                </div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Реструктуризация</div>
+                <div class="limits-item__value">
+                  <span class="icon icon-yes"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="how-tariffs-list__item how-tariff">
+            <h3 class="how-tariff__title">Третий займ</h3>
+            <div class="how-tariff__sum-limits">
+              <div class="sum-limits-item">
+                <p class="sum-limits-item__label">Минимальная сумма</p>
+                <p class="sum-limits-item__value">2000 ₽</p>
+              </div>
+              <div class="sum-limits-item">
+                <p class="sum-limits-item__label">Максимальная сумма</p>
+                <p class="sum-limits-item__value">20 000 ₽</p>
+              </div>
+            </div>
+            <div class="how-tariff__limits">
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Мин. срок выдачи</div>
+                <div class="limits-item__value">5 д.</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Макс. срок выдачи</div>
+                <div class="limits-item__value">30 д.</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Основная % ставка</div>
+                <div class="limits-item__value">1,5%</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">При просрочке</div>
+                <div class="limits-item__value">1,5%</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">% в день выдачи</div>
+                <div class="limits-item__value">
+                  <span class="icon icon-no"></span>
+                </div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Реструктуризация</div>
+                <div class="limits-item__value">
+                  <span class="icon icon-yes"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="how-tariffs-list__item how-tariff">
+            <h3 class="how-tariff__title">Четвертый займ</h3>
+            <div class="how-tariff__sum-limits">
+              <div class="sum-limits-item">
+                <p class="sum-limits-item__label">Минимальная сумма</p>
+                <p class="sum-limits-item__value">2000 ₽</p>
+              </div>
+              <div class="sum-limits-item">
+                <p class="sum-limits-item__label">Максимальная сумма</p>
+                <p class="sum-limits-item__value">30 000 ₽</p>
+              </div>
+            </div>
+            <div class="how-tariff__limits">
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Мин. срок выдачи</div>
+                <div class="limits-item__value">5 д.</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Макс. срок выдачи</div>
+                <div class="limits-item__value">30 д.</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Основная % ставка</div>
+                <div class="limits-item__value">1,5%</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">При просрочке</div>
+                <div class="limits-item__value">1,5%</div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">% в день выдачи</div>
+                <div class="limits-item__value">
+                  <span class="icon icon-no"></span>
+                </div>
+              </div>
+              <div class="how-tariff__limits-item limits-item">
+                <div class="limits-item__label">Реструктуризация</div>
+                <div class="limits-item__value">
+                  <span class="icon icon-yes"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="how-tariffs-arrows">
+          <span class="icon icon-left-right-arrows"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

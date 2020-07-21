@@ -1,0 +1,133 @@
+.about-hero {
+  background-image: url("../images/bg-about.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 160px;
+  padding-bottom: 215px;
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../images/bg-about-mobile.png");
+    padding-top: 143px;
+    padding-bottom: 144px;
+  }
+}
+
+.about-hero-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-intro__notice {
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.about-advantages {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 0;
+  }
+}
+
+.about-advantages-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.about-advantages-list__item {
+  flex-basis: calc(86% / 3);
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc(100% - 32px);
+    margin-right: 32px;
+  }
+}
+
+.about-advantage__icon {
+  display: flex;
+  align-items: flex-end;
+  height: 50px;
+  margin-bottom: 17px;
+}
+
+.about-advantage__title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-advantage__notice {
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.about-arrows {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-top: 45px;
+    text-align: center;
+  }
+}
+
+.about-media {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 0;
+  }
+}
+
+.about-media__arrows {
+  margin-top: 40px;
+}
+
+.about-media__content {
+  padding-top: 25px;
+}
+
+.media-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.media-list__item {
+  flex-basis: calc(33% - 30px / 3);
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc(100% - 20px);
+    margin-right: 20px;
+  }
+}
+
+.media-item {
+  padding: 32px 30px 23px;
+  border: 1px solid #e5e9f2;
+  border-radius: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.media-item__icon {
+  height: 50px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+
+  & > img {
+    max-height: 100%;
+    width: auto;
+  }
+}
+
+.media-item__notice {
+  margin-bottom: 17px;
+  font-size: 15px;
+  line-height: 23px;
+}

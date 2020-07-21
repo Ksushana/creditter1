@@ -1,0 +1,241 @@
+.ticket-page-container {
+  width: 100%;
+  max-width: 832px;
+  margin: 0 auto;
+}
+
+.ticket-head-row {
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.ticket-back-link {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 15px;
+  line-height: 1;
+  color: $gray;
+  transform: translateY(-50%);
+
+  & > .icon {
+    margin-right: 12px;
+  }
+
+  &:hover {
+    & > .icon {
+      background-image: svg-load("icons/arrow-left.svg", fill=$orange);
+    }
+  }
+}
+
+.ticket-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 32px 30px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: 1px solid #edeef0;
+  background: #fff;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+
+.ticket-title {
+  margin-right: 20px;
+
+  @media screen and (max-width: 521px) {
+    margin-bottom: 10px;
+  }
+}
+
+.ticket-status {
+  margin-left: 20px;
+  padding: 4px 10px 5px;
+  border: 1px solid #ebecf1;
+  border-radius: 4px;
+  vertical-align: middle;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  background: #f5f6fa;
+  color: $gray;
+}
+
+.ticket-content {
+  padding: 32px 32px 34px;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.ticket-item {
+  padding: 20px 30px 17px;
+  border: 1px solid #edeef0;
+  border-radius: 6px;
+  margin-bottom: 33px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.ticket-item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+
+.ticket-item__created-date {
+  font-size: 15px;
+  line-height: 18px;
+  color: $gray;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 100%;
+    width: 100%;
+  }
+}
+
+.ticket-item__title {
+  font-size: 21px;
+  line-height: 31px;
+  color: $orange;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 7px;
+  }
+}
+
+.ticket-item__message {
+  font-size: 15px;
+  line-height: 22px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #edeef0;
+}
+
+.ticket-item__footer {
+  padding-top: 15px;
+}
+
+.ticket-item__attached-link {
+  & > .icon {
+    margin-right: 12px;
+  }
+}
+
+.ticket-item__sign {
+  margin-bottom: 17px;
+  color: $gray;
+}
+
+.ticket-message-form__field-textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 33px;
+  padding: 22px 30px 25px;
+  border: 1px solid #edeef0;
+  border-radius: 6px;
+  font-size: 15px;
+  line-height: 18px;
+  resize: none;
+
+  &::placeholder {
+    color: $gray;
+  }
+
+  &:-ms-input-placeholder {
+    color: $gray;
+  }
+
+  &::-ms-input-placeholder {
+    color: $gray;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.ticket-message-form__row {
+  margin-bottom: 33px;
+  padding: 27px 30px;
+  border: 1px solid #edeef0;
+  border-radius: 6px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.ticket-message-form__field-input[type="file"] {
+  display: none;
+}
+
+.ticket-message-form__field-filebutton {
+  display: inline-block;
+  width: 213px;
+  max-width: 100%;
+  padding: 10px 25px 11px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.ticket-message-form__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 424px) {
+    flex-wrap: wrap;
+  }
+}
+
+.close-ticket-link {
+  margin-right: 20px;
+  white-space: nowrap;
+
+  & > .icon {
+    margin-right: 12px;
+  }
+
+  @media screen and (max-width: 424px) {
+    margin-bottom: 15px;
+  }
+}
+
+.ticket-message-form__submit {
+  width: 213px;
+  max-width: 100%;
+  padding: 10px 25px 11px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+}

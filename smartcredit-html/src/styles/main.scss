@@ -1,0 +1,85 @@
+@import "~normalize.css/normalize.css";
+@import "~custom-select/build/custom-select.css";
+@import "~nouislider/distribute/nouislider.min.css";
+@import "~flatpickr/dist/flatpickr.min.css";
+
+@import "./common";
+@import "./fonts";
+@import "./icons";
+@import "./form";
+@import "./tabs";
+@import "./animate";
+@import "./tooltip";
+@import "./container";
+@import "./includes/header";
+@import "./includes/footer";
+@import "./includes/news";
+@import "./pages/index";
+@import "./pages/step";
+@import "./pages/authorize";
+@import "./pages/login";
+@import "./pages/social-networks";
+@import "./pages/change-password";
+@import "./pages/about";
+@import "./pages/disclosure";
+@import "./pages/news-detail";
+@import "./pages/how";
+@import "./pages/back";
+@import "./pages/approved";
+@import "./pages/coupon";
+@import "./pages/loyalty";
+@import "./pages/partner";
+@import "./pages/history";
+@import "./pages/faq";
+@import "./pages/contacts";
+
+/* LK */
+@import "./includes/lk-header";
+@import "./lk";
+@import "./pages/repayment";
+@import "./pages/loans-history";
+@import "./pages/get-loan";
+@import "./pages/my-documents";
+@import "./pages/profile";
+@import "./pages/support-tickets";
+@import "./pages/new-ticket";
+@import "./pages/payment-details";
+@import "./pages/lk-faq";
+@import "./pages/active-loan";
+@import "./pages/lk-loyalty";
+@import "./pages/affiliate";
+@import "./pages/request-verification";
+@import "./pages/ticket";
+@import "./pages/security";
+
+/* PARTNERSHIP*/
+@import "./includes/partnership-sidebar";
+@import "./includes/partnership-advantages";
+@import "./partnership";
+@import "./pages/generator";
+@import "./pages/landings";
+@import "./pages/banners";
+@import "./pages/actions";
+@import "./pages/add-platform";
+@import "./pages/statistics";
+
+.noUi-base {
+  cursor: pointer;
+}
+
+.noUi-marker-horizontal.noUi-marker {
+  display: none;
+}
+
+.flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange, .flatpickr-day.selected.inRange, .flatpickr-day.startRange.inRange, .flatpickr-day.endRange.inRange, .flatpickr-day.selected:focus, .flatpickr-day.startRange:focus, .flatpickr-day.endRange:focus, .flatpickr-day.selected:hover, .flatpickr-day.startRange:hover, .flatpickr-day.endRange:hover, .flatpickr-day.selected.prevMonthDay, .flatpickr-day.startRange.prevMonthDay, .flatpickr-day.endRange.prevMonthDay, .flatpickr-day.selected.nextMonthDay, .flatpickr-day.startRange.nextMonthDay, .flatpickr-day.endRange.nextMonthDay {
+  background: $orange;
+  border-color: $orange;
+}
+
+// .flatpickr-day.selected.startRange, .flatpickr-day.startRange.startRange, .flatpickr-day.endRange.startRange {
+//   border-radius: 10px 0 0 10px;
+// }
+
+// .flatpickr-day.selected.endRange, .flatpickr-day.startRange.endRange, .flatpickr-day.endRange.endRange {
+//   border-radius: 0 10px 10px 0;
+// }

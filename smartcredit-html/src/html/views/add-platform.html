@@ -1,0 +1,49 @@
+<% var data = {
+  title: "SmartCredit | Добавление площадки",
+  name: 'add-platform',
+  activeLink: 'add-platform',
+}; %>
+<%= _.template(require('./../includes/partnership-header.html'))(data) %>
+
+<main class="main partnership-main">
+  <div class="partnership-container partnership-page-container">
+    <%= _.template(require('./../includes/partnership-sidebar.html'))(data) %>
+    <section class="partnership-section">
+      <div class="partnership-section__header">
+        <h2 class="partnership-section-title">Добавление площадки</h2>
+      </div>
+      <div class="partnership-section__content">
+        <form class="add-platform-form">
+          <div class="add-platform-form__row">
+            <label class="add-platform-field">
+              <span class="add-platform-field-label">Название площадки</span>
+              <input class="lk-input add-platform-field-input" type="text" value="">
+            </label>
+          </div>
+          <div class="add-platform-form__row">
+            <label class="add-platform-field">
+              <span class="add-platform-field-label">Тип площадки</span>
+              <input class="lk-input add-platform-field-input" type="text" value="">
+            </label>
+          </div>
+          <div class="add-platform-form__row">
+            <label class="add-platform-field">
+              <span class="add-platform-field-label">Ссылка на площадку</span>
+              <input class="lk-input add-platform-field-input" type="text" value="">
+            </label>
+          </div>
+          <div class="add-platform-form__row">
+            <label class="add-platform-field">
+              <span class="add-platform-field-label">Описание площадки</span>
+              <textarea class="lk-textarea add-platform-field-textarea"></textarea>
+            </label>
+          </div>
+          <button class="btn btn--orange add-platform-form__submit" type="submit">Добавить площадку</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <%= _.template(require('./../includes/partnership-advantages.html'))(data) %>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,111 @@
+<% var data = {
+  title: "SmartCredit | Главная",
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main class="main">
+  <section class="section section-hero home-hero">
+    <div class="home-hero-wrapper">
+      <p class="mute home-hero-notice">Выдаем займы по всей России</p>
+      <h1 class="hero-title">Срочные микрозаймы&nbsp;онлайн за 5 минут</h1>
+      <p class="mute home-hero-notice">по ставке от 1,1%</p>
+      <p class="home-hero-notice-tablet">Выдаем займы по всей России по ставке от 1,1%. Быстро,&nbsp;удобно и без справок.</p>
+      <form action="#" class="application-credit-form">
+        <div class="application-credit-form-wrapper">
+          <div class="chooses">
+            <div class="chooses__block" data-min="2000" data-max="15000" data-step="500">
+              <label class="choose-field">
+                <span class="choose-field__label">Занять</span>
+                <input class="choose-field__input" type="text" value="7500">
+                <span class="choose-field__suffix" style="display:none;">₽</span>
+              </label>
+              <div class="choose-slider"></div>
+              <div class="choose-hints">
+                <div class="choose-hints__min">2 000 <font class="rub">₽</font>
+                </div>
+                <div class="choose-hints__max">15 000 <font class="rub">₽</font>
+                </div>
+              </div>
+            </div>
+            <div class="chooses__block" data-min="5" data-max="30" data-step="1">
+              <label class="choose-field">
+                <span class="choose-field__label">На срок</span>
+                <input class="choose-field__input" type="text" value="15">
+                <span class="choose-field__suffix" style="display:none;">дней</span>
+              </label>
+              <div class="choose-slider"></div>
+              <div class="choose-hints">
+                <div class="choose-hints__min"><span>5</span> дней</div>
+                <div class="choose-hints__max"><span>30</span> дней</div>
+              </div>
+            </div>
+          </div>
+          <div class="application-credit-form__footer">
+            <div class="totals">
+              <div class="totals-item">
+                <p class="totals-item__label">К возврату</p>
+                <p class="totals-item__value">9 863 <span class="totals-item__value-suffix">
+                    <font class="rub">₽</font>
+                  </span></p>
+              </div>
+              <div class="totals-item">
+                <p class="totals-item__label">До</p>
+                <p class="totals-item__value">1 <span class="totals-item__value-suffix" title="апреля">апреля</span></p>
+              </div>
+              <div class="totals-item">
+                <p class="totals-item__label">Ставка</p>
+                <p class="totals-item__value">1,50 <span class="totals-item__value-suffix">%</span></p>
+              </div>
+            </div>
+            <button class="btn btn--orange application-credit-form__submit" type="submit">Получить деньги</button>
+          </div>
+        </div>
+      </form>
+      <div class="advantages">
+        <ul class="advantages-list">
+          <li class="advantages-list__item advantage">
+            <div class="advantage__col">
+              <span class="icon icon-cursor"></span>
+            </div>
+            <div class="advantage__col">
+              <p class="advantage__title">Без документов</p>
+              <p class="advantage__notice">Оформите заявку онлайн</p>
+            </div>
+          </li>
+          <li class="advantages-list__item advantage">
+            <div class="advantage__col">
+              <span class="icon icon-lightning"></span>
+            </div>
+            <div class="advantage__col">
+              <p class="advantage__title">Моментально</p>
+              <p class="advantage__notice">Решение вы узнаете сразу</p>
+            </div>
+          </li>
+          <li class="advantages-list__item advantage">
+            <div class="advantage__col">
+              <span class="icon icon-wallet"></span>
+            </div>
+            <div class="advantage__col">
+              <p class="advantage__title">Куда удобно</p>
+              <p class="advantage__notice">На карту, на счет, на кошелек или наличными</p>
+            </div>
+          </li>
+          <li class="advantages-list__item advantage">
+            <div class="advantage__col">
+              <span class="icon icon-refresh"></span>
+            </div>
+            <div class="advantage__col">
+              <p class="advantage__title">Без комиссий</p>
+              <p class="advantage__notice">Отсутствие скрытых комиссий и платежей</p>
+            </div>
+          </li>
+        </ul>
+        <div class="advantages__arrows">
+          <span class="icon icon-left-right-arrows"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

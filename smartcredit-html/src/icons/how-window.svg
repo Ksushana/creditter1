@@ -1,0 +1,15 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M47 42.8182C47 45.1286 45.1286 47 42.8182 47H5.18182C2.87136 47 1 45.1286 1 42.8182V5.18182C1 2.87136 2.87136 1 5.18182 1H42.8182C45.1286 1 47 2.87136 47 5.18182V42.8182V42.8182Z" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 9.36353H47" stroke="#17233B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.22763 5.18193C6.22763 5.75902 5.75926 6.22738 5.18217 6.22738C4.60508 6.22738 4.13672 5.75902 4.13672 5.18193C4.13672 4.60484 4.60508 4.13647 5.18217 4.13647C5.75926 4.13647 6.22763 4.60484 6.22763 5.18193Z" fill="#17233B"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.4073 5.18193C10.4073 5.75902 9.93895 6.22738 9.36186 6.22738C8.78477 6.22738 8.31641 5.75902 8.31641 5.18193C8.31641 4.60484 8.78477 4.13647 9.36186 4.13647C9.93895 4.13647 10.4073 4.60484 10.4073 5.18193Z" fill="#17233B"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5909 5.18193C14.5909 5.75902 14.1225 6.22738 13.5455 6.22738C12.9684 6.22738 12.5 5.75902 12.5 5.18193C12.5 4.60484 12.9684 4.13647 13.5455 4.13647C14.1225 4.13647 14.5909 4.60484 14.5909 5.18193Z" fill="#17233B"/>
+<line x1="14" y1="37.6455" x2="40" y2="37.6455" stroke="#FF4E2C" stroke-width="2" stroke-linecap="round"/>
+<line x1="7" y1="37.6455" x2="9" y2="37.6455" stroke="#FF4E2C" stroke-width="2" stroke-linecap="round"/>
+<line x1="14" y1="16.6455" x2="40" y2="16.6455" stroke="#FF4E2C" stroke-width="2" stroke-linecap="round"/>
+<line x1="7" y1="16.6455" x2="9" y2="16.6455" stroke="#FF4E2C" stroke-width="2" stroke-linecap="round"/>
+<line x1="14" y1="23.6455" x2="40" y2="23.6455" stroke="#FF4E2C" stroke-width="2" stroke-linecap="round"/>
+<line x1="7" y1="23.6455" x2="9" y2="23.6455" stroke="#FF4E2C" stroke-width="2" stroke-linecap="round"/>
+<line x1="14" y1="30.6455" x2="40" y2="30.6455" stroke="#FF4E2C" stroke-width="2" stroke-linecap="round"/>
+<line x1="7" y1="30.6455" x2="9" y2="30.6455" stroke="#FF4E2C" stroke-width="2" stroke-linecap="round"/>
+</svg>

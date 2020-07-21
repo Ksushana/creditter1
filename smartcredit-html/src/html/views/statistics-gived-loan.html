@@ -1,0 +1,515 @@
+<% var data = {
+  title: "SmartCredit | Статистика",
+  name: 'statistics',
+  activeLink: 'statistics',
+}; %>
+<%= _.template(require('./../includes/partnership-header.html'))(data) %>
+
+<main class="main partnership-main">
+  <div class="partnership-container partnership-page-container statistics-page-container">
+    <%= _.template(require('./../includes/partnership-sidebar.html'))(data) %>
+    <section class="partnership-section statistics-section">
+      <div class="partnership-section__header statistics-section__header">
+        <h2 class="partnership-section-title">Статистика</h2>
+      </div>
+      <div class="partnership-section__content statistics-section__content">
+        <div class="statistics-head">
+          <div class="statistics-head__row">
+            <div class="statistics-field">
+              <p class="statistics-field__title">Даты отчёта</p>
+              <div class="statistics-datepicker-wrapper">
+                <input type="text" class="lk-input statistics-datepicker statistics-field__input">
+              </div>
+            </div>
+          </div>
+          <div class="statistics-head__row">
+            <div class="statistics-head__row-col statistics-field">
+              <p class="statistics-field__title">Сортировать</p>
+              <div class="statistics-select-wrapper">
+                <select class="statistics-select statistics-field__input">
+                  <option value="1">По дням</option>
+                  <option value="2">По месяцам</option>
+                  <option value="3">По годам</option>
+                </select>
+              </div>
+            </div>
+            <div class="statistics-head__row-col statistics-field">
+              <p class="statistics-field__title">Площадка</p>
+              <div class="statistics-select-wrapper">
+                <select class="statistics-select statistics-field__input">
+                  <option value="1">Общая</option>
+                  <option value="2">Первая</option>
+                  <option value="3">Вторая</option>
+                </select>
+              </div>
+            </div>
+            <a class="link btn btn--orange-transparent statistics-head__row-col statistics-exel-download">Скачать в
+              Excel<span class="icon icon-download"></span></a>
+            <button type="button" class="btn btn--orange statistics-head__row-col statistics-params-refresh">
+              Обновить
+            </button>
+          </div>
+        </div>
+        <div>
+          <ul class="lk-table statistics-list">
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__head statistics-list__head">
+                <p class="lk-table__head-cell statistics-list__head-cell">Дата</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">Клики</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">Заявки</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">CR</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">Отклонённые заявки</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">AR</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">Займы</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">EPC</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">EPL</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">Заработок</p>
+              </div>
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Дата</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">1</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заявки</span>
+                  <span class="lk-table__cell-value">1</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклонённые заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">AR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPC</span>
+                  <span class="lk-table__cell-value">900</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPL</span>
+                  <span class="lk-table__cell-value">900</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заработок</span>
+                  <span class="lk-table__cell-value">900</span>
+                </p>
+              </div>
+            </li>
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Дата</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заявки</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклонённые заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">AR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPC</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPL</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заработок</span>
+                  <span class="lk-table__cell-value">1500</span>
+                </p>
+              </div>
+            </li>
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Дата</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заявки</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклонённые заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">AR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPC</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPL</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заработок</span>
+                  <span class="lk-table__cell-value">1500</span>
+                </p>
+              </div>
+            </li>
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Дата</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заявки</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклонённые заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">AR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPC</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPL</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заработок</span>
+                  <span class="lk-table__cell-value">1500</span>
+                </p>
+              </div>
+            </li>
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Дата</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заявки</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклонённые заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">AR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPC</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPL</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заработок</span>
+                  <span class="lk-table__cell-value">1500</span>
+                </p>
+              </div>
+            </li>
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Дата</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заявки</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклонённые заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">AR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPC</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPL</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заработок</span>
+                  <span class="lk-table__cell-value">1500</span>
+                </p>
+              </div>
+            </li>
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Дата</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заявки</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклонённые заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">AR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPC</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPL</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заработок</span>
+                  <span class="lk-table__cell-value">1500</span>
+                </p>
+              </div>
+            </li>
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Дата</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заявки</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклонённые заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">AR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPC</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPL</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заработок</span>
+                  <span class="lk-table__cell-value">1500</span>
+                </p>
+              </div>
+            </li>
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Дата</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заявки</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклонённые заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">AR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPC</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPL</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заработок</span>
+                  <span class="lk-table__cell-value">1500</span>
+                </p>
+              </div>
+            </li>
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Дата</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заявки</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклонённые заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">AR</span>
+                  <span class="lk-table__cell-value">100%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPC</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">EPL</span>
+                  <span class="lk-table__cell-value">250</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Заработок</span>
+                  <span class="lk-table__cell-value">1500</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <%= _.template(require('./../includes/partnership-advantages.html'))(data) %>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

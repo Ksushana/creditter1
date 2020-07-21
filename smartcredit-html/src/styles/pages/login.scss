@@ -1,0 +1,341 @@
+.body-login {
+  background: #e5e5e5;
+}
+
+.header-login {
+  border-bottom: 1px solid #e5e6eb;
+}
+
+.section-login {
+  max-width: 100%;
+  padding-top: 0;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 31px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid #e5e9f2;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px #edeff5;
+  background: #ffffff;
+
+  @media screen and (max-width: 767px) {
+    border-width: 0;
+    border-radius: 0;
+  }
+}
+
+.login-sidebar {
+  width: 100%;
+  max-width: 375px;
+  height: auto;
+  background-image: url("../images/login-sidebar-bg@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  padding: 128px 56px  80px;
+  color: #ffffff;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  z-index: 1;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.login-sidebar__img {
+  margin-bottom: 28px;
+}
+
+.login-sidebar__title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.login-sidebar__advantages {
+  margin-bottom: 28px;
+
+  &-marker {
+    margin-right: 6px;
+  }
+}
+
+.login-sidebar__advantages-item {
+  margin-bottom: 15px;
+  font-family: 'Lato';
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.login-content {
+  flex-grow: 1;
+  width: 100%;
+  padding-top: 38px;
+  padding-bottom: 29px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: -15px;
+    padding-top: 50px;
+  }
+}
+
+.login-formblock {
+  width: 490px;
+  max-width: 100%;
+  padding-top: 0;
+
+  @media screen and (max-width: 991px) {
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.login-title {
+  font-size: 30px;
+  line-height: 27px;
+  margin-bottom: 28px;
+  text-align: left;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+}
+
+.login-form-next-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 36px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+    padding-top: 20px;
+  }
+}
+
+.login-next-button {
+  width: 246px;
+  max-width: 100%;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 23px;
+    padding: 18px 0;
+  }
+}
+
+.footer-login {
+  display: none;
+}
+
+.login-by-socials-container {
+  margin-top: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 13px;
+  }
+}
+
+.login-by-socials {
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #fff;
+  border-top: 1px solid #E5E9F2;
+  padding-top: 18px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-width: 0;
+  }
+}
+
+.login-by-socials__title {
+  margin-top: 13px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: $gray;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    margin-top: 28px;
+  }
+}
+
+.login-by-socials__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.login-by-socials__list-item {
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 10px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 46px;
+  width: 46px;
+  height: 46px;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: 38px;
+    width: 38px;
+    height: 38px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+.login-by-socials__list-item--full {
+  flex-basis: calc(100% - 8px);
+  width: calc(100% - 8px);
+
+  .social-oauth-link {
+    max-width: 316px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc(100% - 10px);
+    width: calc(100% - 10px);
+
+    .social-oauth-link {
+      max-width: 278px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+}
+
+.social-oauth-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e5e9f2;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $gray;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border: 1px solid $orange;
+    color: $orange;
+  }
+}
+
+.social-oauth-link__image {
+  vertical-align: middle;
+
+  @media screen and (max-width: 767px) {
+    width: auto;
+    height: 55%;
+  }
+}
+
+.social-oauth-link_gosuslugi {
+  display: none;
+  height: 46px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 992px) {
+    width: 490px;
+  }
+}
+
+.social-oauth-link_gosuslugi-image {
+  margin-top: 3px;
+}
+
+.login-gosuslugi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 15px 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__title {
+    font-size: 13px;
+    line-height: 18px;
+    color: #8C94A8;
+    margin-right: 10px;
+
+    @media screen and (min-width: 400px) {
+      margin-right: 50px;
+    }
+  }
+
+  &__link {
+    min-width: 133px;
+    max-width: 195px;
+    height: 56px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E5E9F2;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FF4E2C;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 8px;
+  }
+
+  &__img {
+    width: 38px;
+    height: auto;
+    display: block;
+    margin-right: 5px;
+  }
+}

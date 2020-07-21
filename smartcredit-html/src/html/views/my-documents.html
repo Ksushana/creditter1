@@ -1,0 +1,424 @@
+<% var data = {
+  title: "SmartCredit | Мои документы",
+  name: 'my-documents',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-my-documents">
+  <section class="section lk-section">
+    <div class="lk-page-container my-documents-page-container">
+      <h2 class="section-title lk-section-title">Мои документы</h2>
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block my-documents">
+          <div class="my-documents-header">
+            <h3 class="lk-content-block__title my-documents-title">Загруженные документы</h3>
+            <button class="btn btn--orange-transparent button-get-certificate">
+              Получить справку об отсутствии долга
+            </button>
+          </div>
+          <div class="my-documents-content">
+            <ul class="lk-table my-documents-list">
+              <li class="lk-table__row my-documents-list__item">
+                <div class="lk-table__head my-documents-list__head">
+                  <p class="lk-table__head-cell my-documents-list__head-cell">№ договора</p>
+                  <p class="lk-table__head-cell my-documents-list__head-cell">Дата договора</p>
+                  <p class="lk-table__head-cell my-documents-list__head-cell">Дата погашения</p>
+                  <p class="lk-table__head-cell my-documents-list__head-cell">Документы</p>
+                </div>
+                <div class="lk-table__row-inner my-documents-list__row">
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">№ договора</span>
+                    <span class="lk-table__cell-value">537834</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата договора</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата погашения</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                    <span class="lk-table__head-cell--mobile">Документы</span>
+                    <span class="lk-table__cell-value">Посмотреть <span
+                        class="icon icon-arrow-down-small"></span></span>
+                  </p>
+                </div>
+                <div class="lk-table-details my-documents-list__details my-documents-details">
+                  <div class="my-documents-details__content">
+                    <ul class="lk-table my-documents-details-list">
+                      <li class="lk-table__row my-documents-details-list__item">
+                        <div class="lk-table__head my-documents-list__head">
+                          <p class="lk-table__head-cell my-documents-list__head-cell">Название</p>
+                          <p class="lk-table__head-cell my-documents-list__head-cell">Дата документа</p>
+                          <p class="lk-table__head-cell my-documents-list__head-cell">Номер и дата займа</p>
+                          <p class="lk-table__head-cell my-documents-list__head-cell"></p>
+                        </div>
+                        <div class="lk-table__row-inner my-documents-list__row">
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Название</span>
+                            <span class="lk-table__cell-value">Способы оплаты</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Дата документа</span>
+                            <span class="lk-table__cell-value">05.02.2019</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Номер и дата займа</span>
+                            <span class="lk-table__cell-value">234564 05.02.2019</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                            <span class="lk-table__head-cell--mobile"></span>
+                            <span class="lk-table__cell-value">
+                              <a href="#" class="btn btn--orange-transparent my-documents-download-button">Скачать
+                                файл</a>
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li class="lk-table__row my-documents-details-list__item">
+                        <div class="lk-table__row-inner my-documents-list__row">
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Название</span>
+                            <span class="lk-table__cell-value">Услуга страхования</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Дата документа</span>
+                            <span class="lk-table__cell-value">05.02.2019</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Номер и дата займа</span>
+                            <span class="lk-table__cell-value">234564 05.02.2019</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                            <span class="lk-table__head-cell--mobile"></span>
+                            <span class="lk-table__cell-value">
+                              <a href="#" class="btn btn--orange-transparent my-documents-download-button">Скачать
+                                файл</a>
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li class="lk-table__row my-documents-details-list__item">
+                        <div class="lk-table__row-inner my-documents-list__row">
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Название</span>
+                            <span class="lk-table__cell-value">Страхование. Памятка</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Дата документа</span>
+                            <span class="lk-table__cell-value">05.02.2019</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Номер и дата займа</span>
+                            <span class="lk-table__cell-value">234564 05.02.2019</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                            <span class="lk-table__head-cell--mobile"></span>
+                            <span class="lk-table__cell-value">
+                              <a href="#" class="btn btn--orange-transparent my-documents-download-button">Скачать
+                                файл</a>
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li class="lk-table__row my-documents-details-list__item">
+                        <div class="lk-table__row-inner my-documents-list__row">
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Название</span>
+                            <span class="lk-table__cell-value">Публичная оферта</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Дата документа</span>
+                            <span class="lk-table__cell-value">05.02.2019</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Номер и дата займа</span>
+                            <span class="lk-table__cell-value">234564 05.02.2019</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                            <span class="lk-table__head-cell--mobile"></span>
+                            <span class="lk-table__cell-value">
+                              <a href="#" class="btn btn--orange-transparent my-documents-download-button">Скачать
+                                файл</a>
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li class="lk-table__row my-documents-details-list__item">
+                        <div class="lk-table__row-inner my-documents-list__row">
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Название</span>
+                            <span class="lk-table__cell-value">Индивидуальные условия займа (пролонгация)</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Дата документа</span>
+                            <span class="lk-table__cell-value">05.02.2019</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Номер и дата займа</span>
+                            <span class="lk-table__cell-value">234564 05.02.2019</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                            <span class="lk-table__head-cell--mobile"></span>
+                            <span class="lk-table__cell-value">
+                              <a href="#" class="btn btn--orange-transparent my-documents-download-button">Скачать
+                                файл</a>
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li class="lk-table__row my-documents-details-list__item">
+                        <div class="lk-table__row-inner my-documents-list__row">
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Название</span>
+                            <span class="lk-table__cell-value">Копия паспорта, прописка</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Дата документа</span>
+                            <span class="lk-table__cell-value">13.10.2018</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Номер и дата займа</span>
+                            <span class="lk-table__cell-value">234564 13.10.2018</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                            <span class="lk-table__head-cell--mobile"></span>
+                            <span class="lk-table__cell-value">
+                              <a href="#" class="btn btn--orange-transparent my-documents-download-button">Скачать
+                                файл</a>
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                      <li class="lk-table__row my-documents-details-list__item">
+                        <div class="lk-table__row-inner my-documents-list__row">
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Название</span>
+                            <span class="lk-table__cell-value">Копия паспорта, лицевая страница</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Дата документа</span>
+                            <span class="lk-table__cell-value">13.10.2018</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell">
+                            <span class="lk-table__head-cell--mobile">Номер и дата займа</span>
+                            <span class="lk-table__cell-value">234564 13.10.2018</span>
+                          </p>
+                          <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                            <span class="lk-table__head-cell--mobile"></span>
+                            <span class="lk-table__cell-value">
+                              <a href="#" class="btn btn--orange-transparent my-documents-download-button">Скачать
+                                файл</a>
+                            </span>
+                          </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="my-documents-actions">
+                  <button class="btn btn--orange button-my-documents-more" data-toggle-table-details>
+                    <span class="not-active-text">Подробнее</span>
+                    <span class="active-text">Скрыть</span>
+                  </button>
+                </div>
+              </li>
+              <li class="lk-table__row my-documents-list__item">
+                <div class="lk-table__row-inner my-documents-list__row">
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">№ договора</span>
+                    <span class="lk-table__cell-value">537834</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата договора</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата погашения</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                    <span class="lk-table__head-cell--mobile">Документы</span>
+                    <span class="lk-table__cell-value">Посмотреть <span
+                        class="icon icon-arrow-down-small"></span></span>
+                  </p>
+                </div>
+                <div class="my-documents-actions">
+                  <button class="btn btn--orange button-my-documents-more" data-toggle-table-details>
+                    <span class="not-active-text">Подробнее</span>
+                    <span class="active-text">Скрыть</span>
+                  </button>
+                </div>
+              </li>
+              <li class="lk-table__row my-documents-list__item">
+                <div class="lk-table__row-inner my-documents-list__row">
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">№ договора</span>
+                    <span class="lk-table__cell-value">537834</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата договора</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата погашения</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                    <span class="lk-table__head-cell--mobile">Документы</span>
+                    <span class="lk-table__cell-value">Посмотреть <span
+                        class="icon icon-arrow-down-small"></span></span>
+                  </p>
+                </div>
+                <div class="my-documents-actions">
+                  <button class="btn btn--orange button-my-documents-more" data-toggle-table-details>
+                    <span class="not-active-text">Подробнее</span>
+                    <span class="active-text">Скрыть</span>
+                  </button>
+                </div>
+              </li>
+              <li class="lk-table__row my-documents-list__item">
+                <div class="lk-table__row-inner my-documents-list__row">
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">№ договора</span>
+                    <span class="lk-table__cell-value">537834</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата договора</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата погашения</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                    <span class="lk-table__head-cell--mobile">Документы</span>
+                    <span class="lk-table__cell-value">Посмотреть <span
+                        class="icon icon-arrow-down-small"></span></span>
+                  </p>
+                </div>
+                <div class="my-documents-actions">
+                  <button class="btn btn--orange button-my-documents-more" data-toggle-table-details>
+                    <span class="not-active-text">Подробнее</span>
+                    <span class="active-text">Скрыть</span>
+                  </button>
+                </div>
+              </li>
+              <li class="lk-table__row my-documents-list__item">
+                <div class="lk-table__row-inner my-documents-list__row">
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">№ договора</span>
+                    <span class="lk-table__cell-value">537834</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата договора</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата погашения</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                    <span class="lk-table__head-cell--mobile">Документы</span>
+                    <span class="lk-table__cell-value">Посмотреть <span
+                        class="icon icon-arrow-down-small"></span></span>
+                  </p>
+                </div>
+                <div class="my-documents-actions">
+                  <button class="btn btn--orange button-my-documents-more" data-toggle-table-details>
+                    <span class="not-active-text">Подробнее</span>
+                    <span class="active-text">Скрыть</span>
+                  </button>
+                </div>
+              </li>
+              <li class="lk-table__row my-documents-list__item">
+                <div class="lk-table__row-inner my-documents-list__row">
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">№ договора</span>
+                    <span class="lk-table__cell-value">537834</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата договора</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата погашения</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                    <span class="lk-table__head-cell--mobile">Документы</span>
+                    <span class="lk-table__cell-value">Посмотреть <span
+                        class="icon icon-arrow-down-small"></span></span>
+                  </p>
+                </div>
+                <div class="my-documents-actions">
+                  <button class="btn btn--orange button-my-documents-more" data-toggle-table-details>
+                    <span class="not-active-text">Подробнее</span>
+                    <span class="active-text">Скрыть</span>
+                  </button>
+                </div>
+              </li>
+              <li class="lk-table__row my-documents-list__item">
+                <div class="lk-table__row-inner my-documents-list__row">
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">№ договора</span>
+                    <span class="lk-table__cell-value">537834</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата договора</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата погашения</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                    <span class="lk-table__head-cell--mobile">Документы</span>
+                    <span class="lk-table__cell-value">Посмотреть <span
+                        class="icon icon-arrow-down-small"></span></span>
+                  </p>
+                </div>
+                <div class="my-documents-actions">
+                  <button class="btn btn--orange button-my-documents-more" data-toggle-table-details>
+                    <span class="not-active-text">Подробнее</span>
+                    <span class="active-text">Скрыть</span>
+                  </button>
+                </div>
+              </li>
+              <li class="lk-table__row my-documents-list__item">
+                <div class="lk-table__row-inner my-documents-list__row">
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">№ договора</span>
+                    <span class="lk-table__cell-value">537834</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата договора</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell">
+                    <span class="lk-table__head-cell--mobile">Дата погашения</span>
+                    <span class="lk-table__cell-value">05.02.2019</span>
+                  </p>
+                  <p class="lk-table__cell my-documents-list__cell" data-toggle-table-details>
+                    <span class="lk-table__head-cell--mobile">Документы</span>
+                    <span class="lk-table__cell-value">Посмотреть <span
+                        class="icon icon-arrow-down-small"></span></span>
+                  </p>
+                </div>
+                <div class="my-documents-actions">
+                  <button class="btn btn--orange button-my-documents-more" data-toggle-table-details>
+                    <span class="not-active-text">Подробнее</span>
+                    <span class="active-text">Скрыть</span>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

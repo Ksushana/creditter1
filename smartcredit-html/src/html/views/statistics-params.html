@@ -1,0 +1,249 @@
+<% var data = {
+  title: "SmartCredit | Статистика по параметрам ссылок",
+  name: 'statistics-params',
+  activeLink: 'statistics-params',
+}; %>
+<%= _.template(require('./../includes/partnership-header.html'))(data) %>
+
+<main class="main partnership-main">
+  <div class="partnership-container partnership-page-container statistics-params-page-container">
+    <%= _.template(require('./../includes/partnership-sidebar.html'))(data) %>
+    <section class="partnership-section statistics-section">
+      <div class="partnership-section__header statistics-section__header">
+        <h2 class="partnership-section-title">Статистика по параметрам ссылок</h2>
+      </div>
+      <div class="partnership-section__content statistics-section__content">
+        <div class="statistics-head">
+          <div class="statistics-head__row">
+            <div class="statistics-head__row-col statistics-field">
+              <p class="statistics-field__title">Даты отчёта</p>
+              <div class="statistics-datepicker-wrapper">
+                <input type="text" class="lk-input statistics-datepicker statistics-field__input">
+              </div>
+            </div>
+            <div class="statistics-head__row-col statistics-field">
+              <p class="statistics-field__title">Параметры для разбиения</p>
+              <div class="statistics-select-wrapper statistics-field-partitioning-wrapper">
+                <div class="custom-select-multiple statistics-field__input statistics-field-partitioning">
+                  <div class="custom-select-multiple__input">
+                    Нет разбиения
+                  </div>
+                  <div class="custom-select-multiple__dropdown">
+                    <div
+                      class="custom-select-multiple__value custom-select-multiple__value-reset custom-select-multiple__value--active">
+                      Нет разбиения
+                    </div>
+                    <label class="custom-select-multiple__value check">
+                      <input class="check__input" type="checkbox" name="Test">
+                      <span class="check__box"></span>
+                      <span>Test</span>
+                    </label>
+                    <label class="custom-select-multiple__value check">
+                      <input class="check__input" type="checkbox" name="Referrer">
+                      <span class="check__box"></span>
+                      <span>Referrer</span>
+                    </label>
+                    <label class="custom-select-multiple__value check">
+                      <input class="check__input" type="checkbox" name="Клики">
+                      <span class="check__box"></span>
+                      <span>Клики</span>
+                    </label>
+                    <label class="custom-select-multiple__value check">
+                      <input class="check__input" type="checkbox" name="Заявки">
+                      <span class="check__box"></span>
+                      <span>Заявки</span>
+                    </label>
+                    <label class="custom-select-multiple__value check">
+                      <input class="check__input" type="checkbox" name="CR">
+                      <span class="check__box"></span>
+                      <span>CR</span>
+                    </label>
+                    <label class="custom-select-multiple__value check">
+                      <input class="check__input" type="checkbox" name="Отклоненные заявки">
+                      <span class="check__box"></span>
+                      <span>Отклоненные заявки</span>
+                    </label>
+                    <label class="custom-select-multiple__value check">
+                      <input class="check__input" type="checkbox" name="Займы">
+                      <span class="check__box"></span>
+                      <span>Займы</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn--orange statistics-params-refresh">
+              Обновить
+            </button>
+          </div>
+        </div>
+        <div>
+          <ul class="lk-table statistics-list statistics-params-list">
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__head statistics-list__head">
+                <p class="lk-table__head-cell statistics-list__head-cell">test</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">affiliate</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">referrer</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">Клики</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">заявки</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">CR</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">Отклоненные
+                  заявки</p>
+                <p class="lk-table__head-cell statistics-list__head-cell">Займы</p>
+              </div>
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">test</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">affiliate</span>
+                  <span class="lk-table__cell-value">ece15a</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">referrer</span>
+                  <span class="lk-table__cell-value">test</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">1</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">1%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклоненные
+                    заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">9</span>
+                </p>
+              </div>
+            </li>
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">test</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">affiliate</span>
+                  <span class="lk-table__cell-value">ece15a</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">referrer</span>
+                  <span class="lk-table__cell-value">test</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">1</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">1%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклоненные
+                    заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+              </div>
+            </li>
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">test</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">affiliate</span>
+                  <span class="lk-table__cell-value">ece15a</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">referrer</span>
+                  <span class="lk-table__cell-value">test</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">1</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">1%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклоненные
+                    заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+              </div>
+            </li>
+            <li class="lk-table__row statistics-list__item">
+              <div class="lk-table__row-inner statistics-list__row">
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">test</span>
+                  <span class="lk-table__cell-value">2019.01.03</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">affiliate</span>
+                  <span class="lk-table__cell-value">ece15a</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">referrer</span>
+                  <span class="lk-table__cell-value">test</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Клики</span>
+                  <span class="lk-table__cell-value">1</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">CR</span>
+                  <span class="lk-table__cell-value">1%</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Отклоненные
+                    заявки</span>
+                  <span class="lk-table__cell-value">0</span>
+                </p>
+                <p class="lk-table__cell statistics-list__cell">
+                  <span class="lk-table__head-cell--mobile">Займы</span>
+                  <span class="lk-table__cell-value">2</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <%= _.template(require('./../includes/partnership-advantages.html'))(data) %>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,39 @@
+<% var data = {
+  title: "SmartCredit | Безопасность",
+  name: 'security',
+}; %>
+<%= _.template(require('./../includes/lk-header.html'))(data) %>
+
+<main class="main main-security">
+  <section class="section lk-section">
+    <div class="lk-page-container security-page-container">
+      <h2 class="section-title lk-section-title">Безопасность</h2>
+      <div class="lk-section-wrapper">
+        <div class="lk-content-block security">
+          <div class="security-header">
+            <h3 class="lk-content-block__title security-title">Изменить пароль</h3>
+          </div>
+          <div class="security-content">
+            <form class="security-form">
+              <label class="security-form__field">
+                <span class="security-form__field-label">Текущий пароль</span>
+                <input class="lk-input security-form__field-input" type="password" placeholder="">
+              </label>
+              <label class="security-form__field">
+                <span class="security-form__field-label">Новый пароль</span>
+                <input class="lk-input security-form__field-input" type="password" placeholder="">
+              </label>
+              <label class="security-form__field">
+                <span class="security-form__field-label">Повторите пароль</span>
+                <input class="lk-input security-form__field-input" type="password" placeholder="">
+              </label>
+              <button class="btn btn--orange security-submit">Сохранить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
