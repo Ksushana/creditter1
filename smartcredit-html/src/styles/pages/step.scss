@@ -595,6 +595,15 @@ body.application {
   &_last {
     padding-top: 20px;
   }
+
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    bottom: 0;
+    padding-top: 17px ;
+    padding-bottom: 17px;
+    background: rgba(255, 255, 255, 0.92)
+
+  }
 }
 
 .application-next-button {
