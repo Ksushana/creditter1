@@ -1,385 +1,326 @@
+
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ff0000" />
-    <!-- First, all the preloads -->
-    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
-    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
-    <link rel="stylesheet" href="css/style.bundle.css?v=0.0.10" />
-    <title>SmartCredit | Как вернуть деньги</title>
-  </head>
 
-  <body class="body-how">
-    <div class="sidebar-container">
-      <div class="sidebar-menu-container">
-        <nav class="sidebar-menu">
-          <div class="sidebar-menu-header">
-            <nav class="sidebar-menu-toggle">
-              <button class="unbtn sidebar-menu-button">
-                <span class="icon icon-cross"></span>
-              </button>
-            </nav>
-            <a href="/" class="logo">
-              <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
-            </a>
-          </div>
-          <ul class="sidebar-menu-list">
-            <li class="sidebar-menu-list__item sidebar-link">
-              <a href="#" class="link sidebar-link__link sidebar-link__link--big">О компании</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link">
-              <a href="#" class="link sidebar-link__link">Раскрытие информации</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link">
-              <a href="#" class="link sidebar-link__link">СМИ о нас</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link">
-              <a href="#" class="link sidebar-link__link">Новости компании</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link">
-              <a href="#" class="link sidebar-link__link">Контакты</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category">
-              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как взять деньги</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link">
-              <a href="#" class="link sidebar-link__link">Схема работы</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link">
-              <a href="#" class="link sidebar-link__link">Правила предоставления займов</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link">
-              <a href="#" class="link sidebar-link__link">Тарифы</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link">
-              <a href="#" class="link sidebar-link__link">Документы</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link">
-              <a href="#" class="link sidebar-link__link">Способы получения денег</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
-              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Программа лояльности</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
-              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как вернуть деньги</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
-              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Ответы на вопросы</a>
-            </li>
-            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
-              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Исправление кредитной истории</a>
-            </li>
-          </ul>
-          <div class="sidebar-menu-footer">
-            <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
-          </div>
-        </nav>
-      </div>
-    </div>
-    <div class="top-area-container">
-      <button class="unbtn top-area-container__close">
-        <span class="icon icon-cross"></span>
-      </button>
-      <div class="ctabs top-area-tabs">
-        <div class="ctabs-tablist top-area-tabs__tablist" role="tablist">
-          <button
-            class="ctabs-tablist__item top-area-tabs__tablist-item"
-            role="tab"
-            aria-selected="true"
-            aria-controls="top-callback-tab"
-            id="top-callback"
-          >
-            <span class="icon icon-callback-gray"></span>
-            <span>Обратный звонок</span>
-          </button>
-          <button
-            class="ctabs-tablist__item top-area-tabs__tablist-item"
-            role="tab"
-            aria-selected="false"
-            aria-controls="top-feedback-tab"
-            id="top-feedback"
-            tabindex="-1"
-          >
-            <span class="icon icon-feedback-gray"></span>
-            <span>Обратная связь</span>
-          </button>
-          <a class="ctabs-tablist__item top-area-tabs__tablist-item" href="#">
-            <span class="icon icon-question"></span>
-            <span>Ответы на вопросы</span>
-          </a>
-        </div>
-        <div
-          class="ctabs-panel top-area-tabs__panel"
-          tabindex="0"
-          role="tabpanel"
-          data-animation="fadeIn"
-          id="top-callback-tab"
-          aria-labelledby="top-callback"
-        >
-          <div class="ctabs-panel__content top-area-tabs__panel-content">
-            <form class="top-callback-form" action="">
-              <input type="text" class="top-feedback-input top-callback-input" name="phone" placeholder="Телефон" />
-              <button class="btn btn--orange top-feedback-button top-callback-button">Отправить</button>
-            </form>
-          </div>
-        </div>
-        <div
-          class="ctabs-panel top-area-tabs__panel"
-          tabindex="0"
-          role="tabpanel"
-          data-animation="fadeIn"
-          id="top-feedback-tab"
-          aria-labelledby="top-feedback"
-          hidden=""
-        >
-          <div class="ctabs-panel__content top-area-tabs__panel-content">
-            <form class="top-feedback-form" action="">
-              <div class="top-feedback-row">
-                <input type="text" class="top-feedback-input" name="name" placeholder="Имя" />
-                <input type="email" class="top-feedback-input" name="email" placeholder="Эл. почта" />
-              </div>
-              <div class="top-feedback-row">
-                <textarea class="top-feedback-textarea" name="message" cols="30" rows="10"></textarea>
-              </div>
-              <button class="btn btn--orange top-feedback-button">Отправить</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <header class="header header-how">
-      <div class="header-container">
-        <div class="header-left">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ff0000">
+  <!-- First, all the preloads -->
+  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
+  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
+  <link rel="stylesheet" href="css/style.bundle.css?v=0.0.10" />
+  <title>SmartCredit | Как вернуть деньги</title>
+</head>
+
+<body class="body-how">
+  <div class="sidebar-container">
+    <div class="sidebar-menu-container">
+      <nav class="sidebar-menu">
+        <div class="sidebar-menu-header">
           <nav class="sidebar-menu-toggle">
             <button class="unbtn sidebar-menu-button">
-              <span class="icon icon-hamburger"></span>
+              <span class="icon icon-cross"></span>
             </button>
           </nav>
           <a href="/" class="logo">
-            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
+            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
           </a>
         </div>
-        <div class="header-center">
-          <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-callback">
-            <span class="icon icon-phone"></span>
-            <span>Позвонить нам</span>
-          </a>
-          <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-feedback">
-            <span class="icon icon-chat"></span>
-            <span>Поддержка/Верификация 24/7</span>
-          </a>
+        <ul class="sidebar-menu-list">
+          <li class="sidebar-menu-list__item sidebar-link">
+            <a href="#" class="link sidebar-link__link sidebar-link__link--big">О компании</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link">
+            <a href="#" class="link sidebar-link__link">Раскрытие информации</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link">
+            <a href="#" class="link sidebar-link__link">СМИ о нас</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link">
+            <a href="#" class="link sidebar-link__link">Новости компании</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link">
+            <a href="#" class="link sidebar-link__link">Контакты</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link sidebar-link--category">
+            <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как взять деньги</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link">
+            <a href="#" class="link sidebar-link__link">Схема работы</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link">
+            <a href="#" class="link sidebar-link__link">Правила предоставления займов</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link">
+            <a href="#" class="link sidebar-link__link">Тарифы</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link">
+            <a href="#" class="link sidebar-link__link">Документы</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link">
+            <a href="#" class="link sidebar-link__link">Способы получения денег</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+            <a href="#" class="link sidebar-link__link sidebar-link__link--big">Программа лояльности</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+            <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как вернуть деньги</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+            <a href="#" class="link sidebar-link__link sidebar-link__link--big">Ответы на вопросы</a>
+          </li>
+          <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+            <a href="#" class="link sidebar-link__link sidebar-link__link--big">Исправление кредитной истории</a>
+          </li>
+        </ul>
+        <div class="sidebar-menu-footer">
+          <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
         </div>
-        <div class="header-right">
-          <a href="#" class="link link--right-icon header-profile-link">
-            <span>Мой кабинет</span>
-            <span class="icon icon-profile"></span>
-          </a>
+      </nav>
+    </div>
+  </div>
+  <div class="top-area-container">
+    <button class="unbtn top-area-container__close">
+      <span class="icon icon-cross"></span>
+    </button>
+    <div class="ctabs top-area-tabs">
+      <div class="ctabs-tablist top-area-tabs__tablist" role="tablist">
+        <button class="ctabs-tablist__item top-area-tabs__tablist-item" role="tab" aria-selected="true"
+          aria-controls="top-callback-tab" id="top-callback">
+          <span class="icon icon-callback-gray"></span>
+          <span>Обратный звонок</span>
+        </button>
+        <button class="ctabs-tablist__item top-area-tabs__tablist-item" role="tab" aria-selected="false"
+          aria-controls="top-feedback-tab" id="top-feedback" tabindex="-1">
+          <span class="icon icon-feedback-gray"></span>
+          <span>Обратная связь</span>
+        </button>
+        <a class="ctabs-tablist__item top-area-tabs__tablist-item" href="#">
+          <span class="icon icon-question"></span>
+          <span>Ответы на вопросы</span>
+        </a>
+      </div>
+      <div class="ctabs-panel top-area-tabs__panel" tabindex="0" role="tabpanel" data-animation="fadeIn"
+        id="top-callback-tab" aria-labelledby="top-callback">
+        <div class="ctabs-panel__content top-area-tabs__panel-content">
+          <form class="top-callback-form" action="">
+            <input type="text" class="top-feedback-input top-callback-input" name="phone" placeholder="Телефон">
+            <button class="btn btn--orange top-feedback-button top-callback-button">Отправить</button>
+          </form>
         </div>
       </div>
-    </header>
-
-    <main class="main main-back">
-      <section class="section section-hero back-hero">
-        <div class="back-hero-container">
-          <h1 class="hero-title">Как вернуть деньги</h1>
-        </div>
-      </section>
-      <section class="section section-back">
-        <div class="page-container">
-          <h2 class="section-title">Погашение займа</h2>
-          <p class="section-back__notice">
-            Вы можете возвращать займ так, как удобно вам: погашать его целиком или частями, в срок или досрочно. Если у
-            вас возникнет необходимость, вы сможете продлить срок займа. Напомним, что своевременное погашение займа
-            положительно отразится на вашей кредитной истории и увеличит кредитный рейтинг.
-          </p>
-        </div>
-      </section>
-      <section class="section section-back">
-        <div class="page-container">
-          <h2 class="section-title">Досрочное погашение займа</h2>
-          <p class="section-back__notice">
-            Проценты начисляются только за фактическое количество дней займа. А это значит, что при досрочном погашении
-            вы сэкономите на процентах за пользование деньгами.
-          </p>
-        </div>
-      </section>
-      <section class="section section-back">
-        <div class="page-container">
-          <h2 class="section-title">Частичное погашение займа</h2>
-          <p class="section-back__notice">
-            Дополнительный способ экономии на возврате займа — это регулярное погашение плановых или частичных платежей.
-            Оплата займа частями снижает сумму долга и проценты будут начислены на сумму за вычетом внесённого платежа.
-          </p>
-        </div>
-      </section>
-      <section class="section section-back">
-        <div class="page-container">
-          <h2 class="section-title">Продление займа</h2>
-          <p class="section-back__notice">
-            Не успеваете погасить займ вовремя? Продлите его срок. Для этого в личном кабинете выберите срок продления,
-            оплатив при этом лишь проценты, начисленные сверх суммы займа. Это позволит вам сохранить кредитный рейтинг
-            и избежать темных пятен на кредитной истории.
-          </p>
-        </div>
-      </section>
-      <section class="section how-variants back-variants">
-        <div class="page-container">
-          <ul class="how-variants-list">
-            <li class="how-variants-list__item">
-              <span class="icon icon-payment-visa"></span>
-            </li>
-            <li class="how-variants-list__item">
-              <span class="icon icon-payment-mastercard"></span>
-            </li>
-            <li class="how-variants-list__item">
-              <span class="icon icon-payment-maestro"></span>
-            </li>
-            <li class="how-variants-list__item">
-              <span class="icon icon-payment-qiwi"></span>
-            </li>
-            <li class="how-variants-list__item">
-              <span class="icon icon-payment-ymoney"></span>
-            </li>
-            <li class="how-variants-list__item">
-              <span class="icon icon-payment-bank"></span>
-            </li>
-            <li class="how-variants-list__item">
-              <span class="icon icon-payment-cash-desk"></span>
-            </li>
-            <li class="how-variants-list__item">
-              <span class="icon icon-payment-contact"></span>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="section how-payment-contact">
-        <div class="page-container">
-          <h2 class="section-title">Платежная система CONTACT</h2>
-          <div class="contact-map" id="contact-map">
-            <input id="contact-point-search" type="search" placeholder="Город, улица" autocomplete="off" />
-            <div class="ctabs how-payment-contact__tabs">
-              <div class="ctabs-tablist how-payment-contact__tablist" role="tablist">
-                <button
-                  id="contact-pos-in-btn"
-                  class="ctabs-tablist__item how-payment-contact__tablist-item"
-                  role="tab"
-                  aria-selected="true"
-                  aria-controls=""
-                >
-                  Пункты получения займа
-                </button>
-                <button
-                  id="contact-pos-out-btn"
-                  class="ctabs-tablist__item how-payment-contact__tablist-item"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls=""
-                  tabindex="-1"
-                >
-                  Пункты погашения займа
-                </button>
-                <button
-                  id="contact-pos-in-out-btn"
-                  class="ctabs-tablist__item how-payment-contact__tablist-item"
-                  role="tab"
-                  aria-selected="false"
-                  aria-controls=""
-                  tabindex="-1"
-                >
-                  Пункты получения/погашения
-                </button>
-              </div>
+      <div class="ctabs-panel top-area-tabs__panel" tabindex="0" role="tabpanel" data-animation="fadeIn"
+        id="top-feedback-tab" aria-labelledby="top-feedback" hidden="">
+        <div class="ctabs-panel__content top-area-tabs__panel-content">
+          <form class="top-feedback-form" action="">
+            <div class="top-feedback-row">
+              <input type="text" class="top-feedback-input" name="name" placeholder="Имя">
+              <input type="email" class="top-feedback-input" name="email" placeholder="Эл. почта">
             </div>
-            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-          </div>
-          <div class="how-payment-contact-map" id="contact">
-            <div id="how-payment-contact-map"></div>
-          </div>
+            <div class="top-feedback-row">
+              <textarea class="top-feedback-textarea" name="message" cols="30" rows="10"></textarea>
+            </div>
+            <button class="btn btn--orange top-feedback-button">Отправить</button>
+          </form>
         </div>
-      </section>
-    </main>
-
-    <footer class="footer footer-how">
-      <div class="footer-container">
-        <div class="footer__contacts">
-          <div class="footer__contacts-phone">
-            <a href="tel:+74952680557" class="link phone">+7 (495) 268 0557</a>
-          </div>
-          <div class="footer__contacts-copy">
-            <span class="footer__contacts-copy__left">&copy; SmartCredit, 2015-2019.</span>
-            <span class="footer__contacts-copy__right">Все права защищены.</span>
-          </div>
-          <div class="footer__contacts-program">
-            <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
-          </div>
-          <div class="footer__contacts-designedby">
-            <a class="link designedby-link" href="#">Дизайн: Genue</a>
-          </div>
-        </div>
-        <nav class="footer__nav">
-          <ul class="footer__nav-list">
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link footer__nav-link--gray" href="#">О компании</a>
-            </li>
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link" href="#">Раскрытие информации</a>
-            </li>
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link" href="#">СМИ о нас</a>
-            </li>
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link" href="#">Новости компании</a>
-            </li>
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link footer__nav-link--big" href="#">Контакты</a>
-            </li>
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link footer__nav-link--gray" href="#">Программа лояльности</a>
-            </li>
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link footer__nav-link--gray" href="#">Как вернуть деньги</a>
-            </li>
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link footer__nav-link--gray" href="#">Ответы на вопросы</a>
-            </li>
-          </ul>
-          <ul class="footer__nav-list">
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link footer__nav-link--gray footer__nav-link--big" href="#"
-                >Исправление кредитной истории</a
-              >
-            </li>
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link footer__nav-link--gray" href="#">Как взять деньги</a>
-            </li>
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link" href="#">Схема работы</a>
-            </li>
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link" href="#">Правила предоставления займов</a>
-            </li>
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link" href="#">Тарифы</a>
-            </li>
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link" href="#">Документы</a>
-            </li>
-            <li class="footer__nav-list__item">
-              <a class="link footer__nav-link" href="#">Способы получения денег</a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </footer>
+    </div>
+  </div>
+  <header class="header header-how">
+    <div class="header-container">
+      <div class="header-left">
+        <nav class="sidebar-menu-toggle">
+          <button class="unbtn sidebar-menu-button">
+            <span class="icon icon-hamburger"></span>
+          </button>
+        </nav>
+        <a href="/" class="logo">
+          <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
+        </a>
+      </div>
+      <div class="header-center">
+        <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-callback">
+          <span class="icon icon-phone"></span>
+          <span>Позвонить нам</span>
+        </a>
+        <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-feedback">
+          <span class="icon icon-chat"></span>
+          <span>Поддержка/Верификация 24/7</span>
+        </a>
+      </div>
+      <div class="header-right">
+        <a href="#" class="link link--right-icon header-profile-link">
+          <span>Мой кабинет</span>
+          <span class="icon icon-profile"></span>
+        </a>
+      </div>
+    </div>
+  </header>
 
-    <script src="js/bundle.js?v=0.0.10"></script>
-  </body>
+<main class="main main-back">
+  <section class="section section-hero back-hero">
+    <div class="back-hero-container">
+      <h1 class="hero-title">Как вернуть деньги</h1>
+    </div>
+  </section>
+  <section class="section section-back">
+    <div class="page-container">
+      <h2 class="section-title">Погашение займа</h2>
+      <p class="section-back__notice">Вы можете возвращать займ так, как удобно вам: погашать его целиком или частями, в срок или досрочно. Если у вас возникнет необходимость, вы сможете продлить срок займа. Напомним, что своевременное погашение займа положительно отразится на вашей кредитной истории и увеличит кредитный рейтинг.</p>
+    </div>
+  </section>
+  <section class="section section-back">
+    <div class="page-container">
+      <h2 class="section-title">Досрочное погашение займа</h2>
+      <p class="section-back__notice">Проценты начисляются только за фактическое количество дней займа. А это значит, что при досрочном погашении вы сэкономите на процентах за пользование деньгами.</p>
+    </div>
+  </section>
+  <section class="section section-back">
+    <div class="page-container">
+      <h2 class="section-title">Частичное погашение займа</h2>
+      <p class="section-back__notice">Дополнительный способ экономии на возврате займа — это регулярное погашение плановых или частичных платежей. Оплата займа частями снижает сумму долга и проценты будут начислены на сумму за вычетом внесённого платежа.</p>
+    </div>
+  </section>
+  <section class="section section-back">
+    <div class="page-container">
+      <h2 class="section-title">Продление займа</h2>
+      <p class="section-back__notice">Не успеваете погасить займ вовремя? Продлите его срок. Для этого в личном кабинете выберите срок продления, оплатив при этом лишь проценты, начисленные сверх суммы займа. Это позволит вам сохранить кредитный рейтинг и избежать темных пятен на кредитной истории.</p>
+    </div>
+  </section>
+  <section class="section how-variants back-variants">
+    <div class="page-container">
+      <ul class="how-variants-list">
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-visa"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-mastercard"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-maestro"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-qiwi"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-ymoney"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-bank"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-cash-desk"></span>
+        </li>
+        <li class="how-variants-list__item">
+          <span class="icon icon-payment-contact"></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="section how-payment-contact">
+    <div class="page-container">
+      <h2 class="section-title">Платежная система CONTACT</h2>
+      <div class="contact-map" id="contact-map">
+        <input id="contact-point-search" type="search" placeholder="Город, улица" autocomplete="off">
+        <div class="ctabs how-payment-contact__tabs">
+          <div class="ctabs-tablist how-payment-contact__tablist" role="tablist">
+            <button id="contact-pos-in-btn" class="ctabs-tablist__item how-payment-contact__tablist-item" role="tab"
+              aria-selected="true" aria-controls="">Пункты получения займа</button>
+            <button id="contact-pos-out-btn" class="ctabs-tablist__item how-payment-contact__tablist-item" role="tab"
+              aria-selected="false" aria-controls="" tabindex="-1">Пункты погашения займа</button>
+            <button id="contact-pos-in-out-btn" class="ctabs-tablist__item how-payment-contact__tablist-item" role="tab"
+              aria-selected="false" aria-controls="" tabindex="-1">Пункты получения/погашения</button>
+          </div>
+        </div>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+      </div>
+      <div class="how-payment-contact-map" id="contact">
+        <div id="how-payment-contact-map"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer footer-how">
+  <div class="footer-container">
+    <div class="footer__contacts">
+      <div class="footer__contacts-phone">
+        <a href="tel:+74952680557" class="link phone">+7 (495) 268 0557</a>
+      </div>
+      <div class="footer__contacts-copy">
+        <span class="footer__contacts-copy__left">&copy; SmartCredit, 2015-2019.</span>
+        <span class="footer__contacts-copy__right">Все права защищены.</span>
+      </div>
+      <div class="footer__contacts-program">
+        <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
+      </div>
+      <div class="footer__contacts-designedby">
+        <a class="link designedby-link" href="#">Дизайн: Genue</a>
+      </div>
+    </div>
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link footer__nav-link--gray" href="#">О компании</a>
+        </li>
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link" href="#">Раскрытие информации</a>
+        </li>
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link" href="#">СМИ о нас</a>
+        </li>
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link" href="#">Новости компании</a>
+        </li>
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link footer__nav-link--big" href="#">Контакты</a>
+        </li>
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link footer__nav-link--gray" href="#">Программа лояльности</a>
+        </li>
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link footer__nav-link--gray" href="#">Как вернуть деньги</a>
+        </li>
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link footer__nav-link--gray" href="#">Ответы на вопросы</a>
+        </li>
+      </ul>
+      <ul class="footer__nav-list">
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link footer__nav-link--gray footer__nav-link--big" href="#">Исправление кредитной
+            истории</a>
+        </li>
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link footer__nav-link--gray" href="#">Как взять деньги</a>
+        </li>
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link" href="#">Схема работы</a>
+        </li>
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link" href="#">Правила предоставления займов</a>
+        </li>
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link" href="#">Тарифы</a>
+        </li>
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link" href="#">Документы</a>
+        </li>
+        <li class="footer__nav-list__item">
+          <a class="link footer__nav-link" href="#">Способы получения денег</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/bundle.js?v=0.0.10"></script>
+</body>
+
 </html>

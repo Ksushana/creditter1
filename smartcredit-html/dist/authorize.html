@@ -1,77 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ff0000" />
-    <!-- First, all the preloads -->
-    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
-    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
-    <link rel="stylesheet" href="css/style.bundle.css?v=0.0.1" />
-    <title>SmartCredit | Шаг 0 - Авторизация</title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ff0000">
+  <!-- First, all the preloads -->
+  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
+  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
+  <link rel="stylesheet" href="css/style.bundle.css?v=0.0.1" />
+  <title>SmartCredit | Шаг 0 - Авторизация</title>
+</head>
 
-  <body class="application">
-    <header class="header application-header">
-      <div class="application-header__container">
-        <div class="header-left">
-          <a href="/" class="logo">
-            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
-          </a>
-        </div>
-        <div class="header-right">
-          <a href="#" class="link link--right-icon header-profile-link">
-            <span>Мой кабинет</span>
-            <span class="icon icon-profile"></span>
-          </a>
-        </div>
+
+<body class="application">
+  <header class="header application-header">
+    <div class="application-header__container">
+      <div class="header-left">
+        <a href="/" class="logo">
+          <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
+        </a>
       </div>
-    </header>
-    <main class="main main-application">
-      <section class="section-application section-authorization">
-        <div class="section-application__container section-authorization__container">
-          <form class="application-form authorization-form">
-            <div
-              class="application-formblock application-fieldgroup application-fieldgroup--many authorization-formblock"
-            >
-              <p class="application-fieldgroup__title authorization-title">Авторизация</p>
-              <div class="application-fieldgroup__row">
-                <input
-                  class="application-input application-fieldgroup__input application-fieldgroup__input--full"
-                  type="text"
-                  placeholder="Логин"
-                />
-              </div>
-              <div class="application-fieldgroup__row">
-                <input
-                  class="application-input application-fieldgroup__input application-fieldgroup__input--full"
-                  type="text"
-                  placeholder="Пароль"
-                />
-              </div>
+      <div class="header-right">
+        <a href="#" class="link link--right-icon header-profile-link">
+          <span>Мой кабинет</span>
+          <span class="icon icon-profile"></span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="main main-application">
+    <section class="section-application section-authorization">
+      <div class="section-application__container section-authorization__container">
+        <form class="application-form authorization-form">
+          <div
+            class="application-formblock application-fieldgroup application-fieldgroup--many authorization-formblock">
+            <p class="application-fieldgroup__title authorization-title">Авторизация</p>
+            <div class="application-fieldgroup__row">
+              <input class="application-input application-fieldgroup__input application-fieldgroup__input--full"
+                type="text" placeholder="Логин">
             </div>
-            <div class="application-formblock authorization-form-next-action">
-              <a href="#" class="link link--orange forgot-password-link">Забыли логин или пароль?</a>
-              <button class="btn btn--orange authorization-next-button" type="button">Войти</button>
-            </div>
-          </form>
-          <div class="application-footer">
-            <div class="application-footer-container">
-              <p class="authorization-notice">
-                Не сообщайте логин, пароль и код подтверждения, чтобы&nbsp;этим не воспользовались мошенники.
-                Наши&nbsp;сотрудники никогда их не спросит.
-              </p>
+            <div class="application-fieldgroup__row">
+              <input class="application-input application-fieldgroup__input application-fieldgroup__input--full"
+                type="text" placeholder="Пароль">
             </div>
           </div>
+          <div class="application-formblock authorization-form-next-action">
+            <a href="#" class="link link--orange forgot-password-link">Забыли логин или пароль?</a>
+            <button class="btn btn--orange authorization-next-button" type="button">Войти</button>
+          </div>
+        </form>
+        <div class="application-footer">
+          <div class="application-footer-container">
+            <p class="authorization-notice">Не сообщайте логин, пароль и код подтверждения, чтобы&nbsp;этим не
+              воспользовались мошенники. Наши&nbsp;сотрудники
+              никогда их не спросит.</p>
+          </div>
         </div>
-      </section>
-    </main>
-    <script src="js/bundle.js?v=0.0.1"></script>
-  </body>
+      </div>
+    </section>
+  </main>
+  <script src="js/bundle.js?v=0.0.1"></script>
+</body>
+
 </html>

@@ -5,6 +5,7 @@ import accordionInit from './accordion';
 import tooltipInit from './tooltip';
 import slidersInit from './sliders';
 import customSelectMultipleInit from './custom-select-multiple';
+import wallet from './wallet';
 import homeInit from './pages/home';
 import stepInit from './pages/step';
 import newsInit from './pages/news';
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     tooltipInit();
     slidersInit();
     customSelectMultipleInit();
+    wallet();
     homeInit();
     stepInit();
     newsInit();
