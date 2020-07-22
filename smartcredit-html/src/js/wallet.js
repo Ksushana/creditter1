@@ -16,7 +16,10 @@ function init() {
   const cardMaxSlideDistance = cardHeight - minVisible - minInvisible;
   const customTopCardsNumber = 2;
   const maxSlideDistance = calculateMaxPosition();
-  const minCollapseablePosition = cardMaxSlideDistance * 2.5;
+  const minCollapseablePosition = Math.min(
+    cardMaxSlideDistance * 2.5,
+    maxSlideDistance * 0.75,
+  );
 
   let position = minCollapseablePosition;
   let startY;

@@ -4,6 +4,9 @@ $gray: $gray;
 body.application {
   background: #f5f6fa;
   color: $textMainColor;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
 .application-header {
