@@ -43,7 +43,7 @@ function init() {
     const { pageY } = evt.touches[0];
     const diff = pageY - startY;
     position = Math.max(Math.min(startPosition + diff, maxSlideDistance), 0);
-    console.log({ position });
+    // console.log({ position });
     draw();
   }
 
@@ -62,33 +62,37 @@ function init() {
     card.style.transform = `translateY(${translateY}px)`;
   }
 
-  // function calculateMinMargin({ index }) {
-  //   const reverseIndex = total - index - 1;
-  //   if (reverseIndex < customTopCardsNumber) {
-  //     return -(cardHeight * (1 / 4) * (reverseIndex + 1)).toFixed();
-  //   }
-  //   return -(cardHeight - minVisible);
-  // }
-
   function calculateTranslateY({ index }) {
     const reverseIndex = total - index - 1;
     const defaultOffset = (cardHeight - minVisible) * index;
-    const reversePosition = maxSlideDistance - position;
-    const positionOffset =
-      reversePosition < reverseIndex * cardMaxSlideDistance
-        ? 0
-        : Math.min(
-            reverseIndex * cardMaxSlideDistance - reversePosition,
-            cardMaxSlideDistance,
-          );
-    const offset = defaultOffset + positionOffset;
+    // const reversePosition = maxSlideDistance - position;
+    const previousCardsPositionOffset =
+      (total - index - 1) * cardMaxSlideDistance;
+    const maxPositionDiff =
+      maxSlideDistance - cardMaxSlideDistance * reverseIndex;
+    const positionDiff = [6, 7].includes(6)
+      ? Math.max(
+          Math.min(
+            position - cardMaxSlideDistance * (reverseIndex + 1),
+            maxPositionDiff,
+          ),
+          0,
+        )
+      : 0;
+    //   reversePosition < reverseIndex * cardMaxSlideDistance
+    //     ? 0
+    //     : Math.min(
+    //         reversePosition - reverseIndex * cardMaxSlideDistance,
+    //         cardMaxSlideDistance,
+    //       );
+    // const offset = defaultOffset - positionOffset;
+    // const offset = defaultOffset;
+    const offset = defaultOffset - positionDiff;
     console.log({
-      position,
-      reverseIndex,
-      reversePosition,
-      defaultOffset,
-      positionOffset,
+      index,
+      cardPosition: positionDiff,
       offset,
+      y: maxSlideDistance - offset,
     });
     return -offset;
   }
