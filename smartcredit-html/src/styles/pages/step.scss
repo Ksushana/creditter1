@@ -100,6 +100,8 @@ body.application {
     li {
       position: relative;
 
+
+
       &:last-child {
       }
     }
@@ -119,6 +121,10 @@ body.application {
     background: linear-gradient(0deg, #A6B1BB, #A6B1BB), #FFDD2D;
     .application-card-label {
       color: #A6B1BB;
+
+      &::before {
+        border: 2px solid #ffffff;
+      }
     }
 
     svg  {
@@ -158,6 +164,10 @@ body.application {
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%), #FFDD2D;
       .application-card-label {
         color: #FFDD2D;
+
+        &::before {
+          border: 2px solid #000000;
+        }
       }
       svg path {
         fill: #FFDD2D;
@@ -165,7 +175,6 @@ body.application {
 
       .application-card-input:checked+label {
         background-color: #000000;
-
       }
 
       .application-card-bank {
@@ -212,6 +221,20 @@ body.application {
     font-size: 0;
     margin-top: -4px;
     margin-right: -6px;
+    display: block;
+
+    &::before {
+      width: 282px;
+      height: 174px;
+      position: absolute;
+      display: none;
+      content: "";
+      top: 3px;
+      left: 3px;
+      border: 2px solid transparent;
+      box-sizing: border-box;
+      border-radius: 14px;
+    }
   }
 
   .application-card-input:checked+label {
@@ -229,6 +252,10 @@ body.application {
     svg {
       margin-left: 3px;
       display: inline-block;
+    }
+
+    &::before {
+      display: block;
     }
 
 
