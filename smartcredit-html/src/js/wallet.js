@@ -1,8 +1,4 @@
 /* eslint-disable no-new */
-// import Tooltip from 'tooltip.js';
-
-// const TOOLTIP_ATTR = 'data-tooltip';
-// const BOUNDARIES_ATTR = 'data-tooltip-boundaries';
 
 function init() {
   const container = document.querySelector('.application-cards-list');
@@ -20,11 +16,9 @@ function init() {
   const cardMaxSlideDistance = cardHeight - minVisible - minInvisible;
   const customTopCardsNumber = 2;
   const maxSlideDistance = calculateMaxPosition();
+  const minCollapseablePosition = cardMaxSlideDistance * 2.5;
 
-  console.log({ cardMaxSlideDistance, maxSlideDistance });
-
-  // let position = maxSlideDistance;
-  window.position = 0;
+  let position = minCollapseablePosition;
   let startY;
   let startPosition;
 
@@ -35,15 +29,16 @@ function init() {
     const { pageY } = evt.touches[0];
     startY = pageY;
     startPosition = position;
-    // console.log({ startY });
   }
 
   function handleTouchmove(evt) {
     evt.preventDefault();
     const { pageY } = evt.touches[0];
     const diff = pageY - startY;
-    position = Math.max(Math.min(startPosition + diff, maxSlideDistance), 0);
-    // console.log({ position });
+    position = Math.max(
+      Math.min(startPosition + diff, maxSlideDistance),
+      minCollapseablePosition,
+    );
     draw();
   }
 
@@ -52,12 +47,6 @@ function init() {
   }
 
   function drawCard(card, index) {
-    // const cardMinMargin = calculateMinMargin({ index });
-    // const marginBottom = Math.max(
-    //   Math.min(cardMinMargin + position, maxMargin),
-    //   cardMinMargin,
-    // );
-    // console.log({ cardMinMargin, marginBottom });
     const translateY = calculateTranslateY({ index });
     card.style.transform = `translateY(${translateY}px)`;
   }
@@ -65,43 +54,21 @@ function init() {
   function calculateTranslateY({ index }) {
     const reverseIndex = total - index - 1;
     const defaultOffset = (cardHeight - minVisible) * index;
-    // const reversePosition = maxSlideDistance - position;
-    const previousCardsPositionOffset =
-      (total - index - 1) * cardMaxSlideDistance;
     const maxPositionDiff =
       maxSlideDistance - cardMaxSlideDistance * reverseIndex;
-    const positionDiff = [6, 7].includes(6)
-      ? Math.max(
-          Math.min(
-            position - cardMaxSlideDistance * (reverseIndex + 1),
-            maxPositionDiff,
-          ),
-          0,
-        )
-      : 0;
-    //   reversePosition < reverseIndex * cardMaxSlideDistance
-    //     ? 0
-    //     : Math.min(
-    //         reversePosition - reverseIndex * cardMaxSlideDistance,
-    //         cardMaxSlideDistance,
-    //       );
-    // const offset = defaultOffset - positionOffset;
-    // const offset = defaultOffset;
+    const positionDiff = Math.max(
+      Math.min(
+        position - cardMaxSlideDistance * (reverseIndex + 1),
+        maxPositionDiff,
+      ),
+      0,
+    );
     const offset = defaultOffset - positionDiff;
-    console.log({
-      index,
-      cardPosition: positionDiff,
-      offset,
-      y: maxSlideDistance - offset,
-    });
     return -offset;
   }
 
   function calculateMaxPosition() {
-    return Array.from(cards).reduce((acc, _, index) => {
-      // const maxMarginDiff = gutterHeight - calculateMinMargin({ index });
-      return acc + cardMaxSlideDistance;
-    }, 0);
+    return cardMaxSlideDistance * total;
   }
 
   draw();
