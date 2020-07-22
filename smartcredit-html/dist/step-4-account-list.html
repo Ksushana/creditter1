@@ -1,314 +1,235 @@
+
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ff0000" />
-    <!-- First, all the preloads -->
-    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
-    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
-    <link rel="stylesheet" href="css/style.bundle.css?v=0.0.1" />
-    <title>SmartCredit | Шаг 4 - список карт и счетов</title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ff0000">
+  <!-- First, all the preloads -->
+  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
+  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
+  <link rel="stylesheet" href="css/style.bundle.css?v=0.0.1" />
+  <title>SmartCredit | Шаг 4 - список карт и счетов</title>
+</head>
 
-  <body class="application">
-    <header class="header application-header">
-      <div class="application-header__container">
-        <div class="header-left">
-          <a href="/" class="logo">
-            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
-          </a>
-        </div>
-        <div class="header-right">
-          <a href="#" class="link link--right-icon header-profile-link">
-            <span>Мой кабинет</span>
-            <span class="icon icon-profile"></span>
-          </a>
-        </div>
+
+<body class="application">
+  <header class="header application-header">
+    <div class="application-header__container">
+      <div class="header-left">
+        <a href="/" class="logo">
+          <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
+        </a>
       </div>
-    </header>
-    <main class="main main-application">
-      <section class="section-application">
-        <div class="section-application__container">
-          <form class="application-form">
-            <div class="application-form__steps">
-              <ul class="step-list">
-                <li class="step step-one">
-                  <div class="step__number">1</div>
-                  <p class="step__title">Контактная информация</p>
-                </li>
-                <li class="step step-two">
-                  <div class="step__number">2</div>
-                  <p class="step__title">Паспортные данные</p>
-                </li>
-                <li class="step step-three">
-                  <div class="step__number">3</div>
-                  <p class="step__title">Дополнительная информация</p>
-                </li>
-                <li class="step step-four step--active">
-                  <div class="step__number">4</div>
-                  <p class="step__title">Получение денег</p>
-                </li>
-              </ul>
-            </div>
-            <div class="application-form__steps-mobile">
-              <p class="application-form__steps-mobile__title">Получение денег</p>
-            </div>
-            <div class="application-form__progress">
-              <div class="progress">
-                <div class="progress-filled" style="width: 100%;"></div>
-                <div class="progress-text progress-text--finished">
-                  <div class="progress-text__percent">100%</div>
-                  <div class="progress-text__fraction">Шаг 4 из 4</div>
-                </div>
+      <div class="header-right">
+        <a href="#" class="link link--right-icon header-profile-link">
+          <span>Мой кабинет</span>
+          <span class="icon icon-profile"></span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="main main-application">
+    <section class="section-application">
+      <div class="section-application__container">
+        <form class="application-form">
+          <div class="application-form__steps">
+            <ul class="step-list">
+              <li class="step step-one">
+                <div class="step__number">1</div>
+                <p class="step__title">Контактная информация</p>
+              </li>
+              <li class="step step-two">
+                <div class="step__number">2</div>
+                <p class="step__title">Паспортные данные</p>
+              </li>
+              <li class="step step-three">
+                <div class="step__number">3</div>
+                <p class="step__title">Дополнительная информация</p>
+              </li>
+              <li class="step step-four step--active">
+                <div class="step__number">4</div>
+                <p class="step__title">Получение денег</p>
+              </li>
+            </ul>
+          </div>
+          <div class="application-form__steps-mobile">
+            <p class="application-form__steps-mobile__title">Получение денег</p>
+          </div>
+          <div class="application-form__progress">
+            <div class="progress">
+              <div class="progress-filled" style="width: 100%;"></div>
+              <div class="progress-text progress-text--finished">
+                <div class="progress-text__percent">100%</div>
+                <div class="progress-text__fraction">Шаг 4 из 4</div>
               </div>
             </div>
-            <div class="application-formblock application-formblock-prevalue">
-              <div class="application-formblock-prevalue__item">
-                <p class="application-choose__title">Желаемая сумма денег</p>
-                <p class="application-choose__value">100 000 ₽</p>
-              </div>
-              <div class="application-formblock-prevalue__item">
-                <p class="application-choose__title">Желаемый срок займа</p>
-                <p class="application-choose__value">30 дней</p>
+          </div>
+          <div class="application-formblock application-formblock-prevalue">
+            <div class="application-formblock-prevalue__item">
+              <p class="application-choose__title">Желаемая сумма денег</p>
+              <p class="application-choose__value">100 000 ₽</p>
+            </div>
+            <div class="application-formblock-prevalue__item">
+              <p class="application-choose__title">Желаемый срок займа</p>
+              <p class="application-choose__value">30 дней</p>
+            </div>
+          </div>
+          <div class="ctabs account-type-tabs">
+            <div class="ctabs-tablist account-type-tabs__tablist" role="tablist">
+              <div class="account-type-tabs__tablist-container">
+                <button type="button" class="ctabs-tablist__item account-type-tabs__tablist-item" role="tab"
+                  aria-selected="true" aria-controls="cards-tab" id="cards">На карту</button>
+                <button type="button" class="ctabs-tablist__item account-type-tabs__tablist-item" role="tab"
+                  aria-selected="false" aria-controls="qiwi-tab" id="qiwi" tabindex="-1">На QIWI</button>
+                <button type="button" class="ctabs-tablist__item account-type-tabs__tablist-item" role="tab"
+                  aria-selected="false" aria-controls="accounts-tab" id="accounts" tabindex="-1">На Р/С</button>
               </div>
             </div>
-            <div class="ctabs account-type-tabs">
-              <div class="ctabs-tablist account-type-tabs__tablist" role="tablist">
-                <div class="account-type-tabs__tablist-container">
-                  <button
-                    type="button"
-                    class="ctabs-tablist__item account-type-tabs__tablist-item"
-                    role="tab"
-                    aria-selected="true"
-                    aria-controls="cards-tab"
-                    id="cards"
-                  >
-                    На карту
-                  </button>
-                  <button
-                    type="button"
-                    class="ctabs-tablist__item account-type-tabs__tablist-item"
-                    role="tab"
-                    aria-selected="false"
-                    aria-controls="qiwi-tab"
-                    id="qiwi"
-                    tabindex="-1"
-                  >
-                    На QIWI
-                  </button>
-                  <button
-                    type="button"
-                    class="ctabs-tablist__item account-type-tabs__tablist-item"
-                    role="tab"
-                    aria-selected="false"
-                    aria-controls="accounts-tab"
-                    id="accounts"
-                    tabindex="-1"
-                  >
-                    На Р/С
-                  </button>
-                </div>
-              </div>
-              <div
-                class="ctabs-panel account-type-tabs__panel"
-                tabindex="0"
-                role="tabpanel"
-                id="cards-tab"
-                aria-labelledby="cards"
-              >
-                <div class="ctabs-panel__content account-type-tabs__panel-content">
-                  <div class="application-formblock application-formblock-accounts">
-                    <div
-                      class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper"
-                    >
-                      <div class="payment-banks__status-badge"></div>
-                      <div class="card-template-container">
-                        <div class="template-item card-template">
-                          <div class="card-template-row">
-                            <img
-                              class="card-template__bank"
-                              src="images/sberbank.png"
-                              alt="Сбербанк"
-                              width="169"
-                              height="32"
-                            />
-                            <img class="card-template__type" src="images/visa.png" alt="Visa" width="87" height="28" />
-                          </div>
-                          <div class="card-template-row">
-                            <p class="card-template__number">1234 - 5678 - 9000 - 0000</p>
-                          </div>
-                          <div class="card-template-row">
-                            <p class="card-template__name">Алексей Петров</p>
-                            <p class="card-template__date">11/24</p>
-                          </div>
+            <div class="ctabs-panel account-type-tabs__panel" tabindex="0" role="tabpanel" id="cards-tab"
+              aria-labelledby="cards">
+              <div class="ctabs-panel__content account-type-tabs__panel-content">
+                <div class="application-formblock application-formblock-accounts">
+                  <div class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper">
+                    <div class="payment-banks__status-badge"></div>
+                    <div class="card-template-container">
+                      <div class="template-item card-template">
+                        <div class="card-template-row">
+                          <img class="card-template__bank" src="images/sberbank.png" alt="Сбербанк" width="169"
+                            height="32">
+                          <img class="card-template__type" src="images/visa.png" alt="Visa" width="87" height="28">
+                        </div>
+                        <div class="card-template-row">
+                          <p class="card-template__number">1234 - 5678 - 9000 - 0000</p>
+                        </div>
+                        <div class="card-template-row">
+                          <p class="card-template__name">Алексей Петров</p>
+                          <p class="card-template__date">11/24</p>
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper"
-                    >
-                      <div class="payment-banks__status-badge"></div>
-                      <div class="card-template-container">
-                        <div class="template-item card-template">
-                          <div class="card-template-row">
-                            <img
-                              class="card-template__bank"
-                              src="images/sberbank.png"
-                              alt="Сбербанк"
-                              width="169"
-                              height="32"
-                            />
-                            <img
-                              class="card-template__type"
-                              src="images/mastercard.png"
-                              alt="Mastercard"
-                              width="52"
-                              height="32"
-                            />
-                          </div>
-                          <div class="card-template-row">
-                            <p class="card-template__number">ХХХХ - ХХХХ - ХХХХ - 9999</p>
-                          </div>
-                          <div class="card-template-row">
-                            <p class="card-template__name">Алексей Петров</p>
-                            <p class="card-template__date">11/24</p>
-                          </div>
+                  </div>
+                  <div class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper">
+                    <div class="payment-banks__status-badge"></div>
+                    <div class="card-template-container">
+                      <div class="template-item card-template">
+                        <div class="card-template-row">
+                          <img class="card-template__bank" src="images/sberbank.png" alt="Сбербанк" width="169"
+                            height="32">
+                          <img class="card-template__type" src="images/mastercard.png" alt="Mastercard" width="52"
+                            height="32">
+                        </div>
+                        <div class="card-template-row">
+                          <p class="card-template__number">ХХХХ - ХХХХ - ХХХХ - 9999</p>
+                        </div>
+                        <div class="card-template-row">
+                          <p class="card-template__name">Алексей Петров</p>
+                          <p class="card-template__date">11/24</p>
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper"
-                    >
-                      <div class="card-template-container">
-                        <a href="#" class="template-item application-banks__item-add bank-cards__add">
-                          <span class="icon icon-plus-circle application-banks__item-add__icon"></span>
-                          <span class="application-banks__item-add__title">Добавить карту</span>
-                        </a>
-                      </div>
+                  </div>
+                  <div class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper">
+                    <div class="card-template-container">
+                      <a href="#" class="template-item application-banks__item-add bank-cards__add">
+                        <span class="icon icon-plus-circle application-banks__item-add__icon"></span>
+                        <span class="application-banks__item-add__title">Добавить карту</span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="ctabs-panel account-type-tabs__panel"
-                tabindex="0"
-                role="tabpanel"
-                id="qiwi-tab"
-                aria-labelledby="qiwi"
-                hidden=""
-              >
-                <div class="ctabs-panel__content account-type-tabs__panel-content">
-                  <div class="application-formblock application-formblock-accounts">
-                    <div
-                      class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper"
-                    >
-                      <div class="payment-banks__status-badge"></div>
-                      <div class="card-template-container">
-                        <div class="template-item card-template">
-                          <div class="card-template-row">
-                            <img class="card-template__bank" src="images/qiwi.png" alt="QIWI" width="98" height="44" />
-                          </div>
-                          <div class="card-template-row card-template-row--centered">
-                            <p class="card-template__number">+7 999 999 99 99</p>
-                          </div>
+            </div>
+            <div class="ctabs-panel account-type-tabs__panel" tabindex="0" role="tabpanel" id="qiwi-tab"
+              aria-labelledby="qiwi" hidden="">
+              <div class="ctabs-panel__content account-type-tabs__panel-content">
+                <div class="application-formblock application-formblock-accounts">
+                  <div class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper">
+                    <div class="payment-banks__status-badge"></div>
+                    <div class="card-template-container">
+                      <div class="template-item card-template">
+                        <div class="card-template-row">
+                          <img class="card-template__bank" src="images/qiwi.png" alt="QIWI" width="98" height="44">
+                        </div>
+                        <div class="card-template-row card-template-row--centered">
+                          <p class="card-template__number">+7 999 999 99 99</p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div
-                class="ctabs-panel account-type-tabs__panel"
-                tabindex="0"
-                role="tabpanel"
-                id="accounts-tab"
-                aria-labelledby="accounts"
-                hidden=""
-              >
-                <div class="ctabs-panel__content account-type-tabs__panel-content">
-                  <div class="application-formblock application-formblock-accounts">
-                    <div
-                      class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper"
-                    >
-                      <div class="payment-banks__status-badge"></div>
-                      <div class="card-template-container">
-                        <div class="template-item account-template">
-                          <div class="account-template-row">
-                            <img
-                              class="account-template__bank"
-                              src="images/sberbank.png"
-                              alt="Сбербанк"
-                              width="169"
-                              height="32"
-                            />
-                          </div>
-                          <div class="account-template-row">
-                            <p class="account-template__title">Основной счет</p>
-                          </div>
-                          <div class="account-template-row">
-                            <p class="account-template__number">ХХХХХХ - 5678</p>
-                            <p class="account-template__icon">
-                              <span class="icon icon-bank-black"></span>
-                            </p>
-                          </div>
+            </div>
+            <div class="ctabs-panel account-type-tabs__panel" tabindex="0" role="tabpanel" id="accounts-tab"
+              aria-labelledby="accounts" hidden="">
+              <div class="ctabs-panel__content account-type-tabs__panel-content">
+                <div class="application-formblock application-formblock-accounts">
+                  <div class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper">
+                    <div class="payment-banks__status-badge"></div>
+                    <div class="card-template-container">
+                      <div class="template-item account-template">
+                        <div class="account-template-row">
+                          <img class="account-template__bank" src="images/sberbank.png" alt="Сбербанк" width="169"
+                            height="32">
+                        </div>
+                        <div class="account-template-row">
+                          <p class="account-template__title">Основной счет</p>
+                        </div>
+                        <div class="account-template-row">
+                          <p class="account-template__number">ХХХХХХ - 5678</p>
+                          <p class="account-template__icon">
+                            <span class="icon icon-bank-black"></span>
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper"
-                    >
-                      <div class="payment-banks__status-badge"></div>
-                      <div class="card-template-container">
-                        <div class="template-item account-template">
-                          <div class="account-template-row">
-                            <img
-                              class="account-template__bank"
-                              src="images/sberbank.png"
-                              alt="Сбербанк"
-                              width="169"
-                              height="32"
-                            />
-                          </div>
-                          <div class="account-template-row">
-                            <p class="account-template__title">Сберегательный счет</p>
-                          </div>
-                          <div class="account-template-row">
-                            <p class="account-template__number">ХХХХХХ - 5678</p>
-                            <p class="account-template__icon">
-                              <span class="icon icon-bank-black"></span>
-                            </p>
-                          </div>
+                  </div>
+                  <div class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper">
+                    <div class="payment-banks__status-badge"></div>
+                    <div class="card-template-container">
+                      <div class="template-item account-template">
+                        <div class="account-template-row">
+                          <img class="account-template__bank" src="images/sberbank.png" alt="Сбербанк" width="169"
+                            height="32">
+                        </div>
+                        <div class="account-template-row">
+                          <p class="account-template__title">Сберегательный счет</p>
+                        </div>
+                        <div class="account-template-row">
+                          <p class="account-template__number">ХХХХХХ - 5678</p>
+                          <p class="account-template__icon">
+                            <span class="icon icon-bank-black"></span>
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper"
-                    >
-                      <div class="card-template-container">
-                        <a href="#" class="template-item application-banks__item-add bank-accounts__add">
-                          <span class="icon icon-plus-circle application-banks__item-add__icon"></span>
-                          <span class="application-banks__item-add__title">Добавить счет</span>
-                        </a>
-                      </div>
+                  </div>
+                  <div class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper">
+                    <div class="card-template-container">
+                      <a href="#" class="template-item application-banks__item-add bank-accounts__add">
+                        <span class="icon icon-plus-circle application-banks__item-add__icon"></span>
+                        <span class="application-banks__item-add__title">Добавить счет</span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="application-formblock application-form-next-action">
-              <button class="btn btn--orange application-next-button" type="button">Получить деньги</button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-    <script src="js/bundle.js?v=0.0.1"></script>
-  </body>
+          </div>
+          <div class="application-formblock application-form-next-action">
+            <button class="btn btn--orange application-next-button" type="button">Получить деньги</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="js/bundle.js?v=0.0.1"></script>
+</body>
+
 </html>

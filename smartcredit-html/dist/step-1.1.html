@@ -1,247 +1,184 @@
+
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ff0000" />
-    <!-- First, all the preloads -->
-    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
-    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
-    <link rel="stylesheet" href="css/style.bundle.css?v=0.0.1" />
-    <title>SmartCredit | Шаг 1</title>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ff0000">
+  <!-- First, all the preloads -->
+  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
+  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
+  <link rel="stylesheet" href="css/style.bundle.css?v=0.0.1" />
+  <title>SmartCredit | Шаг 1</title>
+</head>
 
-  <body class="application">
-    <header class="header application-header">
-      <div class="application-header__container">
-        <div class="header-left">
-          <a href="/" class="logo">
-            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
-          </a>
-        </div>
-        <div class="header-right">
-          <a href="#" class="link link--right-icon header-profile-link">
-            <span>Мой кабинет</span>
-            <span class="icon icon-profile"></span>
-          </a>
-        </div>
+
+<body class="application">
+  <header class="header application-header">
+    <div class="application-header__container">
+      <div class="header-left">
+        <a href="/" class="logo">
+          <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
+        </a>
       </div>
-    </header>
-    <main class="main main-application">
-      <section class="section-application">
-        <div class="section-application__container">
-          <form class="application-form">
-            <div class="application-form__steps">
-              <ul class="step-list">
-                <li class="step step-one step--active">
-                  <div class="step__number">1</div>
-                  <p class="step__title">Контактная информация</p>
-                </li>
-                <li class="step step-two">
-                  <div class="step__number">2</div>
-                  <p class="step__title">Паспортные данные</p>
-                </li>
-                <li class="step step-three">
-                  <div class="step__number">3</div>
-                  <p class="step__title">Дополнительная информация</p>
-                </li>
-                <li class="step step-four">
-                  <div class="step__number">4</div>
-                  <p class="step__title">Получение денег</p>
-                </li>
-              </ul>
-            </div>
-            <div class="application-form__steps-mobile">
-              <p class="application-form__steps-mobile__title">Контактная информация</p>
-            </div>
-            <div class="application-form__progress">
-              <div class="progress">
-                <div class="progress-filled" style="width: 10%;"></div>
-                <div class="progress-text">
-                  <div class="progress-text__percent">10%</div>
-                  <div class="progress-text__fraction">Шаг 1 из 4</div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="application-formblock application-form__choose-amount application-choose"
-              data-type="amount"
-              data-min="5000"
-              data-max="500000"
-              data-step="1000"
-            >
-              <p class="application-choose__title">Желаемая сумма денег</p>
-              <p class="application-choose__value">
-                <input
-                  class="application-choose__value-number"
-                  type="text"
-                  name="amount"
-                  value="100000"
-                  readonly="readonly"
-                  tabindex="-1"
-                />
-                <span class="application-choose__value-suffix" style="display: none;">₽</span>
-              </p>
-              <div class="choose-slider application-choose-slider choose-slider__amount"></div>
-            </div>
-            <div
-              class="application-formblock application-form__choose-date application-choose"
-              data-type="date"
-              data-min="5"
-              data-max="180"
-              data-step="1"
-            >
-              <p class="application-choose__title">Желаемый срок займа</p>
-              <p class="application-choose__value">
-                <input
-                  class="application-choose__value-number"
-                  type="text"
-                  name="date"
-                  value="30"
-                  readonly="readonly"
-                  tabindex="-1"
-                />
-                <span class="application-choose__value-suffix" style="display: none;">дней</span>
-              </p>
-              <div class="choose-slider application-choose-slider choose-slider__date"></div>
-            </div>
-            <div class="application-formblock application-fieldgroup">
-              <p class="application-fieldgroup__title">Контактная информация</p>
-              <div class="application-fieldgroup__row">
-                <input
-                  class="application-input application-fieldgroup__input"
-                  type="text"
-                  placeholder="Мобильный телефон"
-                />
-                <input
-                  class="application-input application-fieldgroup__input"
-                  type="email"
-                  placeholder="Электронная почта"
-                />
-              </div>
-            </div>
-            <div class="application-social-formblock">
-              <div class="login-gosuslugi__title">
-                Вход через Госуслуги повышает вероятность одобрения на 20%
-              </div>
-              <a href="#" class="login-gosuslugi__link">
-                <img class="login-gosuslugi__img" src="images/gosuslugi.svg" alt="Госуслуги" />
-                <span>Войти через Госуслуги</span>
-              </a>
-            </div>
-
-            <div class="application-formblock application-form-agreements">
-              <label class="application-form__checkbox check">
-                <input class="check__input" type="checkbox" name="agreements" />
-                <span class="check__box"></span>
-                <span
-                  >Я соглашаюсь
-                  <a class="link link--orange" href="#"
-                    >на обработку персональных данных и моей кредитной истории</a
-                  ></span
-                >
-              </label>
-            </div>
-            <div class="application-formblock application-form-next-action">
-              <button class="btn btn--orange application-next-button" type="button">Продолжить</button>
-            </div>
-          </form>
-          <div class="application-social">
-            <div class="application-social__container">
-              <div class="application-social__title">
-                Вход через Госуслуги повышает вероятность одобрения на 20%
-              </div>
-              <div class="application-social__body">
-                <a href="#" class="social-oauth-link social-oauth-link_gosuslugi">
-                  <img
-                    class="social-oauth-link_gosuslugi-image"
-                    src="icons/social-auth/gosuslugi.svg"
-                    alt="Госуслуги"
-                    width="104"
-                    height="auto"
-                  />
-                </a>
-                <p class="login-by-socials__title">Вход через социальные сети</p>
-                <ul class="login-by-socials__list">
-                  <li class="login-by-socials__list-item">
-                    <a href="#" class="social-oauth-link">
-                      <img
-                        class="social-oauth-link__image"
-                        src="icons/social-auth/yandex.svg"
-                        alt="Яндекс"
-                        width="11"
-                        height="21"
-                      />
-                    </a>
-                  </li>
-                  <li class="login-by-socials__list-item">
-                    <a href="#" class="social-oauth-link">
-                      <img
-                        class="social-oauth-link__image"
-                        src="icons/social-auth/google.svg"
-                        alt="Google"
-                        width="23"
-                        height="23"
-                      />
-                    </a>
-                  </li>
-                  <li class="login-by-socials__list-item">
-                    <a href="#" class="social-oauth-link">
-                      <img
-                        class="social-oauth-link__image"
-                        src="icons/social-auth/mail.svg"
-                        alt="Mail.ru"
-                        width="23"
-                        height="23"
-                      />
-                    </a>
-                  </li>
-                  <li class="login-by-socials__list-item">
-                    <a href="#" class="social-oauth-link">
-                      <img
-                        class="social-oauth-link__image"
-                        src="icons/social-auth/fb.svg"
-                        alt="Facebook"
-                        width="25"
-                        height="25"
-                      />
-                    </a>
-                  </li>
-                  <li class="login-by-socials__list-item">
-                    <a href="#" class="social-oauth-link">
-                      <img
-                        class="social-oauth-link__image"
-                        src="icons/social-auth/vk.svg"
-                        alt="VKontakte"
-                        width="25"
-                        height="25"
-                      />
-                    </a>
-                  </li>
-                  <li class="login-by-socials__list-item">
-                    <a href="#" class="social-oauth-link">
-                      <img
-                        class="social-oauth-link__image"
-                        src="icons/social-auth/ok.svg"
-                        alt="Одноклассники"
-                        width="14"
-                        height="23"
-                      />
-                    </a>
-                  </li>
-                </ul>
+      <div class="header-right">
+        <a href="#" class="link link--right-icon header-profile-link">
+          <span>Мой кабинет</span>
+          <span class="icon icon-profile"></span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="main main-application">
+    <section class="section-application">
+      <div class="section-application__container">
+        <form class="application-form">
+          <div class="application-form__steps">
+            <ul class="step-list">
+              <li class="step step-one step--active">
+                <div class="step__number">1</div>
+                <p class="step__title">Контактная информация</p>
+              </li>
+              <li class="step step-two">
+                <div class="step__number">2</div>
+                <p class="step__title">Паспортные данные</p>
+              </li>
+              <li class="step step-three">
+                <div class="step__number">3</div>
+                <p class="step__title">Дополнительная информация</p>
+              </li>
+              <li class="step step-four">
+                <div class="step__number">4</div>
+                <p class="step__title">Получение денег</p>
+              </li>
+            </ul>
+          </div>
+          <div class="application-form__steps-mobile">
+            <p class="application-form__steps-mobile__title">Контактная информация</p>
+          </div>
+          <div class="application-form__progress">
+            <div class="progress">
+              <div class="progress-filled" style="width: 10%;"></div>
+              <div class="progress-text">
+                <div class="progress-text__percent">10%</div>
+                <div class="progress-text__fraction">Шаг 1 из 4</div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-    <script src="js/bundle.js?v=0.0.1"></script>
-  </body>
+          <div class="application-formblock application-form__choose-amount application-choose" data-type="amount"
+            data-min="5000" data-max="500000" data-step="1000">
+            <p class="application-choose__title">Желаемая сумма денег</p>
+            <p class="application-choose__value">
+              <input class="application-choose__value-number" type="text" name="amount" value="100000"
+                readonly="readonly" tabindex="-1">
+              <span class="application-choose__value-suffix" style="display: none;">₽</span>
+            </p>
+            <div class="choose-slider application-choose-slider choose-slider__amount"></div>
+          </div>
+          <div class="application-formblock application-form__choose-date application-choose" data-type="date"
+            data-min="5" data-max="180" data-step="1">
+            <p class="application-choose__title">Желаемый срок займа</p>
+            <p class="application-choose__value">
+              <input class="application-choose__value-number" type="text" name="date" value="30" readonly="readonly"
+                tabindex="-1">
+              <span class="application-choose__value-suffix" style="display: none;">дней</span>
+            </p>
+            <div class="choose-slider application-choose-slider choose-slider__date"></div>
+          </div>
+          <div class="application-formblock application-fieldgroup">
+            <p class="application-fieldgroup__title">Контактная информация</p>
+            <div class="application-fieldgroup__row">
+              <input class="application-input application-fieldgroup__input" type="text"
+                placeholder="Мобильный телефон">
+              <input class="application-input application-fieldgroup__input" type="email"
+                placeholder="Электронная почта">
+            </div>
+          </div>
+          <div class="application-social-formblock">
+  <div class="login-gosuslugi__title">
+    Вход через Госуслуги повышает вероятность одобрения на 20%
+  </div>
+  <a href="#" class="login-gosuslugi__link">
+    <img class="login-gosuslugi__img" src="images/gosuslugi.svg" alt="Госуслуги">
+    <span>Войти через Госуслуги</span>
+  </a>
+</div>
+
+          <div class="application-formblock application-form-agreements">
+            <label class="application-form__checkbox check">
+              <input class="check__input" type="checkbox" name="agreements">
+              <span class="check__box"></span>
+              <span>Я соглашаюсь <a class="link link--orange" href="#">на обработку персональных данных и моей кредитной
+                  истории</a></span>
+            </label>
+          </div>
+          <div class="application-formblock application-form-next-action">
+            <button class="btn btn--orange application-next-button" type="button">Продолжить</button>
+          </div>
+        </form>
+        <div class="application-social">
+  <div class="application-social__container">
+    <div class="application-social__title">
+      Вход через Госуслуги повышает вероятность одобрения на 20%
+    </div>
+    <div class="application-social__body">
+      <a href="#" class="social-oauth-link social-oauth-link_gosuslugi">
+        <img class="social-oauth-link_gosuslugi-image" src="icons/social-auth/gosuslugi.svg" alt="Госуслуги" width="104"
+             height="auto">
+      </a>
+      <p class="login-by-socials__title">Вход через социальные сети</p>
+      <ul class="login-by-socials__list">
+        <li class="login-by-socials__list-item">
+          <a href="#" class="social-oauth-link">
+            <img class="social-oauth-link__image" src="icons/social-auth/yandex.svg" alt="Яндекс" width="11"
+                 height="21">
+          </a>
+        </li>
+        <li class="login-by-socials__list-item">
+          <a href="#" class="social-oauth-link">
+            <img class="social-oauth-link__image" src="icons/social-auth/google.svg" alt="Google" width="23"
+                 height="23">
+          </a>
+        </li>
+        <li class="login-by-socials__list-item">
+          <a href="#" class="social-oauth-link">
+            <img class="social-oauth-link__image" src="icons/social-auth/mail.svg" alt="Mail.ru" width="23"
+                 height="23">
+          </a>
+        </li>
+        <li class="login-by-socials__list-item">
+          <a href="#" class="social-oauth-link">
+            <img class="social-oauth-link__image" src="icons/social-auth/fb.svg" alt="Facebook" width="25"
+                 height="25">
+          </a>
+        </li>
+        <li class="login-by-socials__list-item">
+          <a href="#" class="social-oauth-link">
+            <img class="social-oauth-link__image" src="icons/social-auth/vk.svg" alt="VKontakte" width="25"
+                 height="25">
+          </a>
+        </li>
+        <li class="login-by-socials__list-item">
+          <a href="#" class="social-oauth-link">
+            <img class="social-oauth-link__image" src="icons/social-auth/ok.svg" alt="Одноклассники" width="14"
+                 height="23">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </section>
+  </main>
+  <script src="js/bundle.js?v=0.0.1"></script>
+</body>
+
 </html>

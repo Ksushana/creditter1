@@ -4,6 +4,9 @@ $gray: $gray;
 body.application {
   background: #f5f6fa;
   color: $textMainColor;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
 .application-header {
@@ -80,10 +83,8 @@ body.application {
 
     li {
       position: relative;
-      margin-bottom: -77px;
 
       &:last-child {
-        margin-bottom: 0;
       }
     }
   }
