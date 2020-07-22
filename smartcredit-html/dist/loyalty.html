@@ -1,444 +1,577 @@
-
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ff0000" />
+    <!-- First, all the preloads -->
+    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
+    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
+    <link rel="stylesheet" href="css/style.bundle.css?v=0.0.10" />
+    <title>SmartCredit | Программа лояльности</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ff0000">
-  <!-- First, all the preloads -->
-  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
-  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
-  <link rel="stylesheet" href="css/style.bundle.css?v=0.0.10" />
-  <title>SmartCredit | Программа лояльности</title>
-</head>
-
-<body class="body-loyalty">
-  <div class="sidebar-container">
-    <div class="sidebar-menu-container">
-      <nav class="sidebar-menu">
-        <div class="sidebar-menu-header">
+  <body class="body-loyalty">
+    <div class="sidebar-container">
+      <div class="sidebar-menu-container">
+        <nav class="sidebar-menu">
+          <div class="sidebar-menu-header">
+            <nav class="sidebar-menu-toggle">
+              <button class="unbtn sidebar-menu-button">
+                <span class="icon icon-cross"></span>
+              </button>
+            </nav>
+            <a href="/" class="logo">
+              <img src="icons/new-logo.svg" alt="Smart Credit logo" width="115" height="32" />
+            </a>
+          </div>
+          <ul class="sidebar-menu-list">
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">О компании</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Раскрытие информации</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">СМИ о нас</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Новости компании</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Контакты</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как взять деньги</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Схема работы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Правила предоставления займов</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Тарифы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Документы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link">
+              <a href="#" class="link sidebar-link__link">Способы получения денег</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Программа лояльности</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как вернуть деньги</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Ответы на вопросы</a>
+            </li>
+            <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
+              <a href="#" class="link sidebar-link__link sidebar-link__link--big">Исправление кредитной истории</a>
+            </li>
+          </ul>
+          <div class="sidebar-menu-footer">
+            <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="top-area-container">
+      <button class="unbtn top-area-container__close">
+        <span class="icon icon-cross"></span>
+      </button>
+      <div class="ctabs top-area-tabs">
+        <div class="ctabs-tablist top-area-tabs__tablist" role="tablist">
+          <button
+            class="ctabs-tablist__item top-area-tabs__tablist-item"
+            role="tab"
+            aria-selected="true"
+            aria-controls="top-callback-tab"
+            id="top-callback"
+          >
+            <span class="icon icon-callback-gray"></span>
+            <span>Обратный звонок</span>
+          </button>
+          <button
+            class="ctabs-tablist__item top-area-tabs__tablist-item"
+            role="tab"
+            aria-selected="false"
+            aria-controls="top-feedback-tab"
+            id="top-feedback"
+            tabindex="-1"
+          >
+            <span class="icon icon-feedback-gray"></span>
+            <span>Обратная связь</span>
+          </button>
+          <a class="ctabs-tablist__item top-area-tabs__tablist-item" href="#">
+            <span class="icon icon-question"></span>
+            <span>Ответы на вопросы</span>
+          </a>
+        </div>
+        <div
+          class="ctabs-panel top-area-tabs__panel"
+          tabindex="0"
+          role="tabpanel"
+          data-animation="fadeIn"
+          id="top-callback-tab"
+          aria-labelledby="top-callback"
+        >
+          <div class="ctabs-panel__content top-area-tabs__panel-content">
+            <form class="top-callback-form" action="">
+              <input type="text" class="top-feedback-input top-callback-input" name="phone" placeholder="Телефон" />
+              <button class="btn btn--orange top-feedback-button top-callback-button">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="ctabs-panel top-area-tabs__panel"
+          tabindex="0"
+          role="tabpanel"
+          data-animation="fadeIn"
+          id="top-feedback-tab"
+          aria-labelledby="top-feedback"
+          hidden=""
+        >
+          <div class="ctabs-panel__content top-area-tabs__panel-content">
+            <form class="top-feedback-form" action="">
+              <div class="top-feedback-row">
+                <input type="text" class="top-feedback-input" name="name" placeholder="Имя" />
+                <input type="email" class="top-feedback-input" name="email" placeholder="Эл. почта" />
+              </div>
+              <div class="top-feedback-row">
+                <textarea class="top-feedback-textarea" name="message" cols="30" rows="10"></textarea>
+              </div>
+              <button class="btn btn--orange top-feedback-button">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header header-loyalty">
+      <div class="header-container">
+        <div class="header-left">
           <nav class="sidebar-menu-toggle">
             <button class="unbtn sidebar-menu-button">
-              <span class="icon icon-cross"></span>
+              <span class="icon icon-hamburger"></span>
             </button>
           </nav>
           <a href="/" class="logo">
-            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
+            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
           </a>
         </div>
-        <ul class="sidebar-menu-list">
-          <li class="sidebar-menu-list__item sidebar-link">
-            <a href="#" class="link sidebar-link__link sidebar-link__link--big">О компании</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link">
-            <a href="#" class="link sidebar-link__link">Раскрытие информации</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link">
-            <a href="#" class="link sidebar-link__link">СМИ о нас</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link">
-            <a href="#" class="link sidebar-link__link">Новости компании</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link">
-            <a href="#" class="link sidebar-link__link">Контакты</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link sidebar-link--category">
-            <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как взять деньги</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link">
-            <a href="#" class="link sidebar-link__link">Схема работы</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link">
-            <a href="#" class="link sidebar-link__link">Правила предоставления займов</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link">
-            <a href="#" class="link sidebar-link__link">Тарифы</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link">
-            <a href="#" class="link sidebar-link__link">Документы</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link">
-            <a href="#" class="link sidebar-link__link">Способы получения денег</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
-            <a href="#" class="link sidebar-link__link sidebar-link__link--big">Программа лояльности</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
-            <a href="#" class="link sidebar-link__link sidebar-link__link--big">Как вернуть деньги</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
-            <a href="#" class="link sidebar-link__link sidebar-link__link--big">Ответы на вопросы</a>
-          </li>
-          <li class="sidebar-menu-list__item sidebar-link sidebar-link--category sidebar-link--category-solo">
-            <a href="#" class="link sidebar-link__link sidebar-link__link--big">Исправление кредитной истории</a>
-          </li>
-        </ul>
-        <div class="sidebar-menu-footer">
-          <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
+        <div class="header-center">
+          <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-callback">
+            <span class="icon icon-phone"></span>
+            <span>Позвонить нам</span>
+          </a>
+          <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-feedback">
+            <span class="icon icon-chat"></span>
+            <span>Поддержка/Верификация 24/7</span>
+          </a>
         </div>
-      </nav>
-    </div>
-  </div>
-  <div class="top-area-container">
-    <button class="unbtn top-area-container__close">
-      <span class="icon icon-cross"></span>
-    </button>
-    <div class="ctabs top-area-tabs">
-      <div class="ctabs-tablist top-area-tabs__tablist" role="tablist">
-        <button class="ctabs-tablist__item top-area-tabs__tablist-item" role="tab" aria-selected="true"
-          aria-controls="top-callback-tab" id="top-callback">
-          <span class="icon icon-callback-gray"></span>
-          <span>Обратный звонок</span>
-        </button>
-        <button class="ctabs-tablist__item top-area-tabs__tablist-item" role="tab" aria-selected="false"
-          aria-controls="top-feedback-tab" id="top-feedback" tabindex="-1">
-          <span class="icon icon-feedback-gray"></span>
-          <span>Обратная связь</span>
-        </button>
-        <a class="ctabs-tablist__item top-area-tabs__tablist-item" href="#">
-          <span class="icon icon-question"></span>
-          <span>Ответы на вопросы</span>
-        </a>
-      </div>
-      <div class="ctabs-panel top-area-tabs__panel" tabindex="0" role="tabpanel" data-animation="fadeIn"
-        id="top-callback-tab" aria-labelledby="top-callback">
-        <div class="ctabs-panel__content top-area-tabs__panel-content">
-          <form class="top-callback-form" action="">
-            <input type="text" class="top-feedback-input top-callback-input" name="phone" placeholder="Телефон">
-            <button class="btn btn--orange top-feedback-button top-callback-button">Отправить</button>
-          </form>
+        <div class="header-right">
+          <a href="#" class="link link--right-icon header-profile-link">
+            <span>Мой кабинет</span>
+            <span class="icon icon-profile"></span>
+          </a>
         </div>
       </div>
-      <div class="ctabs-panel top-area-tabs__panel" tabindex="0" role="tabpanel" data-animation="fadeIn"
-        id="top-feedback-tab" aria-labelledby="top-feedback" hidden="">
-        <div class="ctabs-panel__content top-area-tabs__panel-content">
-          <form class="top-feedback-form" action="">
-            <div class="top-feedback-row">
-              <input type="text" class="top-feedback-input" name="name" placeholder="Имя">
-              <input type="email" class="top-feedback-input" name="email" placeholder="Эл. почта">
+    </header>
+
+    <main class="main main-loyalty">
+      <section class="section section-hero loyalty-hero">
+        <div class="loyalty-hero-container">
+          <h1 class="hero-title">Программа лояльности</h1>
+        </div>
+      </section>
+      <section class="section loyalty-discount">
+        <div class="page-container">
+          <h2 class="section-title">Скидка на оплату процентов до 25%</h2>
+          <svg
+            class="loyalty-discount-chart"
+            width="1001"
+            height="398"
+            viewBox="0 0 1001 398"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity=".2"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M976.578 398H24.084V270.5L261 255l240.5-66L740 171l236.578-61v288z"
+              fill="url(#paint0_linear)"
+            />
+            <text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+              <tspan x="478" y="153.806">4 займ</tspan>
+            </text>
+            <path
+              d="M524 103c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z"
+              stroke="#FF4E2C"
+              stroke-width="2"
+            />
+            <text
+              fill="#FF4E2C"
+              font-family="Lato"
+              font-size="15"
+              font-weight="bold"
+              letter-spacing="0"
+              white-space="pre"
+            >
+              <tspan x="483.356" y="107.805">-15%</tspan>
+            </text>
+            <text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+              <tspan x="239" y="218.805">3 займ</tspan>
+            </text>
+            <path fill="#fff" d="M238 144h48v48h-48z" />
+            <path
+              d="M285 168c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z"
+              stroke="#FF4E2C"
+              stroke-width="2"
+            />
+            <text
+              fill="#FF4E2C"
+              font-family="Lato"
+              font-size="15"
+              font-weight="bold"
+              letter-spacing="0"
+              white-space="pre"
+            >
+              <tspan x="244.356" y="172.805">-10%</tspan>
+            </text>
+            <text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+              <tspan x="1" y="234.805">2 займ</tspan>
+            </text>
+            <path
+              d="M47 184c0 12.703-10.297 23-23 23S1 196.703 1 184s10.297-23 23-23 23 10.297 23 23z"
+              stroke="#FF4E2C"
+              stroke-width="2"
+            />
+            <text
+              fill="#FF4E2C"
+              font-family="Lato"
+              font-size="15"
+              font-weight="bold"
+              letter-spacing="0"
+              white-space="pre"
+            >
+              <tspan x="10.207" y="188.805">-5%</tspan>
+            </text>
+            <text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+              <tspan x="716" y="135.805">5 займ</tspan>
+            </text>
+            <path
+              d="M762 85c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z"
+              fill="#fff"
+              stroke="#FF4E2C"
+              stroke-width="2"
+            />
+            <text
+              fill="#FF4E2C"
+              font-family="Lato"
+              font-size="15"
+              font-weight="bold"
+              letter-spacing="0"
+              white-space="pre"
+            >
+              <tspan x="721.356" y="89.805">-20%</tspan>
+            </text>
+            <g>
+              <text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
+                <tspan x="954" y="74.805">6 займ</tspan>
+              </text>
+              <path
+                d="M1000 24c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z"
+                fill="#fff"
+                stroke="#FF4E2C"
+                stroke-width="2"
+              />
+              <text
+                fill="#FF4E2C"
+                font-family="Lato"
+                font-size="15"
+                font-weight="bold"
+                letter-spacing="0"
+                white-space="pre"
+              >
+                <tspan x="959.356" y="28.805">-25%</tspan>
+              </text>
+            </g>
+            <path d="M24 270.5L261 255l240-66 238-18 238-61" stroke="#FF4E2C" stroke-width="2" />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M739 179a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM501 197a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM977 118a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM261 262a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM24 278a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"
+              fill="#fff"
+              stroke="#FF4E2C"
+              stroke-width="2"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear"
+                x1="500.331"
+                y1="109.093"
+                x2="500.331"
+                y2="398"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#FF4E2C" />
+                <stop offset="1" stop-color="#FF4E2C" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="loyalty-discount-chart-mobile">
+            <div class="loyalty-discount-chart-mobile__row discount-line">
+              <div class="discount-line__handle" style="left: 0%;">
+                <div class="discount-line__handle-icon">-5%</div>
+                <div class="discount-line__handle-notice">2 займ</div>
+              </div>
+              <div class="discount-line__handle" style="left: 25%;">
+                <div class="discount-line__handle-icon">-10%</div>
+                <div class="discount-line__handle-notice">3 займ</div>
+              </div>
+              <div class="discount-line__handle" style="left: 50%;">
+                <div class="discount-line__handle-icon">-15%</div>
+                <div class="discount-line__handle-notice">4 займ</div>
+              </div>
+              <div class="discount-line__handle" style="left: 75%;">
+                <div class="discount-line__handle-icon">-20%</div>
+                <div class="discount-line__handle-notice">5 займ</div>
+              </div>
+              <div class="discount-line__handle" style="left: 100%;">
+                <div class="discount-line__handle-icon">-25%</div>
+                <div class="discount-line__handle-notice">6 займ</div>
+              </div>
             </div>
-            <div class="top-feedback-row">
-              <textarea class="top-feedback-textarea" name="message" cols="30" rows="10"></textarea>
-            </div>
-            <button class="btn btn--orange top-feedback-button">Отправить</button>
-          </form>
+          </div>
+          <p class="loyalty-discount-notice">Скидка действительна в течении 12 месяцев</p>
         </div>
-      </div>
-    </div>
-  </div>
-  <header class="header header-loyalty">
-    <div class="header-container">
-      <div class="header-left">
-        <nav class="sidebar-menu-toggle">
-          <button class="unbtn sidebar-menu-button">
-            <span class="icon icon-hamburger"></span>
-          </button>
+      </section>
+      <section class="section loyalty-participation">
+        <div class="page-container">
+          <h2 class="section-title">Участие в&nbsp;программе лояльности</h2>
+          <ul class="loyalty-participation-list">
+            <li class="loyalty-participation-list__item participation-item">
+              <div class="participation-item__icon">
+                <span class="icon icon-loyalty-clock"></span>
+              </div>
+              <p class="participation-item__notice">
+                Клиент может принять участие в&nbsp;программе лояльности, погасив первый полученный займ вовремя
+              </p>
+            </li>
+            <li class="loyalty-participation-list__item participation-item">
+              <div class="participation-item__icon">
+                <span class="icon icon-loyalty-calendar"></span>
+              </div>
+              <p class="participation-item__notice">
+                Активный срок предыдущего займа должен бытьне менее 14&nbsp;дней
+              </p>
+            </li>
+            <li class="loyalty-participation-list__item participation-item">
+              <div class="participation-item__icon">
+                <span class="icon icon-loyalty-prize"></span>
+              </div>
+              <p class="participation-item__notice">
+                Скидки программы лояльности уникальны и не суммируются с&nbsp;другими&nbsp;индивидуальными предложениями
+                от SmartCredit
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section loyalty-questions">
+        <div class="page-container">
+          <h2 class="section-title">Вопросы о программе лояльности</h2>
+          <ul class="loyalty-questions-list accordion" data-allow-toggle data-allow-multiple data-animation="fadeIn">
+            <li class="loyalty-questions-list__item">
+              <div
+                class="loyalty-question accordion-trigger"
+                aria-expanded="false"
+                aria-controls="sect1"
+                id="accordion1id"
+              >
+                <span class="icon icon-arrow-down loyalty-question__icon"></span>
+                <span class="loyalty-question__title"
+                  >Кто может стать участником программы лояльности SmartCredit?</span
+                >
+              </div>
+              <p
+                class="loyalty-answer"
+                id="sect1"
+                role="region"
+                aria-labelledby="accordion1id"
+                class="accordion-panel"
+                hidden=""
+              >
+                Участником программы лояльности становится Клиент при условии что, предыдущий заем был оплачен вовремя,
+                а также активный срок предыдущего займабыл не менее 14 дней.
+              </p>
+            </li>
+            <li class="loyalty-questions-list__item">
+              <div
+                class="loyalty-question accordion-trigger"
+                aria-expanded="false"
+                aria-controls="sect2"
+                id="accordion2id"
+              >
+                <span class="icon icon-arrow-down loyalty-question__icon"></span>
+                <span class="loyalty-question__title">Как увеличивается скидка в программе лояльности?</span>
+              </div>
+              <p
+                class="loyalty-answer"
+                id="sect2"
+                role="region"
+                aria-labelledby="accordion2id"
+                class="accordion-panel"
+                hidden=""
+              >
+                Участником программы лояльности Клиент становится автоматически со второго займа, если предыдущий заем
+                был оплачен в срок.
+                <br />
+                <br />
+                Для каждого последующего займа предоставляется дополнительная скидка на 5% больше предыдущей.
+                Следовательно, на второй заем Вам будет предоставлена 5% скидка, на третий 10%, на четвертый 15%, и так
+                на каждый следующий.
+                <br />
+                <br />
+                Оплачивая заем своевременно, Ваша скидка возрастает на 5%, пока Вы не достигнете скидки в 25% на оплату
+                процентов. Скидка действительна 12 месяцев с момента последней оплаты.
+              </p>
+            </li>
+            <li class="loyalty-questions-list__item">
+              <div
+                class="loyalty-question accordion-trigger"
+                aria-expanded="false"
+                aria-controls="sect3"
+                id="accordion3id"
+              >
+                <span class="icon icon-arrow-down loyalty-question__icon"></span>
+                <span class="loyalty-question__title">Как клиент узнает, какой уровень скидки доступен для него?</span>
+              </div>
+              <p
+                class="loyalty-answer"
+                id="sect3"
+                role="region"
+                aria-labelledby="accordion3id"
+                class="accordion-panel"
+                hidden=""
+              >
+                Уровень текущей скидки доступен в Личном Кабинете на сайте
+                <a href="https://smartcredit.ru">smartcredit.ru</a>, а также в информационном блоке при оформлении новой
+                заявки.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section loyalty-help bg-beige">
+        <div class="page-container">
+          <div class="loyalty-help-row">
+            <div class="loyalty-help-row__col">
+              <p class="loyalty-help__title">Нужна помощь?</p>
+              <div class="loyalty-help-contacts">
+                <p class="loyalty-help-contacts__phone">8 (495) 268-05-57</p>
+                <p class="loyalty-help-contacts__notice">Звонок по России бесплатный</p>
+              </div>
+            </div>
+            <div class="loyalty-help-row__col loyalty-help-questions">
+              <div class="loyalty-help-questions__col">
+                <p class="loyalty-help__title">Остались вопросы?</p>
+                <p class="loyalty-help-questions__item">Кто может оформить заявку?</p>
+                <p class="loyalty-help-questions__item">Как получить заем?</p>
+                <p class="loyalty-help-questions__item">Каковы условия для меня?</p>
+                <button class="btn btn--orange loyalty-help-questions__button">Вопросы и ответы</button>
+              </div>
+              <div class="loyalty-help-questions__col">
+                <img class="img-responsive" src="images/operator.svg" width="263" height="263" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer footer-loyalty">
+      <div class="footer-container">
+        <div class="footer__contacts">
+          <div class="footer__contacts-phone">
+            <a href="tel:+74952680557" class="link phone">+7 (495) 268 0557</a>
+          </div>
+          <div class="footer__contacts-copy">
+            <span class="footer__contacts-copy__left">&copy; SmartCredit, 2015-2019.</span>
+            <span class="footer__contacts-copy__right">Все права защищены.</span>
+          </div>
+          <div class="footer__contacts-program">
+            <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
+          </div>
+          <div class="footer__contacts-designedby">
+            <a class="link designedby-link" href="#">Дизайн: Genue</a>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">О компании</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Раскрытие информации</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">СМИ о нас</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Новости компании</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--big" href="#">Контакты</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Программа лояльности</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Как вернуть деньги</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Ответы на вопросы</a>
+            </li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray footer__nav-link--big" href="#"
+                >Исправление кредитной истории</a
+              >
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Как взять деньги</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Схема работы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Правила предоставления займов</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Тарифы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Документы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Способы получения денег</a>
+            </li>
+          </ul>
         </nav>
-        <a href="/" class="logo">
-          <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
-        </a>
       </div>
-      <div class="header-center">
-        <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-callback">
-          <span class="icon icon-phone"></span>
-          <span>Позвонить нам</span>
-        </a>
-        <a class="link link--left-icon header-center__link top-area-link" href="#" data-id="top-feedback">
-          <span class="icon icon-chat"></span>
-          <span>Поддержка/Верификация 24/7</span>
-        </a>
-      </div>
-      <div class="header-right">
-        <a href="#" class="link link--right-icon header-profile-link">
-          <span>Мой кабинет</span>
-          <span class="icon icon-profile"></span>
-        </a>
-      </div>
-    </div>
-  </header>
+    </footer>
 
-<main class="main main-loyalty">
-  <section class="section section-hero loyalty-hero">
-    <div class="loyalty-hero-container">
-      <h1 class="hero-title">Программа лояльности</h1>
-    </div>
-  </section>
-  <section class="section loyalty-discount">
-    <div class="page-container">
-      <h2 class="section-title">Скидка на оплату процентов до 25%</h2>
-      <svg class="loyalty-discount-chart" width="1001" height="398" viewBox="0 0 1001 398" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path opacity=".2" fill-rule="evenodd" clip-rule="evenodd"
-          d="M976.578 398H24.084V270.5L261 255l240.5-66L740 171l236.578-61v288z" fill="url(#paint0_linear)" /><text
-          fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
-          <tspan x="478" y="153.806">4 займ</tspan>
-        </text>
-        <path d="M524 103c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z" stroke="#FF4E2C"
-          stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15" font-weight="bold"
-          letter-spacing="0" white-space="pre">
-          <tspan x="483.356" y="107.805">-15%</tspan>
-        </text><text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
-          <tspan x="239" y="218.805">3 займ</tspan>
-        </text>
-        <path fill="#fff" d="M238 144h48v48h-48z" />
-        <path d="M285 168c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z" stroke="#FF4E2C"
-          stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15" font-weight="bold"
-          letter-spacing="0" white-space="pre">
-          <tspan x="244.356" y="172.805">-10%</tspan>
-        </text><text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
-          <tspan x="1" y="234.805">2 займ</tspan>
-        </text>
-        <path d="M47 184c0 12.703-10.297 23-23 23S1 196.703 1 184s10.297-23 23-23 23 10.297 23 23z" stroke="#FF4E2C"
-          stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15" font-weight="bold"
-          letter-spacing="0" white-space="pre">
-          <tspan x="10.207" y="188.805">-5%</tspan>
-        </text><text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
-          <tspan x="716" y="135.805">5 займ</tspan>
-        </text>
-        <path d="M762 85c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z" fill="#fff"
-          stroke="#FF4E2C" stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15" font-weight="bold"
-          letter-spacing="0" white-space="pre">
-          <tspan x="721.356" y="89.805">-20%</tspan>
-        </text>
-        <g>
-          <text fill="#17233B" font-family="Lato" font-size="15" letter-spacing="0em" white-space="pre">
-            <tspan x="954" y="74.805">6 займ</tspan>
-          </text>
-          <path d="M1000 24c0 12.703-10.297 23-23 23s-23-10.297-23-23 10.297-23 23-23 23 10.297 23 23z" fill="#fff"
-            stroke="#FF4E2C" stroke-width="2" /><text fill="#FF4E2C" font-family="Lato" font-size="15"
-            font-weight="bold" letter-spacing="0" white-space="pre">
-            <tspan x="959.356" y="28.805">-25%</tspan>
-          </text>
-        </g>
-        <path d="M24 270.5L261 255l240-66 238-18 238-61" stroke="#FF4E2C" stroke-width="2" />
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M739 179a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM501 197a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM977 118a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM261 262a8 8 0 1 0 0-16 8 8 0 0 0 0 16zM24 278a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"
-          fill="#fff" stroke="#FF4E2C" stroke-width="2" />
-        <defs>
-          <linearGradient id="paint0_linear" x1="500.331" y1="109.093" x2="500.331" y2="398"
-            gradientUnits="userSpaceOnUse">
-            <stop stop-color="#FF4E2C" />
-            <stop offset="1" stop-color="#FF4E2C" stop-opacity="0" />
-          </linearGradient>
-        </defs>
-      </svg>
-      <div class="loyalty-discount-chart-mobile">
-        <div class="loyalty-discount-chart-mobile__row discount-line">
-          <div class="discount-line__handle" style="left: 0%;">
-            <div class="discount-line__handle-icon">-5%</div>
-            <div class="discount-line__handle-notice">2 займ</div>
-          </div>
-          <div class="discount-line__handle" style="left: 25%;">
-            <div class="discount-line__handle-icon">-10%</div>
-            <div class="discount-line__handle-notice">3 займ</div>
-          </div>
-          <div class="discount-line__handle" style="left: 50%;">
-            <div class="discount-line__handle-icon">-15%</div>
-            <div class="discount-line__handle-notice">4 займ</div>
-          </div>
-          <div class="discount-line__handle" style="left: 75%;">
-            <div class="discount-line__handle-icon">-20%</div>
-            <div class="discount-line__handle-notice">5 займ</div>
-          </div>
-          <div class="discount-line__handle" style="left: 100%;">
-            <div class="discount-line__handle-icon">-25%</div>
-            <div class="discount-line__handle-notice">6 займ</div>
-          </div>
-        </div>
-      </div>
-      <p class="loyalty-discount-notice">Скидка действительна в течении 12 месяцев</p>
-    </div>
-  </section>
-  <section class="section loyalty-participation">
-    <div class="page-container">
-      <h2 class="section-title">Участие в&nbsp;программе лояльности</h2>
-      <ul class="loyalty-participation-list">
-        <li class="loyalty-participation-list__item participation-item">
-          <div class="participation-item__icon">
-            <span class="icon icon-loyalty-clock"></span>
-          </div>
-          <p class="participation-item__notice">
-            Клиент может принять участие в&nbsp;программе лояльности, погасив первый полученный займ вовремя
-          </p>
-        </li>
-        <li class="loyalty-participation-list__item participation-item">
-          <div class="participation-item__icon">
-            <span class="icon icon-loyalty-calendar"></span>
-          </div>
-          <p class="participation-item__notice">
-            Активный срок предыдущего займа должен бытьне менее 14&nbsp;дней
-          </p>
-        </li>
-        <li class="loyalty-participation-list__item participation-item">
-          <div class="participation-item__icon">
-            <span class="icon icon-loyalty-prize"></span>
-          </div>
-          <p class="participation-item__notice">
-            Скидки программы лояльности уникальны и не суммируются с&nbsp;другими&nbsp;индивидуальными предложениями от
-            SmartCredit
-          </p>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="section loyalty-questions">
-    <div class="page-container">
-      <h2 class="section-title">Вопросы о программе лояльности</h2>
-      <ul class="loyalty-questions-list accordion" data-allow-toggle data-allow-multiple data-animation="fadeIn">
-        <li class="loyalty-questions-list__item">
-          <div class="loyalty-question accordion-trigger" aria-expanded="false" aria-controls="sect1" id="accordion1id">
-            <span class="icon icon-arrow-down loyalty-question__icon"></span>
-            <span class="loyalty-question__title">Кто может стать участником программы лояльности SmartCredit?</span>
-          </div>
-          <p class="loyalty-answer" id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel"
-            hidden="">
-            Участником программы лояльности становится Клиент при условии что, предыдущий заем был оплачен
-            вовремя, а также активный срок предыдущего займабыл не менее 14 дней.
-          </p>
-        </li>
-        <li class="loyalty-questions-list__item">
-          <div class="loyalty-question accordion-trigger" aria-expanded="false" aria-controls="sect2" id="accordion2id">
-            <span class="icon icon-arrow-down loyalty-question__icon"></span>
-            <span class="loyalty-question__title">Как увеличивается скидка в программе лояльности?</span>
-          </div>
-          <p class="loyalty-answer" id="sect2" role="region" aria-labelledby="accordion2id" class="accordion-panel"
-            hidden="">
-            Участником программы лояльности Клиент становится автоматически со второго займа, если
-            предыдущий заем был оплачен в срок.
-            <br>
-            <br>
-            Для каждого последующего займа предоставляется дополнительная скидка на 5% больше предыдущей.
-            Следовательно, на второй заем Вам будет предоставлена 5% скидка, на третий 10%, на четвертый 15%,
-            и так на каждый следующий.
-            <br>
-            <br>
-            Оплачивая заем своевременно, Ваша скидка возрастает на 5%, пока Вы не
-            достигнете скидки в 25% на оплату процентов. Скидка действительна 12 месяцев с момента последней
-            оплаты.
-          </p>
-        </li>
-        <li class="loyalty-questions-list__item">
-          <div class="loyalty-question accordion-trigger" aria-expanded="false" aria-controls="sect3" id="accordion3id">
-            <span class="icon icon-arrow-down loyalty-question__icon"></span>
-            <span class="loyalty-question__title">Как клиент узнает, какой уровень скидки доступен для него?</span>
-          </div>
-          <p class="loyalty-answer" id="sect3" role="region" aria-labelledby="accordion3id" class="accordion-panel"
-            hidden="">
-            Уровень текущей скидки доступен в Личном Кабинете на сайте
-            <a href="https://smartcredit.ru">smartcredit.ru</a>, а также в информационном блоке при
-            оформлении новой заявки.
-          </p>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="section loyalty-help bg-beige">
-    <div class="page-container">
-      <div class="loyalty-help-row">
-        <div class="loyalty-help-row__col">
-          <p class="loyalty-help__title">Нужна помощь?</p>
-          <div class="loyalty-help-contacts">
-            <p class="loyalty-help-contacts__phone">8 (495) 268-05-57</p>
-            <p class="loyalty-help-contacts__notice">Звонок по России бесплатный</p>
-          </div>
-        </div>
-        <div class="loyalty-help-row__col loyalty-help-questions">
-          <div class="loyalty-help-questions__col">
-            <p class="loyalty-help__title">Остались вопросы?</p>
-            <p class="loyalty-help-questions__item">Кто может оформить заявку?</p>
-            <p class="loyalty-help-questions__item">Как получить заем?</p>
-            <p class="loyalty-help-questions__item">Каковы условия для меня?</p>
-            <button class="btn btn--orange loyalty-help-questions__button">Вопросы и ответы</button>
-          </div>
-          <div class="loyalty-help-questions__col">
-            <img class="img-responsive" src="images/operator.svg" width="263" height="263">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer footer-loyalty">
-  <div class="footer-container">
-    <div class="footer__contacts">
-      <div class="footer__contacts-phone">
-        <a href="tel:+74952680557" class="link phone">+7 (495) 268 0557</a>
-      </div>
-      <div class="footer__contacts-copy">
-        <span class="footer__contacts-copy__left">&copy; SmartCredit, 2015-2019.</span>
-        <span class="footer__contacts-copy__right">Все права защищены.</span>
-      </div>
-      <div class="footer__contacts-program">
-        <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
-      </div>
-      <div class="footer__contacts-designedby">
-        <a class="link designedby-link" href="#">Дизайн: Genue</a>
-      </div>
-    </div>
-    <nav class="footer__nav">
-      <ul class="footer__nav-list">
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--gray" href="#">О компании</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Раскрытие информации</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">СМИ о нас</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Новости компании</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--big" href="#">Контакты</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--gray" href="#">Программа лояльности</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--gray" href="#">Как вернуть деньги</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--gray" href="#">Ответы на вопросы</a>
-        </li>
-      </ul>
-      <ul class="footer__nav-list">
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--gray footer__nav-link--big" href="#">Исправление кредитной
-            истории</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--gray" href="#">Как взять деньги</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Схема работы</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Правила предоставления займов</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Тарифы</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Документы</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Способы получения денег</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</footer>
-
-<script src="js/bundle.js?v=0.0.10"></script>
-</body>
-
+    <script src="js/bundle.js?v=0.0.10"></script>
+  </body>
 </html>
