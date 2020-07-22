@@ -1,397 +1,410 @@
-
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ff0000" />
+    <!-- First, all the preloads -->
+    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
+    <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
+    <link rel="stylesheet" href="css/style.bundle.css?v=0.0.9" />
+    <title>SmartCredit | Affiliate</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ff0000">
-  <!-- First, all the preloads -->
-  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Regular.woff" crossorigin />
-  <link rel="preload" as="font" type="font/woff" href="fonts/Lato/Lato-Bold.woff" crossorigin />
-  <link rel="stylesheet" href="css/style.bundle.css?v=0.0.9" />
-  <title>SmartCredit | Affiliate</title>
-</head>
-
-<body class="lk-body body-affiliate">
-  <div class="sidebar-container">
-    <div class="sidebar-menu-container">
-      <nav class="sidebar-menu lk-sidebar-menu">
-        <div class="sidebar-menu-header lk-sidebar-menu-header">
-          <nav class="sidebar-menu-toggle">
-            <button class="unbtn sidebar-menu-button">
-              <span class="icon icon-cross"></span>
-            </button>
-          </nav>
-          <a href="/" class="logo lk-logo">
-            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
-          </a>
-          <a href="#" class="link lk-header-user-link">
-            <span class="icon icon-user"></span>
-          </a>
-        </div>
-        <div class="lk-sidebar-menu__header">
-          <div class="lk-sidebar-menu__header-actions">
-            <a href="#" class="link">Выйти</a>
-            <a class="link link--left-icon lk-support-chat lk-sidebar-support-chat" href="#">
-              <span class="icon icon-chat"></span>
-              <span class="badge lk-support-chat__badge">4</span>
-              <span>Поддержка</span>
+  <body class="lk-body body-affiliate">
+    <div class="sidebar-container">
+      <div class="sidebar-menu-container">
+        <nav class="sidebar-menu lk-sidebar-menu">
+          <div class="sidebar-menu-header lk-sidebar-menu-header">
+            <nav class="sidebar-menu-toggle">
+              <button class="unbtn sidebar-menu-button">
+                <span class="icon icon-cross"></span>
+              </button>
+            </nav>
+            <a href="/" class="logo lk-logo">
+              <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
+            </a>
+            <a href="#" class="link lk-header-user-link">
+              <span class="icon icon-user"></span>
             </a>
           </div>
-          <div class="lk-sidebar-username">
-            Константин Константинопольский
+          <div class="lk-sidebar-menu__header">
+            <div class="lk-sidebar-menu__header-actions">
+              <a href="#" class="link">Выйти</a>
+              <a class="link link--left-icon lk-support-chat lk-sidebar-support-chat" href="#">
+                <span class="icon icon-chat"></span>
+                <span class="badge lk-support-chat__badge">4</span>
+                <span>Поддержка</span>
+              </a>
+            </div>
+            <div class="lk-sidebar-username">
+              Константин Константинопольский
+            </div>
           </div>
-        </div>
-        <ul class="lk-sidebar-menu-list">
-          <li class="sidebar-menu-list__item lk-sidebar-link">
-            <a href="#" class="link lk-sidebar-link__link">Активный займ<span class="icon icon-error"></span></a>
-          </li>
-          <li class="sidebar-menu-list__item lk-sidebar-link">
-            <a href="#" class="link lk-sidebar-link__link lk-sidebar-link__link--active">Оформить займ</a>
-          </li>
-          <li class="sidebar-menu-list__item lk-sidebar-link">
-            <a href="#" class="link lk-sidebar-link__link">Погасить займ</a>
-          </li>
-          <li class="sidebar-menu-list__item lk-sidebar-link">
-            <a href="#" class="link lk-sidebar-link__link">История займов</a>
-          </li>
-          <li class="sidebar-menu-list__item lk-sidebar-link">
-            <a href="#" class="link lk-sidebar-link__link">Личная информация</a>
-          </li>
-          <li class="sidebar-menu-list__item lk-sidebar-link">
-            <a href="#" class="link lk-sidebar-link__link">Мои документы</a>
-          </li>
-          <li class="sidebar-menu-list__item lk-sidebar-link">
-            <a href="#" class="link lk-sidebar-link__link">Программа лояльности</a>
-          </li>
-          <li class="sidebar-menu-list__item lk-sidebar-link">
-            <a href="#" class="link lk-sidebar-link__link">Вопросы</a>
-          </li>
-        </ul>
-      </nav>
+          <ul class="lk-sidebar-menu-list">
+            <li class="sidebar-menu-list__item lk-sidebar-link">
+              <a href="#" class="link lk-sidebar-link__link">Активный займ<span class="icon icon-error"></span></a>
+            </li>
+            <li class="sidebar-menu-list__item lk-sidebar-link">
+              <a href="#" class="link lk-sidebar-link__link lk-sidebar-link__link--active">Оформить займ</a>
+            </li>
+            <li class="sidebar-menu-list__item lk-sidebar-link">
+              <a href="#" class="link lk-sidebar-link__link">Погасить займ</a>
+            </li>
+            <li class="sidebar-menu-list__item lk-sidebar-link">
+              <a href="#" class="link lk-sidebar-link__link">История займов</a>
+            </li>
+            <li class="sidebar-menu-list__item lk-sidebar-link">
+              <a href="#" class="link lk-sidebar-link__link">Личная информация</a>
+            </li>
+            <li class="sidebar-menu-list__item lk-sidebar-link">
+              <a href="#" class="link lk-sidebar-link__link">Мои документы</a>
+            </li>
+            <li class="sidebar-menu-list__item lk-sidebar-link">
+              <a href="#" class="link lk-sidebar-link__link">Программа лояльности</a>
+            </li>
+            <li class="sidebar-menu-list__item lk-sidebar-link">
+              <a href="#" class="link lk-sidebar-link__link">Вопросы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </div>
-  <header class="header lk-header header-affiliate">
-    <div class="lk-header-wrapper">
-      <div class="header-container">
-        <div class="header-left lk-header-left">
-          <nav class="sidebar-menu-toggle">
-            <button class="unbtn sidebar-menu-button">
-              <span class="icon icon-hamburger"></span>
-            </button>
-          </nav>
-          <a href="/" class="logo">
-            <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20">
-          </a>
-        </div>
-        <div class="header-right lk-header-right">
-          <a class="link link--left-icon header-center__link lk-support-chat" href="#">
-            <span class="icon icon-chat"></span>
-            <span class="badge lk-support-chat__badge">4</span>
-            <span>Служба поддержки</span>
-          </a>
-          <div class="lk-dropdown lk-header-dropdown">
-            <button class="unbtn link lk-dropdown__trigger lk-header-user-link">
-              <span class="icon icon-user"></span>
-              <span class="lk-header-user-link__value">konstantin.k@gmail.com</span>
-              <span class="icon icon-arrow-down-lk"></span>
-            </button>
-            <div class="lk-dropdown__content">
-              <ul class="lk-header-user-menu">
-                <li class="lk-header-user-menu__item">
-                  <a class="link" href="#">Настройка профиля</a>
-                </li>
-                <li class="lk-header-user-menu__item">
-                  <a class="link" href="#">Поддержка</a>
-                </li>
-                <li class="lk-header-user-menu__item">
-                  <a class="link" href="#">Выход</a>
-                </li>
-              </ul>
+    <header class="header lk-header header-affiliate">
+      <div class="lk-header-wrapper">
+        <div class="header-container">
+          <div class="header-left lk-header-left">
+            <nav class="sidebar-menu-toggle">
+              <button class="unbtn sidebar-menu-button">
+                <span class="icon icon-hamburger"></span>
+              </button>
+            </nav>
+            <a href="/" class="logo">
+              <img src="icons/logo.svg" alt="Smart Credit logo" width="147" height="20" />
+            </a>
+          </div>
+          <div class="header-right lk-header-right">
+            <a class="link link--left-icon header-center__link lk-support-chat" href="#">
+              <span class="icon icon-chat"></span>
+              <span class="badge lk-support-chat__badge">4</span>
+              <span>Служба поддержки</span>
+            </a>
+            <div class="lk-dropdown lk-header-dropdown">
+              <button class="unbtn link lk-dropdown__trigger lk-header-user-link">
+                <span class="icon icon-user"></span>
+                <span class="lk-header-user-link__value">konstantin.k@gmail.com</span>
+                <span class="icon icon-arrow-down-lk"></span>
+              </button>
+              <div class="lk-dropdown__content">
+                <ul class="lk-header-user-menu">
+                  <li class="lk-header-user-menu__item">
+                    <a class="link" href="#">Настройка профиля</a>
+                  </li>
+                  <li class="lk-header-user-menu__item">
+                    <a class="link" href="#">Поддержка</a>
+                  </li>
+                  <li class="lk-header-user-menu__item">
+                    <a class="link" href="#">Выход</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="lk-header-nav">
-      <nav class="lk-header-nav-menu">
-        <ul class="lk-header-nav-menu-list">
-          <li class="lk-header-nav-menu-list__item">
-            <a href="#" class="link lk-header-nav-menu-list__item-link">Оформить займ</a>
-          </li>
-          <li class="lk-header-nav-menu-list__item">
-            <a href="#" class="link lk-header-nav-menu-list__item-link link--orange">Погасить займ</a>
-          </li>
-          <li class="lk-header-nav-menu-list__item">
-            <a href="#" class="link lk-header-nav-menu-list__item-link">История займов</a>
-          </li>
-          <li class="lk-header-nav-menu-list__item">
-            <a href="#" class="link lk-header-nav-menu-list__item-link">Личная информация</a>
-          </li>
-          <li class="lk-header-nav-menu-list__item">
-            <a href="#" class="link lk-header-nav-menu-list__item-link">Мои документы</a>
-          </li>
-          <li class="lk-header-nav-menu-list__item">
-            <a href="#" class="link lk-header-nav-menu-list__item-link">Акции и купоны</a>
-          </li>
-          <li class="lk-header-nav-menu-list__item">
-            <a href="#" class="link lk-header-nav-menu-list__item-link">Программа лояльности</a>
-          </li>
-          <li class="lk-header-nav-menu-list__item">
-            <a href="#" class="link lk-header-nav-menu-list__item-link">Вопросы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      <div class="lk-header-nav">
+        <nav class="lk-header-nav-menu">
+          <ul class="lk-header-nav-menu-list">
+            <li class="lk-header-nav-menu-list__item">
+              <a href="#" class="link lk-header-nav-menu-list__item-link">Оформить займ</a>
+            </li>
+            <li class="lk-header-nav-menu-list__item">
+              <a href="#" class="link lk-header-nav-menu-list__item-link link--orange">Погасить займ</a>
+            </li>
+            <li class="lk-header-nav-menu-list__item">
+              <a href="#" class="link lk-header-nav-menu-list__item-link">История займов</a>
+            </li>
+            <li class="lk-header-nav-menu-list__item">
+              <a href="#" class="link lk-header-nav-menu-list__item-link">Личная информация</a>
+            </li>
+            <li class="lk-header-nav-menu-list__item">
+              <a href="#" class="link lk-header-nav-menu-list__item-link">Мои документы</a>
+            </li>
+            <li class="lk-header-nav-menu-list__item">
+              <a href="#" class="link lk-header-nav-menu-list__item-link">Акции и купоны</a>
+            </li>
+            <li class="lk-header-nav-menu-list__item">
+              <a href="#" class="link lk-header-nav-menu-list__item-link">Программа лояльности</a>
+            </li>
+            <li class="lk-header-nav-menu-list__item">
+              <a href="#" class="link lk-header-nav-menu-list__item-link">Вопросы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<main class="main main-affiliate">
-  <section class="section lk-section">
-    <div class="lk-page-container affiliate-page-container">
-      <div class="lk-section-wrapper">
-        <div class="lk-content-block affiliate">
-          <div class="affiliate-header">
-            <h3 class="lk-content-block__title affiliate-title">Получайте 500 ₽ за каждого привлеченного клиента,
-              который оформит займ</h3>
-            <div class="affiliate-stats">
-              <p class="affiliate-stats__title">Статистика:</p>
-              <ul class="affiliate-stats-list">
-                <li class="affiliate-stats__item">
-                  <span class="affiliate-stats__item-title">отправлено приглашений —</span> <span
-                    class="affiliate-stats__item-value">123</span>
-                </li>
-                <li class="affiliate-stats__item">
-                  <span class="affiliate-stats__item-title">приглашений —</span> <span
-                    class="affiliate-stats__item-value">23</span>
-                </li>
-                <li class="affiliate-stats__item">
-                  <span class="affiliate-stats__item-title">получено займов —</span> <span
-                    class="affiliate-stats__item-value">1</span>
-                </li>
-                <li class="affiliate-stats__item">
-                  <span class="affiliate-stats__item-title">вам начислено —</span> <span
-                    class="affiliate-stats__item-value">500 ₽</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="affiliate-content">
-            <div class="affiliate-steps">
-              <ul class="step-list affiliate-steps-list">
-                <li class="affiliate-steps__item step step-one">
-                  <div class="step__number affiliate-steps__item-number">1</div>
-                  <div class="affiliate-steps__item-description">
-                    <p class="affiliate-steps__item-description__title">Вы приглашаете друзей</p>
-                    <p class="affiliate-steps__item-description__notice">
-                      Расскажите друзьям о Creditter: отправьте письмо с приглашением или поделитесь ссылкой
-                    </p>
-                  </div>
-                </li>
-                <li class="affiliate-steps__item step step-two">
-                  <div class="step__number affiliate-steps__item-number">2</div>
-                  <div class="affiliate-steps__item-description">
-                    <p class="affiliate-steps__item-description__title">Они регистрируются и инвестируют</p>
-                    <p class="affiliate-steps__item-description__notice">Сразу после регистрации мы положим на счет
-                      вашего друга €5</p>
-                  </div>
-                </li>
-                <li class="affiliate-steps__item step step-three">
-                  <div class="step__number affiliate-steps__item-number">3</div>
-                  <div class="affiliate-steps__item-description">
-                    <p class="affiliate-steps__item-description__title">Вы получаете 5% с их инвестиций</p>
-                    <p class="affiliate-steps__item-description__notice">
-                      На ваш счет будет автоматически зачислено 5% от суммы, инвестированной вашим другом в первые 30
-                      дней.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="affiliate-variants">
-              <div class="affiliate-variants__col affiliate-variant">
-                <p class="affiliate-variant__title">Пригласить по эл. почте</p>
-                <form class="affiliate-invite-from">
-                  <div class="affiliate-invite-from__field radio-toggle">
-                    <label class="radio-toggle__item">
-                      <input class="radio-toggle__item-radio" type="radio" value="email" name="type" checked>
-                      <span class="radio-toggle__item-label">Email</span>
-                    </label>
-                    <label class="radio-toggle__item">
-                      <input class="radio-toggle__item-radio" type="radio" value="sms" name="type">
-                      <span class="radio-toggle__item-label">SMS</span>
-                    </label>
-                  </div>
-                  <label class="affiliate-invite-from__field affiliate-invite-from__field-name">
-                    <input class="lk-input affiliate-invite-from__field-input" type="text" placeholder="Имя">
-                  </label>
-                  <label class="affiliate-invite-from__field">
-                    <input class="lk-input affiliate-invite-from__field-input" type="email" placeholder="Эл. почта">
-                  </label>
-                  <button class="btn btn--orange affiliate-invite-form__submit">Пригласить</button>
-                </form>
-              </div>
-              <div class="affiliate-variants__col affiliate-variant">
-                <p class="affiliate-variant__title">Поделиться ссылкой в&nbsp;соцсетях или мессенджерах</p>
-                <ul class="affiliate-share-list">
-                  <li class="affiliate-share-list__item">
-                    <a class="affiliate-share-link" href="#">
-                      <span class="icon icon-facebook"></span>
-                    </a>
-                  </li>
-                  <li class="affiliate-share-list__item">
-                    <a class="affiliate-share-link" href="#">
-                      <span class="icon icon-linkedin"></span>
-                    </a>
-                  </li>
-                  <li class="affiliate-share-list__item">
-                    <a class="affiliate-share-link" href="#">
-                      <span class="icon icon-gplus"></span>
-                    </a>
-                  </li>
-                  <li class="affiliate-share-list__item">
-                    <a class="affiliate-share-link" href="#">
-                      <span class="icon icon-twitter"></span>
-                    </a>
-                  </li>
-                  <li class="affiliate-share-list__item">
-                    <a class="affiliate-share-link" href="#">
-                      <span class="icon icon-telegram"></span>
-                    </a>
-                  </li>
-                  <li class="affiliate-share-list__item">
-                    <a class="affiliate-share-link" href="#">
-                      <span class="icon icon-whatsup"></span>
-                    </a>
-                  </li>
-                  <li class="affiliate-share-list__item">
-                    <a class="affiliate-share-link" href="#">
-                      <span class="icon icon-viber"></span>
-                    </a>
-                  </li>
-                  <li class="affiliate-share-list__item">
-                    <a class="affiliate-share-link" href="#">
-                      <span class="icon icon-facebook-messanger"></span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="affiliate-variants__col affiliate-variant">
-                <p class="affiliate-variant__title affiliate-variant-contacts__title">Поделиться ссылкой или
-                  импортировать контакты</p>
-                <div class="copy-invite">
-                  <p class="copy-invite__label">Ссылка с приглашением</p>
-                  <div class="copy-invite-field">
-                    <input id="copy-invite-link" class="lk-input copy-invite-field__input" type="text"
-                      value="https://creditter.com/ref/user123" readonly>
-                    <button class="unbtn copy-invite-field__button" type="button"
-                      data-clipboard-target="#copy-invite-link">
-                      <span class="icon icon-copy"></span>
-                    </button>
-                  </div>
-                </div>
-                <div class="mail-share">
-                  <ul class="mail-share__list">
-                    <li class="mail-share__list-item">
-                      <a class="mail-share-link" href="#">
-                        <span class="icon icon-gmail"></span>
-                      </a>
+    <main class="main main-affiliate">
+      <section class="section lk-section">
+        <div class="lk-page-container affiliate-page-container">
+          <div class="lk-section-wrapper">
+            <div class="lk-content-block affiliate">
+              <div class="affiliate-header">
+                <h3 class="lk-content-block__title affiliate-title">
+                  Получайте 500 ₽ за каждого привлеченного клиента, который оформит займ
+                </h3>
+                <div class="affiliate-stats">
+                  <p class="affiliate-stats__title">Статистика:</p>
+                  <ul class="affiliate-stats-list">
+                    <li class="affiliate-stats__item">
+                      <span class="affiliate-stats__item-title">отправлено приглашений —</span>
+                      <span class="affiliate-stats__item-value">123</span>
                     </li>
-                    <li class="mail-share__list-item">
-                      <a class="mail-share-link" href="#">
-                        <span class="icon icon-outlook"></span>
-                      </a>
+                    <li class="affiliate-stats__item">
+                      <span class="affiliate-stats__item-title">приглашений —</span>
+                      <span class="affiliate-stats__item-value">23</span>
+                    </li>
+                    <li class="affiliate-stats__item">
+                      <span class="affiliate-stats__item-title">получено займов —</span>
+                      <span class="affiliate-stats__item-value">1</span>
+                    </li>
+                    <li class="affiliate-stats__item">
+                      <span class="affiliate-stats__item-title">вам начислено —</span>
+                      <span class="affiliate-stats__item-value">500 ₽</span>
                     </li>
                   </ul>
                 </div>
               </div>
+              <div class="affiliate-content">
+                <div class="affiliate-steps">
+                  <ul class="step-list affiliate-steps-list">
+                    <li class="affiliate-steps__item step step-one">
+                      <div class="step__number affiliate-steps__item-number">1</div>
+                      <div class="affiliate-steps__item-description">
+                        <p class="affiliate-steps__item-description__title">Вы приглашаете друзей</p>
+                        <p class="affiliate-steps__item-description__notice">
+                          Расскажите друзьям о Creditter: отправьте письмо с приглашением или поделитесь ссылкой
+                        </p>
+                      </div>
+                    </li>
+                    <li class="affiliate-steps__item step step-two">
+                      <div class="step__number affiliate-steps__item-number">2</div>
+                      <div class="affiliate-steps__item-description">
+                        <p class="affiliate-steps__item-description__title">Они регистрируются и инвестируют</p>
+                        <p class="affiliate-steps__item-description__notice">
+                          Сразу после регистрации мы положим на счет вашего друга €5
+                        </p>
+                      </div>
+                    </li>
+                    <li class="affiliate-steps__item step step-three">
+                      <div class="step__number affiliate-steps__item-number">3</div>
+                      <div class="affiliate-steps__item-description">
+                        <p class="affiliate-steps__item-description__title">Вы получаете 5% с их инвестиций</p>
+                        <p class="affiliate-steps__item-description__notice">
+                          На ваш счет будет автоматически зачислено 5% от суммы, инвестированной вашим другом в первые
+                          30 дней.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="affiliate-variants">
+                  <div class="affiliate-variants__col affiliate-variant">
+                    <p class="affiliate-variant__title">Пригласить по эл. почте</p>
+                    <form class="affiliate-invite-from">
+                      <div class="affiliate-invite-from__field radio-toggle">
+                        <label class="radio-toggle__item">
+                          <input class="radio-toggle__item-radio" type="radio" value="email" name="type" checked />
+                          <span class="radio-toggle__item-label">Email</span>
+                        </label>
+                        <label class="radio-toggle__item">
+                          <input class="radio-toggle__item-radio" type="radio" value="sms" name="type" />
+                          <span class="radio-toggle__item-label">SMS</span>
+                        </label>
+                      </div>
+                      <label class="affiliate-invite-from__field affiliate-invite-from__field-name">
+                        <input class="lk-input affiliate-invite-from__field-input" type="text" placeholder="Имя" />
+                      </label>
+                      <label class="affiliate-invite-from__field">
+                        <input
+                          class="lk-input affiliate-invite-from__field-input"
+                          type="email"
+                          placeholder="Эл. почта"
+                        />
+                      </label>
+                      <button class="btn btn--orange affiliate-invite-form__submit">Пригласить</button>
+                    </form>
+                  </div>
+                  <div class="affiliate-variants__col affiliate-variant">
+                    <p class="affiliate-variant__title">Поделиться ссылкой в&nbsp;соцсетях или мессенджерах</p>
+                    <ul class="affiliate-share-list">
+                      <li class="affiliate-share-list__item">
+                        <a class="affiliate-share-link" href="#">
+                          <span class="icon icon-facebook"></span>
+                        </a>
+                      </li>
+                      <li class="affiliate-share-list__item">
+                        <a class="affiliate-share-link" href="#">
+                          <span class="icon icon-linkedin"></span>
+                        </a>
+                      </li>
+                      <li class="affiliate-share-list__item">
+                        <a class="affiliate-share-link" href="#">
+                          <span class="icon icon-gplus"></span>
+                        </a>
+                      </li>
+                      <li class="affiliate-share-list__item">
+                        <a class="affiliate-share-link" href="#">
+                          <span class="icon icon-twitter"></span>
+                        </a>
+                      </li>
+                      <li class="affiliate-share-list__item">
+                        <a class="affiliate-share-link" href="#">
+                          <span class="icon icon-telegram"></span>
+                        </a>
+                      </li>
+                      <li class="affiliate-share-list__item">
+                        <a class="affiliate-share-link" href="#">
+                          <span class="icon icon-whatsup"></span>
+                        </a>
+                      </li>
+                      <li class="affiliate-share-list__item">
+                        <a class="affiliate-share-link" href="#">
+                          <span class="icon icon-viber"></span>
+                        </a>
+                      </li>
+                      <li class="affiliate-share-list__item">
+                        <a class="affiliate-share-link" href="#">
+                          <span class="icon icon-facebook-messanger"></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="affiliate-variants__col affiliate-variant">
+                    <p class="affiliate-variant__title affiliate-variant-contacts__title">
+                      Поделиться ссылкой или импортировать контакты
+                    </p>
+                    <div class="copy-invite">
+                      <p class="copy-invite__label">Ссылка с приглашением</p>
+                      <div class="copy-invite-field">
+                        <input
+                          id="copy-invite-link"
+                          class="lk-input copy-invite-field__input"
+                          type="text"
+                          value="https://creditter.com/ref/user123"
+                          readonly
+                        />
+                        <button
+                          class="unbtn copy-invite-field__button"
+                          type="button"
+                          data-clipboard-target="#copy-invite-link"
+                        >
+                          <span class="icon icon-copy"></span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="mail-share">
+                      <ul class="mail-share__list">
+                        <li class="mail-share__list-item">
+                          <a class="mail-share-link" href="#">
+                            <span class="icon icon-gmail"></span>
+                          </a>
+                        </li>
+                        <li class="mail-share__list-item">
+                          <a class="mail-share-link" href="#">
+                            <span class="icon icon-outlook"></span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-</main>
+      </section>
+    </main>
 
-<footer class="footer footer-affiliate">
-  <div class="footer-container">
-    <div class="footer__contacts">
-      <div class="footer__contacts-phone">
-        <a href="tel:+74952680557" class="link phone">+7 (495) 268 0557</a>
+    <footer class="footer footer-affiliate">
+      <div class="footer-container">
+        <div class="footer__contacts">
+          <div class="footer__contacts-phone">
+            <a href="tel:+74952680557" class="link phone">+7 (495) 268 0557</a>
+          </div>
+          <div class="footer__contacts-copy">
+            <span class="footer__contacts-copy__left">&copy; SmartCredit, 2015-2019.</span>
+            <span class="footer__contacts-copy__right">Все права защищены.</span>
+          </div>
+          <div class="footer__contacts-program">
+            <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
+          </div>
+          <div class="footer__contacts-designedby">
+            <a class="link designedby-link" href="#">Дизайн: Genue</a>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">О компании</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Раскрытие информации</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">СМИ о нас</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Новости компании</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--big" href="#">Контакты</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Программа лояльности</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Как вернуть деньги</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Ответы на вопросы</a>
+            </li>
+          </ul>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray footer__nav-link--big" href="#"
+                >Исправление кредитной истории</a
+              >
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link footer__nav-link--gray" href="#">Как взять деньги</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Схема работы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Правила предоставления займов</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Тарифы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Документы</a>
+            </li>
+            <li class="footer__nav-list__item">
+              <a class="link footer__nav-link" href="#">Способы получения денег</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="footer__contacts-copy">
-        <span class="footer__contacts-copy__left">&copy; SmartCredit, 2015-2019.</span>
-        <span class="footer__contacts-copy__right">Все права защищены.</span>
-      </div>
-      <div class="footer__contacts-program">
-        <a class="link link-btn btn btn--gray partners-program-link" href="#">Партнерская программа</a>
-      </div>
-      <div class="footer__contacts-designedby">
-        <a class="link designedby-link" href="#">Дизайн: Genue</a>
-      </div>
-    </div>
-    <nav class="footer__nav">
-      <ul class="footer__nav-list">
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--gray" href="#">О компании</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Раскрытие информации</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">СМИ о нас</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Новости компании</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--big" href="#">Контакты</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--gray" href="#">Программа лояльности</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--gray" href="#">Как вернуть деньги</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--gray" href="#">Ответы на вопросы</a>
-        </li>
-      </ul>
-      <ul class="footer__nav-list">
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--gray footer__nav-link--big" href="#">Исправление кредитной
-            истории</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link footer__nav-link--gray" href="#">Как взять деньги</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Схема работы</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Правила предоставления займов</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Тарифы</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Документы</a>
-        </li>
-        <li class="footer__nav-list__item">
-          <a class="link footer__nav-link" href="#">Способы получения денег</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</footer>
+    </footer>
 
-<script src="js/bundle.js?v=0.0.10"></script>
-</body>
-
+    <script src="js/bundle.js?v=0.0.10"></script>
+  </body>
 </html>
