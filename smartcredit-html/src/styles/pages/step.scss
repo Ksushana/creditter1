@@ -104,8 +104,12 @@ body.application {
     .application-card-label {
       color: #A6B1BB;
     }
-    svg path {
-      fill: #A6B1BB;
+
+    svg  {
+      display: none;
+      path {
+        fill: #A6B1BB;
+      }
     }
 
     &--sber {
@@ -145,6 +149,7 @@ body.application {
 
       .application-card-input:checked+label {
         background-color: #000000;
+
       }
 
       .application-card-bank {
@@ -207,7 +212,10 @@ body.application {
     padding-left: 12px;
     svg {
       margin-left: 3px;
+      display: inline-block;
     }
+
+
   }
 
   .application-card-input.visually-hidden {
