@@ -95,37 +95,25 @@ body.application {
   }
 
   .application-cards-list {
-    margin: 0 auto;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #E5E9F2;
 
     li {
       position: relative;
-
-
-
-      &:last-child {
-      }
+      border-bottom: 1px solid #E5E9F2;
     }
   }
 
   .application-card {
-    font-family: Courier New;
-    width: 288px;
-    height: 180px;
+    width: 100%;
+    height: 53px;
     box-sizing: border-box;
-    border-radius: 14px;
     display: flex;
-    flex-wrap: wrap;
-    padding: 21px 21px 18px;
-
-    border: 0.5px solid rgba(255, 255, 255, 0.2);
-    background: linear-gradient(0deg, #A6B1BB, #A6B1BB), #FFDD2D;
-    .application-card-label {
-      color: #A6B1BB;
-
-      &::before {
-        border: 2px solid #ffffff;
-      }
-    }
+    flex-wrap: nowrap;
+    align-items: center;
+    padding:0;
 
     svg  {
       display: none;
@@ -134,127 +122,58 @@ body.application {
       }
     }
 
-    &--sber {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%), #1A9F29;
-      .application-card-label {
-        color: #1A9F29;
-      }
-      svg path {
-        fill: #1A9F29;
-      }
-      .application-card-bank {
-        margin-left: 0;
-        margin-bottom: -2px;
-      }
-    }
-    &--alfa {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%), #ED342E;
-      .application-card-label {
-        color: #ED342E;
-      }
-      svg path {
-        fill: #ED342E;
-      }
-      .application-card-bank {
-        margin-left: 3px;
-        margin-bottom: -4px;
-      }
-    }
-    &--tinkoff {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0) 100%), #FFDD2D;
-      .application-card-label {
-        color: #FFDD2D;
 
-        &::before {
-          border: 2px solid #000000;
-        }
-      }
-      svg path {
-        fill: #FFDD2D;
-      }
-
-      .application-card-input:checked+label {
-        background-color: #000000;
-      }
-
-      .application-card-bank {
-        margin-left: 3px;
-      }
-    }
-
-    &--white {
-      color: #ffffff;
-    }
   }
 
   .application-card-bank {
-    margin-right: auto;
-    height: fit-content;
-    font-size: 17px;
-    line-height: 22px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    min-height: 25px;
-    margin-left: -6px;
+    width: 31px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 9px;
+
+    img {
+      object-fit: contain;
+      object-position: center;
+    }
   }
 
   .application-card-number {
-    width: 100%;
-    padding-top: 23px;
-    padding-bottom: 18px;
     font-style: normal;
     font-weight: normal;
-    font-size: 17.5px;
-    line-height: 22px;
-    text-align: center;
-
-
+    font-size: 15px;
+    line-height: 18px;
+    text-align: left;
+    width: 50px;
   }
 
   .application-card-label {
-    border: 1.5px solid #333333;
+    border: 1px solid #E5E9F2;
     box-sizing: border-box;
     border-radius: 120px;
-    width: 24px;
-    height: 24px;
-    opacity: 0.2;
+    width: 18px;
+    height: 18px;
     font-size: 0;
-    margin-top: -4px;
-    margin-right: -6px;
-    display: block;
+    display: flex;
+    margin-left: 2px;
+    margin-top: 1px;
+    margin-right: 7px;
+    transition: all 0.2s;
 
-    &::before {
-      width: 282px;
-      height: 174px;
-      position: absolute;
-      display: none;
-      content: "";
-      top: 3px;
-      left: 3px;
-      border: 2px solid transparent;
-      box-sizing: border-box;
-      border-radius: 14px;
+    svg {
+      margin: auto;
+      path {
+        fill: #ffffff;
+      }
     }
   }
 
   .application-card-input:checked+label {
-    font-family: Lato;
-    width: 103.65px;
-    height: 28px;
-    background-color: #ffffff;
-    border-radius: 120px;
+    background-color: #FF4E2C;
     opacity: 1;
-    border: none;
-    font-size: 15px;
-    line-height: 18px;
-    padding-top: 5px;
-    padding-left: 12px;
+    border: 1px solid #FF4E2C;
     svg {
-      margin-left: 3px;
-      display: inline-block;
-    }
-
-    &::before {
       display: block;
     }
 
@@ -1010,7 +929,7 @@ left: 0;
     width: 47.2%;
 
     &:not(:last-child) {
-      margin-bottom: 26px;
+      margin-bottom: 21px;
     }
   }
 }
