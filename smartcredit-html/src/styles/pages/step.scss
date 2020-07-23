@@ -4,9 +4,6 @@ $gray: $gray;
 body.application {
   background: #f5f6fa;
   color: $textMainColor;
-  position: fixed;
-  left: 0;
-  right: 0;
 }
 
 .application-header {
@@ -1055,7 +1052,7 @@ left: 0;
   width: 100%;
 
   @media screen and (max-width: 767px) {
-    padding: 22px;
+    padding: 21px;
   }
 }
 
