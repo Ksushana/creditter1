@@ -147,6 +147,11 @@ body.application {
     line-height: 18px;
     text-align: left;
 
+    span {
+      text-decoration: none;
+      color: #17233B;
+    }
+
     .application-card-name {
       width: 50px;
     }
