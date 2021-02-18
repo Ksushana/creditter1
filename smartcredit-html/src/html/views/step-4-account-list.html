@@ -69,11 +69,12 @@
             <div class="ctabs-tablist account-type-tabs__tablist" role="tablist">
               <div class="account-type-tabs__tablist-container">
                 <button type="button" class="ctabs-tablist__item account-type-tabs__tablist-item" role="tab"
-                  aria-selected="true" aria-controls="cards-tab" id="cards">На карту</button>
+                  aria-selected="true" aria-controls="cards-tab" id="cards">Карты</button>
                 <button type="button" class="ctabs-tablist__item account-type-tabs__tablist-item" role="tab"
-                  aria-selected="false" aria-controls="qiwi-tab" id="qiwi" tabindex="-1">На QIWI</button>
-                <button type="button" class="ctabs-tablist__item account-type-tabs__tablist-item" role="tab"
-                  aria-selected="false" aria-controls="accounts-tab" id="accounts" tabindex="-1">На Р/С</button>
+                  aria-selected="false" aria-controls="accounts-tab" id="accounts" tabindex="-1">Счета</button>
+                <button type="button" class="ctabs-tablist__item account-type-tabs__tablist-item " role="tab"
+                  aria-selected="false" aria-controls="qiwi-tab" id="qiwi" tabindex="-1">Другие платежные системы</button>
+
               </div>
             </div>
             <div class="ctabs-panel account-type-tabs__panel" tabindex="0" role="tabpanel" id="cards-tab"
@@ -137,7 +138,7 @@
                   <div class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper">
                     <div class="payment-banks__status-badge"></div>
                     <div class="card-template-container">
-                      <div class="template-item card-template">
+                      <div class="template-item qiwi-template">
                         <div class="card-template-row">
                           <img class="card-template__bank" src="images/qiwi.png" alt="QIWI" width="98" height="44">
                         </div>
@@ -145,6 +146,14 @@
                           <p class="card-template__number">+7 999 999 99 99</p>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                  <div class="card-template-wrapper application-banks-template-wrapper payment-banks-template-wrapper">
+                    <div class="card-template-container">
+                      <a href="#" class="template-item application-banks__item-add qiwi__add">
+                        <span class="icon icon-plus-circle application-banks__item-add__icon"></span>
+                        <span class="application-banks__item-add__title">Добавить QIWI Кошелек</span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -206,14 +215,242 @@
               </div>
             </div>
           </div>
+          <div class="application-formblock application-cards">
+            <ul class="application-cards-list">
+              <li >
+                <div class="application-card application-card--sber  application-card--white">
+                  <input class="application-card-input visually-hidden" type="radio" id="sberbank" name="bank" checked>
+                  <label class="application-card-label" for="sberbank">
+                    <div>
+                      <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.114 0.470703L3.95842 6.52174L1.52688 4.13719L0 5.63676L3.95945 9.52953L11.6471 1.96932L10.114 0.470703Z" fill=""/>
+                      </svg>
+                    </div>
+                  </label>
+                  <p class="application-card-bank">
+                    <img src="icons/sberbank-small.svg" alt="Sberbank" width="22" height="22">
+                  </p>
+                  <p class="application-card-number application-card-number--white">
+                    <span class="application-card-account-name">Карта</span>
+                    <span>
+                      <span>****</span>
+                      <span>****</span>
+                      <span>****</span>
+                      <span>5678</span>
+                    </span>
+                  </p>
+                </div>
+              </li>
+              <li >
+                <div class="application-card application-card--tinkoff  application-card--white">
+                  <input class="application-card-input visually-hidden" type="radio" id="tinkoff" name="bank">
+                  <label class="application-card-label" for="tinkoff">
+                    <div>
+                      <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.114 0.470703L3.95842 6.52174L1.52688 4.13719L0 5.63676L3.95945 9.52953L11.6471 1.96932L10.114 0.470703Z" fill=""/>
+                      </svg>
+                    </div>
+                  </label>
+                  <p class="application-card-bank">
+                    <img src="icons/tinkoff-small.svg" alt="tinkoff" width="31" height="27">
+                  </p>
+                  <p class="application-card-number application-card-number--white">
+                    <span class="application-card-account-name">Карта</span>
+                    <span>
+                      <span>****</span>
+                      <span>****</span>
+                      <span>****</span>
+                      <span>5678</span>
+                    </span>
+                  </p>
+                  </div>
+                </li>
+                <li >
+                  <div class="application-card application-card--alfa  application-card--white">
+                    <input class="application-card-input visually-hidden" type="radio" id="alfabank" name="bank">
+                    <label class="application-card-label" for="alfabank">
+                      <div>
+                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.114 0.470703L3.95842 6.52174L1.52688 4.13719L0 5.63676L3.95945 9.52953L11.6471 1.96932L10.114 0.470703Z" fill=""/>
+                        </svg>
+                      </div>
+                    </label>
+                    <p class="application-card-bank">
+                      <img src="icons/alfa-small.svg" alt="alfabank" width="14" height="22">
+                    </p>
+                    <p class="application-card-number application-card-number--white">
+                      <span class="application-card-account-name">Карта</span>
+                      <span>
+                        <span>****</span>
+                        <span>****</span>
+                        <span>****</span>
+                        <span>5678</span>
+                      </span>
+                    </p>
+                    </div>
+                  </li>
+                  <li >
+                    <div class="application-card application-card--account  application-card--white">
+                      <input class="application-card-input visually-hidden" type="radio" id="account" name="bank">
+                      <label class="application-card-label" for="account">
+                        <div>
+                          <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.114 0.470703L3.95842 6.52174L1.52688 4.13719L0 5.63676L3.95945 9.52953L11.6471 1.96932L10.114 0.470703Z" fill=""/>
+                          </svg>
+                        </div>
+                      </label>
+                      <p class="application-card-bank">
+                        <img src="icons/card-small.svg" alt="account" width="22" height="16">
+                      </p>
+
+                      <p class="application-card-number application-card-number--white">
+                        <span class="application-card-account-name">Счет</span>
+                        <span>
+                          <span>****</span>
+                          <span>****</span>
+                          <span>****</span>
+                          <span>5678</span>
+                        </span>
+                      </div>
+                    </li>
+                    <li >
+                      <div class="application-card application-card--account  application-card--white">
+                        <input class="application-card-input visually-hidden" type="radio" id="account" name="bank">
+                        <label class="application-card-label" for="account">
+                          <div>
+                            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.114 0.470703L3.95842 6.52174L1.52688 4.13719L0 5.63676L3.95945 9.52953L11.6471 1.96932L10.114 0.470703Z" fill=""/>
+                            </svg>
+                          </div>
+                        </label>
+                        <p class="application-card-bank">
+                          <img src="icons/qiwi-account.svg" alt="account" width="20" height="20">
+                        </p>
+
+                        <p class="application-card-number application-card-number--white">
+                          <span class="application-card-account-name">QIWI</span>
+                          <span>
+                            89059958775
+                          </span>
+                        </div>
+                      </li>
+
+            </ul>
+          </div>
           <div class="application-formblock application-form-next-action">
             <button class="btn btn--orange application-next-button" type="button">Получить деньги</button>
           </div>
         </form>
       </div>
     </section>
+    <div class="popup application-popup  application-popup--choose-type">
+      <button class="application-popup__close icon"></button>
+      <div class="application-popup__inner">
+        <div class="application-popup__header">
+          <a class="link application-back-link" href="#">
+            <span class="icon icon-arrow-left"></span>
+          </a>
+          <p class="application-card-add-block__title">Другие платежные системы</p>
+        </div>
+        <div class="">
+          <a  class="application-popup__inner-link">
+            <img src="icons/qiwi-account.svg" alt="account" width="20" height="20">
+            <span class="text">Добавить QIWI Кошелек</span>
+            <span class="icon"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="popup application-popup application-popup--add-number">
+      <button class="application-popup__close icon"></button>
+      <div class="application-popup__inner">
+        <div class="application-popup__header">
+          <a class="link application-back-link" href="#">
+            <span class="icon icon-arrow-left"></span>
+          </a>
+          <p class="application-card-add-block__title">Добавить QIWI кошелек</p>
+        </div>
+        <div class="application-fieldgroup__row">
+          <input class="application-input application-fieldgroup__input application-fieldgroup__input--full" type="text" placeholder="Введите номер QIWI Кошелька">
+        </div>
+        <div class="application-formblock application-form-next-action">
+          <button class="btn btn--orange application-next-button" type="button">Сохранить</button>
+        </div>
+      </div>
+    </div>
   </main>
   <script src="js/bundle.js?v=0.0.1"></script>
+  <script>
+    (function () {
+
+      window.isNotMobile = function () {
+        return window.matchMedia(`(min-width: 768px)`).matches;
+      };
+      const popup = document.querySelector('.application-popup');
+
+      if (isNotMobile()) {
+        return;
+      }
+
+      if (!popup) {
+        return;
+      }
+
+      const openPopupBtn = document.querySelector('#qiwi');
+      const tabList = document.querySelector('.account-type-tabs__tablist');
+      tabList.removeAttribute("role");
+
+      const popupList = document.querySelector('.application-popup--choose-type');
+      const popupList2 = document.querySelector('.application-popup--add-number');
+
+      function openFirst(){
+        popupList.classList.add('isshown')
+      }
+
+      function openSecond(){
+        popupList2.classList.add('isshown')
+      }
+
+      function hideFirst(){
+        popupList.classList.remove('isshown')
+      }
+
+      function hideSecond(){
+        popupList2.classList.remove('isshown')
+      }
+
+
+      const openListBtn = document.querySelector('.application-popup__inner-link');
+      const closePopupBtns = document.querySelectorAll('.application-popup__close');
+      const returnBtn1 = document.querySelector('.application-popup--choose-type .application-back-link');
+      const returnBtn2 = document.querySelector('.application-popup--add-number .application-back-link');
+
+      openPopupBtn.addEventListener("click", function () {
+        openFirst();
+      });
+
+      openListBtn.addEventListener("click", function () {
+        openSecond();
+      });
+
+      closePopupBtns.forEach( function(closePopupBtn) {
+        closePopupBtn.addEventListener("click", function () {
+          hideFirst();
+          hideSecond();
+        });
+      });
+
+
+
+      returnBtn1.addEventListener("click", function () {
+        hideFirst();
+      });
+
+      returnBtn2.addEventListener("click", function () {
+        hideSecond();
+      });
+    })();
+  </script>
 </body>
 
 </html>

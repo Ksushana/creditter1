@@ -1205,6 +1205,10 @@ left: 0;
 
 .account-type-tabs__tablist {
   margin-bottom: 32px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+  }
 }
 
 .account-type-tabs__tablist-container {
@@ -1216,6 +1220,19 @@ left: 0;
 
   @media screen and (max-width: 767px) {
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 23px;
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+.account-type-tabs__panel {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -1224,12 +1241,39 @@ left: 0;
   line-height: 29px;
 
   @media screen and (max-width: 767px) {
-    padding-top: 13px;
-    padding-bottom: 13px;
-    margin-right: 10px;
-    font-size: 18px;
+    flex-basis: unset;
+    width: 48%;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ff4e2c;
+    border-radius: 5px!important;
+    background: #fff;
+    padding: 0;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ff4e2c;
+    margin-right: 0;
+    min-height: 42px;
+    font-weight: 400!important;
   }
 }
+
+.account-type-tabs__tablist-item:last-child {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+   }
+}
+
+.account-type-tabs__tablist-item::after {
+
+  @media screen and (max-width: 767px) {
+   display: none;
+  }
+}
+
 
 .application-formblock-accounts {
   display: flex;
@@ -1410,4 +1454,105 @@ left: 0;
   margin-bottom: 20px;
   font-size: 24px;
   line-height: 29px;
+}
+
+.application-popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border: 0;
+  height: 100vh;
+  background-color: #fff;
+  padding-top: 48px;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+
+  &.isshown {
+    transform: translateX(0);
+  }
+
+  &--choose-type {
+    z-index: 1000;
+  }
+
+  &--add-number {
+    z-index: 2000;
+  }
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+
+  .application-back-link {
+    @media screen and (max-width: 767px) {
+      display: block;
+      position: absolute;
+      top: 3px;
+      left: -26px;
+    }
+  }
+
+  .application-card-add-block__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .icon-arrow-left {
+    width: 14px;
+    height: 22px;
+  }
+
+  .application-fieldgroup__row {
+    margin: 0 16px;
+  }
+
+  .application-fieldgroup__input {
+    height: calc(1.5em + 38px);
+  }
+}
+
+.application-popup__close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 16px;
+  height: 16px;
+  background-image: svg-load("icons/close-icon.svg");
+  padding: 0;
+  background-size: 100%;
+  border: 0;
+  background-color: transparent;
+  z-index: 2001;
+}
+
+.application-popup__header {
+  margin: 0 40px;
+  text-align: center;
+  position: relative;
+}
+
+.application-popup__inner-link {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 54px;
+  border-top: 1px solid #E5E9F2;
+  border-bottom: 1px solid #E5E9F2;
+  align-items: center;
+  padding: 18px;
+  font-size: 15px;
+line-height: 20px;
+
+  .text {
+    flex-grow: 1;
+    padding-left: 14px;
+  }
+
+  .icon {
+    background-image: svg-load("icons/arrow-left.svg", fill=#8C94A8);
+    transform: rotate(180deg);
+  }
 }

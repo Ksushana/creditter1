@@ -103,9 +103,11 @@
   }
 
   & .card-template,
-  & .account-template {
+  & .account-template,
+  & .qiwi-template {
     background: #ffffff;
     border: 1px solid #e5e9f2;
+    padding: 20px;
   }
 }
 
@@ -119,9 +121,11 @@
   }
 
   & .card-template,
-  & .account-template {
+  & .account-template,
+  & .qiwi-template {
     border: 1px solid #ff6f53;
     background: #f9f5ef;
+
   }
 }
 
