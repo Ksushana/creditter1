@@ -314,9 +314,9 @@
                       </div>
                     </li>
                     <li >
-                      <div class="application-card application-card--account  application-card--white">
-                        <input class="application-card-input visually-hidden" type="radio" id="account" name="bank">
-                        <label class="application-card-label" for="account">
+                      <div class="application-card application-card--qiwi  application-card--white">
+                        <input class="application-card-input visually-hidden" type="radio" id="qiwi" name="bank">
+                        <label class="application-card-label" for="qiwi">
                           <div>
                             <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M10.114 0.470703L3.95842 6.52174L1.52688 4.13719L0 5.63676L3.95945 9.52953L11.6471 1.96932L10.114 0.470703Z" fill=""/>
@@ -361,96 +361,11 @@
         </div>
       </div>
     </div>
-    <div class="popup application-popup application-popup--add-number">
-      <button class="application-popup__close icon"></button>
-      <div class="application-popup__inner">
-        <div class="application-popup__header">
-          <a class="link application-back-link" href="#">
-            <span class="icon icon-arrow-left"></span>
-          </a>
-          <p class="application-card-add-block__title">Добавить QIWI кошелек</p>
-        </div>
-        <div class="application-fieldgroup__row">
-          <input class="application-input application-fieldgroup__input application-fieldgroup__input--full" type="text" placeholder="Введите номер QIWI Кошелька">
-        </div>
-        <div class="application-formblock application-form-next-action">
-          <button class="btn btn--orange application-next-button" type="button">Сохранить</button>
-        </div>
-      </div>
+
     </div>
   </main>
   <script src="js/bundle.js?v=0.0.1"></script>
-  <script>
-    (function () {
 
-      window.isNotMobile = function () {
-        return window.matchMedia(`(min-width: 768px)`).matches;
-      };
-      const popup = document.querySelector('.application-popup');
-
-      if (isNotMobile()) {
-        return;
-      }
-
-      if (!popup) {
-        return;
-      }
-
-      const openPopupBtn = document.querySelector('#qiwi');
-      const tabList = document.querySelector('.account-type-tabs__tablist');
-      tabList.removeAttribute("role");
-
-      const popupList = document.querySelector('.application-popup--choose-type');
-      const popupList2 = document.querySelector('.application-popup--add-number');
-
-      function openFirst(){
-        popupList.classList.add('isshown')
-      }
-
-      function openSecond(){
-        popupList2.classList.add('isshown')
-      }
-
-      function hideFirst(){
-        popupList.classList.remove('isshown')
-      }
-
-      function hideSecond(){
-        popupList2.classList.remove('isshown')
-      }
-
-
-      const openListBtn = document.querySelector('.application-popup__inner-link');
-      const closePopupBtns = document.querySelectorAll('.application-popup__close');
-      const returnBtn1 = document.querySelector('.application-popup--choose-type .application-back-link');
-      const returnBtn2 = document.querySelector('.application-popup--add-number .application-back-link');
-
-      openPopupBtn.addEventListener("click", function () {
-        openFirst();
-      });
-
-      openListBtn.addEventListener("click", function () {
-        openSecond();
-      });
-
-      closePopupBtns.forEach( function(closePopupBtn) {
-        closePopupBtn.addEventListener("click", function () {
-          hideFirst();
-          hideSecond();
-        });
-      });
-
-
-
-      returnBtn1.addEventListener("click", function () {
-        hideFirst();
-      });
-
-      returnBtn2.addEventListener("click", function () {
-        hideSecond();
-      });
-    })();
-  </script>
 </body>
 
 </html>
