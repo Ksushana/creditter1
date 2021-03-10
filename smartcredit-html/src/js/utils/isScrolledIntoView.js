@@ -29,3 +29,15 @@ export function isScrolledOutOfView(element) {
 
   return elemBottom < docViewTop;
 }
+
+export function isScrolledInTheMiddle(element) {
+  const docViewTop =
+    (document.documentElement && document.documentElement.scrollTop) ||
+    document.body.scrollTop;
+  const elemTop = getOffset(element).top;
+  const halfScreen = window.innerHeight / 2;
+  const scrollTop = docViewTop + halfScreen
+
+  return elemTop < scrollTop;
+}
+
