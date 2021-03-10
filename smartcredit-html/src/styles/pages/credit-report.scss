@@ -388,9 +388,18 @@
       left: 50%;
       transform: translate3d(-50%, 0px, 0px);
       top: 64px;
-      background-color: var(--fill-yellow);
+      background-color: #FF4E2C;
       height: 0px;
       transition: height 0.3s ease-out 0s;
+    }
+
+    &.is-orange {
+      background-color: #FF4E2C;
+      color: #fff;
+
+      &::after {
+        height: calc(100% - 31px);
+      }
     }
   }
 

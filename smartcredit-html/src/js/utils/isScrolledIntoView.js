@@ -29,3 +29,11 @@ export function isScrolledOutOfView(element) {
 
   return elemBottom < docViewTop;
 }
+
+export function isScrolledInTheMiddle(element) {
+  const elemTop = getOffset(element).top;
+  const middle = elemTop - (window.innerHeight / 2);
+
+  return elemTop === middle;
+}
+
