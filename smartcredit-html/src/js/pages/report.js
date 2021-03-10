@@ -1,4 +1,4 @@
-import { isScrolledInTheMiddle } from './utils/isScrolledIntoView';
+import { isScrolledInTheMiddle } from '../utils/isScrolledIntoView';
 
 const CLASSES = {
   CONTAINER: 'report-charts__line-icon',
@@ -13,14 +13,18 @@ function init() {
     return null;
   }
 
-  function changeColor() {
-    Array.from(icons).forEach(icon => {
-      if (isScrolledInTheMiddle(icon)) {
-        alert(1)
-      }
-    });
+  function handleWindowScroll() {
+    document.addEventListener('scroll', () => {
+      Array.from(icons).forEach(icon => {
+        if (isScrolledInTheMiddle(icon)) {
+          icon.classList.add('is-orange');
+        } else {
+          icon.classList.remove('is-orange');
+        }
+      });
+    })
   }
-  changeColor();
+  handleWindowScroll();
 }
 
 export default init;

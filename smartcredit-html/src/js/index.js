@@ -24,7 +24,7 @@ import paymentDetailsInit from './pages/payment-details';
 import lkLoyaltyInit from './pages/lk-loyalty';
 import affiliateInit from './pages/affiliate';
 import statisticsInit from './pages/statistics';
-// import reportInit from './pages/report';
+import reportInit from './pages/report';
 
 document.addEventListener('DOMContentLoaded', () => {
   if (
@@ -57,6 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
     lkLoyaltyInit();
     affiliateInit();
     statisticsInit();
-    // reportInit();
+    reportInit();
   }
 });
