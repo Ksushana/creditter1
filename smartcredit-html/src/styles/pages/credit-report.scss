@@ -269,6 +269,7 @@
 
   &__order {
     text-align: center;
+    padding: 0 16px;
   }
 
   &__order-note {
@@ -276,6 +277,10 @@
     font-size: 21px;
     line-height: 32px;
     color: #000000;
+
+    @media screen and (max-width: 900px) {
+      padding: 0 30px
+    }
   }
 }
 
@@ -287,7 +292,7 @@
   }
 
   @media screen and (max-width: 900px) {
-    padding: 64px 16px 56px;
+    padding: 64px 16px 0;
   }
 
   &__item {
@@ -297,6 +302,10 @@
     @media screen and (max-width: 900px) {
       flex-direction: column;
       position: relative;
+    }
+
+    @media screen and (max-width: 900px) {
+      margin-bottom: 63px;
     }
 
     &:last-child {
@@ -314,7 +323,7 @@
 
     @media screen and (max-width: 900px) {
       width: 100%;
-      padding: 0 0 0 57px;
+      padding: 0 0 0 63px;
     }
 
     &--left {
@@ -340,11 +349,11 @@
     margin: 0px 40px 0px -24px;
     position: relative;
     @media screen and (max-width: 900px) {
-
+      margin: 0;
       position: absolute;
       top: 2px;
       height: 100%;
-      left: 25px;
+      left: 0;
     }
   }
 
@@ -391,12 +400,20 @@
       font-size: 21px;
       line-height: 32px;
       margin: 9px 0 16px;
-
+      @media screen and (max-width: 900px) {
+        font-size: 17px;
+        line-height: 26px;
+        margin: 19px 0 12px;
+      }
     }
 
     p {
       font-size: 17px;
       line-height: 26px;
+      @media screen and (max-width: 900px) {
+        font-size: 14px;
+        line-height: 22px;
+      }
     }
   }
 }
